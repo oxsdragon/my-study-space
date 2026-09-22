@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Study Space</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply saved theme before first paint to avoid a flash
+    try { var t = localStorage.getItem('study.theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">&#9998;</span>
+      <span class="brand-name">My Study Space</span>
+    </a>
+    <form class="search" id="search-form" role="search">
+      <input id="search-input" type="search" placeholder="Search all subjects…" aria-label="Search all subjects" autocomplete="off">
+    </form>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">&#9680;</button>
+  </header>
+
+  <div id="update-banner" class="update-banner" hidden role="status">
+    <span>New content is available.</span>
+    <button type="button" class="btn small primary" id="update-refresh">Refresh</button>
+    <button type="button" class="icon-btn small" id="update-dismiss" aria-label="Dismiss">&times;</button>
+  </div>
+
+  <main id="app" tabindex="-1"></main>
+
+  <noscript><p style="padding:2rem">This site needs JavaScript turned on to work.</p></noscript>
+
+  <script src="data/site-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Allowlist approach: everything is ignored by default, and only the
+# public, friend-facing site (docs/) plus a couple of safe project files
+# are explicitly un-ignored below. This is deliberate — it means a new
+# file only ever gets published if it's added to the allowlist here,
+# never by accident.
+#
+# Original PowerPoint/PDF/Word files, the local full site (with links back
+# to those originals), lesson-authoring sources, and processing scripts
+# all stay on this computer and are never pushed to GitHub.
+
+*
+
+!.gitignore
+!README.md
+!docs/
+!docs/**
