@@ -9,7 +9,7 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-22T18:13:50",
+ "generated": "2026-09-22T22:11:41",
  "lessons": [
   {
    "id": "arabic-almubtada-walkhabar",
