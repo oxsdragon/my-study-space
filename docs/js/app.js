@@ -71,6 +71,19 @@
     }
     return a;
   }
+  // A lesson is "v2" (redesigned page) if it has the new authoring fields; older lessons
+  // keep working exactly as before via the classic tab layout until they're re-processed.
+  function isV2(l) { return !!(l.idea || l.examples || l.summaryCard); }
+  function youtubeSearchUrl(q) { return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(q || ''); }
+  function difficultyDots(level) {
+    var n = level === 'hard' ? 3 : level === 'medium' ? 2 : 1;
+    var html = '<span class="difficulty" aria-label="Difficulty: ' + esc(level || 'easy') + '">';
+    for (var i = 1; i <= 3; i++) html += '<span class="dot' + (i <= n ? ' on' : '') + '"></span>';
+    return html + '</span> <span style="text-transform:capitalize">' + esc(level || 'easy') + '</span>';
+  }
+  function boxLabel(type) {
+    return type === 'formula' ? 'Formula' : type === 'rule' ? 'Rule' : type === 'date' ? 'Key date' : 'Note';
+  }
 
   /* ---------------- progress (localStorage, with in-memory fallback) ---------------- */
   var STORE_KEY = 'study.progress.v1';
@@ -87,7 +100,10 @@
   function getP(id) {
     var s = loadStore();
     var p = s.lessons[id] || {};
-    return { studied: !!p.studied, best: p.best || null, last: p.last || null, attempts: p.attempts || 0, lastWrong: p.lastWrong || [] };
+    return {
+      studied: !!p.studied, best: p.best || null, last: p.last || null, attempts: p.attempts || 0, lastWrong: p.lastWrong || [],
+      kpisChecked: p.kpisChecked || [], revealed: p.revealed || {}, myVideos: p.myVideos || []
+    };
   }
   function setP(id, patch) {
     var s = loadStore();
@@ -123,16 +139,28 @@
         var n = normWithMap(text);
         searchIndex.push({ lesson: l, tab: tab, label: label, text: text, norm: n });
       }
-      add('summary', 'Lesson title', l.title);
-      (l.summary || []).forEach(function (sec) {
-        add('summary', 'Summary', (sec.heading ? sec.heading + ' — ' : '') + (sec.text || '') + ' ' + (sec.bullets || []).join(' · '));
+      var v2 = isV2(l);
+      add(v2 ? 'explanation' : 'summary', 'Lesson title', l.title);
+      if (v2 && l.idea) {
+        add('idea', 'The idea', [l.idea.simple, l.idea.academic, l.idea.analogy].filter(Boolean).join(' '));
+      }
+      (l.explanation || l.summary || []).forEach(function (sec) {
+        add(v2 ? 'explanation' : 'summary', v2 ? 'Explanation' : 'Summary',
+          (sec.heading ? sec.heading + ' — ' : '') + (sec.text || '') + ' ' + (sec.bullets || []).join(' · ') + (sec.box ? ' ' + sec.box.content : ''));
       });
-      (l.kpis || []).forEach(function (k) { add('kpis', 'KPI', k); });
-      (l.keyTerms || []).forEach(function (t) { add('terms', 'Key term', t.term + ' — ' + t.definition); });
+      (l.kpis || []).forEach(function (k) { add(v2 ? 'glance' : 'kpis', 'KPI', k); });
+      (l.keyTerms || []).forEach(function (t) { add(v2 ? 'explanation' : 'terms', 'Key term', t.term + ' — ' + t.definition); });
+      (l.examples || []).forEach(function (ex) {
+        var stepText = (ex.steps || []).map(function (s) { return (s.explain || '') + ' ' + (s.work || '') + ' ' + (s.why || ''); }).join(' ');
+        add('examples', 'Worked example', (ex.title || '') + ' ' + (ex.problem || '') + ' ' + stepText + ' ' + (ex.answer || ''));
+      });
+      if (l.summaryCard) {
+        add('revise', 'Revision summary', (l.summaryCard.points || []).join(' ') + ' ' + (l.summaryCard.mustNotForget || []).join(' '));
+      }
       var q = l.quiz || {};
-      (q.multipleChoice || []).forEach(function (m) { add('quiz', 'Quiz', m.question + ' ' + (m.options || []).join(' | ')); });
-      (q.shortAnswer || []).forEach(function (m) { add('quiz', 'Quiz', m.question); });
-      (q.examStyle || []).forEach(function (m) { add('quiz', 'Quiz', m.question); });
+      (q.multipleChoice || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question + ' ' + (m.options || []).join(' | ')); });
+      (q.shortAnswer || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question); });
+      (q.examStyle || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question); });
     });
   }
   function highlight(entry, words) {
@@ -225,6 +253,7 @@
   function viewLesson(id, tab) {
     var l = getLesson(id);
     if (!l) return viewNotFound();
+    if (isV2(l)) return viewLessonV2(l, tab);
     if (!TABS.some(function (t) { return t[0] === tab; })) tab = 'summary';
     document.title = l.title + ' — My Study Space';
     var pr = getP(l.id), d = dirAttr(l);
@@ -251,6 +280,7 @@
     else if (tab === 'terms') body.innerHTML = tabTerms(l);
     else if (tab === 'quiz') body.innerHTML = tabQuiz(l);
     else if (tab === 'flash') body.innerHTML = tabFlash(l);
+    window.scrollTo(0, 0);
   }
 
   function tabSummary(l) {
@@ -278,6 +308,228 @@
       html += '<div class="term"><dt ' + d + '>' + esc(t.term) + '</dt><dd ' + d + '>' + rich(t.definition) + '</dd></div>';
     });
     return html + '</dl>';
+  }
+
+  /* ================================================================
+     Lesson page v2 — the redesigned 7-section layout. Used whenever
+     a lesson has the new authoring fields (idea / examples / summaryCard).
+     Reuses tabQuiz()/tabFlash() as-is inside the Practice section.
+     ================================================================ */
+  var V2_SECTIONS = [
+    ['glance', '1. At a Glance'], ['idea', '2. The Idea'], ['explanation', '3. Full Explanation'],
+    ['examples', '4. Worked Examples'], ['watch', '5. Watch'], ['practice', '6. Practice'], ['revise', '7. Revise']
+  ];
+
+  function viewLessonV2(l, section) {
+    if (!V2_SECTIONS.some(function (s) { return s[0] === section; })) section = 'glance';
+    document.title = l.title + ' — My Study Space';
+    var pr = getP(l.id), d = dirAttr(l), rtl = layoutDir(l) === 'dir="rtl"';
+    var html = '<div class="crumbs"><a href="#/">Home</a> / <a href="#/subject/' + encodeURIComponent(l.subject) + '">' + esc(l.subject) + '</a></div>' +
+      '<div class="lesson-head' + (rtl ? ' rtl' : '') + '"><div><h1 ' + d + '>' + esc(l.title) +
+      (isNew(l) ? ' <span class="badge new" dir="ltr" style="vertical-align:middle">New</span>' : '') + '</h1>' +
+      (l.source ? '<p class="lead">From <span class="path">' + esc(fileName(l.source)) + '</span></p>' : '') + '</div>' +
+      '<button class="btn small" type="button" data-action="toggle-studied" aria-pressed="' + pr.studied + '">' +
+      (pr.studied ? '✓ Studied' : 'Mark as studied') + '</button></div>';
+    html += '<nav class="section-nav" aria-label="Lesson sections">';
+    V2_SECTIONS.forEach(function (s) {
+      html += '<a' + (s[0] === section ? ' class="active"' : '') + ' href="#/lesson/' + encodeURIComponent(l.id) + '/' + s[0] + '">' + s[1] + '</a>';
+    });
+    if (l.source) html += '<a href="' + fileUrl(l.source) + '" target="_blank" rel="noopener" style="margin-inline-start:auto" title="Opens your original file">Original file ↗</a>';
+    html += '</nav>';
+    html += '<div class="v2' + (rtl ? ' rtl-col' : '') + '">';
+    html += sectionGlance(l, pr, d);
+    html += sectionIdea(l, d);
+    html += sectionExplanation(l, d);
+    html += sectionExamples(l, pr, d);
+    html += sectionWatch(l, pr, d);
+    html += sectionPractice(l, pr, d);
+    html += sectionRevise(l, d);
+    html += '</div>';
+    app.innerHTML = html;
+    if (section === 'glance') window.scrollTo(0, 0);
+    else { var target = document.getElementById('section-' + section); if (target) target.scrollIntoView({ block: 'start' }); }
+  }
+
+  function sectionGlance(l, pr, d) {
+    var meta = l.meta || {}, kpis = l.kpis || [], checked = pr.kpisChecked || [];
+    var nChecked = checked.filter(Boolean).length;
+    var html = '<section class="v2-section" id="section-glance"><h2><span class="num">1</span>At a Glance</h2><div class="glance-grid">' +
+      '<div class="glance-stat"><div class="label">Time to study</div><div class="value">' + (meta.studyMinutes ? '~' + meta.studyMinutes + ' min' : '—') + '</div></div>' +
+      '<div class="glance-stat"><div class="label">Difficulty</div><div class="value">' + difficultyDots(meta.difficulty) + '</div></div>' +
+      '<div class="glance-stat"><div class="label">Your progress</div><div class="value">' + (pr.best ? 'Best ' + pr.best.score + '/' + pr.best.total : pr.studied ? '✓ Studied' : 'Not started') + '</div></div>' +
+      '<div class="glance-stat"><div class="label">Objectives ticked</div><div class="value">' + nChecked + ' / ' + kpis.length + '</div></div>' +
+      '</div>';
+    if (meta.prerequisites && meta.prerequisites.length) {
+      html += '<h3>You should already know</h3><ul class="prereq-list">';
+      meta.prerequisites.forEach(function (p) { html += '<li ' + d + '>' + esc(p) + '</li>'; });
+      html += '</ul>';
+    }
+    html += '<h3>Learning objectives</h3><ul class="checklist">';
+    kpis.forEach(function (k, i) {
+      var isChecked = !!checked[i];
+      html += '<li class="' + (isChecked ? 'checked' : '') + '"><label>' +
+        '<input type="checkbox" data-action="toggle-kpi" data-i="' + i + '"' + (isChecked ? ' checked' : '') + '>' +
+        '<span class="kpi-text" ' + d + '>' + rich(k) + '</span></label></li>';
+    });
+    return html + '</ul></section>';
+  }
+
+  function sectionIdea(l, d) {
+    var idea = l.idea || {};
+    var html = '<section class="v2-section" id="section-idea"><h2><span class="num">2</span>The Idea in Simple Words</h2>';
+    if (idea.simple) html += '<div class="idea-card simple"><div class="idea-label">In plain words</div><p ' + d + '>' + rich(idea.simple) + '</p></div>';
+    if (idea.academic) html += '<div class="idea-card academic"><div class="idea-label">The proper version</div><p ' + d + '>' + rich(idea.academic) + '</p></div>';
+    if (idea.analogy) html += '<div class="idea-card analogy"><div class="idea-label">Think of it like this</div><p ' + d + '>' + rich(idea.analogy) + '</p></div>';
+    return html + '</section>';
+  }
+
+  function sectionExplanation(l, d) {
+    var html = '<section class="v2-section" id="section-explanation"><h2><span class="num">3</span>Full Explanation</h2><div class="reading">';
+    (l.explanation || l.summary || []).forEach(function (sec) {
+      if (sec.heading) html += '<h3 ' + d + '>' + esc(sec.heading) + '</h3>';
+      if (sec.text) html += '<p ' + d + '>' + rich(sec.text) + '</p>';
+      if (sec.bullets && sec.bullets.length) {
+        html += '<ul>';
+        sec.bullets.forEach(function (b) { html += '<li ' + d + '>' + rich(b) + '</li>'; });
+        html += '</ul>';
+      }
+      if (sec.box) {
+        html += '<div class="info-box ' + esc(sec.box.type || 'rule') + '"><div class="box-label">' + esc(boxLabel(sec.box.type)) +
+          (sec.box.title ? ': ' + esc(sec.box.title) : '') + '</div><div ' + d + '>' + rich(sec.box.content || '') + '</div></div>';
+      }
+      if (sec.diagram && sec.diagram.svg) {
+        html += '<div class="diagram-box">' + sec.diagram.svg + (sec.diagram.caption ? '<div class="caption">' + esc(sec.diagram.caption) + '</div>' : '') + '</div>';
+      }
+    });
+    html += '</div>';
+    if ((l.keyTerms || []).length) {
+      html += '<h3>Key terms <span class="hint" style="margin:0">(tap to see the definition)</span></h3><div class="term-chips">';
+      l.keyTerms.forEach(function (t) {
+        html += '<span class="term-chip"><button type="button" data-action="term-toggle" ' + d + '>' + esc(t.term) + '</button>' +
+          '<span class="def-pop" ' + d + '>' + rich(t.definition) + '</span></span>';
+      });
+      html += '</div>';
+    }
+    return html + '</section>';
+  }
+
+  function sectionExamples(l, pr, d) {
+    var examples = l.examples || [];
+    var html = '<section class="v2-section" id="section-examples"><h2><span class="num">4</span>Worked Examples</h2>';
+    if (!examples.length) return html + '<div class="empty">No worked examples yet.</div></section>';
+    var revealed = pr.revealed || {};
+    examples.forEach(function (ex, ei) {
+      var n = revealed[ei] || 0, steps = ex.steps || [];
+      html += '<div class="example"><div class="example-head"><h3 ' + d + '>' + esc(ex.title || ('Example ' + (ei + 1))) + '</h3>' +
+        (ex.difficulty ? '<span class="diff-tag ' + esc(ex.difficulty) + '">' + esc(ex.difficulty) + '</span>' : '') + '</div>' +
+        '<p class="problem" ' + d + '>' + rich(ex.problem || '') + '</p>';
+      if (n === 0) {
+        html += '<p class="hint">Try it yourself first, then reveal the steps one at a time.</p>' +
+          '<div class="btn-row"><button class="btn primary" type="button" data-action="reveal-step" data-ex="' + ei + '">Show step 1</button></div>';
+      } else {
+        for (var s = 0; s < Math.min(n, steps.length); s++) {
+          html += '<div class="step"><div class="step-n">Step ' + (s + 1) + '</div><div ' + d + '>' + rich(steps[s].explain || '') + '</div>' +
+            (steps[s].work ? '<div class="work">' + esc(steps[s].work) + '</div>' : '') +
+            (steps[s].why ? '<div class="why">Why this step? ' + rich(steps[s].why) + '</div>' : '') + '</div>';
+        }
+        if (n < steps.length) {
+          html += '<div class="btn-row"><button class="btn primary" type="button" data-action="reveal-step" data-ex="' + ei + '">Show step ' + (n + 1) + '</button>' +
+            '<button class="btn" type="button" data-action="reveal-all" data-ex="' + ei + '">Show all steps</button></div>';
+        } else {
+          html += '<div class="final-answer" ' + d + '>Answer: ' + rich(ex.answer || '') + '</div>' +
+            '<div class="btn-row"><button class="btn small" type="button" data-action="reveal-reset" data-ex="' + ei + '">Hide steps again</button></div>';
+        }
+      }
+      html += '</div>';
+    });
+    if ((l.commonMistakes || []).length) {
+      html += '<div class="mistakes-box"><h3>Common mistakes</h3><ul>';
+      l.commonMistakes.forEach(function (m) { html += '<li ' + d + '><strong>' + rich(m.mistake) + '</strong> — ' + rich(m.fix) + '</li>'; });
+      html += '</ul></div>';
+    }
+    return html + '</section>';
+  }
+
+  function sectionWatch(l, pr, d) {
+    var videos = l.videos || [];
+    var html = '<section class="v2-section" id="section-watch"><h2><span class="num">5</span>Watch if You Didn\'t Understand</h2>';
+    if (videos.length) {
+      html += '<div class="video-grid">';
+      videos.forEach(function (v) {
+        html += '<div class="video-card"><a class="btn small primary" href="' + esc(youtubeSearchUrl(v.query)) + '" target="_blank" rel="noopener">Search YouTube ↗</a>' +
+          '<div class="channel">Look for a channel like: <strong>' + esc(v.channel) + '</strong></div>' +
+          '<p class="note" ' + d + '>' + rich(v.note || '') + '</p></div>';
+      });
+      html += '</div>';
+    } else {
+      html += '<div class="empty">No suggested videos yet.</div>';
+    }
+    html += '<h3 style="margin-top:24px">Your saved videos</h3>';
+    var mine = pr.myVideos || [];
+    if (mine.length) {
+      html += '<ul class="my-videos-list">';
+      mine.forEach(function (v, i) {
+        html += '<li><a href="' + esc(v.url) + '" target="_blank" rel="noopener">' + esc(v.note || v.url) + '</a>' +
+          '<button class="icon-btn small" type="button" data-action="remove-video" data-i="' + i + '" aria-label="Remove saved video">&times;</button></li>';
+      });
+      html += '</ul>';
+    } else {
+      html += '<p class="hint" style="margin-top:0">If your teacher shares a video, paste the link here to save it with this lesson.</p>';
+    }
+    html += '<form class="my-video-form" data-action-form="add-video">' +
+      '<input type="url" name="video-url" placeholder="Paste a video link" required>' +
+      '<input type="text" name="video-note" placeholder="What is it? (optional)">' +
+      '<button class="btn" type="submit">Save link</button></form>';
+    return html + '</section>';
+  }
+
+  var quickRecallState = {}; // lessonId -> { items: [...], revealed: {i:true} } — cached so it doesn't reshuffle on every re-render
+  function getQuickRecall(l) {
+    if (!quickRecallState[l.id]) {
+      var pool = [];
+      lessonsOf(l.subject).forEach(function (other) {
+        if (other.id === l.id) return;
+        (((other.quiz || {}).multipleChoice) || []).forEach(function (q) { pool.push({ lessonTitle: other.title, q: q }); });
+      });
+      quickRecallState[l.id] = { items: shuffle(pool).slice(0, 5), revealed: {} };
+    }
+    return quickRecallState[l.id];
+  }
+
+  function sectionPractice(l, pr, d) {
+    var html = '<section class="v2-section" id="section-practice"><h2><span class="num">6</span>Practice</h2>';
+    html += '<h3>Quiz</h3>' + tabQuiz(l);
+    html += '<h3 style="margin-top:36px">Flashcards</h3>' + tabFlash(l);
+    var qr = getQuickRecall(l);
+    if (qr.items.length) {
+      html += '<h3 style="margin-top:36px">Quick recall — from earlier lessons in ' + esc(l.subject) + '</h3>';
+      qr.items.forEach(function (item, i) {
+        html += '<div class="quick-recall-item"><div class="from">From ' + esc(item.lessonTitle) + '</div>' +
+          '<div ' + d + '>' + rich(item.q.question) + '</div>';
+        if (qr.revealed[i]) {
+          html += '<div class="answer-box" style="margin-top:10px"><p ' + d + '>' + rich(item.q.options[item.q.answer]) + '</p><p ' + d + '>' + rich(item.q.explanation) + '</p></div>';
+        } else {
+          html += '<div class="btn-row"><button class="btn small" type="button" data-action="qr-reveal" data-i="' + i + '">Show answer</button></div>';
+        }
+        html += '</div>';
+      });
+    }
+    return html + '</section>';
+  }
+
+  function sectionRevise(l, d) {
+    var sc = l.summaryCard || {};
+    var html = '<section class="v2-section print-section" id="section-revise"><h2><span class="num">7</span>Summary to Revise From</h2><div class="summary-card">';
+    if (sc.points && sc.points.length) {
+      html += '<ul>'; sc.points.forEach(function (p) { html += '<li ' + d + '>' + rich(p) + '</li>'; }); html += '</ul>';
+    }
+    if (sc.mustNotForget && sc.mustNotForget.length) {
+      html += '<div class="must-not-forget"><h3>5 things you must not forget</h3><ol>';
+      sc.mustNotForget.forEach(function (p) { html += '<li ' + d + '>' + rich(p) + '</li>'; });
+      html += '</ol></div>';
+    }
+    html += '</div><div class="btn-row no-print"><button class="btn primary" type="button" data-action="print-page">🖨 Print this page</button></div>';
+    return html + '</section>';
   }
 
   /* ---------------- flashcards ---------------- */
@@ -447,6 +699,7 @@
     if (head === 'lesson' && parts[1]) {
       if (quiz && quiz.lessonId !== parts[1]) quiz = null;
       viewLesson(parts[1], parts[2] || 'summary');
+      return; // v1 scrolls to top itself; v2 scrolls to the requested section — see viewLesson/viewLessonV2
     } else if (head === 'subject' && parts[1]) viewSubject(parts[1]);
     else if (head === 'search') viewSearch(parts.slice(1).join('/'));
     else if (!head) viewHome();
@@ -495,7 +748,48 @@
       quiz.revealed = true; rerenderLesson();
     } else if (act === 'grade') {
       quiz.results[quiz.list[quiz.i].id] = el.getAttribute('data-ok') === '1'; advance();
+    } else if (act === 'toggle-kpi') {
+      var checkedArr = (getP(l.id).kpisChecked || []).slice(), ki = +el.getAttribute('data-i');
+      checkedArr[ki] = !checkedArr[ki];
+      setP(l.id, { kpisChecked: checkedArr }); rerenderLesson();
+    } else if (act === 'term-toggle') {
+      var chip = el.closest('.term-chip'); if (chip) chip.classList.toggle('open');
+    } else if (act === 'reveal-step') {
+      var ei = +el.getAttribute('data-ex');
+      var rv = Object.assign({}, getP(l.id).revealed); rv[ei] = (rv[ei] || 0) + 1;
+      setP(l.id, { revealed: rv }); rerenderLesson();
+    } else if (act === 'reveal-all') {
+      var ei2 = +el.getAttribute('data-ex');
+      var steps2 = ((l.examples || [])[ei2] || {}).steps || [];
+      var rv2 = Object.assign({}, getP(l.id).revealed); rv2[ei2] = steps2.length;
+      setP(l.id, { revealed: rv2 }); rerenderLesson();
+    } else if (act === 'reveal-reset') {
+      var ei3 = +el.getAttribute('data-ex');
+      var rv3 = Object.assign({}, getP(l.id).revealed); rv3[ei3] = 0;
+      setP(l.id, { revealed: rv3 }); rerenderLesson();
+    } else if (act === 'remove-video') {
+      var vi = +el.getAttribute('data-i');
+      var vids = (getP(l.id).myVideos || []).slice(); vids.splice(vi, 1);
+      setP(l.id, { myVideos: vids }); rerenderLesson();
+    } else if (act === 'qr-reveal') {
+      var qr = getQuickRecall(l); qr.revealed[el.getAttribute('data-i')] = true; rerenderLesson();
+    } else if (act === 'print-page') {
+      window.print();
     }
+  });
+
+  app.addEventListener('submit', function (ev) {
+    var form = ev.target.closest('[data-action-form="add-video"]');
+    if (!form) return;
+    ev.preventDefault();
+    var l = currentLesson(); if (!l) return;
+    var urlInput = form.querySelector('input[name="video-url"]'), noteInput = form.querySelector('input[name="video-note"]');
+    var url = urlInput.value.trim();
+    if (!/^https?:\/\//i.test(url)) { urlInput.focus(); return; }
+    var vids = (getP(l.id).myVideos || []).slice();
+    vids.push({ url: url, note: noteInput.value.trim() });
+    setP(l.id, { myVideos: vids });
+    rerenderLesson();
   });
 
   document.addEventListener('keydown', function (ev) {
@@ -503,11 +797,11 @@
     if (tag === 'TEXTAREA' || tag === 'INPUT' || ev.ctrlKey || ev.metaKey || ev.altKey) return;
     var l = currentLesson(); if (!l) return;
     var tab = (location.hash.match(/^#\/lesson\/[^/]+\/([^/]+)/) || [])[1];
-    if (tab === 'flash' && flash) {
+    if ((tab === 'flash' || tab === 'practice') && flash) {
       var b = ev.key === 'ArrowRight' ? app.querySelector('[data-action="flash-next"]') :
               ev.key === 'ArrowLeft' ? app.querySelector('[data-action="flash-prev"]') : null;
       if (b && !b.disabled) { ev.preventDefault(); b.click(); }
-    } else if (tab === 'quiz' && quiz && quiz.i < quiz.list.length) {
+    } else if ((tab === 'quiz' || tab === 'practice') && quiz && quiz.i < quiz.list.length) {
       var q = quiz.list[quiz.i];
       if (q.type === 'mc' && quiz.chosen === null && /^[1-9]$/.test(ev.key) && +ev.key <= q.options.length) {
         var o = app.querySelector('[data-action="choose"][data-i="' + (+ev.key - 1) + '"]'); if (o) o.click();

@@ -9,7 +9,7 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-23T07:14:22",
+ "generated": "2026-09-23T18:53:37",
  "lessons": [
   {
    "id": "arabic-almubtada-walkhabar",
@@ -2470,14 +2470,37 @@ window.STUDY_DATA = {
    "title": "Topic 1: Electricity — Currents and Circuits",
    "subject": "Physics",
    "order": 1,
-   "summary": [
+   "meta": {
+    "studyMinutes": 35,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Rearranging simple algebraic equations",
+     "SI units (ampere, volt, ohm, coulomb)"
+    ]
+   },
+   "idea": {
+    "simple": "Think of an electric circuit like a loop of pipe with water flowing around it. The battery is a pump that pushes the water (electric charge) around the loop. How much water goes past a point each second is the current. Resistors are like narrow sections of pipe — they don't stop the flow, but they make it harder to push water through, so it takes more \"pump strength\" (voltage) to keep the same flow going.",
+    "academic": "An electric circuit is a closed conducting path along which electric charge flows, driven by a source of electromotive force (EMF) such as a battery. The current I is the rate of charge flow (I = Δq/Δt), the potential difference V is the energy transferred per unit charge, and the resistance R (related by Ohm's law, V = IR) determines how much current flows for a given voltage. In any circuit, current and voltage combine differently depending on whether components are arranged in series or in parallel.",
+    "analogy": "Picture a lazy river at a water park with a pump pushing the water around a loop. The pump is the battery — it does work to push charge around, and that work-per-unit-charge is the voltage. The current is how much water passes a marker each second. A resistor is like a narrow, twisty section of the channel: the water still gets through, but more of the pump's effort is \"used up\" forcing it through that narrow bit — that used-up energy is exactly what a resistor does to electrical energy."
+   },
+   "explanation": [
     {
      "heading": "Current and charge",
-     "text": "**Electric current (I)** is the rate at which charge flows past a point: **I = Δq/Δt**. Current is measured in amperes (A), where 1 A = 1 coulomb of charge per second."
+     "text": "**Electric current (I)** is the rate at which charge flows past a point. Current is measured in amperes (A), where 1 A = 1 coulomb of charge per second.",
+     "box": {
+      "type": "formula",
+      "title": "Current",
+      "content": "I = Δq/Δt   (equivalently, Q = It)"
+     }
     },
     {
      "heading": "Potential difference (voltage)",
-     "text": "**Potential difference (V)** is the work done per unit charge moving a positive charge between two points along a circuit: **V = W/q**. It is what \"pushes\" charge around a circuit, and is measured in volts (V)."
+     "text": "**Potential difference (V)** is the work done per unit charge moving a positive charge between two points along a circuit. It is what \"pushes\" charge around a circuit, and is measured in volts (V).",
+     "box": {
+      "type": "formula",
+      "title": "Potential difference",
+      "content": "V = W/q"
+     }
     },
     {
      "heading": "Conductors, insulators, and resistance",
@@ -2490,17 +2513,27 @@ window.STUDY_DATA = {
     {
      "heading": "Ohm's law and electrical power",
      "bullets": [
-      "**Ohm's law: V = IR.** A plot of voltage against current for an **ohmic resistor** is a straight line through the origin.",
-      "**Electrical power: P = IV = I²R = V²/R.** All three forms give the same answer — pick whichever matches the values you know."
-     ]
+      "A plot of voltage against current for an **ohmic resistor** is a straight line through the origin.",
+      "All three power formulas give the same answer — pick whichever matches the values you already know."
+     ],
+     "box": {
+      "type": "formula",
+      "title": "Ohm's law and power",
+      "content": "V = IR\nP = IV = I²R = V²/R"
+     }
     },
     {
      "heading": "Resistivity: how geometry affects resistance",
-     "text": "**Resistivity (ρ)** is a property of the material itself, related to resistance by **ρ = RA/l**, where A is the cross-sectional area and l is the length.",
+     "text": "**Resistivity (ρ)** is a property of the material itself, related to resistance by ρ = RA/l, where A is the cross-sectional area and l is the length.",
      "bullets": [
       "For a given material, resistance **increases with length** and **decreases with cross-sectional area**: a longer or thinner wire has more resistance.",
       "Since A = πr², resistance is proportional to 1/r². Tripling the radius (3r) divides the resistance by 9."
-     ]
+     ],
+     "box": {
+      "type": "formula",
+      "title": "Resistivity",
+      "content": "ρ = RA/l   ⇔   R = ρl/A"
+     }
     },
     {
      "heading": "The junction (current) rule",
@@ -2509,14 +2542,28 @@ window.STUDY_DATA = {
     {
      "heading": "Series and parallel circuits",
      "bullets": [
-      "**Series circuit:** current has only one path, so it is the **same** through every resistor: I = I₁ = I₂ = I₃ = … . Voltage drops **add up**: V = V₁ + V₂ + V₃ + … . Equivalent resistance: Req = R₁ + R₂ + R₃ + … .",
-      "**Parallel circuit:** the voltage across each branch is the **same**: V = V₁ = V₂ = V₃ = … . Current **splits** between branches: I = I₁ + I₂ + I₃ + … . Equivalent resistance: 1/Req = 1/R₁ + 1/R₂ + 1/R₃ + … .",
-      "In a parallel combination, the equivalent resistance is always **less** than the smallest individual resistance, so adding parallel branches lowers Req and raises total current. Two identical bulbs shine **brighter in parallel** than in series, because each still gets the full battery voltage."
-     ]
+      "**Series circuit:** current has only one path, so it is the **same** through every resistor. Voltage drops **add up**.",
+      "**Parallel circuit:** the voltage across each branch is the **same**. Current **splits** between branches.",
+      "In a parallel combination, the equivalent resistance is always **less** than the smallest individual resistance. Two identical bulbs shine **brighter in parallel** than in series, because each still gets the full battery voltage."
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Series vs. parallel — what stays the same",
+      "content": "Series: I same everywhere, V adds up, Req = R₁ + R₂ + …\nParallel: V same across each branch, I adds up, 1/Req = 1/R₁ + 1/R₂ + …"
+     },
+     "diagram": {
+      "svg": "<svg viewBox='0 0 440 200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A series circuit: a battery connected to two resistors R1 and R2 in a single loop'><line x1='60' y1='30' x2='180' y2='30' stroke='currentColor' stroke-width='3'/><polyline points='180,30 190,15 200,45 210,15 220,45 230,15 240,30' fill='none' stroke='currentColor' stroke-width='3'/><line x1='240' y1='30' x2='300' y2='30' stroke='currentColor' stroke-width='3'/><polyline points='300,30 310,15 320,45 330,15 340,45 350,15 360,30' fill='none' stroke='currentColor' stroke-width='3'/><line x1='360' y1='30' x2='380' y2='30' stroke='currentColor' stroke-width='3'/><line x1='380' y1='30' x2='380' y2='170' stroke='currentColor' stroke-width='3'/><line x1='380' y1='170' x2='60' y2='170' stroke='currentColor' stroke-width='3'/><line x1='60' y1='170' x2='60' y2='105' stroke='currentColor' stroke-width='3'/><line x1='45' y1='105' x2='75' y2='105' stroke='currentColor' stroke-width='5'/><line x1='52' y1='92' x2='68' y2='92' stroke='currentColor' stroke-width='2'/><line x1='60' y1='92' x2='60' y2='30' stroke='currentColor' stroke-width='3'/><text x='210' y='11' font-size='15' fill='currentColor' text-anchor='middle'>R₁</text><text x='330' y='11' font-size='15' fill='currentColor' text-anchor='middle'>R₂</text><text x='30' y='100' font-size='15' fill='currentColor' text-anchor='middle'>−</text><text x='30' y='86' font-size='15' fill='currentColor' text-anchor='middle'>+</text><text x='220' y='192' font-size='13' fill='currentColor' text-anchor='middle'>Same current I flows through R₁ and R₂</text></svg>",
+      "caption": "A simple series circuit: one loop, one current, two resistors."
+     }
     },
     {
      "heading": "EMF and internal resistance",
-     "text": "A real battery has some **internal resistance (r)**, so its **terminal voltage** (what you actually measure across it) is less than its **EMF (ε)** once current flows: **ε = I(R + r)**, where R is the external (load) resistance. The larger the current drawn, the more voltage is \"lost\" inside the battery."
+     "text": "A real battery has some **internal resistance (r)**, so its **terminal voltage** (what you actually measure across it) is less than its **EMF (ε)** once current flows. The larger the current drawn, the more voltage is \"lost\" inside the battery.",
+     "box": {
+      "type": "formula",
+      "title": "EMF equation",
+      "content": "ε = I(R + r)   ⇔   Vterminal = ε − Ir"
+     }
     }
    ],
    "kpis": [
@@ -2591,6 +2638,123 @@ window.STUDY_DATA = {
     {
      "term": "Terminal voltage",
      "definition": "The potential difference actually measured across a battery's terminals; equals ε − Ir."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Charge from current and time",
+     "difficulty": "easy",
+     "problem": "A phone charger delivers a steady current of 2.0 A into a battery for 3.0 minutes. How much charge flows into the battery?",
+     "steps": [
+      {
+       "explain": "The charge formula needs time in seconds, not minutes, so convert the time first.",
+       "work": "t = 3.0 min × 60 = 180 s",
+       "why": "Mixing up units (minutes vs. seconds) is the single most common reason this type of question goes wrong."
+      },
+      {
+       "explain": "Apply the charge–current relationship directly, now that current and time are in consistent SI units.",
+       "work": "Q = It = (2.0 A)(180 s)"
+      },
+      {
+       "explain": "Multiply to get the final charge.",
+       "work": "Q = 360 C"
+      }
+     ],
+     "answer": "Q = 360 C"
+    },
+    {
+     "title": "Example 2: A combined series–parallel circuit",
+     "difficulty": "medium",
+     "problem": "R₁ = 6.0 Ω and R₂ = 3.0 Ω are connected in parallel, and this pair is connected in series with R₃ = 4.0 Ω across a 24 V battery (assume no internal resistance). Find the total current drawn from the battery.",
+     "steps": [
+      {
+       "explain": "You can't apply Ohm's law to the whole circuit until every series/parallel group has been reduced to one number, so start with the parallel pair.",
+       "work": "1/Rp = 1/6.0 + 1/3.0 = 1/2.0  →  Rp = 2.0 Ω",
+       "why": "R₁ and R₂ share the same two junctions, which is exactly what \"parallel\" means — so they combine using the parallel formula, not by simply adding."
+      },
+      {
+       "explain": "Now that the parallel section behaves as one resistor, add it in series with R₃.",
+       "work": "Req = Rp + R₃ = 2.0 + 4.0 = 6.0 Ω"
+      },
+      {
+       "explain": "Apply Ohm's law to the whole circuit using the full battery voltage and the total equivalent resistance.",
+       "work": "I = V/Req = 24 V / 6.0 Ω"
+      },
+      {
+       "explain": "This is the current leaving the battery — it's the same current that flows through R₃, and it then splits between R₁ and R₂.",
+       "work": "I = 4.0 A"
+      }
+     ],
+     "answer": "I = 4.0 A (the total current from the battery, all of which passes through R₃)"
+    },
+    {
+     "title": "Example 3: EMF, internal resistance, and terminal voltage",
+     "difficulty": "hard",
+     "problem": "A battery has EMF ε = 9.0 V and internal resistance r = 0.50 Ω. It is connected to an external resistor R = 4.0 Ω. Find (a) the current in the circuit and (b) the terminal voltage of the battery.",
+     "steps": [
+      {
+       "explain": "Start from the EMF equation, since ε, R, and r are all known and I is the unknown.",
+       "work": "ε = I(R + r)"
+      },
+      {
+       "explain": "Substitute the known values, combining the external and internal resistance first.",
+       "work": "9.0 = I(4.0 + 0.50) = I(4.5)"
+      },
+      {
+       "explain": "Solve for the current by dividing.",
+       "work": "I = 9.0 / 4.5 = 2.0 A"
+      },
+      {
+       "explain": "The terminal voltage is the EMF minus the voltage \"used up\" across the internal resistance.",
+       "work": "Vterminal = ε − Ir = 9.0 − (2.0)(0.50)",
+       "why": "It's tempting to just report the EMF as the terminal voltage, but the two are only equal when no current flows (e.g. an open circuit). Whenever current flows, some voltage is lost inside the battery itself."
+      },
+      {
+       "explain": "Subtract to get the final terminal voltage.",
+       "work": "Vterminal = 9.0 − 1.0 = 8.0 V"
+      }
+     ],
+     "answer": "I = 2.0 A; terminal voltage = 8.0 V"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Mixing up which quantity stays the same in series vs. parallel circuits.",
+     "fix": "Write it down before starting any circuit problem: series → current is the same everywhere; parallel → voltage is the same across each branch."
+    },
+    {
+     "mistake": "Applying Ohm's law to the whole circuit before simplifying series/parallel groups.",
+     "fix": "Always reduce every series and parallel combination down to one equivalent resistance first, then work outward with V = IR."
+    },
+    {
+     "mistake": "Forgetting to convert units (minutes to seconds, mm to m) before substituting into a formula.",
+     "fix": "Underline the units in the question and convert everything to base SI units (seconds, metres, amps, volts) before you calculate anything."
+    },
+    {
+     "mistake": "Reporting a battery's EMF as if it were the terminal voltage while current is flowing.",
+     "fix": "Remember Vterminal = ε − Ir: the terminal voltage only equals the EMF when there is no current (an open circuit)."
+    }
+   ],
+   "videos": [
+    {
+     "query": "Ohm's law explained with worked examples physics",
+     "channel": "Khan Academy",
+     "note": "A clear walkthrough of V = IR — good if rearranging the formula for different unknowns feels shaky."
+    },
+    {
+     "query": "series and parallel circuits explained physics",
+     "channel": "Professor Dave Explains",
+     "note": "Compares series and parallel circuits side by side with simple diagrams — good for the \"what's the same, what's different\" mix-up."
+    },
+    {
+     "query": "EMF and internal resistance of a battery explained",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Covers why terminal voltage is less than EMF, with several worked numeric examples similar to Example 3 in this lesson."
+    },
+    {
+     "query": "resistivity and resistance of a wire explained",
+     "channel": "Flipping Physics",
+     "note": "Explains how a wire's length and cross-sectional area affect its resistance — useful for the geometry-based questions."
     }
    ],
    "quiz": {
@@ -2744,6 +2908,24 @@ window.STUDY_DATA = {
       "answer": "(a) 1/Req = 1/R₁ + 1/R₂ = 1/6.0 + 1/3.0 = 1/2.0, so Req = 2.0 Ω.\n(b) In parallel, each resistor has the full 30 V across it: I₁ = ε/R₁ = 30 V / 6.0 Ω = 5.0 A.\n(c) I₂ = ε/R₂ = 30 V / 3.0 Ω = 10.0 A.",
       "explanation": "Marks: (a) 2, (b) 2, (c) 2. In a parallel combination directly across an ideal source, every branch sees the full source voltage, so each branch's current follows straight from Ohm's law applied to that branch alone."
      }
+    ]
+   },
+   "summaryCard": {
+    "points": [
+     "Current I = Δq/Δt (A); potential difference V = W/q (V); resistance R = V/I (Ω, Ohm's law).",
+     "Power: P = IV = I²R = V²/R.",
+     "Resistivity: ρ = RA/l — resistance rises with length, falls with cross-sectional area.",
+     "Junction rule: current in = current out at any junction.",
+     "Series: same current, voltages add, Req = R₁ + R₂ + …",
+     "Parallel: same voltage, currents add, 1/Req = 1/R₁ + 1/R₂ + …; Req is always less than the smallest resistor.",
+     "EMF equation: ε = I(R + r); terminal voltage Vterminal = ε − Ir."
+    ],
+    "mustNotForget": [
+     "Simplify series/parallel groups into one Req before applying Ohm's law to the whole circuit.",
+     "Series → current is the same everywhere; parallel → voltage is the same across each branch.",
+     "Terminal voltage equals EMF only when no current flows — otherwise Vterminal = ε − Ir.",
+     "Convert to base SI units (seconds, metres, amps, volts) before calculating.",
+     "R ∝ 1/r² for a wire, since A = πr² — tripling the radius divides resistance by 9."
     ]
    },
    "addedAt": "2026-09-22T17:17:34"
