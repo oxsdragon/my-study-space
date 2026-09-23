@@ -9,7 +9,7 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-22T22:14:43",
+ "generated": "2026-09-23T07:14:22",
  "lessons": [
   {
    "id": "arabic-almubtada-walkhabar",
@@ -1206,6 +1206,279 @@ window.STUDY_DATA = {
    "addedAt": "2026-09-22T17:24:13"
   },
   {
+   "id": "english-unit1-word-families-and-word-forms",
+   "title": "Unit 1: Word Families and Word Forms — Genius: Nature or Nurture?",
+   "subject": "English",
+   "order": 1,
+   "summary": [
+    {
+     "heading": "Essential question",
+     "text": "**How does changing a word's form change the job it performs in a sentence?** The same idea — for example \"predict\" — can show up as a verb (predict), a noun (prediction), an adjective (predictable), or an adverb (predictably). Each form does a different grammatical job, even though the core meaning stays connected."
+    },
+    {
+     "heading": "The four word-form jobs",
+     "bullets": [
+      "**Verb:** the action or state — *Experts **predict** some outcomes.*",
+      "**Noun:** the thing, idea, or person — *The **prediction** was accurate.*",
+      "**Adjective:** describes a noun — *The result was **predictable**.*",
+      "**Adverb:** describes a verb, adjective, or whole sentence — *She answered **predictably**.*"
+     ]
+    },
+    {
+     "heading": "Spotting the clues: common suffixes",
+     "text": "Suffixes (word endings) are strong clues to a word's part of speech:",
+     "bullets": [
+      "**Nouns** often end in **-tion/-sion** (prediction, transformation), **-ity** (flexibility), **-ence/-ance** (persistence), **-ment** (astonishment), or **-y** (anxiety, expertise).",
+      "**Adjectives** often end in **-able/-ible** (predictable, flexible), **-ous** (anxious), **-ive** (transformative), **-ing/-ed** (astonishing, disabled), or **-ent/-ant** (persistent).",
+      "**Adverbs** almost always end in **-ly**, added to the adjective form (predictably, anxiously, astonishingly, expertly).",
+      "Some words have **no natural form** in a category (marked **X** in the worksheet) — e.g. there's no common single-word adverb for \"transform\" or \"retain\"."
+     ]
+    },
+    {
+     "heading": "Unit 1 word families",
+     "text": "These are the key words from the \"Genius — Nature or Nurture?\" vocabulary set, with their main forms:",
+     "bullets": [
+      "**predict** (v) → prediction (n) → predictable (adj) → predictably (adv)",
+      "**estimate** (v) → estimate/estimation (n) → estimated (adj) → (no common adverb)",
+      "**astonish** (v) → astonishment (n) → astonishing (adj) → astonishingly (adv)",
+      "(no common verb) → anxiety (n) → anxious (adj) → anxiously (adv)",
+      "(no common verb) → flexibility (n) → flexible (adj) → (no common adverb)",
+      "interact (v) → interaction (n) → interactive (adj) → interactively (adv)",
+      "transform (v) → transformation (n) → transformative (adj) → (no common adverb)",
+      "retain (v) → retention (n) → retentive (adj) → (no common adverb)",
+      "benefit (v) → benefit (n) → beneficial (adj) → beneficially (adv)",
+      "disable (v) → disability (n) → disabled (adj) → (no common adverb)",
+      "(no common single verb) → expertise (n) → expert (adj/n) → expertly (adv)",
+      "assimilate (v) → assimilation (n) → assimilated (adj) → (no common adverb)",
+      "emerge (v) → emergence (n) → emerging/emergent (adj) → (no common adverb)",
+      "persist (v) → persistence (n) → persistent (adj) → persistently (adv)",
+      "compensate (v) → compensation (n) → compensatory (adj) → (no common adverb)"
+     ]
+    }
+   ],
+   "kpis": [
+    "Identify and form nouns, verbs, adjectives and adverbs from key unit vocabulary.",
+    "Select and use the correct word form in context, making necessary grammatical changes.",
+    "Explain how changing a word's form changes the job it performs in a sentence."
+   ],
+   "keyTerms": [
+    {
+     "term": "predict",
+     "definition": "verb: predict; noun: prediction; adjective: predictable; adverb: predictably — to say what will happen before it does."
+    },
+    {
+     "term": "estimate",
+     "definition": "verb/noun: estimate; adjective: estimated — to roughly calculate or judge the value, size, or amount of something."
+    },
+    {
+     "term": "astonish",
+     "definition": "verb: astonish; noun: astonishment; adjective: astonishing; adverb: astonishingly — to surprise someone greatly."
+    },
+    {
+     "term": "anxious",
+     "definition": "adjective: anxious; noun: anxiety; adverb: anxiously — feeling worried or nervous about something."
+    },
+    {
+     "term": "flexible",
+     "definition": "adjective: flexible; noun: flexibility — able to change or adapt easily to new conditions."
+    },
+    {
+     "term": "interaction",
+     "definition": "noun: interaction; verb: interact; adjective: interactive; adverb: interactively — communication or engagement between people or things."
+    },
+    {
+     "term": "transform",
+     "definition": "verb: transform; noun: transformation; adjective: transformative — to change completely in form or character."
+    },
+    {
+     "term": "retain",
+     "definition": "verb: retain; noun: retention; adjective: retentive — to keep or continue to hold something, such as information."
+    },
+    {
+     "term": "benefit",
+     "definition": "noun/verb: benefit; adjective: beneficial; adverb: beneficially — an advantage, or to gain an advantage."
+    },
+    {
+     "term": "disabled",
+     "definition": "adjective: disabled; noun: disability; verb: disable — having a physical or mental condition that limits movement, senses, or activities."
+    },
+    {
+     "term": "expertise",
+     "definition": "noun: expertise; adjective/noun: expert; adverb: expertly — expert skill or knowledge in a particular field."
+    },
+    {
+     "term": "assimilate",
+     "definition": "verb: assimilate; noun: assimilation; adjective: assimilated — to take in and fully understand or absorb information, or to become part of a group."
+    },
+    {
+     "term": "emerge",
+     "definition": "verb: emerge; noun: emergence; adjective: emerging/emergent — to appear or come into existence."
+    },
+    {
+     "term": "persistent",
+     "definition": "adjective: persistent; noun: persistence; verb: persist; adverb: persistently — continuing firmly despite difficulty."
+    },
+    {
+     "term": "compensate",
+     "definition": "verb: compensate; noun: compensation; adjective: compensatory — to make up for a loss, weakness, or disadvantage."
+    }
+   ],
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "\"Her response was completely ______.\" Which word form correctly completes the sentence?",
+      "options": [
+       "predict",
+       "prediction",
+       "predictable",
+       "predictably"
+      ],
+      "answer": 2,
+      "explanation": "After \"completely\" and \"was\", the sentence needs an adjective describing \"response\": predictable."
+     },
+     {
+      "question": "\"He answered the question ______, without a hint of doubt.\" Which word form fits?",
+      "options": [
+       "expert",
+       "expertise",
+       "expertly",
+       "experts"
+      ],
+      "answer": 2,
+      "explanation": "The blank describes how he answered (a verb), so it needs the adverb form: expertly."
+     },
+     {
+      "question": "\"Years of focused practice can build real ______.\" Which word form fits?",
+      "options": [
+       "expert",
+       "expertise",
+       "expertly",
+       "expertness"
+      ],
+      "answer": 1,
+      "explanation": "After \"build real\", the sentence needs a noun: expertise (expert skill or knowledge)."
+     },
+     {
+      "question": "\"A highly ______ routine is easier to prepare for.\" Which word form fits?",
+      "options": [
+       "predict",
+       "prediction",
+       "predictable",
+       "predictably"
+      ],
+      "answer": 2,
+      "explanation": "The blank describes the noun \"routine\", so it needs an adjective: predictable."
+     },
+     {
+      "question": "Which suffix is the strongest clue that a word is an adverb?",
+      "options": [
+       "-tion",
+       "-able",
+       "-ly",
+       "-ment"
+      ],
+      "answer": 2,
+      "explanation": "Adverbs are almost always formed by adding -ly to the adjective form, e.g. predictable → predictably."
+     },
+     {
+      "question": "\"The sudden change caused a great deal of ______.\" Which word form fits?",
+      "options": [
+       "anxious",
+       "anxiety",
+       "anxiously",
+       "anxiousness itself"
+      ],
+      "answer": 1,
+      "explanation": "After \"a great deal of\", the sentence needs a noun: anxiety."
+     },
+     {
+      "question": "\"New abilities may ______ over time as the brain adapts.\" Which word form fits?",
+      "options": [
+       "emerge",
+       "emergence",
+       "emerging",
+       "emergent"
+      ],
+      "answer": 0,
+      "explanation": "The sentence needs a verb after the modal \"may\": emerge."
+     },
+     {
+      "question": "\"People sometimes develop strategies to ______ for a weakness.\" Which word form fits?",
+      "options": [
+       "compensate",
+       "compensation",
+       "compensatory",
+       "compensating themselves"
+      ],
+      "answer": 0,
+      "explanation": "After \"to\" (infinitive), the sentence needs the base verb: compensate."
+     },
+     {
+      "question": "Which word in this list is a noun formed from the adjective \"flexible\"?",
+      "options": [
+       "flex",
+       "flexibly",
+       "flexibility",
+       "flexed"
+      ],
+      "answer": 2,
+      "explanation": "Adding -ity to flexible gives the noun flexibility, following the common adjective → noun pattern."
+     },
+     {
+      "question": "\"A ______ learner continues despite difficulty.\" Which word form fits?",
+      "options": [
+       "persist",
+       "persistence",
+       "persistent",
+       "persistently"
+      ],
+      "answer": 2,
+      "explanation": "The blank describes the noun \"learner\", so it needs an adjective: persistent."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "Change the word form as instructed: persistent (adjective) → noun.",
+      "answer": "persistence",
+      "explanation": "Persistence is the noun form, referring to the quality of continuing firmly despite difficulty."
+     },
+     {
+      "question": "Change the word form as instructed: transform (verb) → noun.",
+      "answer": "transformation",
+      "explanation": "Adding -ation to the verb transform gives the noun transformation."
+     },
+     {
+      "question": "Correct the word-form error in this sentence: \"He responded anxiety to the sudden change.\"",
+      "answer": "He responded anxiously to the sudden change.",
+      "explanation": "The word describes how he responded (a verb), so it needs the adverb form anxiously, not the noun anxiety."
+     },
+     {
+      "question": "Explain, in your own words, how changing a word's form changes the job it performs in a sentence. Use one example from the unit vocabulary.",
+      "answer": "Changing a word's form changes its part of speech and therefore its grammatical job: a noun names a thing, a verb shows an action, an adjective describes a noun, and an adverb describes a verb or adjective. For example, \"predict\" (verb, an action) becomes \"prediction\" (noun, a thing), \"predictable\" (adjective, describing something), or \"predictably\" (adverb, describing how something is done).",
+      "explanation": "Any correct example from the word list is acceptable, as long as it shows the same word changing job across at least two forms."
+     },
+     {
+      "question": "Build a related word as instructed: benefit (noun) → adjective.",
+      "answer": "beneficial",
+      "explanation": "Adding -ial to benefit gives the adjective beneficial, meaning helpful or advantageous."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "Rewrite each sentence, replacing the bold idea with the requested word form. Make any other necessary grammatical changes.\n(a) His daily routine lacks flexibility. (Use flexible.)\n(b) The unfamiliar task caused anxiety for the learner. (Use anxious.)\n(c) The brain may use compensation for an area of weakness. (Use compensate.)",
+      "answer": "(a) His daily routine is not flexible. / His daily routine lacks flexibility → His daily routine isn't flexible.\n(b) The unfamiliar task made the learner anxious.\n(c) The brain may compensate for an area of weakness.",
+      "explanation": "Marks: (a) 2, (b) 2, (c) 2. In each case, changing the word's part of speech (noun → adjective/verb) requires restructuring the sentence around it, not just swapping one word for another — check that subject, verb, and object still agree grammatically."
+     },
+     {
+      "question": "Sort these words into the correct part of speech: persistence, transform, anxious, predictably, interaction, beneficial.\n(a) List each word under Noun, Verb, Adjective, or Adverb.\n(b) Choose one word and explain which suffix or clue helped you identify its part of speech.",
+      "answer": "(a) Noun: persistence, interaction. Verb: transform. Adjective: anxious, beneficial. Adverb: predictably.\n(b) Example: \"predictably\" is an adverb because it ends in -ly, which is added to the adjective \"predictable\" to describe how an action is done.",
+      "explanation": "Marks: (a) 6 (one per word), (b) 2. Accept any correct, well-reasoned explanation for part (b) that correctly names the word's actual part of speech and a plausible clue (suffix, position in the sentence, or the word it modifies)."
+     }
+    ]
+   },
+   "addedAt": "2026-09-23T07:13:45"
+  },
+  {
    "id": "islamic-studies-alislam-yanbudh-altatarruf",
    "title": "الإسلام ينبذ التطرّف",
    "subject": "Islamic Studies",
@@ -2191,249 +2464,6 @@ window.STUDY_DATA = {
     ]
    },
    "addedAt": "2026-09-20T18:47:15"
-  },
-  {
-   "id": "math-introduction-to-derivatives",
-   "title": "Introduction to Derivatives",
-   "subject": "Math",
-   "summary": [
-    {
-     "heading": "The big idea",
-     "text": "A **derivative** tells you how fast a function is changing at one exact point. If f(x) is a distance, its derivative is the speed at that instant. On a graph, the derivative is the **slope of the tangent line** — the straight line that just touches the curve at that point."
-    },
-    {
-     "heading": "The formal definition",
-     "text": "The derivative is defined using a limit: f′(x) = lim (h→0) [f(x + h) − f(x)] / h. The fraction is the slope between two points on the curve that are h apart. As h shrinks to 0, that slope becomes the slope at a single point."
-    },
-    {
-     "heading": "Basic rules for differentiating",
-     "text": "You rarely use the limit definition. These four rules cover every polynomial:",
-     "bullets": [
-      "**Constant rule:** the derivative of a constant is 0. (d/dx of 7 = 0)",
-      "**Power rule:** d/dx of xⁿ = n·xⁿ⁻¹. (Bring the power down, then subtract 1 from it.)",
-      "**Constant multiple rule:** d/dx of c·f(x) = c·f′(x). (Constants just come along for the ride.)",
-      "**Sum rule:** d/dx of [f(x) + g(x)] = f′(x) + g′(x). (Differentiate term by term.)"
-     ]
-    },
-    {
-     "heading": "Worked example",
-     "text": "If f(x) = 3x⁴ − 5x² + 7, differentiate each term:\n3x⁴ → 12x³, −5x² → −10x, 7 → 0.\nSo **f′(x) = 12x³ − 10x**."
-    },
-    {
-     "heading": "Tangent lines",
-     "text": "At x = a, the slope of the tangent is f′(a). The tangent line is **y − f(a) = f′(a)(x − a)**.\nExample: f(x) = x² at a = 3. The slope is f′(3) = 6 and f(3) = 9, so y − 9 = 6(x − 3), which simplifies to y = 6x − 9."
-    },
-    {
-     "heading": "Increasing and decreasing functions",
-     "bullets": [
-      "If f′(x) > 0 on an interval, f is **increasing** there (the graph goes up).",
-      "If f′(x) < 0 on an interval, f is **decreasing** there (the graph goes down).",
-      "Where f′(x) = 0 you have a **critical point**. It might be a maximum, a minimum, or neither — you must check the sign of f′ on both sides."
-     ]
-    }
-   ],
-   "kpis": [
-    "Explain the derivative as the instantaneous rate of change of a function.",
-    "Use the power rule, constant rule, and sum rule to differentiate polynomials.",
-    "Find the equation of a tangent line to a curve at a given point.",
-    "Use the first derivative to identify where a function is increasing or decreasing."
-   ],
-   "keyTerms": [
-    {
-     "term": "Derivative",
-     "definition": "A function f′(x) that gives the instantaneous rate of change of f at each x. It equals the slope of the tangent line to the graph."
-    },
-    {
-     "term": "Instantaneous rate of change",
-     "definition": "How fast a quantity is changing at one exact moment (for example, the speedometer reading rather than the average speed of a trip)."
-    },
-    {
-     "term": "Tangent line",
-     "definition": "The straight line that touches a curve at one point and has the same slope as the curve there."
-    },
-    {
-     "term": "Limit",
-     "definition": "The value that an expression gets closer and closer to as its input approaches some number. The derivative is defined as a limit."
-    },
-    {
-     "term": "Constant rule",
-     "definition": "The derivative of any constant is 0, because a constant does not change."
-    },
-    {
-     "term": "Power rule",
-     "definition": "d/dx of xⁿ = n·xⁿ⁻¹. Multiply by the power, then lower the power by 1."
-    },
-    {
-     "term": "Sum rule",
-     "definition": "The derivative of a sum is the sum of the derivatives, so you can differentiate a polynomial one term at a time."
-    },
-    {
-     "term": "Critical point",
-     "definition": "An x-value where f′(x) = 0 (or f′ does not exist). It is a candidate for a maximum or minimum."
-    },
-    {
-     "term": "Increasing function",
-     "definition": "A function whose values go up as x increases. This happens where f′(x) > 0."
-    },
-    {
-     "term": "Decreasing function",
-     "definition": "A function whose values go down as x increases. This happens where f′(x) < 0."
-    }
-   ],
-   "quiz": {
-    "multipleChoice": [
-     {
-      "question": "What does the derivative of a function measure?",
-      "options": [
-       "The total area under the curve",
-       "The instantaneous rate of change",
-       "The y-intercept of the graph",
-       "The average of all y-values"
-      ],
-      "answer": 1,
-      "explanation": "The derivative f′(x) gives how fast f is changing at the exact point x — its instantaneous rate of change."
-     },
-     {
-      "question": "Geometrically, f′(a) is the…",
-      "options": [
-       "height of the graph at x = a",
-       "area between the graph and the x-axis",
-       "slope of the tangent line at x = a",
-       "distance from the origin to the point"
-      ],
-      "answer": 2,
-      "explanation": "f′(a) is the slope of the tangent line to the curve at x = a. The height of the graph would be f(a), not f′(a)."
-     },
-     {
-      "question": "What is the derivative of f(x) = 7?",
-      "options": [
-       "7",
-       "1",
-       "7x",
-       "0"
-      ],
-      "answer": 3,
-      "explanation": "By the constant rule, the derivative of any constant is 0 because a constant never changes."
-     },
-     {
-      "question": "Using the power rule, what is d/dx of x⁵?",
-      "options": [
-       "x⁴",
-       "5x⁴",
-       "5x⁵",
-       "4x⁵"
-      ],
-      "answer": 1,
-      "explanation": "Power rule: bring the exponent down (5) and subtract 1 from it (5 − 1 = 4), giving 5x⁴."
-     },
-     {
-      "question": "If f(x) = 3x⁴ − 5x² + 7, what is f′(x)?",
-      "options": [
-       "12x³ − 10x",
-       "12x⁴ − 10x²",
-       "3x³ − 5x",
-       "12x³ − 10x + 7"
-      ],
-      "answer": 0,
-      "explanation": "Differentiate term by term: 3x⁴ → 12x³, −5x² → −10x, and the constant 7 → 0. So f′(x) = 12x³ − 10x."
-     },
-     {
-      "question": "What is the slope of the tangent to f(x) = x² at x = 3?",
-      "options": [
-       "3",
-       "6",
-       "9",
-       "2"
-      ],
-      "answer": 1,
-      "explanation": "f′(x) = 2x, so f′(3) = 2·3 = 6. (9 is the height f(3), not the slope.)"
-     },
-     {
-      "question": "If f′(x) < 0 on an interval, what is true of f on that interval?",
-      "options": [
-       "f is increasing",
-       "f is decreasing",
-       "f is constant",
-       "f has a maximum at every point"
-      ],
-      "answer": 1,
-      "explanation": "A negative derivative means the slope is negative, so the graph goes down as x increases: f is decreasing."
-     },
-     {
-      "question": "A critical point occurs where…",
-      "options": [
-       "f(x) = 0",
-       "f′(x) = 0",
-       "f″(x) = 0 only",
-       "x = 0"
-      ],
-      "answer": 1,
-      "explanation": "Critical points are the x-values where the derivative is 0 (or does not exist). They are candidates for a maximum or minimum."
-     },
-     {
-      "question": "What is d/dx of 4x³?",
-      "options": [
-       "12x²",
-       "4x²",
-       "12x³",
-       "7x²"
-      ],
-      "answer": 0,
-      "explanation": "Constant multiple rule plus power rule: 4 · (3x²) = 12x²."
-     },
-     {
-      "question": "If f(x) = x² + 6x, what is f′(x)?",
-      "options": [
-       "x + 6",
-       "2x + 6x",
-       "2x + 6",
-       "2x² + 6"
-      ],
-      "answer": 2,
-      "explanation": "Sum rule: differentiate each term. x² → 2x and 6x → 6, so f′(x) = 2x + 6."
-     }
-    ],
-    "shortAnswer": [
-     {
-      "question": "State the power rule and use it to differentiate x⁷.",
-      "answer": "Power rule: d/dx of xⁿ = n·xⁿ⁻¹. So d/dx of x⁷ = 7x⁶.",
-      "explanation": "Multiply by the current exponent (7), then reduce the exponent by 1 (7 − 1 = 6)."
-     },
-     {
-      "question": "Differentiate f(x) = 2x³ − 4x + 9.",
-      "answer": "f′(x) = 6x² − 4.",
-      "explanation": "2x³ → 6x², −4x → −4, and the constant 9 → 0. Use the sum rule to combine them."
-     },
-     {
-      "question": "Find the equation of the tangent line to f(x) = x² at x = 2.",
-      "answer": "y = 4x − 4.",
-      "explanation": "f(2) = 4 and f′(x) = 2x, so the slope is f′(2) = 4. Tangent: y − 4 = 4(x − 2), which simplifies to y = 4x − 4."
-     },
-     {
-      "question": "In words, what does it tell you if f′(a) > 0?",
-      "answer": "The function is increasing at x = a: the graph slopes upward there, so f is rising as x increases.",
-      "explanation": "The sign of the derivative is the sign of the slope. A positive slope means the graph goes up to the right."
-     },
-     {
-      "question": "Why is the derivative of a constant function equal to 0?",
-      "answer": "A constant function never changes, so its rate of change is 0. Its graph is a horizontal line, which has slope 0.",
-      "explanation": "The derivative measures rate of change. No change means a rate of 0 — this is also what the limit definition gives, since f(x + h) − f(x) = 0 for every h."
-     }
-    ],
-    "examStyle": [
-     {
-      "question": "Let f(x) = x³ − 3x² + 2.\n(a) Find f′(x).\n(b) Find the critical points.\n(c) State the intervals on which f is increasing and decreasing.",
-      "answer": "(a) f′(x) = 3x² − 6x.\n(b) Set 3x² − 6x = 0, so 3x(x − 2) = 0, giving critical points x = 0 and x = 2.\n(c) f is increasing for x < 0 and for x > 2 (f′ > 0). f is decreasing for 0 < x < 2 (f′ < 0).",
-      "explanation": "For (c), test a value in each region: f′(−1) = 9 > 0, f′(1) = −3 < 0, f′(3) = 9 > 0. The sign changes at x = 0 (+ to −, a local maximum, f(0) = 2) and at x = 2 (− to +, a local minimum, f(2) = −2). Marks: (a) 1, (b) 2, (c) 3."
-     },
-     {
-      "question": "Let f(x) = x² − 4x + 5.\n(a) Find the equation of the tangent line at x = 1.\n(b) At what point on the graph is the tangent line horizontal?",
-      "answer": "(a) f(1) = 2 and f′(x) = 2x − 4, so the slope is f′(1) = −2. Tangent: y − 2 = −2(x − 1), i.e. y = −2x + 4.\n(b) Horizontal means slope 0: 2x − 4 = 0, so x = 2. Then f(2) = 1, so the point is (2, 1).",
-      "explanation": "Always find the point (x, f(x)) and the slope f′(x) separately, then combine them in y − f(a) = f′(a)(x − a). A horizontal tangent is where f′(x) = 0 — a critical point. Here it is the minimum of the parabola. Marks: (a) 3, (b) 3."
-     }
-    ]
-   },
-   "addedAt": "2026-09-20T18:22:49"
   },
   {
    "id": "physics-topic1-electricity-currents-and-circuits",
