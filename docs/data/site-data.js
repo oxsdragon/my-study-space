@@ -9,14 +9,27 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-23T18:53:37",
+ "generated": "2026-09-27T15:32:32",
  "lessons": [
   {
    "id": "arabic-almubtada-walkhabar",
    "title": "المبتدأ والخبر",
    "subject": "Arabic",
    "dir": "rtl",
-   "summary": [
+   "meta": {
+    "studyMinutes": 20,
+    "difficulty": "easy",
+    "prerequisites": [
+     "معرفة أقسام الكلمة: اسم، فعل، حرف",
+     "معرفة علامات الإعراب الأصلية: الضمة والفتحة والكسرة"
+    ]
+   },
+   "idea": {
+    "simple": "تخيّل أنك تتحدث عن شيء ثم تخبر عنه بشيء آخر. الكلمة التي تتحدث عنها هي «المبتدأ»، والكلمة التي تخبر بها عنه هي «الخبر». مثلاً لو قلت «القطةُ نائمةٌ»: أنت تتحدث عن (القطة) وتخبر عنها بأنها (نائمة). هاتان الكلمتان معًا تكوّنان جملة كاملة المعنى، تُسمّى الجملة الاسمية.",
+    "academic": "المبتدأ والخبر ركنا الجملة الاسمية الأساسيان؛ فالمبتدأ اسم مرفوع تبدأ به الجملة ويُخبَر عنه، والخبر ما يتمّ به معنى المبتدأ وتحصل به الفائدة، وهو مرفوع كذلك. ويأتي الخبر مفردًا، أو جملة (اسمية أو فعلية)، أو شبه جملة (جارًّا ومجرورًا أو ظرفًا).",
+    "analogy": "فكّر في المبتدأ والخبر كسؤال وجواب في جملة واحدة: المبتدأ يطرح ضمنيًا سؤال «من؟» أو «ما هذا؟»، والخبر هو الجواب. في «الشمسُ مشرقةٌ»: لو سألت «ما الشمس؟» لكان الجواب «مشرقةٌ» — وهذا بالضبط دور الخبر."
+   },
+   "explanation": [
     {
      "heading": "الجملة الاسمية والجملة الفعلية",
      "text": "**الجملة الاسمية** هي التي تبدأ باسم، وتتكوّن من ركنين أساسيين: **مبتدأ** و**خبر**. أما **الجملة الفعلية** فهي التي تبدأ بفعل، مثل: «يكتبُ الطالبُ الدرسَ»."
@@ -35,11 +48,21 @@ window.STUDY_DATA = {
       "**خبر مفرد:** ليس جملة ولا شبه جملة، مثل: «الطالبُ مجتهدٌ».",
       "**خبر جملة:** جملة فعلية أو اسمية في محلّ رفع، مثل: «الطالبُ يكتبُ الدرسَ».",
       "**خبر شبه جملة:** جارّ ومجرور أو ظرف، مثل: «الكتابُ على المكتبِ»."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "أنواع الخبر الثلاثة",
+      "content": "خبر مفرد ← كلمة واحدة\nخبر جملة ← جملة فعلية أو اسمية (تحتاج رابطًا)\nخبر شبه جملة ← جارّ ومجرور أو ظرف"
+     }
     },
     {
      "heading": "علامات الرفع",
-     "text": "الأصل أن يُرفع المبتدأ والخبر بـ**الضمة**. وتنوب عنها **الألف** في المثنى: «المعلمانِ مخلصانِ»، و**الواو** في جمع المذكر السالم: «المعلمونَ مخلصونَ»."
+     "text": "الأصل أن يُرفع المبتدأ والخبر بـ**الضمة**. وتنوب عنها **الألف** في المثنى: «المعلمانِ مخلصانِ»، و**الواو** في جمع المذكر السالم: «المعلمونَ مخلصونَ».",
+     "box": {
+      "type": "rule",
+      "title": "علامات الرفع",
+      "content": "مفرد ← الضمة\nمثنى ← الألف (نيابة عن الضمة)\nجمع مذكر سالم ← الواو (نيابة عن الضمة)"
+     }
     }
    ],
    "kpis": [
@@ -84,6 +107,109 @@ window.STUDY_DATA = {
     {
      "term": "جمع المذكر السالم",
      "definition": "اسم يدلّ على أكثر من اثنين من المذكّر بزيادة واو ونون، ويُرفع بالواو، مثل: «المعلمونَ»."
+    }
+   ],
+   "examples": [
+    {
+     "title": "المثال الأول: تحديد المبتدأ والخبر",
+     "difficulty": "easy",
+     "problem": "حدّد المبتدأ والخبر في الجملة: «الكتابُ مفيدٌ».",
+     "steps": [
+      {
+       "explain": "ابحث عن الاسم الذي بدأت به الجملة وتتحدث عنه — هذا هو المبتدأ.",
+       "work": "المبتدأ = الكتابُ"
+      },
+      {
+       "explain": "ابحث عن الكلمة التي أكملت معنى المبتدأ وأفادت معه فائدة تامة — هذا هو الخبر.",
+       "work": "الخبر = مفيدٌ"
+      },
+      {
+       "explain": "تحقّق أن الجملة الآن تامة المعنى.",
+       "work": "الكتابُ مفيدٌ ← جملة تامة المعنى"
+      }
+     ],
+     "answer": "المبتدأ: الكتابُ — الخبر: مفيدٌ (خبر مفرد)."
+    },
+    {
+     "title": "المثال الثاني: تحديد نوع الخبر",
+     "difficulty": "medium",
+     "problem": "بيّن نوع الخبر في جملة: «الطلابُ ينجحون بالاجتهادِ».",
+     "steps": [
+      {
+       "explain": "حدّد المبتدأ أولاً: هو الاسم الذي بدأت به الجملة.",
+       "work": "المبتدأ = الطلابُ"
+      },
+      {
+       "explain": "انظر إلى ما بعد المبتدأ: هل هو كلمة واحدة، أم جملة، أم شبه جملة؟ هنا بعده فعل مضارع له فاعل، فهو جملة فعلية.",
+       "work": "الخبر = ينجحون بالاجتهادِ (جملة فعلية)",
+       "why": "علامة خبر الجملة الفعلية أنها تبدأ بفعل له فاعل، وتكون في محلّ رفع خبر."
+      },
+      {
+       "explain": "تأكّد من وجود رابط يربط الجملة الفعلية بالمبتدأ، وهو غالبًا ضمير يعود عليه.",
+       "work": "الرابط = واو الجماعة في «ينجحون»، وهي تعود على «الطلاب»"
+      }
+     ],
+     "answer": "الخبر جملة فعلية «ينجحون بالاجتهادِ»، في محلّ رفع، والرابط ضمير مستتر (واو الجماعة)."
+    },
+    {
+     "title": "المثال الثالث: إعراب كامل للمبتدأ والخبر",
+     "difficulty": "hard",
+     "problem": "أعرب المبتدأ والخبر إعرابًا كاملًا في جملة: «المعلمونَ مخلصونَ في عملهم».",
+     "steps": [
+      {
+       "explain": "حدّد المبتدأ: هو الاسم الذي بدأت به الجملة.",
+       "work": "المبتدأ = المعلمونَ"
+      },
+      {
+       "explain": "حدّد نوع المبتدأ من حيث الإفراد والجمع لتعرف علامة رفعه.",
+       "work": "المعلمونَ = جمع مذكر سالم"
+      },
+      {
+       "explain": "طبّق قاعدة رفع جمع المذكر السالم.",
+       "work": "إعراب المعلمونَ: مبتدأ مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم",
+       "why": "تذكّر: جمع المذكر السالم يُرفع بالواو، ويُنصب ويُجر بالياء."
+      },
+      {
+       "explain": "حدّد الخبر: الكلمة التي أكملت المعنى، أما «في عملهم» فشبه جملة متعلقة بالخبر وليست خبرًا مستقلًا.",
+       "work": "الخبر = مخلصونَ (خبر مفرد)"
+      },
+      {
+       "explain": "أعرب الخبر بنفس قاعدة جمع المذكر السالم.",
+       "work": "إعراب مخلصونَ: خبر مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم"
+      }
+     ],
+     "answer": "المعلمونَ: مبتدأ مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم. مخلصونَ: خبر مرفوع وعلامة رفعه الواو لأنه جمع مذكر سالم."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "الخلط بين خبر الجملة وشبه الجملة.",
+     "fix": "خبر الجملة يحتوي على فعل وفاعل (أو مبتدأ وخبر آخر)، أما شبه الجملة فجارّ ومجرور أو ظرف فقط، بلا فعل."
+    },
+    {
+     "mistake": "رفع المثنى وجمع المذكر السالم بالضمة بدلاً من الألف أو الواو.",
+     "fix": "احفظ القاعدة: المثنى يُرفع بالألف، وجمع المذكر السالم يُرفع بالواو، لا بالضمة."
+    },
+    {
+     "mistake": "نسيان الرابط الذي يربط خبر الجملة بالمبتدأ.",
+     "fix": "تأكد دائمًا من وجود ضمير (ظاهر أو مستتر) في خبر الجملة يعود على المبتدأ."
+    }
+   ],
+   "videos": [
+    {
+     "query": "المبتدأ والخبر شرح مبسط بالأمثلة",
+     "channel": "قنوات تعليم النحو العربي",
+     "note": "شرح مبسّط لتعريف المبتدأ والخبر مع أمثلة تطبيقية، مناسب لبداية الدرس."
+    },
+    {
+     "query": "أنواع الخبر في اللغة العربية مفرد جملة شبه جملة",
+     "channel": "دروس نحو تعليمية",
+     "note": "يفصّل أنواع الخبر الثلاثة بأمثلة متعددة."
+    },
+    {
+     "query": "إعراب المثنى وجمع المذكر السالم بالألف والواو",
+     "channel": "قنوات اللغة العربية التعليمية",
+     "note": "يوضح علامات رفع المثنى وجمع المذكر السالم، وهو أساس أسئلة الإعراب في هذا الدرس."
     }
    ],
    "quiz": {
@@ -239,6 +365,22 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "المبتدأ: اسم مرفوع تبدأ به الجملة الاسمية ويُخبَر عنه.",
+     "الخبر: يكمل معنى المبتدأ، وهو مرفوع، وله ثلاثة أنواع: مفرد، جملة، شبه جملة.",
+     "خبر الجملة (فعلية أو اسمية) يحتاج رابطًا يعود على المبتدأ.",
+     "شبه الجملة (جار ومجرور/ظرف) نوع مستقل من أنواع الخبر.",
+     "المثنى يُرفع بالألف، وجمع المذكر السالم يُرفع بالواو، بدلاً من الضمة."
+    ],
+    "mustNotForget": [
+     "المبتدأ والخبر مرفوعان دائمًا في هذا الدرس.",
+     "خبر الجملة يحتاج رابطًا (ضميرًا) يعود على المبتدأ.",
+     "المثنى ← الألف، وجمع المذكر السالم ← الواو (لا الضمة).",
+     "شبه الجملة (جار ومجرور أو ظرف) نوع مستقل من أنواع الخبر.",
+     "لتحديد المبتدأ: ابحث عن أول اسم مرفوع تبدأ به الجملة الاسمية."
+    ]
+   },
    "addedAt": "2026-09-20T18:24:15"
   },
   {
@@ -246,7 +388,21 @@ window.STUDY_DATA = {
    "title": "Genetic Recombination and Gene Linkage",
    "subject": "Biology",
    "order": 4,
-   "summary": [
+   "meta": {
+    "studyMinutes": 30,
+    "difficulty": "hard",
+    "prerequisites": [
+     "Lessons 1–3 on Mendelian genetics (genotype, Punnett squares)",
+     "Basic understanding of meiosis and chromosomes",
+     "Comfort with percentages and simple exponents (2ⁿ)"
+    ]
+   },
+   "idea": {
+    "simple": "Imagine chromosomes as train cars, and genes as passengers riding on them. If two passengers are sitting right next to each other on the SAME car, they usually get off together — that's gene linkage. But every so often, cars can swap sections mid-journey (crossing over), which can separate even close neighbors. The farther apart two passengers sit, the more likely a swap will separate them.",
+    "academic": "Genetic recombination — new gene combinations arising from independent assortment and crossing over during meiosis — is a major source of variation. However, genes located close together on the same chromosome (linked genes) tend to violate Mendel's law of independent assortment because they are usually inherited together, unless separated by crossing over. The frequency of crossing over between two genes (recombination frequency) is proportional to the physical distance between them, which allows recombination frequency data to be converted into map units and used to construct chromosome maps.",
+    "analogy": "Think of a chromosome as a long rope with genes tied on at different points. Crossing over is like cutting two ropes at a random point and swapping the ends. Two knots tied close together almost always end up on the same rope-piece after a cut; two knots tied far apart are much more likely to end up on different pieces."
+   },
+   "explanation": [
     {
      "heading": "Genetic recombination",
      "text": "**Genetic recombination** is the new combination of genes produced by crossing over and independent assortment during meiosis. It is a major source of genetic **variation** in offspring.",
@@ -254,7 +410,12 @@ window.STUDY_DATA = {
       "Combinations of genes from independent assortment alone can be calculated as **2ⁿ**, where n = the number of chromosome pairs.",
       "Since any possible male gamete can fertilize any possible female gamete, the total possible combinations after fertilization are **2ⁿ × 2ⁿ**.",
       "Example: an organism with 10 chromosomes (5 pairs) makes gametes with 2⁵ = 32 possible combinations."
-     ]
+     ],
+     "box": {
+      "type": "formula",
+      "title": "Independent assortment",
+      "content": "Gamete types (one parent) = 2ⁿ\nOffspring combinations (two parents) = 2ⁿ × 2ⁿ"
+     }
     },
     {
      "heading": "Gene linkage",
@@ -275,7 +436,12 @@ window.STUDY_DATA = {
     },
     {
      "heading": "Recombination frequency",
-     "text": "**Recombination frequency (RF)** is how often a crossover occurs between two genes during meiosis. **The higher the RF, the farther apart the genes are** on the chromosome. By convention, **1% RF = 1 map unit** (also called a Morgan unit), so RF values can be used directly to build a chromosome map showing gene order and relative distances."
+     "text": "**Recombination frequency (RF)** is how often a crossover occurs between two genes during meiosis. **The higher the RF, the farther apart the genes are** on the chromosome. By convention, **1% RF = 1 map unit** (also called a Morgan unit), so RF values can be used directly to build a chromosome map showing gene order and relative distances.",
+     "box": {
+      "type": "rule",
+      "title": "Reading recombination frequency",
+      "content": "RF near 0% → genes very close together (rarely separated)\nRF near 50% → genes unlinked (same as pure chance)\n1% RF = 1 map unit"
+     }
     },
     {
      "heading": "Polyploidy",
@@ -321,6 +487,101 @@ window.STUDY_DATA = {
     {
      "term": "Polyploidy",
      "definition": "A condition where an organism or cell has more than two complete sets of chromosomes; common in plants."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Gamete types from independent assortment",
+     "difficulty": "easy",
+     "problem": "A cell has 4 chromosome pairs (8 chromosomes total). How many genetically different gamete types can it produce through independent assortment alone?",
+     "steps": [
+      {
+       "explain": "Identify n, the number of chromosome PAIRS (not the total chromosome count).",
+       "work": "n = 4 pairs"
+      },
+      {
+       "explain": "Apply the formula for independent assortment: each pair can contribute either its maternal or paternal chromosome to a gamete.",
+       "work": "Number of gamete types = 2ⁿ = 2⁴"
+      },
+      {
+       "explain": "Calculate the final number.",
+       "work": "2⁴ = 16"
+      }
+     ],
+     "answer": "16 possible gamete types."
+    },
+    {
+     "title": "Example 2: Deciding whether two genes are linked",
+     "difficulty": "medium",
+     "problem": "Two genes, P and Q, are found to be inherited together in 78% of offspring. Are P and Q linked? Explain your reasoning.",
+     "steps": [
+      {
+       "explain": "Recall the benchmark for unlinked genes: independent assortment predicts 50% co-inheritance by chance alone.",
+       "work": "Expected co-inheritance if unlinked = 50%"
+      },
+      {
+       "explain": "Compare the observed rate to this benchmark.",
+       "work": "Observed = 78%, well above 50%",
+       "why": "The bigger the gap above 50%, the stronger the evidence for linkage — 78% is a clear, strong signal, not just random noise."
+      },
+      {
+       "explain": "Draw a conclusion based on the comparison.",
+       "work": "78% ≫ 50% → genes are linked"
+      }
+     ],
+     "answer": "Yes, P and Q are linked — their 78% co-inheritance rate is far higher than the 50% expected for unlinked genes."
+    },
+    {
+     "title": "Example 3: Mapping three genes from recombination frequencies",
+     "difficulty": "hard",
+     "problem": "Recombination frequencies were measured between three genes: M–N: 6%, N–O: 9%, M–O: 15%. (a) Convert these to map units. (b) Determine the most likely order of the genes on the chromosome.",
+     "steps": [
+      {
+       "explain": "Convert each recombination frequency directly into map units, since 1% RF = 1 map unit.",
+       "work": "M–N = 6 map units, N–O = 9 map units, M–O = 15 map units"
+      },
+      {
+       "explain": "Check whether the largest distance equals the sum of the two smaller ones — if so, the gene measured in both smaller distances sits in the middle.",
+       "work": "M–N + N–O = 6 + 9 = 15, which equals M–O = 15",
+       "why": "This consistency check works because if N sits between M and O, the direct M-to-O distance should equal the sum of the two shorter hops through N."
+      },
+      {
+       "explain": "Conclude the gene order from the consistent distances.",
+       "work": "Order: M — N — O (N is in the middle)"
+      }
+     ],
+     "answer": "Gene order: M — N — O, with N positioned 6 map units from M and 9 map units from O (consistent with the 15-unit M–O distance)."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Using 2ⁿ instead of 2ⁿ × 2ⁿ when asked for total offspring combinations after fertilization.",
+     "fix": "2ⁿ alone gives the possible gamete types from ONE parent. For total offspring combinations from two parents, you need 2ⁿ × 2ⁿ."
+    },
+    {
+     "mistake": "Assuming a high co-inheritance rate between two genes says something about every other gene too.",
+     "fix": "Linkage is always evaluated PAIRWISE between two specific genes — a high co-inheritance rate only tells you about that one pair, not about the whole genome."
+    },
+    {
+     "mistake": "Thinking a recombination frequency near 50% means genes are \"very linked.\"",
+     "fix": "It's the opposite: RF near 0% means genes are very close together; RF near 50% means the genes behave as if unlinked (same as pure chance)."
+    }
+   ],
+   "videos": [
+    {
+     "query": "genetic recombination and crossing over explained meiosis",
+     "channel": "Amoeba Sisters",
+     "note": "Explains crossing over during meiosis and how it creates new gene combinations."
+    },
+    {
+     "query": "gene linkage and recombination frequency explained genetics",
+     "channel": "Bozeman Science",
+     "note": "Covers linked genes and how recombination frequency relates to physical distance on a chromosome."
+    },
+    {
+     "query": "polyploidy in plants explained genetics",
+     "channel": "Khan Academy",
+     "note": "Explains polyploidy and why it's common and useful in plant breeding."
     }
    ],
    "quiz": {
@@ -476,6 +737,23 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "Genetic recombination = new gene combinations from independent assortment + crossing over.",
+     "Independent assortment alone gives 2ⁿ gamete types (n = chromosome pairs); fertilization multiplies this to 2ⁿ × 2ⁿ.",
+     "Linked genes (close together on the same chromosome) tend to be inherited together, violating independent assortment.",
+     "50% co-inheritance = unlinked (pure chance); much higher than 50% = linked.",
+     "Recombination frequency (RF): higher RF = genes farther apart; 1% RF = 1 map unit.",
+     "Polyploidy = more than two full chromosome sets; common in plants, often makes them larger and stronger."
+    ],
+    "mustNotForget": [
+     "2ⁿ = gametes from ONE parent; 2ⁿ × 2ⁿ = combinations after fertilization from TWO parents.",
+     "50% co-inheritance = unlinked; well above 50% = linked.",
+     "Higher recombination frequency = genes farther apart (1% RF = 1 map unit).",
+     "To find gene order, look for the pair of distances that add up to the largest distance.",
+     "Polyploidy (more than 2 chromosome sets) is common in plants and linked to larger, hardier crops."
+    ]
+   },
    "addedAt": "2026-09-22T17:24:14"
   },
   {
@@ -483,7 +761,20 @@ window.STUDY_DATA = {
    "title": "Lesson 1: The Work of Gregor Mendel",
    "subject": "Biology",
    "order": 1,
-   "summary": [
+   "meta": {
+    "studyMinutes": 25,
+    "difficulty": "easy",
+    "prerequisites": [
+     "Basic understanding of chromosomes and sexual reproduction",
+     "Reading simple ratios (e.g. 3:1)"
+    ]
+   },
+   "idea": {
+    "simple": "Imagine each parent gives their child one building block for every toy set — say, a red or a blue one. Genes work a bit like that: each parent passes on one version (allele) of every gene to their child. If one color is \"stronger\" (dominant), the toy looks that color even if the child is secretly also holding a block of the other color.",
+    "academic": "Gregor Mendel used pea plants to discover the basic rules of inheritance: individuals inherit two alleles for each gene, one from each parent; these alleles segregate (separate) into gametes; and when a dominant and a recessive allele are both present, the dominant allele's trait is expressed while the recessive allele's trait is masked, not lost.",
+    "analogy": "Think of a genotype like a hand of two playing cards, one face-up and one face-down. Whichever card is face-up is what everyone sees (the phenotype) — but the face-down card is still there in the hand, ready to be dealt again to the next generation."
+   },
+   "explanation": [
     {
      "heading": "Mendel's experiments with peas",
      "text": "Gregor Mendel, a monk born in 1822, studied inheritance using pea plants in his monastery garden. Peas were a good \"model system\": they are small, easy to grow, produce many offspring, and can **self-pollinate** (a single flower has both male and female parts) or be **cross-pollinated** by hand.",
@@ -504,7 +795,12 @@ window.STUDY_DATA = {
       "Some alleles are **dominant**, some are **recessive**.",
       "An organism with **at least one dominant allele** shows that dominant trait.",
       "An organism shows a **recessive** trait only if it has **no dominant allele** for that gene — i.e., two recessive alleles."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "The principle of dominance",
+      "content": "GG → dominant trait shown\nGg → dominant trait shown (recessive allele masked, not gone)\ngg → recessive trait shown"
+     }
     },
     {
      "heading": "The F1 generation: hybrids show only one trait",
@@ -516,7 +812,12 @@ window.STUDY_DATA = {
      "bullets": [
       "**Segregation:** during gamete formation, the two alleles an individual carries separate, so each gamete (egg or sperm) receives only **one** allele for each gene.",
       "At fertilization, gametes join again to restore allele pairs. The F1 plants (all heterozygous) each carried one dominant and one recessive allele, so when self-pollinated they could recombine to give some homozygous-recessive F2 offspring."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Gg × Gg cross",
+      "content": "Genotype ratio: 1 GG : 2 Gg : 1 gg\nPhenotype ratio: 3 dominant : 1 recessive"
+     }
     }
    ],
    "kpis": [
@@ -582,6 +883,101 @@ window.STUDY_DATA = {
     {
      "term": "F1 / F2 generation",
      "definition": "F1 is the first hybrid generation from a cross of two true-breeding parents; F2 is the next generation, produced by self-pollinating or crossing F1 individuals."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Crossing two true-breeding plants",
+     "difficulty": "easy",
+     "problem": "In pea plants, purple flowers (P) are dominant over white (p). A true-breeding purple plant (PP) is crossed with a true-breeding white plant (pp). What are the genotype and phenotype of the F1 offspring?",
+     "steps": [
+      {
+       "explain": "List the gametes each true-breeding parent can produce — a homozygous parent can only make one type of gamete.",
+       "work": "PP parent → all P gametes. pp parent → all p gametes."
+      },
+      {
+       "explain": "Combine one gamete from each parent to find the offspring genotype.",
+       "work": "F1 genotype = Pp"
+      },
+      {
+       "explain": "Apply the principle of dominance: any plant with at least one P allele shows the dominant (purple) phenotype.",
+       "work": "F1 phenotype = purple"
+      }
+     ],
+     "answer": "All F1 offspring are Pp and purple."
+    },
+    {
+     "title": "Example 2: Crossing two heterozygotes",
+     "difficulty": "medium",
+     "problem": "Two purple Pp plants are crossed. What genotype and phenotype ratios are expected in the offspring?",
+     "steps": [
+      {
+       "explain": "List the possible gametes from each Pp parent — segregation means each gamete gets only one allele.",
+       "work": "Each Pp parent produces 1/2 P and 1/2 p gametes"
+      },
+      {
+       "explain": "Combine gametes from both parents in all four possible ways to find the offspring genotypes.",
+       "work": "Offspring: 1/4 PP, 1/2 Pp, 1/4 pp"
+      },
+      {
+       "explain": "Apply the principle of dominance to convert genotypes into phenotypes: PP and Pp both look purple; only pp looks white.",
+       "work": "Phenotypes: 3/4 purple, 1/4 white",
+       "why": "This is exactly why a Gg × Gg cross always gives the same 3:1 phenotype ratio, no matter which trait is involved."
+      }
+     ],
+     "answer": "Genotype ratio 1:2:1 (PP:Pp:pp); phenotype ratio 3:1 (purple:white)."
+    },
+    {
+     "title": "Example 3: Working out an unknown genotype (a test cross)",
+     "difficulty": "hard",
+     "problem": "A purple-flowered plant of unknown genotype is crossed with a white-flowered plant (pp), producing 48 purple offspring and 52 white offspring. What was the genotype of the purple parent, and how do you know?",
+     "steps": [
+      {
+       "explain": "Notice the offspring are roughly half purple and half white — a 1:1 ratio.",
+       "work": "Observed ratio ≈ 1:1 (purple : white)"
+      },
+      {
+       "explain": "Compare this to what different genotypes for the purple parent would predict: PP × pp would give all-purple offspring; Pp × pp would give a 1:1 mix.",
+       "work": "Test: Pp × pp → gametes: Pp parent gives 1/2 P, 1/2 p; pp parent gives all p",
+       "why": "Crossing an unknown genotype with a homozygous recessive individual (pp) is called a test cross — it's the standard way to reveal a hidden heterozygous genotype."
+      },
+      {
+       "explain": "Combine the gametes to predict the offspring ratio, and compare it to what was actually observed.",
+       "work": "Predicted offspring: 1/2 Pp (purple), 1/2 pp (white) → matches the observed ~1:1 ratio"
+      }
+     ],
+     "answer": "The purple parent's genotype was Pp (heterozygous) — confirmed because a test cross with pp produced the 1:1 ratio that only a Pp × pp cross predicts."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Thinking a recessive allele disappears once it's masked in a heterozygote.",
+     "fix": "Masked does not mean gone — a recessive allele stays in the genotype and can reappear when it pairs with another recessive allele in a later generation."
+    },
+    {
+     "mistake": "Confusing genotype with phenotype.",
+     "fix": "Genotype is the letters (e.g. Gg); phenotype is what you actually see (e.g. purple flowers). Two different genotypes (GG and Gg) can share the same phenotype."
+    },
+    {
+     "mistake": "Expecting a small sample to match a ratio exactly.",
+     "fix": "Ratios like 3:1 are probabilities — they only show up accurately over many offspring, so a handful of offspring might not match exactly."
+    }
+   ],
+   "videos": [
+    {
+     "query": "Gregor Mendel pea plant experiments explained",
+     "channel": "Amoeba Sisters",
+     "note": "A clear, friendly overview of Mendel's pea experiments and the principle of dominance."
+    },
+    {
+     "query": "genotype vs phenotype explained biology",
+     "channel": "Bozeman Science",
+     "note": "Explains the genotype/phenotype distinction with several examples — good for the common mix-up."
+    },
+    {
+     "query": "segregation of alleles during meiosis explained",
+     "channel": "Khan Academy",
+     "note": "Covers how alleles physically separate during gamete formation — the biological basis of segregation."
     }
    ],
    "quiz": {
@@ -737,6 +1133,23 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "Genes come in different versions called alleles; individuals carry two alleles per gene, one from each parent.",
+     "Dominant alleles show their trait whenever present; recessive alleles only show when no dominant allele is present.",
+     "Homozygous = two identical alleles (GG or gg); heterozygous = two different alleles (Gg).",
+     "Genotype is the genetic makeup (letters); phenotype is the observable trait it produces.",
+     "Segregation: each gamete gets only one allele per gene, never both.",
+     "A cross of two heterozygotes (Gg × Gg) gives a 1:2:1 genotype ratio and a 3:1 phenotype ratio."
+    ],
+    "mustNotForget": [
+     "A masked recessive allele is not lost — it can reappear in a later generation.",
+     "Genotype (letters) is not the same as phenotype (what you see): GG and Gg can look identical.",
+     "Each gamete carries only one allele per gene (segregation).",
+     "Gg × Gg → 3:1 phenotype ratio, 1:2:1 genotype ratio.",
+     "A test cross (unknown genotype × homozygous recessive) reveals whether an organism is homozygous or heterozygous."
+    ]
+   },
    "addedAt": "2026-09-22T17:24:13"
   },
   {
@@ -744,7 +1157,20 @@ window.STUDY_DATA = {
    "title": "Lesson 2: Applying Mendel's Principles",
    "subject": "Biology",
    "order": 2,
-   "summary": [
+   "meta": {
+    "studyMinutes": 30,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Lesson 1: The Work of Gregor Mendel (genotype, phenotype, dominant/recessive)",
+     "Basic probability (fractions, multiplying probabilities)"
+    ]
+   },
+   "idea": {
+    "simple": "A Punnett square is just a multiplication table for genes. You write one parent's possible 'gene cards' across the top and the other's down the side, then fill in the grid by combining them — like a times table, but instead of numbers you get gene combinations.",
+    "academic": "Because alleles segregate randomly into gametes and combine randomly at fertilization, the outcomes of a genetic cross follow the rules of probability. A Punnett square is a systematic grid that lists every possible combination of gametes from two parents, letting you read off the exact genotype and phenotype ratios expected in the offspring — for one gene (monohybrid) or two genes at once (dihybrid, following independent assortment).",
+    "analogy": "Think of a Punnett square like flipping two coins at once, but each coin is a parent's \"gene coin\" with a dominant side and a recessive side. Just like predicting how often you get heads-heads, heads-tails, and so on from two coins, a Punnett square predicts how often each gene combination shows up in the offspring."
+   },
+   "explanation": [
     {
      "heading": "Probability and heredity",
      "text": "**Probability** is the likelihood that an event will occur. A coin toss has a 50% (1/2) chance of either outcome, and each flip is an **independent event** — the outcome of one flip doesn't affect the next. For independent events happening together, multiply their probabilities: three tails in a row is 1/2 × 1/2 × 1/2 = 1/8."
@@ -763,7 +1189,12 @@ window.STUDY_DATA = {
     },
     {
      "heading": "Punnett squares",
-     "text": "A **Punnett square** is a grid used to predict the genotype and phenotype combinations from a genetic cross. You list one parent's possible gametes along the top and the other's along the side, then fill in each cell with the combination. For a **monohybrid cross** (one trait, Bb × Bb): 3 genotypes possible (BB, Bb, bb) and 2 phenotypes, with a 3/4 chance of the dominant phenotype and 1/4 chance of the recessive."
+     "text": "A **Punnett square** is a grid used to predict the genotype and phenotype combinations from a genetic cross. You list one parent's possible gametes along the top and the other's along the side, then fill in each cell with the combination. For a **monohybrid cross** (one trait, Bb × Bb): 3 genotypes possible (BB, Bb, bb) and 2 phenotypes, with a 3/4 chance of the dominant phenotype and 1/4 chance of the recessive.",
+     "box": {
+      "type": "rule",
+      "title": "Monohybrid cross (Bb × Bb)",
+      "content": "Genotypes: 1 BB : 2 Bb : 1 bb\nPhenotypes: 3 dominant : 1 recessive"
+     }
     },
     {
      "heading": "Two-factor (dihybrid) crosses",
@@ -771,7 +1202,12 @@ window.STUDY_DATA = {
      "bullets": [
       "**Independent assortment:** genes for different traits segregate into gametes independently of one another, so all combinations of alleles are possible in gametes.",
       "For RrYy × RrYy: 16 possible offspring combinations, giving 9/16 dominant-dominant, 3/16 dominant-recessive, 3/16 recessive-dominant, and 1/16 fully recessive."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Dihybrid cross (RrYy × RrYy)",
+      "content": "9/16 round-yellow, 3/16 round-green, 3/16 wrinkled-yellow, 1/16 wrinkled-green\nShortcut: multiply two separate monohybrid probabilities (e.g. 3/4 × 1/4)"
+     }
     }
    ],
    "kpis": [
@@ -817,6 +1253,105 @@ window.STUDY_DATA = {
     {
      "term": "9:3:3:1 ratio",
      "definition": "The expected phenotype ratio in the F2 generation of a dihybrid cross between two double heterozygotes."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: A monohybrid test cross",
+     "difficulty": "easy",
+     "problem": "In guinea pigs, black fur (B) is dominant over white (b). A heterozygous black guinea pig (Bb) is crossed with a white guinea pig (bb). What genotype and phenotype ratio is expected in the offspring?",
+     "steps": [
+      {
+       "explain": "List the gametes each parent can produce.",
+       "work": "Bb parent → 1/2 B, 1/2 b. bb parent → all b."
+      },
+      {
+       "explain": "Build a 2×2 Punnett square by combining each gamete pair.",
+       "work": "Offspring genotypes: 1/2 Bb, 1/2 bb"
+      },
+      {
+       "explain": "Convert genotypes to phenotypes using dominance.",
+       "work": "Phenotypes: 1/2 black (Bb), 1/2 white (bb)"
+      }
+     ],
+     "answer": "Genotype and phenotype ratio: 1:1 (black : white)."
+    },
+    {
+     "title": "Example 2: Probability across two births",
+     "difficulty": "medium",
+     "problem": "A Bb × Bb cross is made. (a) What is the probability a single offspring is black? (b) What is the probability that the first two offspring are both black?",
+     "steps": [
+      {
+       "explain": "Set up the monohybrid Punnett square for Bb × Bb.",
+       "work": "Offspring genotypes: 1/4 BB, 1/2 Bb, 1/4 bb"
+      },
+      {
+       "explain": "Combine BB and Bb, since both show the dominant (black) phenotype.",
+       "work": "P(black) = 1/4 + 1/2 = 3/4"
+      },
+      {
+       "explain": "For two separate births, multiply the probability of black for each one.",
+       "work": "P(both black) = 3/4 × 3/4 = 9/16",
+       "why": "Separate offspring are independent events, just like separate coin flips — so their probabilities multiply, even though each individual birth still follows the same 3/4 chance."
+      }
+     ],
+     "answer": "P(one offspring black) = 3/4. P(first two offspring both black) = 9/16."
+    },
+    {
+     "title": "Example 3: A dihybrid probability shortcut",
+     "difficulty": "hard",
+     "problem": "In pea plants, round (R) is dominant over wrinkled (r), and yellow (Y) is dominant over green (y). Two RrYy plants are crossed. What is the probability that an offspring is round and green?",
+     "steps": [
+      {
+       "explain": "Break the dihybrid cross into two separate monohybrid crosses, since the genes assort independently.",
+       "work": "Seed shape: Rr × Rr. Seed color: Yy × Yy"
+      },
+      {
+       "explain": "Find the probability of \"round\" from the shape cross.",
+       "work": "P(round) = 3/4 (RR or Rr)"
+      },
+      {
+       "explain": "Find the probability of \"green\" from the color cross.",
+       "work": "P(green) = 1/4 (yy only)"
+      },
+      {
+       "explain": "Since the two genes assort independently, multiply the two probabilities together instead of building the full 16-box grid.",
+       "work": "P(round and green) = 3/4 × 1/4 = 3/16",
+       "why": "This shortcut — splitting a dihybrid cross into two monohybrid crosses and multiplying — gives the same answer as a full Punnett square, much faster."
+      }
+     ],
+     "answer": "P(round and green) = 3/16."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Treating Bb and bB as two different genotypes.",
+     "fix": "Order doesn't matter — Bb and bB both mean \"one dominant, one recessive allele,\" i.e. heterozygous. They're the same genotype, just written from different parents' gametes."
+    },
+    {
+     "mistake": "Building a dihybrid Punnett square with only 2 rows and columns.",
+     "fix": "For a dihybrid cross (RrYy × RrYy), each parent can make 4 different gamete types (RY, Ry, rY, ry), so you need a 4×4 = 16-box grid, not a 2×2."
+    },
+    {
+     "mistake": "Multiplying probabilities for events that aren't actually independent.",
+     "fix": "Only multiply probabilities for events that truly don't affect each other — like two different genes assorting independently, or two separate births."
+    }
+   ],
+   "videos": [
+    {
+     "query": "how to do a Punnett square monohybrid cross",
+     "channel": "Bozeman Science",
+     "note": "Step-by-step walkthrough of building and reading a monohybrid Punnett square."
+    },
+    {
+     "query": "dihybrid cross Punnett square 9:3:3:1 explained",
+     "channel": "Amoeba Sisters",
+     "note": "Shows how to set up a full 4×4 dihybrid Punnett square and where the 9:3:3:1 ratio comes from."
+    },
+    {
+     "query": "probability rules genetics multiplication rule",
+     "channel": "Khan Academy",
+     "note": "Covers the multiplication rule for independent events — the math behind every Punnett square."
     }
    ],
    "quiz": {
@@ -972,6 +1507,23 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "Probability of independent events: multiply them (e.g. two coin flips, or two different genes).",
+     "Punnett square: one parent's gametes across the top, the other's down the side; fill in each cell.",
+     "Monohybrid cross (Bb × Bb): 1:2:1 genotype ratio, 3:1 phenotype ratio.",
+     "Homozygous dominant (BB) and homozygous recessive (bb) are the two \"pure\" genotypes; heterozygous (Bb) has one of each.",
+     "Dihybrid cross (RrYy × RrYy): 9:3:3:1 phenotype ratio from independent assortment, using a 4×4 grid.",
+     "Shortcut: split a dihybrid cross into two separate monohybrid crosses and multiply their probabilities."
+    ],
+    "mustNotForget": [
+     "Multiply probabilities only for independent events — like two different genes or two separate offspring.",
+     "A dihybrid cross needs a 4×4 grid (16 boxes), not a 2×2.",
+     "Bb and bB are the SAME genotype (heterozygous).",
+     "Monohybrid Bb × Bb → 3:1 phenotype; dihybrid RrYy × RrYy → 9:3:3:1 phenotype.",
+     "Dihybrid probability shortcut: multiply the two separate monohybrid probabilities instead of building the full grid."
+    ]
+   },
    "addedAt": "2026-09-22T17:24:13"
   },
   {
@@ -979,7 +1531,20 @@ window.STUDY_DATA = {
    "title": "Lesson 3: Other Patterns of Inheritance",
    "subject": "Biology",
    "order": 3,
-   "summary": [
+   "meta": {
+    "studyMinutes": 30,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Lesson 2: Applying Mendel's Principles (Punnett squares, probability)",
+     "Dominant/recessive alleles and genotype notation"
+    ]
+   },
+   "idea": {
+    "simple": "Mendel's rules (one clear winner allele) work great for pea plants, but real life has more variety: sometimes two alleles blend like mixing paint (incomplete dominance), sometimes they both show up side by side like a patchwork quilt (codominance), sometimes a gene has more than two possible \"flavors\" across a population (multiple alleles), and sometimes many genes team up to create a whole spectrum of outcomes (polygenic traits) — plus, the environment itself can nudge how genes are expressed.",
+    "academic": "While many traits follow Mendel's simple dominant/recessive pattern, several important exceptions exist: incomplete dominance (heterozygotes show a blended intermediate phenotype), codominance (heterozygotes express both alleles fully and separately), multiple alleles (more than two allele forms exist for a gene across a population, though each individual carries only two), polygenic inheritance (several genes jointly determine a trait, producing continuous variation), and genotype–environment interaction (environmental conditions influence how a genotype is expressed as a phenotype).",
+    "analogy": "Think of incomplete dominance like mixing red and white paint to get pink — a genuine blend. Codominance is more like a checkerboard of red and white squares side by side — both colors are fully there, just not mixed. A polygenic trait is like a group project graded by averaging many students' small individual contributions — no single student's part determines the whole grade."
+   },
+   "explanation": [
     {
      "heading": "Incomplete dominance",
      "text": "In **incomplete dominance**, one allele is not completely dominant over another, so heterozygotes show a **blended, intermediate** phenotype. Example: four o'clock flowers — red (RR) × white (WW) produces **pink (RW)** heterozygous offspring, a blend of the two parent colors. Pink (RW) × pink (RW) can still produce some fully red or fully white offspring, since the alleles themselves haven't blended, only the phenotype has."
@@ -994,7 +1559,12 @@ window.STUDY_DATA = {
      "bullets": [
       "**Incomplete dominance:** the traits blend into a new, intermediate phenotype (e.g. pink from red + white).",
       "**Codominance:** both traits appear fully and separately, side by side (e.g. black-and-white speckling, or AB blood type)."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Blending vs. both-shown",
+      "content": "Incomplete dominance → RW = pink (a NEW blended look)\nCodominance → speckled / type AB (BOTH original traits, fully shown)"
+     }
     },
     {
      "heading": "Multiple alleles",
@@ -1002,7 +1572,12 @@ window.STUDY_DATA = {
      "bullets": [
       "**Rabbit coat color** has 4 alleles, from most to least dominant: C (full color) > Cᶜʰ (chinchilla) > Cʰ (Himalayan) > c (albino).",
       "**Human blood type** is controlled by three alleles: Iᴬ and Iᴮ (codominant with each other, and both dominant over i); i is recessive. Genotypes: AA or AO → type A; BB or BO → type B; AB → type AB (codominance); OO → type O."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Blood type genotypes",
+      "content": "IᴬIᴬ or Iᴬi → type A\nIᴮIᴮ or Iᴮi → type B\nIᴬIᴮ → type AB (codominance)\nii → type O"
+     }
     },
     {
      "heading": "Polygenic traits",
@@ -1048,6 +1623,105 @@ window.STUDY_DATA = {
     {
      "term": "Genotype–environment interaction",
      "definition": "The idea that an organism's phenotype depends not only on its genotype but also on environmental conditions during development."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: An incomplete dominance cross",
+     "difficulty": "easy",
+     "problem": "In four o'clock flowers, red (R) and white (W) show incomplete dominance. A red (RR) plant is crossed with a pink (RW) plant. What phenotypes are expected in the offspring, and in what ratio?",
+     "steps": [
+      {
+       "explain": "List the gametes each parent produces.",
+       "work": "RR parent → all R. RW parent → 1/2 R, 1/2 W."
+      },
+      {
+       "explain": "Combine the gametes to find the offspring genotypes.",
+       "work": "Offspring genotypes: 1/2 RR, 1/2 RW"
+      },
+      {
+       "explain": "Convert genotypes to phenotypes — remember there's no simple dominant here; RW is its own blended phenotype (pink).",
+       "work": "Phenotypes: 1/2 red (RR), 1/2 pink (RW)"
+      }
+     ],
+     "answer": "1:1 ratio of red to pink; no white offspring are possible from this particular cross."
+    },
+    {
+     "title": "Example 2: A codominance cross (blood type)",
+     "difficulty": "medium",
+     "problem": "A man with blood type AB (IᴬIᴮ) has children with a woman with blood type O (ii). What blood types are possible in their children, and in what proportions?",
+     "steps": [
+      {
+       "explain": "List the gametes each parent can produce.",
+       "work": "IᴬIᴮ parent → 1/2 Iᴬ, 1/2 Iᴮ. ii parent → all i."
+      },
+      {
+       "explain": "Combine gametes to find the offspring genotypes.",
+       "work": "Offspring genotypes: 1/2 Iᴬi, 1/2 Iᴮi"
+      },
+      {
+       "explain": "Convert genotypes to blood types — Iᴬ and Iᴮ are each dominant over i.",
+       "work": "Iᴬi = type A, Iᴮi = type B",
+       "why": "Codominance between Iᴬ and Iᴮ never actually shows up here, because no offspring inherits both Iᴬ and Iᴮ — codominance only appears when an individual has one of each."
+      }
+     ],
+     "answer": "1/2 of children will be type A, 1/2 will be type B. No child can be type AB or type O from this particular cross."
+    },
+    {
+     "title": "Example 3: Combining multiple alleles and codominance",
+     "difficulty": "hard",
+     "problem": "A woman with type A blood, whose mother was type O, marries a man with type AB blood. (a) What is the woman's genotype? (b) What blood types are possible in their children?",
+     "steps": [
+      {
+       "explain": "Since the woman's mother was type O (ii), the woman must have inherited an i allele from her mother, even though she herself shows type A.",
+       "work": "Woman's genotype must include one i allele",
+       "why": "A parent with type O can only pass on the recessive i allele — so any child of a type-O parent carries at least one i, regardless of their own phenotype."
+      },
+      {
+       "explain": "Combine this with her own type A phenotype to determine her full genotype.",
+       "work": "Woman's genotype = Iᴬi (heterozygous, not IᴬIᴬ)"
+      },
+      {
+       "explain": "List the gametes from both parents: the woman (Iᴬi) and the man (IᴬIᴮ).",
+       "work": "Woman → 1/2 Iᴬ, 1/2 i. Man → 1/2 Iᴬ, 1/2 Iᴮ."
+      },
+      {
+       "explain": "Combine all gamete pairs to list the possible offspring genotypes and blood types.",
+       "work": "Offspring: 1/4 IᴬIᴬ (type A), 1/4 IᴬIᴮ (type AB), 1/4 Iᴬi (type A), 1/4 Iᴮi (type B)"
+      }
+     ],
+     "answer": "(a) The woman's genotype is Iᴬi. (b) Their children could be type A (1/2), type AB (1/4), or type B (1/4) — but not type O."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Confusing incomplete dominance (blending) with codominance (both fully expressed).",
+     "fix": "Ask: does the heterozygote look like a NEW blended color (incomplete dominance, e.g. pink), or does it show BOTH original traits distinctly at once (codominance, e.g. speckled feathers or AB blood)?"
+    },
+    {
+     "mistake": "Thinking \"multiple alleles\" means one individual can carry more than two alleles.",
+     "fix": "Multiple alleles is a population-level idea — many versions of a gene exist across everyone, but any single individual (being diploid) still only carries two alleles for that gene."
+    },
+    {
+     "mistake": "Treating a polygenic trait like a single-gene trait with only a few categories.",
+     "fix": "Because several genes each contribute a small effect, polygenic traits (like height or skin color) produce a wide, continuous spread of outcomes, not just 2–4 discrete categories."
+    }
+   ],
+   "videos": [
+    {
+     "query": "incomplete dominance vs codominance explained biology",
+     "channel": "Amoeba Sisters",
+     "note": "Directly compares the two patterns side by side with clear examples — perfect for the blending vs. both-shown mix-up."
+    },
+    {
+     "query": "multiple alleles blood type genetics explained",
+     "channel": "Bozeman Science",
+     "note": "Explains ABO blood type genetics, showing dominance and codominance working together in one gene."
+    },
+    {
+     "query": "polygenic inheritance explained biology",
+     "channel": "Khan Academy",
+     "note": "Covers how multiple genes combine to produce continuous traits like height or skin color."
     }
    ],
    "quiz": {
@@ -1203,6 +1877,23 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "Incomplete dominance: heterozygote shows a blended, intermediate phenotype (e.g. pink from red × white).",
+     "Codominance: heterozygote shows both traits fully and separately (e.g. AB blood type, speckled chickens).",
+     "Multiple alleles: more than two versions of a gene exist in a population, but each individual still carries only two.",
+     "Blood type: Iᴬ and Iᴮ are codominant with each other, and both dominant over recessive i.",
+     "Polygenic traits (several genes) produce a wide, continuous range of phenotypes, e.g. human skin color.",
+     "Phenotype = genotype + environment — the same genotype can look different under different conditions."
+    ],
+    "mustNotForget": [
+     "Incomplete dominance blends; codominance shows both traits separately.",
+     "Multiple alleles exist at the population level; each individual still has only two.",
+     "Type AB blood = IᴬIᴮ (codominance); type O = ii (fully recessive).",
+     "A parent with type O blood can only pass on the recessive i allele.",
+     "Environment can change how a genotype is expressed — genotype alone doesn't always predict phenotype."
+    ]
+   },
    "addedAt": "2026-09-22T17:24:13"
   },
   {
@@ -1210,7 +1901,20 @@ window.STUDY_DATA = {
    "title": "Unit 1: Word Families and Word Forms — Genius: Nature or Nurture?",
    "subject": "English",
    "order": 1,
-   "summary": [
+   "meta": {
+    "studyMinutes": 25,
+    "difficulty": "easy",
+    "prerequisites": [
+     "Basic parts of speech: noun, verb, adjective, adverb",
+     "Comfort reading short non-fiction passages"
+    ]
+   },
+   "idea": {
+    "simple": "Words are like actors who can play different roles depending on their costume (ending). The same core idea — like \"predict\" — can dress up as a verb (predict), a noun (prediction), an adjective (predictable), or an adverb (predictably), just by changing its \"costume\" (suffix).",
+    "academic": "Word families consist of related words sharing a common root but differing in part of speech (noun, verb, adjective, adverb), each signaled by characteristic suffixes. Recognizing these suffix patterns allows a reader or writer to select the grammatically correct form of a word to fit its role in a sentence.",
+    "analogy": "Think of a word root like a Lego base plate, and each suffix like a different Lego piece you snap on top. Snap on \"-tion\" and you build a noun; snap on \"-able\" and you build an adjective; snap on \"-ly\" and you build an adverb. Same base, different top piece, different job."
+   },
+   "explanation": [
     {
      "heading": "Essential question",
      "text": "**How does changing a word's form change the job it performs in a sentence?** The same idea — for example \"predict\" — can show up as a verb (predict), a noun (prediction), an adjective (predictable), or an adverb (predictably). Each form does a different grammatical job, even though the core meaning stays connected."
@@ -1232,7 +1936,12 @@ window.STUDY_DATA = {
       "**Adjectives** often end in **-able/-ible** (predictable, flexible), **-ous** (anxious), **-ive** (transformative), **-ing/-ed** (astonishing, disabled), or **-ent/-ant** (persistent).",
       "**Adverbs** almost always end in **-ly**, added to the adjective form (predictably, anxiously, astonishingly, expertly).",
       "Some words have **no natural form** in a category (marked **X** in the worksheet) — e.g. there's no common single-word adverb for \"transform\" or \"retain\"."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Suffix cheat sheet",
+      "content": "Noun: -tion/-sion, -ity, -ence/-ance, -ment, -y\nAdjective: -able/-ible, -ous, -ive, -ing/-ed, -ent/-ant\nAdverb: -ly (added to the adjective)"
+     }
     },
     {
      "heading": "Unit 1 word families",
@@ -1321,6 +2030,96 @@ window.STUDY_DATA = {
     {
      "term": "compensate",
      "definition": "verb: compensate; noun: compensation; adjective: compensatory — to make up for a loss, weakness, or disadvantage."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Choosing the correct form",
+     "difficulty": "easy",
+     "problem": "Complete the sentence with the correct form of \"astonish\": \"The results of the study were quite ______.\"",
+     "steps": [
+      {
+       "explain": "Identify the job of the blank: it comes after \"were quite\" and describes the noun \"results\" — so it needs an adjective.",
+       "work": "Blank needs: adjective form of astonish"
+      },
+      {
+       "explain": "Recall the word family for \"astonish\": astonish (v) → astonishment (n) → astonishing (adj) → astonishingly (adv).",
+       "work": "Adjective form = astonishing"
+      },
+      {
+       "explain": "Insert the correct form into the sentence to check it reads naturally.",
+       "work": "The results of the study were quite astonishing."
+      }
+     ],
+     "answer": "astonishing"
+    },
+    {
+     "title": "Example 2: Transforming a sentence",
+     "difficulty": "medium",
+     "problem": "Rewrite the sentence, replacing the underlined idea with the noun form of \"persistent\": \"Being persistent helped her master the skill.\"",
+     "steps": [
+      {
+       "explain": "Identify the word family: persistent (adj) → persistence (n).",
+       "work": "Noun form = persistence"
+      },
+      {
+       "explain": "Since \"being persistent\" functions as a noun phrase (the subject of the sentence), replace it directly with the single noun.",
+       "work": "\"Being persistent\" → \"Persistence\""
+      },
+      {
+       "explain": "Rewrite the full sentence with the new word, checking it still reads naturally.",
+       "work": "Persistence helped her master the skill."
+      }
+     ],
+     "answer": "Persistence helped her master the skill."
+    },
+    {
+     "title": "Example 3: Identifying part of speech across a word family",
+     "difficulty": "hard",
+     "problem": "Identify the part of speech of the underlined word in each sentence, and give the suffix clue that helped you decide: (a) \"The interaction between the two groups was interesting.\" (b) \"She interacts confidently with new people.\" (c) \"It was a highly interactive presentation.\"",
+     "steps": [
+      {
+       "explain": "Look at each word's ending and its position in the sentence.",
+       "work": "(a) interaction — ends in -tion, follows \"The\", functions as the subject\n(b) interacts — has a subject (\"She\") and shows an action\n(c) interactive — ends in -ive, describes \"presentation\""
+      },
+      {
+       "explain": "Match each pattern to its part of speech.",
+       "work": "(a) noun (b) verb (c) adjective",
+       "why": "Recognizing these three endings together (-tion, the base verb form, -ive) is exactly how you can identify all forms of the same word family at a glance."
+      }
+     ],
+     "answer": "(a) interaction = noun (-tion ending). (b) interacts = verb (agrees with subject \"she\"). (c) interactive = adjective (-ive ending, describes a noun)."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Using a noun where an adverb is needed, or vice versa.",
+     "fix": "Ask what job the blank is doing: describing HOW something happens = adverb (-ly); naming a THING or IDEA = noun."
+    },
+    {
+     "mistake": "Forgetting to restructure the rest of the sentence when swapping a word's part of speech.",
+     "fix": "Changing \"lacks flexibility\" (verb + noun) to use \"flexible\" (adjective) usually means rebuilding the whole sentence, not just swapping one word — always re-read the full sentence afterward."
+    },
+    {
+     "mistake": "Assuming every word has a form in all four categories.",
+     "fix": "Some words simply don't have a natural adverb or verb form (e.g. no common adverb for \"transform\") — memorize which ones are missing rather than inventing a word."
+    }
+   ],
+   "videos": [
+    {
+     "query": "word forms nouns verbs adjectives adverbs suffixes English grammar",
+     "channel": "engVid",
+     "note": "Explains common suffix patterns for each part of speech with plenty of examples."
+    },
+    {
+     "query": "how to identify part of speech in a sentence English grammar",
+     "channel": "English with Lucy",
+     "note": "Covers strategies for figuring out a word's job in a sentence from context — useful for the fill-in-the-blank exercises."
+    },
+    {
+     "query": "word family exercises vocabulary building English",
+     "channel": "JenniferESL",
+     "note": "Practical practice with word families and choosing the correct form in context."
     }
    ],
    "quiz": {
@@ -1474,6 +2273,22 @@ window.STUDY_DATA = {
       "answer": "(a) Noun: persistence, interaction. Verb: transform. Adjective: anxious, beneficial. Adverb: predictably.\n(b) Example: \"predictably\" is an adverb because it ends in -ly, which is added to the adjective \"predictable\" to describe how an action is done.",
       "explanation": "Marks: (a) 6 (one per word), (b) 2. Accept any correct, well-reasoned explanation for part (b) that correctly names the word's actual part of speech and a plausible clue (suffix, position in the sentence, or the word it modifies)."
      }
+    ]
+   },
+   "summaryCard": {
+    "points": [
+     "Four word-form jobs: verb (action), noun (thing/idea), adjective (describes a noun), adverb (describes a verb/adjective).",
+     "Common suffixes: nouns -tion/-ity/-ence/-ment; adjectives -able/-ous/-ive/-ent; adverbs -ly.",
+     "Not every word has a form in all four categories — some have no natural verb or adverb.",
+     "To pick the right form, ask what job the blank does in the sentence.",
+     "Changing a word's form often means restructuring the rest of the sentence, not just swapping one word."
+    ],
+    "mustNotForget": [
+     "Adverbs almost always end in -ly, added to the adjective form.",
+     "Ask \"what job does this word do here?\" before choosing its form.",
+     "Some words have no natural form in a category — don't invent one.",
+     "Changing part of speech often means changing the sentence structure around it.",
+     "Common noun suffixes: -tion, -ity, -ence/-ance, -ment; common adjective suffixes: -able, -ous, -ive, -ent."
     ]
    },
    "addedAt": "2026-09-23T07:13:45"
@@ -1802,7 +2617,20 @@ window.STUDY_DATA = {
    "subject": "Islamic Studies",
    "dir": "rtl",
    "order": 2,
-   "summary": [
+   "meta": {
+    "studyMinutes": 30,
+    "difficulty": "medium",
+    "prerequisites": [
+     "معرفة عامة بمصادر التشريع الإسلامي (القرآن والسنة)",
+     "القدرة على قراءة الآيات القرآنية وفهم معناها العام"
+    ]
+   },
+   "idea": {
+    "simple": "تخيّل أن القرآن الكريم بحر عميق، وكل عالم يغوص فيه ليخرج لنا لآلئ بحسب أدواته: عالم اللغة يخرج لنا معاني الكلمات، وعالم الفقه يخرج لنا الأحكام، وعالم الأدب يخرج لنا جمال الأسلوب. كل هذه «الطرق» في الغوص تُسمّى مناهج التفسير، وهي لا تتعارض بل تكمّل بعضها.",
+    "academic": "مناهج المفسرين هي الخطط والطرق العلمية التي سار عليها علماء التفسير عبر التاريخ لبيان مراد الله من كلامه واستخراج أحكامه وحِكَمه، وتنقسم بحسب مصدرها إلى تفسير بالمأثور (يعتمد النقل) وتفسير بالرأي المحمود (يعتمد الاجتهاد المنضبط)، وبحسب موضوعها إلى ألوان متعددة كاللغوي والفقهي والأدبي والتحليلي والموضوعي.",
+    "analogy": "فكّر في مصادر التفسير الأربعة كأربعة مفاتيح لفتح باب فهم الآية: المفتاح الأول (النقل عن الرسول ﷺ)، والثاني (أقوال الصحابة)، والثالث (اللغة العربية)، والرابع (قانون الشرع العام) — وكلما استخدمت مفاتيح أكثر، انفتح لك فهم أعمق وأدق للآية."
+   },
+   "explanation": [
     {
      "heading": "العناية بالقرآن الكريم",
      "text": "أنزل الله القرآن الكريم على خاتم الرسل ﷺ ليكون **نورًا وهدًى للعالمين**. وحظي القرآن عبر التاريخ بالكثير من الاهتمام والعناية بالحفظ والتلاوة والتفسير والطباعة والبحث والدراسة والجوائز من الحكومات والمؤسسات والأفراد، وقد أولته دولة الإمارات العربية المتحدة اهتمامًا تخطّى الحدود. وشمّر علماؤنا في كل عصر عن ساعد الجد ففسّروا وحلّلوا، فنتج عن ذلك ظهور **مناهج التفسير** ومدارسه واتجاهاته: كالتفسير بالمأثور والتفسير بالرأي."
@@ -1834,7 +2662,12 @@ window.STUDY_DATA = {
       "**الثالث:** الأخذ بمطلق اللغة.",
       "**الرابع:** الأخذ بما يقتضيه الكلام ويدلّ عليه قانون الشرع.",
       "ومن المصادر الأخرى: **تفسير القرآن بالقرآن**، و**التفسير بالرأي** المنضبط بقواعد اللغة والشرع."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "المصادر الأربعة الأمهات",
+      "content": "١) النقل عن الرسول ﷺ (بلا ضعيف أو موضوع)\n٢) أقوال الصحابة\n٣) مطلق اللغة\n٤) ما يقتضيه الكلام وقانون الشرع"
+     }
     },
     {
      "heading": "تصنيف المصادر",
@@ -1899,7 +2732,12 @@ window.STUDY_DATA = {
       "**التفسير التحليلي:** يهتم ببيان معنى الألفاظ في الآية وبلاغة التركيب والنظم وأسباب النزول. من كتبه: التسهيل لعلوم التنزيل لابن جزي الأندلسي.",
       "**التفسير الموضوعي:** يهتم ببيان موضوع ما من خلال آيات القرآن في جميع القرآن أو في سورة واحدة، أو بيان معاني لفظة أو جملة قرآنية. من كتبه: التفسير الوسيط للقرآن الكريم (علماء مجمع البحوث الإسلامية في الأزهر).",
       "**سبب تنوع ألوان التفسير:** كل عالم يفسّر القرآن حسب نبوغه في العلم الذي تخصّص به."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "ألوان التفسير الخمسة",
+      "content": "لغوي (البحر المحيط) — يبحث في النحو والغريب\nفقهي (الجامع لأحكام القرآن) — يبحث في الأحكام\nأدبي (التفسير البياني) — يبحث في البلاغة\nتحليلي (التسهيل لعلوم التنزيل) — ألفاظ وسياق وأسباب نزول\nموضوعي (التفسير الوسيط) — موضوع واحد عبر القرآن"
+     }
     },
     {
      "heading": "نقد تفسير مرجوح",
@@ -1922,6 +2760,101 @@ window.STUDY_DATA = {
       "**سبب النزول:** نزلت في رجل من الصحابة قتل رجلًا من الكفار في الشهر الحرام، فعابوا المؤمنين بذلك.",
       "**التفسير:** أن الفتنة في الدين، وهي الشرك، أعظم من قتل المشركين في الشهر الحرام."
      ]
+    }
+   ],
+   "examples": [
+    {
+     "title": "المثال الأول: تصنيف مصادر التفسير",
+     "difficulty": "easy",
+     "problem": "صنّف المصادر التالية إلى نقلية وعقلية: القرآن — قواعد اللغة العربية — أقوال الصحابة — قواعد الشريعة العامة.",
+     "steps": [
+      {
+       "explain": "تذكّر تعريف المصادر النقلية: كل ما مصدره النقل (القرآن، السنة، أقوال الصحابة والتابعين).",
+       "work": "نقلية: القرآن، أقوال الصحابة"
+      },
+      {
+       "explain": "تذكّر تعريف المصادر العقلية: كل ما مصدره اللغة والقواعد العامة لا النقل المباشر.",
+       "work": "عقلية: قواعد اللغة العربية، قواعد الشريعة العامة"
+      }
+     ],
+     "answer": "نقلية: القرآن، وأقوال الصحابة. عقلية: قواعد اللغة العربية، وقواعد الشريعة العامة."
+    },
+    {
+     "title": "المثال الثاني: تحديد لون التفسير من وصف الكتاب",
+     "difficulty": "medium",
+     "problem": "كتاب «الجامع لأحكام القرآن» للقرطبي يُعنى ببيان الأحكام الشرعية المستنبطة من كل آية. حدّد لون هذا التفسير معلّلًا اختيارك.",
+     "steps": [
+      {
+       "explain": "اقرأ الوصف جيدًا وحدّد الكلمة المفتاحية التي تدل على مجال اهتمام الكتاب.",
+       "work": "الوصف يذكر: «بيان الأحكام الشرعية المستنبطة من كل آية»"
+      },
+      {
+       "explain": "طابق هذه الكلمة المفتاحية مع تعريفات ألوان التفسير الخمسة (لغوي، فقهي، أدبي، تحليلي، موضوعي).",
+       "work": "الاهتمام بالأحكام الشرعية = تعريف التفسير الفقهي بالضبط",
+       "why": "كل لون تفسير له كلمة مفتاحية مميزة: اللغوي↔النحو والغريب، الفقهي↔الأحكام، الأدبي↔البلاغة، التحليلي↔الألفاظ وأسباب النزول، الموضوعي↔موضوع واحد شامل."
+      },
+      {
+       "explain": "اربط الكتاب بلونه لتأكيد الإجابة، فهذا يطابق ما ورد في الدرس.",
+       "work": "الجامع لأحكام القرآن للقرطبي هو المثال المذكور في الدرس على التفسير الفقهي"
+      }
+     ],
+     "answer": "لون هذا التفسير: التفسير الفقهي، لأنه يهتم ببيان الأحكام الفقهية الواردة في الآيات، وهذا هو بالضبط ما ذُكر في وصف كتاب القرطبي."
+    },
+    {
+     "title": "المثال الثالث: نقد تفسير مرجوح",
+     "difficulty": "hard",
+     "problem": "فسّر بعضهم قوله تعالى ﴿يَوْمَ نَدْعُو كُلَّ أُنَاسٍ بِإِمَامِهِمْ﴾ بأن الناس يوم القيامة يُنادَون بأسماء أمهاتهم. بيّن حكم هذا التفسير مع الاستدلال، واذكر القاعدة العامة التي يقوم عليها حكمك.",
+     "steps": [
+      {
+       "explain": "ابدأ بتحديد نوع هذا التفسير: هل عليه دليل صحيح من النقل، أم هو اجتهاد بلا سند؟",
+       "work": "هذا التفسير لم يُنقل بسند صحيح عن النبي ﷺ ولا الصحابة، وليس عليه دليل"
+      },
+      {
+       "explain": "قارنه بالأدلة الصحيحة الثابتة في المسألة نفسها لترى هل يتفق معها أو يخالفها.",
+       "work": "الأدلة الصحيحة تدل على أن الناس يوم القيامة يُنادَون بأسمائهم وأسماء آبائهم، لا أمهاتهم"
+      },
+      {
+       "explain": "استنتج الحكم الشرعي على هذا التفسير بناءً على غياب الدليل ومخالفته للأدلة الصحيحة.",
+       "work": "الحكم: تفسير مرجوح وضعيف"
+      },
+      {
+       "explain": "اربط هذا الحكم بالقاعدة العامة التي تحكم الأمور الغيبية تحديدًا.",
+       "work": "القاعدة: الأمور الغيبية لا تُفسَّر إلا بالمأثور، ولا مجال فيها للرأي والاجتهاد",
+       "why": "الغيب لا يُدرَك بالعقل أو اللغة وحدهما، فلا بد فيه من نقل صحيح؛ ولهذا يُعدّ أي تفسير غيبي بلا دليل تفسيرًا مرجوحًا مهما بدا منطقيًا."
+      }
+     ],
+     "answer": "هذا تفسير مرجوح وضعيف، لأنه ليس عليه دليل صحيح، والأدلة الثابتة تدل على أن الناس يُنادَون بأسمائهم وأسماء آبائهم. والقاعدة العامة: لا يجوز القول في كلام الله بغير دليل صحيح، والأمور الغيبية تحديدًا لا تُفسَّر إلا بالمأثور ولا مجال فيها للرأي."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "الخلط بين المصادر النقلية والمصادر العقلية للتفسير.",
+     "fix": "نقلية = القرآن والسنة وأقوال الصحابة والتابعين (كلها نُقلت). عقلية = اللغة وقواعد الشريعة العامة (لا تُنقل بل تُستنبط)."
+    },
+    {
+     "mistake": "الظن بأن التفسير بالرأي كله مذموم.",
+     "fix": "الرأي المذموم هو التابع للهوى بلا ضوابط. أما الرأي المحمود فهو المنضبط بقواعد اللغة والشرع، وهو مقبول ومعتبر."
+    },
+    {
+     "mistake": "الخلط بين ألوان التفسير الخمسة (لغوي، فقهي، أدبي، تحليلي، موضوعي) وعدم ربط كل لون بمثاله الصحيح.",
+     "fix": "اربط كل لون بكلمته المفتاحية وكتابه: لغوي↔نحو (البحر المحيط)، فقهي↔أحكام (الجامع لأحكام القرآن)، أدبي↔بلاغة (التفسير البياني)، تحليلي↔ألفاظ وأسباب نزول (التسهيل)، موضوعي↔موضوع شامل (التفسير الوسيط)."
+    }
+   ],
+   "videos": [
+    {
+     "query": "شرح مناهج المفسرين التفسير بالمأثور والتفسير بالرأي",
+     "channel": "قنوات علوم القرآن التعليمية",
+     "note": "يوضح الفرق بين التفسير بالمأثور والتفسير بالرأي المحمود بأمثلة من كتب التفسير."
+    },
+    {
+     "query": "ألوان التفسير اللغوي الفقهي الأدبي التحليلي الموضوعي",
+     "channel": "دروس علوم القرآن الميسرة",
+     "note": "يشرح ألوان التفسير الخمسة مع أمثلة من كتب كل لون."
+    },
+    {
+     "query": "مصادر التفسير النقلية والعقلية شرح مبسط",
+     "channel": "قنوات الدراسات الإسلامية للثانوية",
+     "note": "يفصّل المصادر الأربعة الأمهات للتفسير مع التصنيف إلى نقلية وعقلية."
     }
    ],
    "kpis": [
@@ -2149,6 +3082,23 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "مناهج المفسرين: خطط العلماء لبيان مراد كلام الله واستخراج أحكامه.",
+     "المصادر الأربعة الأمهات: النقل عن الرسول ﷺ، أقوال الصحابة، مطلق اللغة، ما يقتضيه الكلام وقانون الشرع.",
+     "المصادر تنقسم إلى نقلية (قرآن، سنة، صحابة، تابعين) وعقلية (لغة، قواعد شرعية عامة).",
+     "أقوى أنواع التفسير: تفسير القرآن بالقرآن.",
+     "قسما التفسير: بالمأثور (النقل) وبالرأي المحمود (الاجتهاد المنضبط).",
+     "ألوان التفسير الخمسة: لغوي، فقهي، أدبي، تحليلي، موضوعي — لكل منها كتاب مميز."
+    ],
+    "mustNotForget": [
+     "المصادر الأربعة الأمهات: النقل عن الرسول ﷺ، أقوال الصحابة، اللغة، قانون الشرع.",
+     "نقلية = قرآن وسنة وصحابة وتابعين. عقلية = لغة وشريعة عامة.",
+     "تفسير القرآن بالقرآن هو أقوى الأنواع لأن الله أعلم بمراده.",
+     "الرأي المذموم = تابع للهوى. الرأي المحمود = منضبط باللغة والشرع.",
+     "الأمور الغيبية لا تُفسَّر إلا بالمأثور، ولا مجال فيها للرأي."
+    ]
+   },
    "addedAt": "2026-09-22T17:29:56"
   },
   {
@@ -2157,7 +3107,20 @@ window.STUDY_DATA = {
    "subject": "Islamic Studies",
    "dir": "rtl",
    "order": 1,
-   "summary": [
+   "meta": {
+    "studyMinutes": 35,
+    "difficulty": "medium",
+    "prerequisites": [
+     "معرفة أساسيات الحدود الشرعية العامة",
+     "القدرة على قراءة الآيات القرآنية وفهم معناها العام"
+    ]
+   },
+   "idea": {
+    "simple": "تخيّل سورة النور كسور حماية حول المجتمع: تمنع جرائم تمس الأعراض (كالزنا)، وتمنع أيضًا اتهام الأبرياء ظلمًا (القذف)، وتقدّم حلاً عادلاً للزوج إذا اتهم زوجته دون شهود (اللعان). الهدف الكبير: حماية الأسرة والمجتمع من الفوضى الأخلاقية، مع العدل في العقوبة والإثبات.",
+    "academic": "تتناول الآيات العشر الأولى من سورة النور تشريع عقوبة جريمة الزنا وشروط إثباتها، وعقوبة القذف (اتهام العفيفات بالزنا دون بيّنة)، ثم تشريع اللعان كحل خاص لحالة اتهام الزوج زوجته دون شهود. تجمع هذه الأحكام بين الردع (العقوبة) والرحمة (شروط الإثبات الصارمة، والتوبة، واللعان).",
+    "analogy": "فكّر في نظام إثبات الزنا (أربعة شهود) كقفل بأربعة مفاتيح مختلفة يجب توفرها جميعًا معًا حتى يُفتح — وهذا يجعل الاتهام الكاذب شبه مستحيل عمليًا، فيحمي أعراض الناس من الاتهامات العشوائية."
+   },
+   "explanation": [
     {
      "heading": "سبب تسمية السورة",
      "text": "نزلت **سورة النور** في المدينة المنورة، وترتيبها في القرآن الكريم بعد سورة **المؤمنون**. سُمّيت بهذا الاسم لتضمّنها **آية النور** ﴿اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ﴾، ولما اشتملت عليه من الأحكام والآداب التي تدعو إلى **العفاف والستر والفضيلة**، وهي التي تنير للمؤمن قلبه وحياته."
@@ -2182,7 +3145,12 @@ window.STUDY_DATA = {
       "**المخاطَب** بتنفيذ العقوبة هو **الحاكم (ولي الأمر)** حفظًا للأمن والنظام، وتتولى التنفيذ الجهة التي يقرّرها الحاكم. قال النسفي: «والخطاب للأئمة لأن إقامة الحد من الدين».",
       "لا تثبت الجريمة إلا بشهادة **أربعة شهود عدول** أو **باعتراف الزناة أنفسهم**. وهذا احتياط من الإسلام في كيفية إثباتها لستر الأعراض.",
       "نهت الآيات عن التهاون مع الزاني ﴿وَلَا تَأْخُذْكُم بِهِمَا رَأْفَةٌ﴾ لأن آثار هذا العمل يتحملها المجتمع."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "عقوبة الزنا",
+      "content": "غير المحصن (البكر) ← الجلد مئة جلدة\nالمحصن (المتزوج) ← الرجم\nطريقا الإثبات ← أربعة شهود عدول، أو الاعتراف"
+     }
     },
     {
      "heading": "آثار جريمة الزنا في الفرد والمجتمع",
@@ -2201,7 +3169,12 @@ window.STUDY_DATA = {
       "**بدنية:** الجلد ثمانين جلدة.",
       "**معنوية:** رد شهادتهم، فلا تُقبل في قضاء أو بيع أو شراء.",
       "**دينية:** الحكم عليهم بالفسق ﴿وَأُولَٰئِكَ هُمُ الْفَاسِقُونَ﴾ أي الخارجون عن طاعة الله."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "عقوبات القذف الثلاث (تجتمع معًا)",
+      "content": "بدنية: الجلد ثمانين جلدة\nمعنوية: رد الشهادة\nدينية: الحكم بالفسق"
+     }
     },
     {
      "heading": "التوبة من القذف",
@@ -2229,7 +3202,12 @@ window.STUDY_DATA = {
       "يذكّرها القاضي بعذاب الآخرة، ويطلب إليها أن تقول في الخامسة: ﴿أَنَّ غَضَبَ اللَّهِ عَلَيْهَا إِن كَانَ مِنَ الصَّادِقِينَ﴾.",
       "**النتيجة:** يُفرَّق بين المتلاعنين **تفريقًا أبديًا**.",
       "الجزاء من جنس العمل: خصّ القرآن **الرجل باللعن** والمرأة **بالغضب**."
-     ]
+     ],
+     "box": {
+      "type": "rule",
+      "title": "خطوات اللعان",
+      "content": "الزوج: أربعة أيمان، ثم الخامسة (اللعنة إن كان كاذبًا)\nالزوجة: أربعة أيمان، ثم الخامسة (الغضب إن كانت صادقة)\nالنتيجة: تفريق أبدي"
+     }
     },
     {
      "heading": "قواعد وحِكَم مهمة",
@@ -2308,6 +3286,109 @@ window.STUDY_DATA = {
     {
      "term": "الاعتراف حجة قاصرة",
      "definition": "قاعدة أصولية: من اعترف بالزنا طُبّقت عليه العقوبة وحده، ولا يؤثر اعترافه في الشخص الآخر."
+    }
+   ],
+   "examples": [
+    {
+     "title": "المثال الأول: تعليل اشتراط أربعة شهود",
+     "difficulty": "easy",
+     "problem": "علّل: اشتراط أربعة شهود لإثبات جريمة الزنا، خلافًا لسائر الحقوق التي يكفي فيها شاهدان.",
+     "steps": [
+      {
+       "explain": "استحضر طبيعة هذه الجريمة تحديدًا: أنها تمسّ عرض الإنسان وسمعته.",
+       "work": "الزنا جريمة تمسّ الأعراض والأنساب"
+      },
+      {
+       "explain": "اربط شدة العقوبة (الجلد أو الرجم) بضرورة التشديد في طريقة إثباتها أيضًا، منعًا من الاتهام الكاذب.",
+       "work": "عقوبة شديدة ← تحتاج إثباتًا قويًا جدًا لتفادي الظلم"
+      },
+      {
+       "explain": "صغ الجواب النهائي بربط الاحتياط في الإثبات بستر الأعراض وحماية الناس من التشهير دون دليل قاطع.",
+       "work": "الخلاصة: احتياطًا في إثباتها وسترًا للأعراض وحماية للناس من الاتهام دون بيّنة قوية"
+      }
+     ],
+     "answer": "اشترط الإسلام أربعة شهود عدول لإثبات الزنا احتياطًا شديدًا، لأن هذه الجريمة تمس الأعراض وعقوبتها شديدة، فأراد الشرع أن يصعب إثباتها قدر الإمكان لتفادي الاتهام الكاذب وحماية أعراض الناس."
+    },
+    {
+     "title": "المثال الثاني: تطبيق قاعدة الاعتراف حجة قاصرة",
+     "difficulty": "medium",
+     "problem": "استنبط الحكم الشرعي في هذه الحالة: اعترف رجل بالزنا مع امرأة، وأنكرت المرأة التهمة تمامًا ولم يشهد عليها أحد.",
+     "steps": [
+      {
+       "explain": "طبّق قاعدة «الاعتراف حجة قاصرة»: هل يتعدّى أثر اعتراف الرجل إلى المرأة المنكِرة؟",
+       "work": "القاعدة: الاعتراف حجة قاصرة على المعترف نفسه"
+      },
+      {
+       "explain": "بما أن الاعتراف قاصر على صاحبه، والمرأة أنكرت ولم تثبت عليها بيّنة، فلا تُطبَّق عليها عقوبة الزنا.",
+       "work": "المرأة: لا يثبت عليها الحد لعدم وجود بيّنة، وإنكارها مقبول",
+       "why": "القاعدة الأصولية تمنع أن يتعدّى أثر اعتراف شخص إلى شخص آخر لم يعترف ولم تقم عليه بيّنة."
+      },
+      {
+       "explain": "أما الرجل، فحكمه يُبنى على اعترافه وحده.",
+       "work": "الرجل: يُقام عليه الحد بناءً على اعترافه"
+      }
+     ],
+     "answer": "يُقام الحد على الرجل بناءً على اعترافه وحده، ولا يثبت شيء على المرأة لإنكارها وعدم وجود بيّنة أخرى عليها، عملًا بقاعدة «الاعتراف حجة قاصرة»."
+    },
+    {
+     "title": "المثال الثالث: وصف خطوات اللعان كاملة",
+     "difficulty": "hard",
+     "problem": "صِف خطوات اللعان كاملة بين زوج اتهم زوجته بالزنا دون شهود، من بداية القسم إلى النتيجة النهائية.",
+     "steps": [
+      {
+       "explain": "ابدأ بالطرف الذي يبدأ باللعان شرعًا، وهو الزوج، واذكر عدد أيمانه ومضمونها.",
+       "work": "الزوج يقسم بالله أربع مرات أنه صادق فيما اتهم به زوجته"
+      },
+      {
+       "explain": "اذكر ما يقوله الزوج في اليمين الخامسة تحديدًا.",
+       "work": "الزوج يقول في الخامسة: «أنّ لعنة الله عليه إن كان من الكاذبين»"
+      },
+      {
+       "explain": "انتقل إلى دور الزوجة، واذكر عدد أيمانها ومضمونها.",
+       "work": "الزوجة تقسم بالله أربع مرات أنه كاذب فيما رماها به"
+      },
+      {
+       "explain": "اذكر ما تقوله الزوجة في يمينها الخامسة، ولاحظ الفرق المتعمّد بين لفظها ولفظ الزوج.",
+       "work": "الزوجة تقول في الخامسة: «أنّ غضب الله عليها إن كان من الصادقين»",
+       "why": "لاحظ الفرق المتعمّد بين اللفظين: «اللعنة» للزوج و«الغضب» للزوجة — وهذا من باب «الجزاء من جنس العمل» كما ورد في الدرس."
+      },
+      {
+       "explain": "اذكر النتيجة النهائية المترتبة على تمام اللعان بين الطرفين.",
+       "work": "يُفرَّق القاضي بينهما تفريقًا أبديًا"
+      }
+     ],
+     "answer": "يبدأ الزوج بأربعة أيمان أنه صادق، ثم يلعن نفسه في الخامسة إن كان كاذبًا. ثم تقسم الزوجة أربعة أيمان أنه كاذب، ثم تدعو على نفسها بالغضب في الخامسة إن كان صادقًا. والنتيجة: يُفرَّق القاضي بينهما تفريقًا أبديًا."
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "الخلط بين عقوبة الزاني غير المحصن (البكر) وعقوبة الزاني المحصن.",
+     "fix": "غير المحصن (البكر) ← الجلد مئة جلدة. المحصن (المتزوج) ← الرجم."
+    },
+    {
+     "mistake": "نسيان أن للقذف ثلاث عقوبات تجتمع معًا وليست عقوبة واحدة بديلة عن الأخرى.",
+     "fix": "عقوبات القذف الثلاث تُطبّق معًا: بدنية (الجلد)، ومعنوية (رد الشهادة)، ودينية (الحكم بالفسق)."
+    },
+    {
+     "mistake": "الخلط بين ترتيب أيمان اللعان، وماذا يقول كل طرف في اليمين الخامسة.",
+     "fix": "الزوج يبدأ أولاً (أربع أيمان ثم اللعن في الخامسة)، ثم الزوجة (أربع أيمان ثم الغضب في الخامسة) — احفظ: لعنة للزوج، غضب للزوجة."
+    }
+   ],
+   "videos": [
+    {
+     "query": "تفسير سورة النور آيات الزنا والقذف واللعان",
+     "channel": "قنوات التفسير الميسر",
+     "note": "شرح ميسّر لأحكام آيات الزنا والقذف واللعان في بداية سورة النور."
+    },
+    {
+     "query": "أحكام اللعان في الفقه الإسلامي شرح مبسط",
+     "channel": "دروس الفقه الميسر",
+     "note": "يوضح خطوات اللعان بالتفصيل، وهو أكثر جزء يحتاج الطالب لتثبيته."
+    },
+    {
+     "query": "شروط إثبات حد الزنا في الإسلام",
+     "channel": "قنوات الفقه الإسلامي التعليمية",
+     "note": "يشرح لماذا اشترط الإسلام أربعة شهود لإثبات الزنا خلافًا لبقية الحقوق."
     }
    ],
    "quiz": {
@@ -2463,7 +3544,1012 @@ window.STUDY_DATA = {
      }
     ]
    },
+   "summaryCard": {
+    "points": [
+     "الزاني غير المحصن (البكر): الجلد مئة جلدة. الزاني المحصن: الرجم.",
+     "لا يثبت الزنا إلا بأربعة شهود عدول أو باعتراف الزناة أنفسهم.",
+     "عقوبات القاذف الثلاث معًا: الجلد ثمانين جلدة، ورد الشهادة، والحكم بالفسق.",
+     "يُستثنى من عقوبة القذف من تاب توبة صادقة وأصلح عمله.",
+     "اللعان: أربعة أيمان من كل طرف، ثم يمين خامسة (لعنة للزوج، غضب للزوجة)، وينتهي بتفريق أبدي.",
+     "قاعدة: الاعتراف حجة قاصرة على صاحبه فقط."
+    ],
+    "mustNotForget": [
+     "غير المحصن ← الجلد مئة جلدة. المحصن ← الرجم.",
+     "إثبات الزنا: أربعة شهود عدول أو الاعتراف فقط.",
+     "عقوبات القذف الثلاث تجتمع معًا: جلد، ورد شهادة، وفسق.",
+     "اللعان: الزوج أولاً (لعنة في الخامسة)، ثم الزوجة (غضب في الخامسة)، وينتهي بتفريق أبدي.",
+     "الاعتراف حجة قاصرة: لا يتعدّى أثره إلى غير المعترف."
+    ]
+   },
    "addedAt": "2026-09-20T18:47:15"
+  },
+  {
+   "id": "math-lesson9-3-arithmetic-sequences-and-series",
+   "title": "Lesson 9-3: Arithmetic Sequences and Series",
+   "subject": "Math",
+   "order": 1,
+   "meta": {
+    "studyMinutes": 40,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Solving one-step and two-step linear equations",
+     "Knowing what a sequence and a term are",
+     "Order of operations with negative numbers"
+    ]
+   },
+   "idea": {
+    "simple": "An arithmetic sequence is a list of numbers where you add the **same number every time** to get the next one. That number is the common difference, d. If you know where the list starts (a₁) and how much it jumps each step (d), you can jump straight to any term without writing them all out. Adding up the terms of the list is called a series, and there is a shortcut formula for that too.",
+    "academic": "An arithmetic sequence a₁, a₂, a₃, … has a constant common difference d = aₙ₊₁ − aₙ. Its nth term is given by aₙ = a₁ + (n − 1)d, a linear function of n. The sum of the first n terms (the partial sum Sₙ of the arithmetic series) is Sₙ = n(a₁ + aₙ)/2, or equivalently Sₙ = (n/2)[2a₁ + (n − 1)d]. Sums can be written compactly using sigma notation.",
+    "analogy": "Think of climbing stairs where every step is exactly the same height. The first step is a₁, the step height is d. To know how high step 12 is, you don't climb all 12 — you take the first step and add 11 more step-heights. Adding up the heights of every step is like Gauss's trick: pair the lowest with the highest, and every pair has the same total."
+   },
+   "explanation": [
+    {
+     "heading": "What is an arithmetic sequence?",
+     "text": "In an **arithmetic sequence**, each term is found by adding the same number to the previous term. That number is the **common difference d**.\nTo find d, subtract any term from the term after it: d = a₂ − a₁.",
+     "bullets": [
+      "9, 16, 23, 30, … → d = 16 − 9 = 7",
+      "5, −13, −31, … → d = −13 − 5 = −18 (d can be negative)",
+      "Always check d with more than one pair of terms."
+     ]
+    },
+    {
+     "heading": "The nth term formula",
+     "text": "You can find any term if you know the first term a₁ and the common difference d.",
+     "box": {
+      "type": "formula",
+      "title": "nth term of an arithmetic sequence",
+      "content": "aₙ = a₁ + (n − 1)d"
+     },
+     "bullets": [
+      "a₁ = first term, d = common difference, n = position of the term (1, 2, 3, …).",
+      "The formula has 4 letters (aₙ, a₁, n, d). If you know any 3, you can solve for the 4th."
+     ]
+    },
+    {
+     "heading": "Writing an equation for the nth term",
+     "text": "To 'write an equation for the nth term' you need **a₁ and d**. Substitute them into aₙ = a₁ + (n − 1)d, then expand and simplify.",
+     "bullets": [
+      "**Given the first few terms:** find d, then substitute. Example: 5, −13, −31 → aₙ = 5 + (n − 1)(−18) = −18n + 23.",
+      "**Given one term and d** (e.g. a₅ = 19, d = 6): first use the formula to find a₁ (19 = a₁ + 4·6 → a₁ = −5), then write aₙ = −5 + (n − 1)6 = 6n − 11.",
+      "**Given two terms** (e.g. a₆ = −34, a₂₃ = 119): d = (119 − (−34)) ÷ (23 − 6) = 153 ÷ 17 = 9. Then find a₁ and write the equation.",
+      "Check your equation by plugging in n = 1, 2, 3 — you should get the original terms."
+     ]
+    },
+    {
+     "heading": "Arithmetic means",
+     "text": "**Arithmetic means** are the missing terms between two non-consecutive terms of an arithmetic sequence. To find them, you need d.",
+     "bullets": [
+      "Count the total number of terms: the given two ends plus the missing ones. Four means between −8 and 22 → 6 terms, so n = 6.",
+      "Use aₙ = a₁ + (n − 1)d with the last term: 22 = −8 + 5d → d = 6.",
+      "Keep adding d: −8, **−2, 4, 10, 16**, 22."
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Counting terms",
+      "content": "number of terms n = (number of means) + 2"
+     }
+    },
+    {
+     "heading": "Arithmetic series and partial sums",
+     "text": "A **series** is what you get when you add the terms of a sequence. An **arithmetic series** is the sum of an arithmetic sequence. The sum of the first n terms is the **partial sum Sₙ**.",
+     "box": {
+      "type": "formula",
+      "title": "Partial sum of an arithmetic series",
+      "content": "General (know a₁ and aₙ):   Sₙ = n(a₁ + aₙ)/2\nAlternate (know a₁ and d):   Sₙ = (n/2)[2a₁ + (n − 1)d]"
+     },
+     "bullets": [
+      "Pick the formula that matches what you are given.",
+      "If n is not given (e.g. 12 + 19 + 26 + … + 180), first use aₙ = a₁ + (n − 1)d to find n: 180 = 12 + (n − 1)7 → n = 25."
+     ]
+    },
+    {
+     "heading": "Finding the first three terms of a series",
+     "text": "Sometimes you are given Sₙ and asked for the first three terms. The plan is always: **find the missing letter (n or a₁), then find d, then add d twice.**",
+     "bullets": [
+      "Given a₁ = 7, aₙ = 79, Sₙ = 430: use Sₙ = n(a₁ + aₙ)/2 → 430 = n(43) → n = 10.",
+      "Then 79 = 7 + 9d → d = 8.",
+      "First three terms: 7, 15, 23."
+     ]
+    },
+    {
+     "heading": "Sigma notation",
+     "text": "**Sigma notation** is a shorthand for writing a sum. Σ is the Greek capital letter sigma.\nΣ from k = 1 to 12 of (4k + 2) means: put k = 1, 2, 3, …, 12 into 4k + 2 and add the results: 6 + 10 + 14 + … + 50.",
+     "bullets": [
+      "The number under Σ is the **first value of k**; the number on top is the **last value of k**.",
+      "a₁ = the formula with the bottom value of k; aₙ = the formula with the top value of k.",
+      "Then use Sₙ = n(a₁ + aₙ)/2."
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Number of terms in a sigma sum",
+      "content": "n = top − bottom + 1\ne.g. k = 4 to 18 → n = 18 − 4 + 1 = 15"
+     }
+    }
+   ],
+   "kpis": [
+    "Find the nth term of an arithmetic sequence using aₙ = a₁ + (n − 1)d.",
+    "Write an equation for the nth term of an arithmetic sequence from its terms, from one term and d, or from two non-consecutive terms.",
+    "Find arithmetic means between two terms of a sequence.",
+    "Find sums of arithmetic series using both partial-sum formulas.",
+    "Find the first three terms of an arithmetic series given Sₙ and other information.",
+    "Evaluate arithmetic series written in sigma notation.",
+    "Solve real-world problems (prizes, free fall, savings) with arithmetic series."
+   ],
+   "keyTerms": [
+    {
+     "term": "Arithmetic sequence",
+     "definition": "A sequence in which each term is found by adding the same number (the common difference) to the previous term."
+    },
+    {
+     "term": "Common difference (d)",
+     "definition": "The constant amount added each time in an arithmetic sequence: d = aₙ₊₁ − aₙ. It can be positive, negative, or a fraction."
+    },
+    {
+     "term": "nth term formula",
+     "definition": "aₙ = a₁ + (n − 1)d — gives any term of an arithmetic sequence from the first term and common difference."
+    },
+    {
+     "term": "Arithmetic means",
+     "definition": "The terms between any two non-consecutive terms of an arithmetic sequence."
+    },
+    {
+     "term": "Arithmetic mean",
+     "definition": "The average of two or more numbers."
+    },
+    {
+     "term": "Series",
+     "definition": "The sum formed when the terms of a sequence are added together."
+    },
+    {
+     "term": "Arithmetic series",
+     "definition": "The sum of the terms of an arithmetic sequence."
+    },
+    {
+     "term": "Partial sum (Sₙ)",
+     "definition": "The sum of the first n terms of a series: Sₙ = n(a₁ + aₙ)/2 = (n/2)[2a₁ + (n − 1)d]."
+    },
+    {
+     "term": "Sigma notation (Σ)",
+     "definition": "A shorthand for a sum: the value under Σ is the first value of k, the value on top is the last, and the expression next to Σ gives each term."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Find the nth term",
+     "difficulty": "easy",
+     "problem": "Find the 12th term of the arithmetic sequence 9, 16, 23, 30, …",
+     "steps": [
+      {
+       "explain": "Find the common difference by subtracting consecutive terms.",
+       "work": "16 − 9 = 7,  23 − 16 = 7,  30 − 23 = 7  →  d = 7"
+      },
+      {
+       "explain": "Write the nth term formula and substitute a₁ = 9, d = 7, n = 12.",
+       "work": "a₁₂ = 9 + (12 − 1)(7)",
+       "why": "n − 1 = 11 because you start at the first term and take 11 jumps to reach the 12th."
+      },
+      {
+       "explain": "Simplify.",
+       "work": "a₁₂ = 9 + 77 = 86"
+      }
+     ],
+     "answer": "a₁₂ = 86"
+    },
+    {
+     "title": "Example 2: Write the equation from one term and d",
+     "difficulty": "medium",
+     "problem": "Write an equation for the nth term of the arithmetic sequence with a₈ = −8 and d = −2.",
+     "steps": [
+      {
+       "explain": "You need a₁ first. Substitute the known term into the nth term formula.",
+       "work": "−8 = a₁ + (8 − 1)(−2)\n−8 = a₁ − 14"
+      },
+      {
+       "explain": "Solve for a₁.",
+       "work": "a₁ = −8 + 14 = 6"
+      },
+      {
+       "explain": "Substitute a₁ = 6 and d = −2 into the formula and simplify.",
+       "work": "aₙ = 6 + (n − 1)(−2)\naₙ = 6 − 2n + 2\naₙ = 8 − 2n",
+       "why": "Distribute carefully: (n − 1)(−2) = −2n + 2, not −2n − 2."
+      },
+      {
+       "explain": "Check: n = 8 should give −8.",
+       "work": "a₈ = 8 − 16 = −8 ✓"
+      }
+     ],
+     "answer": "aₙ = 8 − 2n  (or aₙ = −2n + 8)"
+    },
+    {
+     "title": "Example 3: Find arithmetic means",
+     "difficulty": "medium",
+     "problem": "Find five arithmetic means between −12 and −66.",
+     "steps": [
+      {
+       "explain": "Count the terms: 2 ends + 5 means = 7 terms.",
+       "work": "a₁ = −12,  a₇ = −66,  n = 7"
+      },
+      {
+       "explain": "Use the nth term formula to find d.",
+       "work": "−66 = −12 + (7 − 1)d\n−54 = 6d\nd = −9"
+      },
+      {
+       "explain": "Keep adding −9 from the first term.",
+       "work": "−12, −21, −30, −39, −48, −57, −66"
+      }
+     ],
+     "answer": "The means are −21, −30, −39, −48, −57."
+    },
+    {
+     "title": "Example 4: Sum when n is unknown",
+     "difficulty": "medium",
+     "problem": "Find the sum of the arithmetic series −24 + (−18) + (−12) + … + 72.",
+     "steps": [
+      {
+       "explain": "Identify a₁, d and aₙ.",
+       "work": "a₁ = −24,  d = −18 − (−24) = 6,  aₙ = 72"
+      },
+      {
+       "explain": "Find n using the nth term formula.",
+       "work": "72 = −24 + (n − 1)(6)\n96 = 6n − 6\n102 = 6n  →  n = 17"
+      },
+      {
+       "explain": "Use the general sum formula.",
+       "work": "S₁₇ = 17(−24 + 72)/2 = 17(48)/2 = 17 × 24",
+       "why": "Simplify (−24 + 72) = 48 first, then halve it, then multiply by n — doing it in this order avoids arithmetic slips."
+      },
+      {
+       "explain": "Multiply.",
+       "work": "S₁₇ = 408"
+      }
+     ],
+     "answer": "S₁₇ = 408"
+    },
+    {
+     "title": "Example 5: First three terms of a series",
+     "difficulty": "hard",
+     "problem": "Find the first three terms of the arithmetic series in which aₙ = 228, n = 28 and Sₙ = 2982.",
+     "steps": [
+      {
+       "explain": "a₁ is missing. Use the general sum formula, since you know n, aₙ and Sₙ.",
+       "work": "2982 = 28(a₁ + 228)/2\n2982 = 14(a₁ + 228)\n213 = a₁ + 228\na₁ = −15"
+      },
+      {
+       "explain": "Now find d with the nth term formula.",
+       "work": "228 = −15 + (28 − 1)d\n243 = 27d\nd = 9"
+      },
+      {
+       "explain": "Add d twice to get the next two terms.",
+       "work": "−15,  −15 + 9 = −6,  −6 + 9 = 3"
+      }
+     ],
+     "answer": "−15, −6, 3"
+    },
+    {
+     "title": "Example 6: Sigma notation (exam style)",
+     "difficulty": "hard",
+     "problem": "Find Σ from k = 4 to 18 of (6k − 1).\nA 846   B 910   C 975   D 1008",
+     "steps": [
+      {
+       "explain": "Count the terms.",
+       "work": "n = 18 − 4 + 1 = 15"
+      },
+      {
+       "explain": "Find the first and last terms by substituting the bottom and top values of k.",
+       "work": "a₁ = 6(4) − 1 = 23\naₙ = 6(18) − 1 = 107"
+      },
+      {
+       "explain": "Use the general sum formula.",
+       "work": "S₁₅ = 15(23 + 107)/2 = 15(65) = 975"
+      }
+     ],
+     "answer": "975 → C"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Using n instead of (n − 1) in the nth term formula, e.g. a₁₂ = 9 + 12(7).",
+     "fix": "From the first term to the nth term there are only n − 1 jumps. Always write aₙ = a₁ + (n − 1)d."
+    },
+    {
+     "mistake": "Sign errors when distributing a negative d, e.g. 12 + (n − 1)(−9) written as −9n + 13.",
+     "fix": "Expand in two steps: (n − 1)(−9) = −9n + 9, so 12 − 9n + 9 = 21 − 9n. Then check with n = 1 (should give 12)."
+    },
+    {
+     "mistake": "Counting the number of terms wrongly for arithmetic means (using the number of means as n).",
+     "fix": "n = number of means + 2 (the two given ends are terms too)."
+    },
+    {
+     "mistake": "In sigma notation, using the top number as n (e.g. n = 18 for k = 4 to 18).",
+     "fix": "n = top − bottom + 1. For k = 4 to 18, n = 15."
+    },
+    {
+     "mistake": "Getting the sign of d the wrong way round (subtracting the later term from the earlier one).",
+     "fix": "d = later term − earlier term (a₂ − a₁). Check that your rule actually produces the terms of the sequence."
+    }
+   ],
+   "videos": [
+    {
+     "query": "arithmetic sequences nth term formula explained",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Walks through aₙ = a₁ + (n − 1)d with lots of examples, including writing the equation from two given terms."
+    },
+    {
+     "query": "arithmetic series sum formula sigma notation",
+     "channel": "Khan Academy",
+     "note": "Shows where the sum formula comes from (the Gauss pairing trick) and how to read sigma notation."
+    },
+    {
+     "query": "arithmetic means between two numbers",
+     "channel": "Mario's Math Tutoring",
+     "note": "Short, focused practice on inserting arithmetic means — good for counting the number of terms correctly."
+    }
+   ],
+   "summaryCard": {
+    "points": [
+     "Arithmetic sequence: add the same common difference d each time; d = a₂ − a₁.",
+     "nth term: aₙ = a₁ + (n − 1)d.",
+     "Given two terms aₘ and aₖ: d = (aₘ − aₖ)/(m − k).",
+     "Arithmetic means: n = means + 2, then solve for d.",
+     "Partial sum: Sₙ = n(a₁ + aₙ)/2  or  Sₙ = (n/2)[2a₁ + (n − 1)d].",
+     "Sigma notation: n = top − bottom + 1; a₁ and aₙ come from the bottom and top values of k."
+    ],
+    "mustNotForget": [
+     "Use (n − 1), not n, in the nth term formula.",
+     "To write an equation for aₙ you always need a₁ and d — find the missing one first.",
+     "If n is not given in a sum, find it first using aₙ = a₁ + (n − 1)d.",
+     "Number of terms = means + 2; in sigma notation = top − bottom + 1.",
+     "Check your answer by generating the first few terms from your rule."
+    ]
+   },
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "What is the 12th term of the arithmetic sequence 9, 16, 23, 30, …?",
+      "options": [
+       "79",
+       "86",
+       "93",
+       "84"
+      ],
+      "answer": 1,
+      "explanation": "d = 7, so a₁₂ = 9 + (12 − 1)(7) = 9 + 77 = 86."
+     },
+     {
+      "question": "Which is the equation of the nth term of the arithmetic sequence −8, −2, 4, 10, …?",
+      "options": [
+       "aₙ = −14 + 8n",
+       "aₙ = 14 − 6n",
+       "aₙ = −8 + 6n",
+       "aₙ = −14 + 6n"
+      ],
+      "answer": 3,
+      "explanation": "d = 6 and a₁ = −8: aₙ = −8 + (n − 1)6 = −8 + 6n − 6 = −14 + 6n."
+     },
+     {
+      "question": "Find the sum of the arithmetic series with aₙ = 154, d = 8, n = 19.",
+      "options": [
+       "Sₙ = 82",
+       "Sₙ = 1558",
+       "Sₙ = 19",
+       "Sₙ = 1446"
+      ],
+      "answer": 1,
+      "explanation": "First find a₁: 154 = a₁ + 18(8) → a₁ = 10. Then S₁₉ = 19(10 + 154)/2 = 19(82) = 1558."
+     },
+     {
+      "question": "Find Σ from k = 1 to 12 of (3k + 9).",
+      "options": [
+       "45",
+       "78",
+       "342",
+       "410"
+      ],
+      "answer": 2,
+      "explanation": "n = 12, a₁ = 3(1) + 9 = 12, a₁₂ = 3(12) + 9 = 45. S = 12(12 + 45)/2 = 6 × 57 = 342."
+     },
+     {
+      "question": "Four arithmetic means are inserted between −8 and 22. What is the common difference?",
+      "options": [
+       "6",
+       "5",
+       "7.5",
+       "30"
+      ],
+      "answer": 0,
+      "explanation": "There are 4 + 2 = 6 terms, so 22 = −8 + 5d → 30 = 5d → d = 6."
+     },
+     {
+      "question": "How many terms are in the sum Σ from k = 4 to 18 of (6k − 1)?",
+      "options": [
+       "14",
+       "18",
+       "22",
+       "15"
+      ],
+      "answer": 3,
+      "explanation": "n = top − bottom + 1 = 18 − 4 + 1 = 15."
+     },
+     {
+      "question": "What does the partial sum Sₙ of a series mean?",
+      "options": [
+       "The sum of the first n terms",
+       "The nth term of the sequence",
+       "The common difference multiplied by n",
+       "The average of the first and last terms"
+      ],
+      "answer": 0,
+      "explanation": "The sum of the first n terms of a series is called the partial sum and is written Sₙ."
+     },
+     {
+      "question": "An arithmetic sequence has a₈ = −8 and d = −2. What is a₁?",
+      "options": [
+       "−22",
+       "−6",
+       "6",
+       "10"
+      ],
+      "answer": 2,
+      "explanation": "−8 = a₁ + 7(−2) = a₁ − 14, so a₁ = 6."
+     },
+     {
+      "question": "What is the sum of the first 50 natural numbers (1 + 2 + … + 50)?",
+      "options": [
+       "2550",
+       "1250",
+       "1275",
+       "2500"
+      ],
+      "answer": 2,
+      "explanation": "a₁ = 1, aₙ = 50, n = 50: S₅₀ = 50(1 + 50)/2 = 25 × 51 = 1275."
+     },
+     {
+      "question": "Find Σ from m = 9 to 21 of (5m + 6).",
+      "options": [
+       "972",
+       "1281",
+       "1701",
+       "1053"
+      ],
+      "answer": 3,
+      "explanation": "n = 21 − 9 + 1 = 13, a₁ = 5(9) + 6 = 51, aₙ = 5(21) + 6 = 111. S = 13(51 + 111)/2 = 13 × 81 = 1053."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "Find a₂₀ for the arithmetic sequence with a₁ = 15 and d = −8.",
+      "answer": "a₂₀ = −137",
+      "explanation": "a₂₀ = 15 + (20 − 1)(−8) = 15 − 152 = −137."
+     },
+     {
+      "question": "Write an equation for the nth term of the arithmetic sequence 12, 3, −6, …",
+      "answer": "aₙ = 21 − 9n  (or aₙ = −9n + 21)",
+      "explanation": "d = 3 − 12 = −9. aₙ = 12 + (n − 1)(−9) = 12 − 9n + 9 = 21 − 9n. Check: n = 1 gives 12 ✓. (A common slip is writing −9n + 13 by distributing the sign wrongly.)"
+     },
+     {
+      "question": "Find the five arithmetic means between −18 and 36.",
+      "answer": "−9, 0, 9, 18, 27",
+      "explanation": "7 terms in total: 36 = −18 + 6d → 54 = 6d → d = 9. Add 9 each time from −18."
+     },
+     {
+      "question": "Find the sum of the arithmetic series 2 + 4 + 6 + … + 100.",
+      "answer": "2550",
+      "explanation": "d = 2. Find n: 100 = 2 + (n − 1)2 → n = 50. S₅₀ = 50(2 + 100)/2 = 50 × 51 = 2550."
+     },
+     {
+      "question": "Find the first three terms of the arithmetic series with a₁ = 8, aₙ = 100 and Sₙ = 1296.",
+      "answer": "8, 12, 16",
+      "explanation": "1296 = n(8 + 100)/2 = 54n → n = 24. Then 100 = 8 + 23d → d = 4. Terms: 8, 12, 16."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "An arithmetic sequence has a₆ = −34 and a₂₃ = 119.\n(a) Find the common difference d. [2 marks]\n(b) Find the first term a₁. [2 marks]\n(c) Write an equation for the nth term. [1 mark]\n(d) Find a₄₀. [1 mark]",
+      "answer": "(a) From a₆ to a₂₃ there are 23 − 6 = 17 jumps: 119 − (−34) = 17d → 153 = 17d → d = 9.\n(b) −34 = a₁ + (6 − 1)(9) = a₁ + 45 → a₁ = −79.\n(c) aₙ = −79 + (n − 1)(9) = −79 + 9n − 9 → aₙ = 9n − 88.\n(d) a₄₀ = 9(40) − 88 = 360 − 88 = 272.",
+      "explanation": "When two non-consecutive terms are given, the gap in position (23 − 6) tells you how many times d was added. Find d first, then a₁, then the equation. Check (c) with n = 6: 54 − 88 = −34 ✓."
+     },
+     {
+      "question": "A radio station is offering a total of AED 8,500 in prizes over ten hours. Each hour, the prize increases by AED 100.\n(a) State the values of Sₙ, n and d. [1 mark]\n(b) Find the amount of the first prize. [3 marks]\n(c) Find the amount of the last prize. [2 marks]",
+      "answer": "(a) Sₙ = 8500, n = 10, d = 100.\n(b) Use Sₙ = (n/2)[2a₁ + (n − 1)d]: 8500 = (10/2)[2a₁ + 9(100)] → 8500 = 5(2a₁ + 900) → 1700 = 2a₁ + 900 → a₁ = AED 400.\n(c) a₁₀ = 400 + (10 − 1)(100) = AED 1300. (Check: 10(400 + 1300)/2 = 8500 ✓)",
+      "explanation": "Because you know d but not the last term, use the alternate sum formula to find a₁. Then the nth term formula gives the last prize, and the general sum formula is a quick check."
+     }
+    ]
+   },
+   "addedAt": "2026-09-27T15:32:22"
+  },
+  {
+   "id": "math-lesson9-4-geometric-sequences-and-series",
+   "title": "Lesson 9-4: Geometric Sequences and Series",
+   "subject": "Math",
+   "order": 2,
+   "meta": {
+    "studyMinutes": 45,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Lesson 9-3: Arithmetic Sequences and Series",
+     "Laws of exponents and negative bases, e.g. (−3)⁴ vs (−3)⁵",
+     "Taking roots, e.g. the 4th root of 625"
+    ]
+   },
+   "idea": {
+    "simple": "A geometric sequence is a list of numbers where you **multiply by the same number every time** to get the next one. That number is the common ratio, r. Arithmetic sequences add; geometric sequences multiply — so they grow (or shrink) much faster. Like before, there is a formula to jump straight to any term, and a shortcut formula to add up the terms.",
+    "academic": "A geometric sequence a₁, a₂, a₃, … has a constant common ratio r = aₙ₊₁ / aₙ (r ≠ 0). Its nth term is aₙ = a₁rⁿ⁻¹, an exponential function of n. The partial sum of the first n terms of a geometric series is Sₙ = (a₁ − a₁rⁿ)/(1 − r) or Sₙ = (a₁ − aₙr)/(1 − r), valid for r ≠ 1.",
+    "analogy": "Think of a chain message: you send it to 5 friends, each of them sends it to 5 more, and so on. Every round multiplies the number of messages by 5. Round 1 has 5, round 2 has 25, round 3 has 125 — it explodes quickly. The number of messages in any round is the nth term; the total number of messages ever sent is the series sum."
+   },
+   "explanation": [
+    {
+     "heading": "What is a geometric sequence?",
+     "text": "In a **geometric sequence**, each term is found by multiplying the previous term by the same number, the **common ratio r**.\nTo find r, divide any term by the term before it: r = a₂ ÷ a₁.",
+     "bullets": [
+      "5, 25, 125, 625, … → r = 25 ÷ 5 = 5",
+      "0.5, 2, 8, 32, … → r = 2 ÷ 0.5 = 4",
+      "−3, 6, −12, … → r = 6 ÷ (−3) = −2 (a negative r makes the signs alternate)",
+      "810, 270, 90, … → r = 1/3 (a fraction r makes the terms shrink)"
+     ]
+    },
+    {
+     "heading": "The nth term formula",
+     "box": {
+      "type": "formula",
+      "title": "nth term of a geometric sequence",
+      "content": "aₙ = a₁ · rⁿ⁻¹"
+     },
+     "bullets": [
+      "Only r is raised to the power — not a₁. Work out rⁿ⁻¹ first, then multiply by a₁.",
+      "Example: a₁ = 5, r = 5, n = 8 → a₈ = 5(5)⁷ = 5(78,125) = 390,625.",
+      "Keep negative r in brackets: −3(−2)ⁿ⁻¹, not −3 · −2ⁿ⁻¹."
+     ]
+    },
+    {
+     "heading": "Writing an equation for the nth term",
+     "text": "As with arithmetic sequences, you need **a₁ and r**.",
+     "bullets": [
+      "**Given the first few terms:** 0.5, 2, 8, 32 → r = 4 → aₙ = 0.5(4)ⁿ⁻¹.",
+      "**Given one term and r** (a₄ = 5, r = 6): 5 = a₁(6)³ = 216a₁ → a₁ = 5/216 → aₙ = (5/216)(6)ⁿ⁻¹.",
+      "Leave the answer in the form aₙ = a₁ · rⁿ⁻¹ — don't multiply a₁ into r."
+     ]
+    },
+    {
+     "heading": "Geometric means",
+     "text": "**Geometric means** are the terms between two non-consecutive terms of a geometric sequence. To find them you need r.",
+     "bullets": [
+      "Three means between 2 and 1250 → 5 terms: 1250 = 2 · r⁴ → r⁴ = 625 → r = ±5.",
+      "Because the power is **even**, r can be positive or negative, so there are two answers: 10, 50, 250 **or** −10, 50, −250.",
+      "Four means between 0.5 and 512 → 6 terms: 512 = 0.5 · r⁵ → r⁵ = 1024 → r = 4. An **odd** power gives only one r: 2, 8, 32, 128."
+     ],
+     "box": {
+      "type": "rule",
+      "title": "Solving rᵏ = number",
+      "content": "k even → r = ± (kth root)   (two possible sequences)\nk odd → r = (kth root)   (one sequence)"
+     }
+    },
+    {
+     "heading": "Geometric series and partial sums",
+     "text": "A **geometric series** is the sum of the terms of a geometric sequence. The sum of the first n terms is Sₙ.",
+     "box": {
+      "type": "formula",
+      "title": "Partial sum of a geometric series (r ≠ 1)",
+      "content": "Know a₁ and n:    Sₙ = (a₁ − a₁rⁿ) / (1 − r)\nKnow a₁ and aₙ:   Sₙ = (a₁ − aₙr) / (1 − r)"
+     },
+     "bullets": [
+      "Emails example: a₁ = 5, r = 5, n = 8 → S₈ = (5 − 5·5⁸)/(1 − 5) = −1,953,120/−4 = 488,280.",
+      "Be careful with 1 − r when r is negative: r = −3 gives 1 − (−3) = 4."
+     ]
+    },
+    {
+     "heading": "Sigma notation with geometric series",
+     "text": "For Σ from k = 3 to 10 of 4(2)ᵏ⁻¹:",
+     "bullets": [
+      "a₁ = the first term, found using the bottom k: 4 · 2³⁻¹ = 16.",
+      "r = the base of the power: r = 2.",
+      "n = top − bottom + 1 = 10 − 3 + 1 = 8.",
+      "S₈ = (16 − 16·2⁸)/(1 − 2) = 4080."
+     ]
+    },
+    {
+     "heading": "Finding the first term from a sum",
+     "text": "If Sₙ, r and n are given, substitute them into Sₙ = (a₁ − a₁rⁿ)/(1 − r) and solve for a₁. Factor out a₁ first: Sₙ = a₁(1 − rⁿ)/(1 − r).",
+     "bullets": [
+      "S₇ = 13,116, r = 3: 13,116 = a₁(1 − 3⁷)/(1 − 3) = a₁(−2186)/(−2) = 1093a₁ → a₁ = 12.",
+      "If aₙ is given instead of n, use Sₙ = (a₁ − aₙr)/(1 − r)."
+     ]
+    },
+    {
+     "heading": "Real-world geometric problems",
+     "bullets": [
+      "**'Twice as much each day', 'forwards to 4 friends'** → multiply by the same factor → geometric.",
+      "**'Each swing travels 95% as far'** → r = 0.95.",
+      "**'Removes 70% each time'** → 30% is left each time, so the amount remaining is multiplied by 0.3.",
+      "Decide whether the question asks for one term (aₙ) or a total (Sₙ)."
+     ]
+    }
+   ],
+   "kpis": [
+    "Find the nth term of a geometric sequence using aₙ = a₁rⁿ⁻¹.",
+    "Write an equation for the nth term of a geometric sequence from its terms or from one term and r.",
+    "Find geometric means between two terms, including both answers when r = ±.",
+    "Find sums of geometric series using both partial-sum formulas.",
+    "Evaluate geometric series written in sigma notation.",
+    "Find the first term of a geometric series given Sₙ, r and n (or aₙ).",
+    "Solve real-world problems (emails, river levels, pendulums, filters) with geometric sequences and series."
+   ],
+   "keyTerms": [
+    {
+     "term": "Geometric sequence",
+     "definition": "A sequence in which each term is found by multiplying the previous term by the same non-zero number (the common ratio)."
+    },
+    {
+     "term": "Common ratio (r)",
+     "definition": "The constant multiplier in a geometric sequence: r = aₙ₊₁ ÷ aₙ. It can be negative or a fraction."
+    },
+    {
+     "term": "nth term (geometric)",
+     "definition": "aₙ = a₁ · rⁿ⁻¹ — gives any term of a geometric sequence from the first term and common ratio."
+    },
+    {
+     "term": "Geometric means",
+     "definition": "The terms between two non-consecutive terms of a geometric sequence."
+    },
+    {
+     "term": "Geometric series",
+     "definition": "The sum of the terms of a geometric sequence."
+    },
+    {
+     "term": "Partial sum of a geometric series",
+     "definition": "Sₙ = (a₁ − a₁rⁿ)/(1 − r) or Sₙ = (a₁ − aₙr)/(1 − r), where r ≠ 1."
+    },
+    {
+     "term": "Sigma notation (geometric)",
+     "definition": "For Σ a·bᵏ⁻¹: a₁ comes from the bottom value of k, r is the base b, and n = top − bottom + 1."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Find the nth term (emails)",
+     "difficulty": "easy",
+     "problem": "Hasan e-mails a link to 5 friends. Each friend forwards it to 5 more friends, and so on. If the pattern continues, how many e-mails are sent in the 8th round?",
+     "steps": [
+      {
+       "explain": "Identify a₁, r and n.",
+       "work": "a₁ = 5,  r = 5,  n = 8",
+       "why": "Each round is 5 times the previous round, so this is geometric with ratio 5."
+      },
+      {
+       "explain": "Use the nth term formula.",
+       "work": "a₈ = 5(5)⁸⁻¹ = 5(5)⁷"
+      },
+      {
+       "explain": "Evaluate the power first, then multiply.",
+       "work": "5⁷ = 78,125  →  a₈ = 5(78,125) = 390,625"
+      }
+     ],
+     "answer": "390,625 e-mails in the 8th round"
+    },
+    {
+     "title": "Example 2: Equation from one term and r",
+     "difficulty": "medium",
+     "problem": "Write an equation for the nth term of the geometric sequence with a₃ = 28 and r = 2.",
+     "steps": [
+      {
+       "explain": "Find a₁ using the nth term formula.",
+       "work": "28 = a₁(2)³⁻¹ = 4a₁  →  a₁ = 7"
+      },
+      {
+       "explain": "Substitute a₁ and r into the formula.",
+       "work": "aₙ = 7(2)ⁿ⁻¹"
+      },
+      {
+       "explain": "Check with n = 3.",
+       "work": "7(2)² = 28 ✓"
+      }
+     ],
+     "answer": "aₙ = 7(2)ⁿ⁻¹"
+    },
+    {
+     "title": "Example 3: Geometric means (two answers)",
+     "difficulty": "medium",
+     "problem": "Find the geometric means of the sequence 810, _, _, _, 10.",
+     "steps": [
+      {
+       "explain": "There are 5 terms, so a₁ = 810 and a₅ = 10.",
+       "work": "10 = 810 · r⁵⁻¹ = 810r⁴"
+      },
+      {
+       "explain": "Divide both sides by 810.",
+       "work": "r⁴ = 10/810 = 1/81"
+      },
+      {
+       "explain": "Take the 4th root. The power is even, so r can be positive or negative.",
+       "work": "r = ±1/3",
+       "why": "(1/3)⁴ and (−1/3)⁴ both equal 1/81."
+      },
+      {
+       "explain": "Build both sequences.",
+       "work": "r = 1/3:   810, 270, 90, 30, 10\nr = −1/3:  810, −270, 90, −30, 10"
+      }
+     ],
+     "answer": "270, 90, 30  or  −270, 90, −30"
+    },
+    {
+     "title": "Example 4: Sum of a geometric series",
+     "difficulty": "medium",
+     "problem": "Find the sum of the geometric series with a₁ = 2000, aₙ = 125 and r = 1/2.",
+     "steps": [
+      {
+       "explain": "You know a₁ and aₙ (not n), so use the second sum formula.",
+       "work": "Sₙ = (a₁ − aₙr)/(1 − r)"
+      },
+      {
+       "explain": "Substitute.",
+       "work": "Sₙ = (2000 − 125 · ½)/(1 − ½) = (2000 − 62.5)/0.5"
+      },
+      {
+       "explain": "Simplify.",
+       "work": "Sₙ = 1937.5/0.5 = 3875"
+      }
+     ],
+     "answer": "Sₙ = 3875"
+    },
+    {
+     "title": "Example 5: Sigma notation with a negative ratio",
+     "difficulty": "hard",
+     "problem": "Find Σ from k = 1 to 7 of 4(−3)ᵏ⁻¹.",
+     "steps": [
+      {
+       "explain": "Read off a₁, r and n.",
+       "work": "a₁ = 4(−3)⁰ = 4,  r = −3,  n = 7 − 1 + 1 = 7"
+      },
+      {
+       "explain": "Use Sₙ = (a₁ − a₁rⁿ)/(1 − r).",
+       "work": "S₇ = (4 − 4(−3)⁷)/(1 − (−3))"
+      },
+      {
+       "explain": "Evaluate. (−3)⁷ is negative because 7 is odd.",
+       "work": "(−3)⁷ = −2187  →  S₇ = (4 + 8748)/4 = 8752/4",
+       "why": "4 − 4(−2187) = 4 + 8748. Two negatives make a positive."
+      },
+      {
+       "explain": "Divide.",
+       "work": "S₇ = 2188"
+      }
+     ],
+     "answer": "2188"
+    },
+    {
+     "title": "Example 6: Find the first term (exam style)",
+     "difficulty": "hard",
+     "problem": "Find a₁ in a geometric series for which Sₙ = −26,240, n = 8 and r = −3.",
+     "steps": [
+      {
+       "explain": "Write the sum formula with a₁ factored out.",
+       "work": "Sₙ = a₁(1 − rⁿ)/(1 − r)"
+      },
+      {
+       "explain": "Substitute the known values.",
+       "work": "−26,240 = a₁(1 − (−3)⁸)/(1 − (−3)) = a₁(1 − 6561)/4"
+      },
+      {
+       "explain": "Simplify the fraction.",
+       "work": "−26,240 = a₁(−6560)/4 = −1640a₁"
+      },
+      {
+       "explain": "Solve for a₁.",
+       "work": "a₁ = −26,240 ÷ −1640 = 16"
+      }
+     ],
+     "answer": "a₁ = 16"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Multiplying a₁ and r before raising to the power, e.g. 5·5⁷ treated as 25⁷.",
+     "fix": "Only r has the exponent. Work out rⁿ⁻¹ first, then multiply by a₁."
+    },
+    {
+     "mistake": "Giving only r = +5 when solving r⁴ = 625 for geometric means.",
+     "fix": "An even power has two roots (±). Write both sequences unless the question says the terms are positive."
+    },
+    {
+     "mistake": "Losing the sign of a negative ratio, e.g. writing −2ⁿ⁻¹ instead of (−2)ⁿ⁻¹, or 1 − r = −2 when r = −3.",
+     "fix": "Always put negative r in brackets: 1 − (−3) = 4 and (−3)⁸ = +6561."
+    },
+    {
+     "mistake": "Using the arithmetic formulas (adding d) on a geometric sequence.",
+     "fix": "Test first: is the gap the same (add → arithmetic) or is the ratio the same (multiply → geometric)?"
+    },
+    {
+     "mistake": "Using the wrong sum formula — plugging aₙ into the rⁿ formula or vice versa.",
+     "fix": "Given n → Sₙ = (a₁ − a₁rⁿ)/(1 − r). Given aₙ → Sₙ = (a₁ − aₙr)/(1 − r)."
+    }
+   ],
+   "videos": [
+    {
+     "query": "geometric sequences nth term formula common ratio",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Many worked examples of aₙ = a₁rⁿ⁻¹, including finding a₁ from a later term."
+    },
+    {
+     "query": "geometric series partial sum formula examples",
+     "channel": "Khan Academy",
+     "note": "Derives the partial-sum formula and applies it — helps you remember why it has (1 − r) underneath."
+    },
+    {
+     "query": "geometric means between two numbers positive and negative ratio",
+     "channel": "Mario's Math Tutoring",
+     "note": "Focuses on geometric means and the ± case when the power is even."
+    }
+   ],
+   "summaryCard": {
+    "points": [
+     "Geometric sequence: multiply by the same common ratio r each time; r = a₂ ÷ a₁.",
+     "nth term: aₙ = a₁ · rⁿ⁻¹.",
+     "Geometric means: n = means + 2; solve a₁rⁿ⁻¹ = last term for r (± if the power is even).",
+     "Sum, given n: Sₙ = (a₁ − a₁rⁿ)/(1 − r).",
+     "Sum, given aₙ: Sₙ = (a₁ − aₙr)/(1 − r).",
+     "Sigma: a₁ from the bottom k, r = the base, n = top − bottom + 1."
+    ],
+    "mustNotForget": [
+     "Only r is raised to the power n − 1, never a₁.",
+     "Even power → r = ± root → two possible sets of means.",
+     "Keep negative r in brackets: (−3)ⁿ and 1 − (−3) = 4.",
+     "The sum formulas need r ≠ 1.",
+     "Percent problems: '95% as far' → r = 0.95; 'removes 70%' → 30% remains, r = 0.3."
+    ]
+   },
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "Find a₁ for the geometric series with Sₙ = 1330, aₙ = 486 and r = 3/2.",
+      "options": [
+       "64",
+       "665",
+       "729",
+       "68"
+      ],
+      "answer": 0,
+      "explanation": "Sₙ = (a₁ − aₙr)/(1 − r): 1330 = (a₁ − 729)/(−0.5) → a₁ − 729 = −665 → a₁ = 64."
+     },
+     {
+      "question": "Find a₆ for the geometric sequence with a₁ = 800 and r = 1/2.",
+      "options": [
+       "50",
+       "25",
+       "12.5",
+       "400"
+      ],
+      "answer": 1,
+      "explanation": "a₆ = 800(½)⁵ = 800/32 = 25."
+     },
+     {
+      "question": "Which is the equation of the nth term of the geometric sequence −3, 6, −12, …?",
+      "options": [
+       "aₙ = 3(−2)ⁿ⁻¹",
+       "aₙ = −3(2)ⁿ⁻¹",
+       "aₙ = −3(−2)ⁿ⁻¹",
+       "aₙ = −2(−3)ⁿ⁻¹"
+      ],
+      "answer": 2,
+      "explanation": "r = 6 ÷ (−3) = −2 and a₁ = −3, so aₙ = −3(−2)ⁿ⁻¹."
+     },
+     {
+      "question": "What is the common ratio of 0.5, 2, 8, 32, …?",
+      "options": [
+       "1.5",
+       "2",
+       "4",
+       "0.25"
+      ],
+      "answer": 2,
+      "explanation": "r = 2 ÷ 0.5 = 4 (check: 8 ÷ 2 = 4)."
+     },
+     {
+      "question": "Find Σ from k = 1 to 7 of 4(−3)ᵏ⁻¹.",
+      "options": [
+       "−2188",
+       "1094",
+       "2916",
+       "2188"
+      ],
+      "answer": 3,
+      "explanation": "a₁ = 4, r = −3, n = 7: S₇ = (4 − 4(−3)⁷)/(1 + 3) = (4 + 8748)/4 = 2188."
+     },
+     {
+      "question": "Find the sum of the geometric series with a₁ = 2, r = 3 and n = 10.",
+      "options": [
+       "29524",
+       "118096",
+       "59048",
+       "59049"
+      ],
+      "answer": 2,
+      "explanation": "S₁₀ = (2 − 2·3¹⁰)/(1 − 3) = (2 − 118,098)/(−2) = 59,048."
+     },
+     {
+      "question": "Four geometric means are inserted between 0.5 and 512. What is r?",
+      "options": [
+       "2",
+       "4",
+       "8",
+       "±4"
+      ],
+      "answer": 1,
+      "explanation": "6 terms: 512 = 0.5r⁵ → r⁵ = 1024 → r = 4. The power 5 is odd, so there is only one real root."
+     },
+     {
+      "question": "A river rose 3 cm on the first day, and each day after it rose twice as much as the day before. How much did it rise in total over 5 days?",
+      "options": [
+       "48 cm",
+       "93 cm",
+       "45 cm",
+       "96 cm"
+      ],
+      "answer": 1,
+      "explanation": "a₁ = 3, r = 2, n = 5: S₅ = (3 − 3·2⁵)/(1 − 2) = (3 − 96)/(−1) = 93 cm."
+     },
+     {
+      "question": "Find a₁ for the geometric series with Sₙ = −2912, r = 3 and n = 6.",
+      "options": [
+       "8",
+       "−4",
+       "−16",
+       "−8"
+      ],
+      "answer": 3,
+      "explanation": "−2912 = a₁(1 − 3⁶)/(1 − 3) = a₁(−728)/(−2) = 364a₁ → a₁ = −8."
+     },
+     {
+      "question": "Find a₇ for the geometric sequence with a₁ = 2/9 and r = 3.",
+      "options": [
+       "54",
+       "18",
+       "162",
+       "486"
+      ],
+      "answer": 2,
+      "explanation": "a₇ = (2/9)(3)⁶ = (2/9)(729) = 162."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "Write an equation for the nth term of the geometric sequence −0.25, 2, −16, 128, …",
+      "answer": "aₙ = −0.25(−8)ⁿ⁻¹",
+      "explanation": "r = 2 ÷ (−0.25) = −8 and a₁ = −0.25, so aₙ = −0.25(−8)ⁿ⁻¹."
+     },
+     {
+      "question": "Find three geometric means between 2 and 1250.",
+      "answer": "10, 50, 250  or  −10, 50, −250",
+      "explanation": "5 terms: 1250 = 2r⁴ → r⁴ = 625 → r = ±5. Both ratios give valid sequences."
+     },
+     {
+      "question": "Find the sum of the geometric series with a₁ = 16, r = 1/2 and n = 9.",
+      "answer": "S₉ = 31.9375 (= 511/16)",
+      "explanation": "S₉ = (16 − 16(½)⁹)/(1 − ½) = (16 − 1/32)/(½) = 32 − 1/16 = 31.9375."
+     },
+     {
+      "question": "Sumayya forwards a joke e-mail to four friends. Each of them forwards it to four friends, and so on. How many people receive the e-mail on the ninth round of forwarding?",
+      "answer": "262,144 people",
+      "explanation": "a₁ = 4, r = 4, n = 9: a₉ = 4(4)⁸ = 4⁹ = 262,144."
+     },
+     {
+      "question": "Find Σ from k = 1 to 8 of (−3)(−2)ᵏ⁻¹.",
+      "answer": "255",
+      "explanation": "a₁ = −3, r = −2, n = 8: S₈ = (−3 − (−3)(−2)⁸)/(1 + 2) = (−3 + 768)/3 = 765/3 = 255."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "The first swing of a pendulum travels 30 cm. Each following swing travels 95% as far as the previous swing.\n(a) State a₁, r and n for the first 30 swings. [1 mark]\n(b) Find the length of the 30th swing, to 2 decimal places. [2 marks]\n(c) Find the total distance travelled by the pendulum after the 30th swing, to the nearest cm. [3 marks]",
+      "answer": "(a) a₁ = 30, r = 0.95, n = 30.\n(b) a₃₀ = 30(0.95)²⁹ ≈ 30(0.2259) ≈ 6.78 cm.\n(c) S₃₀ = (30 − 30(0.95)³⁰)/(1 − 0.95) = 30(1 − 0.2146)/0.05 ≈ 600(0.7854) ≈ 471 cm.",
+      "explanation": "'95% as far' means multiply by 0.95 each time, so it is geometric with r = 0.95. Part (b) asks for one term (aₙ); part (c) asks for a total (Sₙ)."
+     },
+     {
+      "question": "A geometric series has Sₙ = −26,240, n = 8 and r = −3.\n(a) Find a₁. [3 marks]\n(b) Find a₈. [1 mark]\n(c) Verify your answers using Sₙ = (a₁ − aₙr)/(1 − r). [2 marks]",
+      "answer": "(a) −26,240 = a₁(1 − (−3)⁸)/(1 − (−3)) = a₁(1 − 6561)/4 = −1640a₁ → a₁ = 16.\n(b) a₈ = 16(−3)⁷ = 16(−2187) = −34,992.\n(c) (16 − (−34,992)(−3))/(1 + 3) = (16 − 104,976)/4 = −104,960/4 = −26,240 ✓",
+      "explanation": "With a negative ratio, keep every −3 in brackets: (−3)⁸ is positive and (−3)⁷ is negative. Using the second sum formula is a good independent check of your a₁."
+     }
+    ]
+   },
+   "addedAt": "2026-09-27T15:32:24"
   },
   {
    "id": "physics-topic1-electricity-currents-and-circuits",
