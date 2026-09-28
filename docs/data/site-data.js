@@ -9,7 +9,7 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-27T15:32:32",
+ "generated": "2026-09-28T17:41:23",
  "lessons": [
   {
    "id": "arabic-almubtada-walkhabar",
@@ -1895,6 +1895,1590 @@ window.STUDY_DATA = {
     ]
    },
    "addedAt": "2026-09-22T17:24:13"
+  },
+  {
+   "id": "chemistry-lesson1-1-dynamic-equilibrium",
+   "title": "Lesson 1.1: A State of Dynamic Equilibrium",
+   "subject": "Chemistry",
+   "order": 1,
+   "meta": {
+    "studyMinutes": 60,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Balancing chemical equations",
+     "Molarity: M = moles ÷ volume (L)",
+     "States of matter symbols (s), (l), (g), (aq)"
+    ]
+   },
+   "idea": {
+    "simple": "Some reactions can go **both ways**: reactants make products, and products turn back into reactants. In a closed container the two directions eventually happen at the **same speed**. From then on the amounts of everything stop changing — not because the reaction stopped, but because both directions cancel out. That balance is called **chemical equilibrium**, and a single number, **Keq**, tells you whether the balance point has mostly products or mostly reactants.",
+    "academic": "A reversible reaction reaches dynamic equilibrium when the rate of the forward reaction equals the rate of the reverse reaction, so the concentrations of reactants and products remain constant (not equal) at constant temperature. The law of chemical equilibrium states that, at a given temperature, the ratio Keq = [products]^coefficients / [reactants]^coefficients has a constant value. Pure solids and pure liquids are omitted from the expression.",
+    "analogy": "Picture two people swapping books between two shelves at exactly the same speed — one moves books left→right, the other right→left. Both are working the whole time, yet the number of books on each shelf never changes. The shelves don't need to hold the same number of books; they just stop changing. That is dynamic equilibrium."
+   },
+   "explanation": [
+    {
+     "heading": "Reversible reactions",
+     "text": "A **reversible reaction** is a reaction that can occur in both the forward and the reverse directions. It is shown with a double arrow ⇌.",
+     "bullets": [
+      "H₂(g) + Cl₂(g) ⇌ 2HCl(g)",
+      "**Forward reaction:** H₂ + Cl₂ → 2HCl (reactants → products)",
+      "**Reverse (backward) reaction:** 2HCl → H₂ + Cl₂ (products → reactants)",
+      "In N₂ + 3H₂ ⇌ 2NH₃, the forward reactants are N₂ + 3H₂; in the reverse reaction, 2NH₃ is the reactant."
+     ]
+    },
+    {
+     "heading": "What is chemical equilibrium?",
+     "text": "A **chemical equilibrium** is a state in which the forward and reverse reactions balance each other because they take place at **equal rates**.",
+     "box": {
+      "type": "rule",
+      "title": "At equilibrium",
+      "content": "Rate of forward reaction = Rate of reverse reaction\nConcentrations of reactants and products are CONSTANT — not equal"
+     },
+     "bullets": [
+      "It is **dynamic**: reactants keep forming products and products keep forming reactants.",
+      "Because the two rates are equal, there is no overall change in amounts.",
+      "The concentrations stay constant at constant temperature — they are usually **not** equal to each other."
+     ]
+    },
+    {
+     "heading": "Three conditions needed to reach equilibrium (memorize)",
+     "bullets": [
+      "1) The reaction mixture must be in a **closed container**.",
+      "2) The reaction mixture must be at a **constant temperature**.",
+      "3) **All reactants and products must be present.**"
+     ]
+    },
+    {
+     "heading": "Reading concentration–time and rate–time graphs",
+     "bullets": [
+      "**Reactant** curves start high and **decrease**; **product** curves start at zero and **increase**.",
+      "As products build up and reactants are used up, the forward rate slows down and the reverse rate speeds up.",
+      "Equilibrium is first reached where the curves become **flat (horizontal)** — 'the start of the straight line'.",
+      "On a rate–time graph, the forward-rate and reverse-rate curves meet and stay together at equilibrium.",
+      "Where the reactant and product curves **cross** is NOT equilibrium — the lines are still changing there."
+     ]
+    },
+    {
+     "heading": "Particulate diagrams: H₂ + I₂ ⇌ 2HI",
+     "text": "Counting particles over time shows when equilibrium is reached:",
+     "bullets": [
+      "0 s: [H₂] = 8, [I₂] = 8, [HI] = 0 → only reactants, so only the forward reaction can happen.",
+      "16 s: [H₂] = 6, [I₂] = 6, [HI] = 4 → both reactions now occur.",
+      "32 s: [H₂] = 4, [I₂] = 4, [HI] = 8 → equilibrium is reached.",
+      "48 s: [H₂] = 4, [I₂] = 4, [HI] = 8 → nothing has changed: still at equilibrium."
+     ]
+    },
+    {
+     "heading": "Equilibrium position and the law of chemical equilibrium",
+     "bullets": [
+      "An **equilibrium position** is a particular set of equilibrium concentrations — the point where forward and reverse rates are equal.",
+      "**Law of chemical equilibrium:** at a **given temperature**, a chemical system may reach a state in which a particular ratio of reactant and product concentrations has a **constant value**."
+     ]
+    },
+    {
+     "heading": "The equilibrium constant, Keq",
+     "text": "The **equilibrium constant** is the ratio of product concentrations to reactant concentrations, each raised to the power of its coefficient in the balanced equation.",
+     "box": {
+      "type": "formula",
+      "title": "For xX + yY ⇌ wW + zZ",
+      "content": "Keq = [W]ʷ[Z]ᶻ / [X]ˣ[Y]ʸ"
+     },
+     "bullets": [
+      "Example: A + 2B ⇌ 3C + 4D → Keq = [C]³[D]⁴ / [A][B]²",
+      "4NH₃ + 5O₂ ⇌ 4NO + 6H₂O (all gases) → Keq = [NO]⁴[H₂O]⁶ / [NH₃]⁴[O₂]⁵"
+     ]
+    },
+    {
+     "heading": "What the size of K tells you",
+     "bullets": [
+      "**K > 1 (large):** mostly products at equilibrium, products favored, position lies to the **right**, the forward reaction is favored and goes practically to completion.",
+      "**K < 1 (small):** mostly reactants at equilibrium, reactants favored, position lies to the **left**, the reverse reaction is favored.",
+      "Example: H₂ + Br₂ ⇌ 2HBr has a large K → mostly HBr. N₂ + O₂ ⇌ 2NO has a small K → mostly N₂ and O₂.",
+      "The value of K at a specified temperature shows the **extent** to which reactants are converted to products."
+     ]
+    },
+    {
+     "heading": "Homogeneous vs heterogeneous equilibrium",
+     "bullets": [
+      "**Homogeneous:** all reactants and products are in the **same physical state**, e.g. H₂(g) + Cl₂(g) ⇌ 2HCl(g).",
+      "**Heterogeneous:** reactants and products are in **more than one physical state**, e.g. H₂O(g) + C(s) ⇌ H₂(g) + CO(g)."
+     ]
+    },
+    {
+     "heading": "Rules for writing Keq expressions",
+     "box": {
+      "type": "rule",
+      "title": "Left out of the expression",
+      "content": "Pure solids (s)  ✗\nPure liquids (l)  ✗\nWater as a solid or liquid  ✗\nGases (g) and aqueous (aq) species  ✓"
+     },
+     "bullets": [
+      "CaCO₃(s) ⇌ CaO(s) + CO₂(g) → Kc = [CO₂]  or  Kp = P(CO₂)",
+      "FeO(s) + CO(g) ⇌ Fe(s) + CO₂(g) → Keq = [CO₂] / [CO]",
+      "C₂H₅OH(l) ⇌ C₂H₅OH(g) → Keq = [C₂H₅OH(g)]",
+      "2H₂O(l) ⇌ 2H₂(g) + O₂(g) → Keq = [H₂]²[O₂]",
+      "**Kc** uses concentrations [ ]; **Kp** uses partial pressures P."
+     ]
+    },
+    {
+     "heading": "Manipulating K",
+     "box": {
+      "type": "formula",
+      "title": "Changing the equation changes K",
+      "content": "Multiply equation by n → K' = Kⁿ\nReverse the equation → K' = 1 / K\nAdd equations (steps) → K = K₁ × K₂ × K₃ …"
+     },
+     "bullets": [
+      "CO + 2H₂ ⇌ CH₃OH, Keq = 10.5. Doubled: 2CO + 4H₂ ⇌ 2CH₃OH → K' = (10.5)² = 110.",
+      "Reversed: CH₃OH ⇌ CO + 2H₂ → K' = 1/10.5 = 0.0952.",
+      "X ⇌ 2Y (K₁ = 2.0) plus 2Y ⇌ 3Z (K₂ = 4.0) gives X ⇌ 3Z → K = 2.0 × 4.0 = 8.0."
+     ]
+    },
+    {
+     "heading": "Calculating with Keq",
+     "bullets": [
+      "**Find K:** convert moles to concentration (M = n ÷ V), write the expression, substitute, calculate.",
+      "**Find an unknown concentration:** write the expression, substitute the known values and K, then rearrange for the unknown.",
+      "Always put **products on top**. Turning the fraction upside down is the most common way to lose marks."
+     ]
+    }
+   ],
+   "kpis": [
+    "Define chemical equilibrium.",
+    "Define a reversible reaction.",
+    "List three characteristics a reaction mixture must have to attain a state of chemical equilibrium.",
+    "Describe the dynamic (chemical) equilibrium.",
+    "Describe chemical equilibrium using reactant and product concentration–time graphs or particulate diagrams.",
+    "Explain how the equilibrium position is obtained.",
+    "State the law of chemical equilibrium.",
+    "Define the equilibrium constant, Keq.",
+    "Relate the value of an equilibrium constant to the relative quantities of reactants and products at equilibrium, identifying the information given by the value of K at a specified temperature.",
+    "Write the chemical equilibrium expression for a homogeneous equilibrium system (Keq, Kc and Kp).",
+    "Write the chemical equilibrium expression for a heterogeneous equilibrium system (Keq, Kc and Kp).",
+    "Calculate the value of the equilibrium constant given the concentration data at a specific equilibrium position.",
+    "Calculate the equilibrium concentration of a reactant given the concentrations of other reactants, products and the equilibrium constant at a specific temperature."
+   ],
+   "keyTerms": [
+    {
+     "term": "Reversible reaction",
+     "definition": "A reaction that can occur in both the forward and the reverse directions (shown with ⇌)."
+    },
+    {
+     "term": "Chemical equilibrium",
+     "definition": "A state in which the forward and reverse reactions balance each other because they take place at equal rates."
+    },
+    {
+     "term": "Dynamic equilibrium",
+     "definition": "Equilibrium in which both reactions continue to happen at equal rates, so the concentrations of reactants and products stay constant (not equal)."
+    },
+    {
+     "term": "Equilibrium position",
+     "definition": "A particular set of equilibrium concentrations of reactants and products."
+    },
+    {
+     "term": "Law of chemical equilibrium",
+     "definition": "At a given temperature, a chemical system may reach a state in which a particular ratio of reactant and product concentrations has a constant value."
+    },
+    {
+     "term": "Equilibrium constant (Keq)",
+     "definition": "The ratio of product concentrations to reactant concentrations, each raised to the power of its coefficient in the balanced equation."
+    },
+    {
+     "term": "Homogeneous equilibrium",
+     "definition": "An equilibrium in which all reactants and products are in the same physical state."
+    },
+    {
+     "term": "Heterogeneous equilibrium",
+     "definition": "An equilibrium in which reactants and products are present in more than one physical state."
+    },
+    {
+     "term": "Kc",
+     "definition": "Equilibrium constant written using molar concentrations [ ] of gases and aqueous species."
+    },
+    {
+     "term": "Kp",
+     "definition": "Equilibrium constant written using the partial pressures of gases."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Write Keq expressions",
+     "difficulty": "easy",
+     "problem": "Write the equilibrium constant expression for:\n(a) N₂O₄(g) ⇌ 2NO₂(g)\n(b) CO(g) + 3H₂(g) ⇌ CH₄(g) + H₂O(g)\n(c) C(s) + H₂O(g) ⇌ CO(g) + H₂(g)",
+     "steps": [
+      {
+       "explain": "Products go on top, reactants underneath; each coefficient becomes a power.",
+       "work": "(a) Keq = [NO₂]² / [N₂O₄]"
+      },
+      {
+       "explain": "Here water is a gas, so it IS included.",
+       "work": "(b) Keq = [CH₄][H₂O] / [CO][H₂]³"
+      },
+      {
+       "explain": "C is a pure solid, so leave it out.",
+       "work": "(c) Keq = [CO][H₂] / [H₂O]",
+       "why": "The 'concentration' of a pure solid is constant, so it is folded into K."
+      }
+     ],
+     "answer": "(a) [NO₂]²/[N₂O₄]   (b) [CH₄][H₂O]/[CO][H₂]³   (c) [CO][H₂]/[H₂O]"
+    },
+    {
+     "title": "Example 2: Calculate Keq from moles",
+     "difficulty": "medium",
+     "problem": "N₂O₄(g) ⇌ 2NO₂(g). One litre of the gas mixture at equilibrium contains 0.0045 mol N₂O₄ and 0.030 mol NO₂ at 10 °C. Calculate Keq.",
+     "steps": [
+      {
+       "explain": "Convert moles to concentration: M = n ÷ V.",
+       "work": "[N₂O₄] = 0.0045 ÷ 1 = 0.0045 M\n[NO₂] = 0.030 ÷ 1 = 0.030 M"
+      },
+      {
+       "explain": "Write the expression.",
+       "work": "Keq = [NO₂]² / [N₂O₄]"
+      },
+      {
+       "explain": "Substitute and calculate.",
+       "work": "Keq = (0.030)² / 0.0045 = 0.00090 / 0.0045 = 0.20"
+      }
+     ],
+     "answer": "Keq = 0.20"
+    },
+    {
+     "title": "Example 3: Find an unknown equilibrium concentration",
+     "difficulty": "medium",
+     "problem": "CO(g) + 2H₂(g) ⇌ CH₃OH(g), Keq = 10.5. Calculate [CO] in an equilibrium mixture containing 0.933 M H₂ and 1.32 M CH₃OH.",
+     "steps": [
+      {
+       "explain": "Write the expression.",
+       "work": "Keq = [CH₃OH] / [CO][H₂]²"
+      },
+      {
+       "explain": "Rearrange for [CO].",
+       "work": "[CO] = [CH₃OH] / (Keq × [H₂]²)"
+      },
+      {
+       "explain": "Substitute.",
+       "work": "[CO] = 1.32 / (10.5 × 0.933²) = 1.32 / (10.5 × 0.8705) = 1.32 / 9.140"
+      },
+      {
+       "explain": "Calculate.",
+       "work": "[CO] = 0.144 M"
+      }
+     ],
+     "answer": "[CO] = 0.144 M"
+    },
+    {
+     "title": "Example 4: Keq with products on top (common trap)",
+     "difficulty": "medium",
+     "problem": "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g). At equilibrium [PCl₅] = 0.010 M, [PCl₃] = 0.15 M and [Cl₂] = 0.37 M. Determine Keq.",
+     "steps": [
+      {
+       "explain": "PCl₅ is the reactant, so it goes on the BOTTOM.",
+       "work": "Keq = [PCl₃][Cl₂] / [PCl₅]",
+       "why": "Writing [PCl₅] on top gives 0.18 — the upside-down (wrong) answer."
+      },
+      {
+       "explain": "Substitute and calculate.",
+       "work": "Keq = (0.15 × 0.37) / 0.010 = 0.0555 / 0.010 = 5.55"
+      }
+     ],
+     "answer": "Keq ≈ 5.6 (K > 1, so products are favored)"
+    },
+    {
+     "title": "Example 5: Unknown concentration with a squared term",
+     "difficulty": "hard",
+     "problem": "2NO(g) + Cl₂(g) ⇌ 2NOCl(g), Keq = 1.2 × 10¹. At equilibrium the vessel contains 2.0 M NO and 6.0 M NOCl. Calculate [Cl₂].",
+     "steps": [
+      {
+       "explain": "Write the expression — NOCl is the product.",
+       "work": "Keq = [NOCl]² / [NO]²[Cl₂]"
+      },
+      {
+       "explain": "Substitute the known values.",
+       "work": "12 = (6.0)² / ((2.0)² × [Cl₂]) = 36 / (4.0 × [Cl₂])"
+      },
+      {
+       "explain": "Rearrange for [Cl₂].",
+       "work": "[Cl₂] = 36 / (4.0 × 12) = 36 / 48 = 0.75 M"
+      }
+     ],
+     "answer": "[Cl₂] = 0.75 M"
+    },
+    {
+     "title": "Example 6: Combining K rules",
+     "difficulty": "hard",
+     "problem": "N₂(g) + Br₂(g) + O₂(g) ⇌ 2NOBr(g), Kc = 2.0 × 10⁻²⁷ at 25 °C.\n(a) Calculate Kc for the reverse reaction.\n(b) Calculate Kc for 2N₂ + 2Br₂ + 2O₂ ⇌ 4NOBr.",
+     "steps": [
+      {
+       "explain": "Reversing an equation inverts K.",
+       "work": "(a) K' = 1 / (2.0 × 10⁻²⁷) = 5.0 × 10²⁶"
+      },
+      {
+       "explain": "Multiplying every coefficient by 2 squares K.",
+       "work": "(b) K' = (2.0 × 10⁻²⁷)² = 4.0 × 10⁻⁵⁴"
+      }
+     ],
+     "answer": "(a) 5.0 × 10²⁶   (b) 4.0 × 10⁻⁵⁴"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Saying that at equilibrium the concentrations of reactants and products are equal.",
+     "fix": "At equilibrium the concentrations are CONSTANT, not equal. It is the RATES that are equal."
+    },
+    {
+     "mistake": "Thinking the reaction stops at equilibrium.",
+     "fix": "Equilibrium is dynamic — both reactions keep going, just at the same rate."
+    },
+    {
+     "mistake": "Choosing the point where the reactant and product curves cross as equilibrium.",
+     "fix": "Equilibrium starts where the curves first become flat (horizontal) and stay flat."
+    },
+    {
+     "mistake": "Writing the Keq expression upside down (reactants on top).",
+     "fix": "Always products over reactants. For PCl₅ ⇌ PCl₃ + Cl₂, Keq = [PCl₃][Cl₂]/[PCl₅]."
+    },
+    {
+     "mistake": "Including solids, pure liquids or liquid water in the expression.",
+     "fix": "Only (g) and (aq) species appear. Cross out anything marked (s) or (l) before you start."
+    },
+    {
+     "mistake": "Forgetting to raise concentrations to the power of their coefficients.",
+     "fix": "2NOCl → [NOCl]²; 3H₂ → [H₂]³. Check every coefficient against its power."
+    }
+   ],
+   "videos": [
+    {
+     "query": "dynamic equilibrium reversible reactions explained",
+     "channel": "Tyler DeWitt",
+     "note": "A clear, friendly introduction to why equilibrium is dynamic and why concentrations become constant, not equal."
+    },
+    {
+     "query": "how to write equilibrium constant expression Kc Kp solids liquids",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Lots of practice writing K expressions, including which states to leave out."
+    },
+    {
+     "query": "equilibrium constant K reverse multiply add reactions",
+     "channel": "Khan Academy",
+     "note": "Shows why reversing inverts K, multiplying raises K to a power, and adding steps multiplies K values."
+    }
+   ],
+   "summaryCard": {
+    "points": [
+     "Reversible reaction: goes both forward and backward (⇌).",
+     "Chemical equilibrium: forward rate = reverse rate; concentrations constant (not equal).",
+     "3 conditions: closed container, constant temperature, all reactants and products present.",
+     "Keq = [products]^coefficients / [reactants]^coefficients.",
+     "K > 1 → products favored (right); K < 1 → reactants favored (left).",
+     "Homogeneous = one physical state; heterogeneous = more than one.",
+     "Leave out (s), (l) and liquid water. Kc uses [ ], Kp uses partial pressures.",
+     "Multiply equation by n → Kⁿ; reverse → 1/K; add steps → K₁ × K₂."
+    ],
+    "mustNotForget": [
+     "Equilibrium means equal RATES, and constant (not equal) concentrations.",
+     "Equilibrium begins where the concentration curves first become flat.",
+     "Products on top — an upside-down expression is the most common lost mark.",
+     "Pure solids, pure liquids and liquid water never appear in K.",
+     "K depends only on temperature — the value is for a specified temperature."
+    ]
+   },
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), chemical equilibrium occurs when the ______.",
+      "options": [
+       "amounts of NH₃, N₂ and H₂ are equal",
+       "concentrations of NH₃, N₂ and H₂ are constant",
+       "reaction occurs in an open container",
+       "volume of NH₃ is less than N₂ and H₂"
+      ],
+      "answer": 1,
+      "explanation": "At equilibrium the concentrations stop changing — they are constant, not equal. Equilibrium also needs a closed container."
+     },
+     {
+      "question": "For PCl₅(g) ⇌ PCl₃(g) + Cl₂(g), which is the REVERSE reaction?",
+      "options": [
+       "PCl₅ → PCl₃ + Cl₂",
+       "PCl₃ + PCl₅ → Cl₂",
+       "PCl₅ + Cl₂ → PCl₃",
+       "PCl₃ + Cl₂ → PCl₅"
+      ],
+      "answer": 3,
+      "explanation": "The reverse reaction turns the products (PCl₃ + Cl₂) back into the reactant (PCl₅)."
+     },
+     {
+      "question": "When H₂(g) + Br₂(g) ⇌ 2HBr(g) reaches equilibrium, the mixture will contain ______.",
+      "options": [
+       "H₂, Br₂ and HBr",
+       "HBr only",
+       "H₂ and Br₂ only",
+       "H₂ only"
+      ],
+      "answer": 0,
+      "explanation": "One of the conditions for equilibrium is that all reactants and products are present."
+     },
+     {
+      "question": "Which is NOT one of the three conditions needed to reach equilibrium?",
+      "options": [
+       "A closed container",
+       "A constant temperature",
+       "Equal concentrations of reactants and products",
+       "All reactants and products present"
+      ],
+      "answer": 2,
+      "explanation": "The three conditions are: closed container, constant temperature, and all reactants and products present. Equal concentrations are not required."
+     },
+     {
+      "question": "For 2X(g) + Y(g) ⇌ 2Z(g), Keq = 2.0 × 10⁻⁷. Which statement is true?",
+      "options": [
+       "Products are favored",
+       "Reactants and products are present in equal amounts",
+       "Reactants are favored",
+       "The reaction is exothermic"
+      ],
+      "answer": 2,
+      "explanation": "K < 1, so the equilibrium mixture is mostly reactants — reactants are favored and the position lies to the left."
+     },
+     {
+      "question": "Which reaction(s) represent a HOMOGENEOUS equilibrium?\nI. H₂O(g) + C(s) ⇌ H₂(g) + CO(g)\nII. 2SO₂(g) + O₂(g) ⇌ 2SO₃(g)\nIII. N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+      "options": [
+       "I only",
+       "II and III only",
+       "III only",
+       "I and II only"
+      ],
+      "answer": 1,
+      "explanation": "II and III have every species as a gas (same physical state). I contains a solid, so it is heterogeneous."
+     },
+     {
+      "question": "What is the Keq expression for H₂O(g) + C(s) ⇌ H₂(g) + CO(g)?",
+      "options": [
+       "[CO][H₂] / [H₂O][C]",
+       "[H₂O][C] / [CO][H₂]",
+       "[CO][H₂]",
+       "[CO][H₂] / [H₂O]"
+      ],
+      "answer": 3,
+      "explanation": "Products over reactants, and C(s) is a pure solid so it is left out: Keq = [CO][H₂]/[H₂O]."
+     },
+     {
+      "question": "H₂(g) + Br₂(g) ⇌ 2HBr(g) has Kc = 3.8 × 10⁴. What is Kc for 2HBr(g) ⇌ H₂(g) + Br₂(g)?",
+      "options": [
+       "1.9 × 10⁴",
+       "2.6 × 10⁻⁵",
+       "3.8 × 10⁴",
+       "6.4 × 10⁻⁴"
+      ],
+      "answer": 1,
+      "explanation": "Reversing the reaction inverts K: 1 / (3.8 × 10⁴) = 2.6 × 10⁻⁵."
+     },
+     {
+      "question": "A + B ⇌ AB, Kc = 0.24 and AB + A ⇌ A₂B, Kc = 3.8. What is Kc for 2A + B ⇌ A₂B?",
+      "options": [
+       "4.0",
+       "3.6",
+       "0.91",
+       "16"
+      ],
+      "answer": 2,
+      "explanation": "Adding the two steps gives the overall reaction, so multiply the K values: 0.24 × 3.8 = 0.91."
+     },
+     {
+      "question": "On a concentration–time graph, when does a reaction FIRST reach equilibrium?",
+      "options": [
+       "When the reactant and product curves cross",
+       "At time zero",
+       "When the reactant curve starts to fall",
+       "When all the curves first become flat"
+      ],
+      "answer": 3,
+      "explanation": "Equilibrium begins at the start of the straight, horizontal lines — the moment concentrations stop changing."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "Define chemical equilibrium.",
+      "answer": "A state in which the forward and reverse reactions balance each other because they take place at equal rates.",
+      "explanation": "The key idea is equal RATES. As a result, the concentrations of reactants and products stay constant."
+     },
+     {
+      "question": "Write the equilibrium constant expression for CH₄(g) + 2H₂S(g) ⇌ CS₂(g) + 4H₂(g).",
+      "answer": "Keq = [CS₂][H₂]⁴ / [CH₄][H₂S]²",
+      "explanation": "Products on top, reactants below, and each coefficient becomes a power. All species are gases, so all are included."
+     },
+     {
+      "question": "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g). At 400 K, [PCl₅] = 0.135 M, [PCl₃] = 0.550 M and [Cl₂] = 0.550 M. Calculate Keq.",
+      "answer": "Keq = 2.24",
+      "explanation": "Keq = [PCl₃][Cl₂]/[PCl₅] = (0.550 × 0.550)/0.135 = 0.3025/0.135 = 2.24."
+     },
+     {
+      "question": "CO(g) + 2H₂(g) ⇌ CH₃OH(g), Keq = 10.5. What is Keq for 2CO(g) + 4H₂(g) ⇌ 2CH₃OH(g)?",
+      "answer": "Keq = 110",
+      "explanation": "The equation was multiplied by 2, so K is raised to the power 2: (10.5)² = 110."
+     },
+     {
+      "question": "2SO₂(g) + O₂(g) ⇌ 2SO₃(g) has Kc = 1.7 × 10⁶. Find Kc for SO₃(g) ⇌ ½O₂(g) + SO₂(g).",
+      "answer": "Kc = 7.7 × 10⁻⁴",
+      "explanation": "The reaction is reversed (1/K) and halved (power ½): (1 / 1.7 × 10⁶)^½ = (5.88 × 10⁻⁷)^½ = 7.7 × 10⁻⁴."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "Consider H₂(g) + I₂(g) ⇌ 2HI(g). A closed flask starts with [H₂] = [I₂] = 8 M and no HI. After 16 s, [H₂] = [I₂] = 6 M and [HI] = 4 M. After 32 s and 48 s, [H₂] = [I₂] = 4 M and [HI] = 8 M.\n(a) Explain why only the forward reaction occurs at 0 s. [1 mark]\n(b) State the time at which equilibrium is first reached and justify your answer. [2 marks]\n(c) Describe what happens to the rates of the forward and reverse reactions between 0 s and 32 s. [2 marks]\n(d) Write the Keq expression and calculate Keq. [2 marks]",
+      "answer": "(a) Only reactants (H₂ and I₂) are present, so there is no HI to react in the reverse direction.\n(b) 32 s — the concentrations are the same at 32 s and 48 s, so they have stopped changing.\n(c) The forward rate decreases as the reactants are used up; the reverse rate increases as HI builds up, until the two rates are equal.\n(d) Keq = [HI]² / [H₂][I₂] = 8² / (4 × 4) = 64/16 = 4.0",
+      "explanation": "Equilibrium is the first time concentrations become constant. At equilibrium the rates are equal, not the concentrations — here [HI] = 8 M while [H₂] = 4 M."
+     },
+     {
+      "question": "Consider 2NO(g) + Cl₂(g) ⇌ 2NOCl(g), Keq = 1.2 × 10¹.\n(a) Is this a homogeneous or heterogeneous equilibrium? Justify. [1 mark]\n(b) Write the Keq expression. [1 mark]\n(c) At equilibrium, [NO] = 2.0 M and [NOCl] = 6.0 M. Calculate [Cl₂]. [3 marks]\n(d) State whether reactants or products are favored and explain using Keq. [1 mark]",
+      "answer": "(a) Homogeneous — all reactants and products are gases.\n(b) Keq = [NOCl]² / [NO]²[Cl₂]\n(c) 12 = (6.0)² / ((2.0)² × [Cl₂]) → 12 = 36 / (4.0[Cl₂]) → [Cl₂] = 36 / 48 = 0.75 M\n(d) Products are favored, because Keq = 12 > 1.",
+      "explanation": "Keep the products on top: [NOCl]² is the numerator. Rearranging correctly gives [Cl₂] = [NOCl]² / (Keq × [NO]²)."
+     }
+    ]
+   },
+   "addedAt": "2026-09-28T17:41:17"
+  },
+  {
+   "id": "chemistry-lesson1-2-factors-affecting-equilibrium",
+   "title": "Lesson 1.2: Factors Affecting Chemical Equilibrium",
+   "subject": "Chemistry",
+   "order": 2,
+   "meta": {
+    "studyMinutes": 45,
+    "difficulty": "medium",
+    "prerequisites": [
+     "Lesson 1.1: A State of Dynamic Equilibrium",
+     "Writing Keq expressions (which states are left out)",
+     "Counting moles of gas from a balanced equation"
+    ]
+   },
+   "idea": {
+    "simple": "A system at equilibrium doesn't like being disturbed. If you push it — add something, remove something, squeeze it — it **shifts to undo your push**. Add more of a substance and the reaction uses it up; remove a substance and the reaction makes more of it; squeeze a gas mixture and the reaction moves to the side with **fewer gas molecules**. A catalyst only makes everything faster — it doesn't move the balance point at all.",
+    "academic": "Le Chatelier's principle states that if a stress is applied to a system at equilibrium, the system shifts in the direction that relieves the stress. Changes in concentration and in pressure/volume (for gaseous systems with unequal moles of gas) change the equilibrium position but not Keq. A catalyst increases the forward and reverse rates equally by providing a lower-activation-energy pathway, so it does not affect the position of equilibrium. Changing the amount of a pure solid has no effect.",
+    "analogy": "Think of a see-saw that balances itself. If someone sits down on the left, it tips so that weight slides back toward the right to rebalance it. If you take weight off the right, it tips so more weight rolls right to replace it. The see-saw always moves to cancel out whatever you did."
+   },
+   "explanation": [
+    {
+     "heading": "Le Chatelier's principle",
+     "text": "**Le Chatelier's principle** states that if a stress is applied to a system at equilibrium, the system shifts in the direction that **relieves the stress**.",
+     "bullets": [
+      "A 'stress' is any change: adding or removing a substance, changing pressure or volume, or changing temperature.",
+      "'Shifts to the right' = toward products (the forward reaction is favored).",
+      "'Shifts to the left' = toward reactants (the reverse reaction is favored)."
+     ]
+    },
+    {
+     "heading": "Factors that can affect equilibrium",
+     "bullets": [
+      "Concentration",
+      "Pressure / volume — **for gaseous systems only**",
+      "The presence of a catalyst (it has no effect on the position)",
+      "Temperature (the only factor that changes the value of K)"
+     ]
+    },
+    {
+     "heading": "Effect of concentration",
+     "box": {
+      "type": "rule",
+      "title": "For A + B ⇌ C + D",
+      "content": "Add reactant → shifts RIGHT (uses up the added reactant)\nAdd product → shifts LEFT\nRemove product → shifts RIGHT (makes more product)\nRemove reactant → shifts LEFT"
+     },
+     "bullets": [
+      "**Increasing** the concentration of a component shifts the equilibrium to the **opposite side** to reduce it.",
+      "**Decreasing** the concentration of a component shifts the equilibrium to the **same side** to replace it.",
+      "Increasing concentration increases the number of effective collisions; decreasing it decreases them.",
+      "Effect on the equilibrium **position**: changes. Effect on **Keq**: **no change**."
+     ]
+    },
+    {
+     "heading": "Worked shift: A + 2B ⇌ C + D",
+     "bullets": [
+      "**Add more A** → shifts right. [B] decreases, [C] increases, [D] increases, [A] decreases but stays **higher than the original**.",
+      "**Remove C** → shifts right. [A] decreases, [B] decreases, [D] increases, [C] increases but stays **lower than the original**.",
+      "The system only partly undoes a change — it never returns all the way to the starting amounts."
+     ]
+    },
+    {
+     "heading": "Solids do not shift the equilibrium",
+     "text": "Changing the amount of a **solid** reactant or product does **NOT** affect the position of equilibrium, because solids don't appear in the Keq expression.",
+     "bullets": [
+      "CO(g) + Fe₃O₄(s) ⇌ CO₂(g) + 3FeO(s): Keq = [CO₂]/[CO]",
+      "Adding FeO → no change. Adding Fe₃O₄ → no change.",
+      "Increasing [CO₂] (a gas product) → shifts left."
+     ]
+    },
+    {
+     "heading": "Effect of pressure and volume (gases only)",
+     "text": "Pressure only affects equilibrium systems with **unequal moles of gaseous reactants and products**. Count the gas moles on each side using the coefficients.",
+     "box": {
+      "type": "rule",
+      "title": "Pressure and volume",
+      "content": "Increase pressure (decrease volume) → shifts to the side with FEWER gas moles\nDecrease pressure (increase volume) → shifts to the side with MORE gas moles\nEqual gas moles on both sides → NO effect"
+     },
+     "bullets": [
+      "Boyle's law: pressure and volume are inversely proportional — increasing pressure is the same as decreasing volume.",
+      "N₂(g) + 3H₂(g) ⇌ 2NH₃(g): 4 moles → 2 moles. Increase pressure → shifts right (forward); decrease pressure → shifts left.",
+      "2SO₂ + O₂ ⇌ 2SO₃: 3 moles → 2 moles. Increase pressure → right; decrease pressure → left.",
+      "CO(g) + NO₂(g) ⇌ CO₂(g) + NO(g): 2 moles → 2 moles, so pressure/volume changes have **no effect**.",
+      "Only count **gases** — ignore solids, liquids and aqueous species. A reaction with no gases is not affected by pressure.",
+      "Effect on **Keq**: **no change**."
+     ]
+    },
+    {
+     "heading": "Effect of a catalyst",
+     "bullets": [
+      "A **catalyst** is a substance that speeds up the rate of reaction without being used up.",
+      "It speeds up the forward **and** backward reactions equally, by offering an alternative pathway with a **lower activation energy**.",
+      "A catalyst **does NOT** affect the position of equilibrium — the system just reaches equilibrium faster."
+     ]
+    },
+    {
+     "heading": "Summary table",
+     "box": {
+      "type": "note",
+      "title": "Change → effect on equilibrium",
+      "content": "Increase concentration → shifts to the opposite side\nDecrease concentration → shifts to the same side\nIncrease pressure → shifts to the side with the least moles of gas\nDecrease pressure → shifts to the side with the most moles of gas\nIncrease temperature → shifts in the endothermic direction\nDecrease temperature → shifts in the exothermic direction\nCatalyst → no shift"
+     },
+     "bullets": [
+      "**K changes only if the temperature changes.** Concentration, pressure, volume and catalysts never change K."
+     ]
+    }
+   ],
+   "kpis": [
+    "State Le Chatelier's principle.",
+    "Explain the effect of changing the concentration (adding reactants, removing products or adding products) on an equilibrium system.",
+    "Explain the effect of changing the volume and pressure on an equilibrium system.",
+    "Explain the effect of a catalyst on an equilibrium system.",
+    "Apply Le Chatelier's principle to predict the shift in equilibrium when the system is subjected to stress.",
+    "Investigate Le Chatelier's principle through a lab experiment, illustrating the effects of several experimental parameters on equilibria (Lab 9)."
+   ],
+   "keyTerms": [
+    {
+     "term": "Le Chatelier's principle",
+     "definition": "If a stress is applied to a system at equilibrium, the system shifts in the direction that relieves the stress."
+    },
+    {
+     "term": "Stress",
+     "definition": "Any change applied to a system at equilibrium, such as a change in concentration, pressure/volume or temperature."
+    },
+    {
+     "term": "Shift to the right",
+     "definition": "The equilibrium moves toward the products; the forward reaction is favored."
+    },
+    {
+     "term": "Shift to the left",
+     "definition": "The equilibrium moves toward the reactants; the reverse reaction is favored."
+    },
+    {
+     "term": "Catalyst",
+     "definition": "A substance that speeds up the forward and reverse reactions equally without being used up; it does not change the equilibrium position."
+    },
+    {
+     "term": "Activation energy",
+     "definition": "The minimum energy needed for a reaction to occur; a catalyst provides a pathway with a lower activation energy."
+    },
+    {
+     "term": "Boyle's law",
+     "definition": "Pressure and volume of a gas are inversely proportional: increasing pressure is the same as decreasing volume."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Concentration and pressure changes",
+     "difficulty": "easy",
+     "problem": "PCl₅(g) + heat ⇌ PCl₃(g) + Cl₂(g). Predict the effect of:\n(1) adding Cl₂\n(2) increasing the pressure\n(3) removing PCl₃ as it forms\n(4) adding a catalyst",
+     "steps": [
+      {
+       "explain": "Cl₂ is a product. Adding a product shifts the equilibrium to the opposite side.",
+       "work": "(1) Shifts LEFT"
+      },
+      {
+       "explain": "Count gas moles: 1 mol on the left, 2 mol on the right. Higher pressure favors fewer moles.",
+       "work": "(2) Shifts LEFT (toward 1 mole)"
+      },
+      {
+       "explain": "Removing a product makes the system replace it.",
+       "work": "(3) Shifts RIGHT"
+      },
+      {
+       "explain": "A catalyst speeds up both directions equally.",
+       "work": "(4) No change in position (equilibrium is reached faster)"
+      }
+     ],
+     "answer": "(1) Left  (2) Left  (3) Right  (4) No change"
+    },
+    {
+     "title": "Example 2: Color changes with NO₂ and N₂O₄",
+     "difficulty": "medium",
+     "problem": "N₂O₄(g) ⇌ 2NO₂(g). N₂O₄ is colorless and NO₂ is brown. Predict the color the mixture moves toward when:\n(a) the pressure is decreased\n(b) the pressure is increased\n(c) the volume is decreased\n(d) the volume is increased",
+     "steps": [
+      {
+       "explain": "Count gas moles: 1 mol N₂O₄ on the left, 2 mol NO₂ on the right.",
+       "work": "Left = fewer moles (colorless); right = more moles (brown)"
+      },
+      {
+       "explain": "Decreasing pressure favors MORE moles.",
+       "work": "(a) Shifts right → more NO₂ → browner"
+      },
+      {
+       "explain": "Increasing pressure favors FEWER moles.",
+       "work": "(b) Shifts left → more N₂O₄ → paler (toward colorless)"
+      },
+      {
+       "explain": "Decreasing volume is the same as increasing pressure.",
+       "work": "(c) Shifts left → toward colorless",
+       "why": "Volume is the reverse of pressure."
+      },
+      {
+       "explain": "Increasing volume is the same as decreasing pressure.",
+       "work": "(d) Shifts right → browner"
+      }
+     ],
+     "answer": "(a) Brown  (b) Colorless  (c) Colorless  (d) Brown"
+    },
+    {
+     "title": "Example 3: Solids and a heterogeneous system",
+     "difficulty": "medium",
+     "problem": "CO(g) + Fe₃O₄(s) ⇌ CO₂(g) + 3FeO(s).\n(a) Write the Keq expression.\n(b) Is this homogeneous or heterogeneous?\n(c) Predict the effect of adding FeO, adding Fe₃O₄, and increasing [CO₂].",
+     "steps": [
+      {
+       "explain": "Leave out the solids.",
+       "work": "(a) Keq = [CO₂] / [CO]"
+      },
+      {
+       "explain": "There are gases and solids.",
+       "work": "(b) Heterogeneous — more than one physical state"
+      },
+      {
+       "explain": "Solids are not in the expression, so changing their amount does nothing.",
+       "work": "Adding FeO → no change\nAdding Fe₃O₄ → no change"
+      },
+      {
+       "explain": "CO₂ is a gaseous product; adding it shifts to the opposite side.",
+       "work": "Increasing [CO₂] → shifts left"
+      }
+     ],
+     "answer": "(a) Keq = [CO₂]/[CO]  (b) Heterogeneous  (c) No change, no change, shifts left"
+    },
+    {
+     "title": "Example 4: Cobalt chloride colors",
+     "difficulty": "hard",
+     "problem": "[Co(H₂O)₆]²⁺(aq, pink) + 4Cl⁻(aq) ⇌ [CoCl₄]²⁻(aq, blue) + 6H₂O(l). Predict the color when you:\n(a) add a few drops of NaCl solution\n(b) add a few drops of [Co(H₂O)₆]²⁺\n(c) add a few drops of [CoCl₄]²⁻\n(d) increase the pressure",
+     "steps": [
+      {
+       "explain": "NaCl dissolves to Na⁺ + Cl⁻, which adds the reactant Cl⁻.",
+       "work": "(a) Shifts right → more [CoCl₄]²⁻ → blue"
+      },
+      {
+       "explain": "Adding a reactant shifts right.",
+       "work": "(b) Shifts right → blue"
+      },
+      {
+       "explain": "Adding a product shifts left.",
+       "work": "(c) Shifts left → more [Co(H₂O)₆]²⁺ → pink"
+      },
+      {
+       "explain": "There are no gases in this equilibrium.",
+       "work": "(d) No effect",
+       "why": "Pressure only matters for systems with unequal moles of gas."
+      }
+     ],
+     "answer": "(a) Blue  (b) Blue  (c) Pink  (d) No effect"
+    },
+    {
+     "title": "Example 5: Stress table",
+     "difficulty": "medium",
+     "problem": "2CO(g) + O₂(g) ⇌ 2CO₂(g) + heat. Predict the shift for: removal of CO₂, addition of O₂, addition of a catalyst, decreased pressure.",
+     "steps": [
+      {
+       "explain": "CO₂ is a product; removing it makes more.",
+       "work": "Removal of CO₂ → to the right"
+      },
+      {
+       "explain": "O₂ is a reactant; adding it uses it up.",
+       "work": "Addition of O₂ → to the right"
+      },
+      {
+       "explain": "A catalyst doesn't move the equilibrium.",
+       "work": "Addition of catalyst → neither"
+      },
+      {
+       "explain": "Gas moles: 3 on the left, 2 on the right. Lower pressure favors more moles.",
+       "work": "Decreased pressure → to the left"
+      }
+     ],
+     "answer": "Right, right, neither, left"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Saying adding a solid (like FeO or Fe₃O₄) shifts the equilibrium.",
+     "fix": "Solids are not in the Keq expression, so adding or removing them has NO effect."
+    },
+    {
+     "mistake": "Answering a color question with the color of the substance you added.",
+     "fix": "Work out the SHIFT first, then the color of the side it shifts toward. Adding Cl⁻ to the cobalt system shifts right → blue, even though NaCl is colorless."
+    },
+    {
+     "mistake": "Mixing up volume and pressure.",
+     "fix": "They are opposites: decreasing volume = increasing pressure → shifts toward fewer gas moles."
+    },
+    {
+     "mistake": "Counting solids, liquids or aqueous species when deciding a pressure shift.",
+     "fix": "Count only (g) coefficients. If both sides have equal gas moles (or no gases), pressure has no effect."
+    },
+    {
+     "mistake": "Thinking a catalyst shifts the equilibrium toward products.",
+     "fix": "A catalyst speeds up BOTH directions equally — no shift, it only reaches equilibrium faster."
+    },
+    {
+     "mistake": "Saying K changes when concentration or pressure changes.",
+     "fix": "Only temperature changes K. Concentration and pressure change the position, not K."
+    }
+   ],
+   "videos": [
+    {
+     "query": "Le Chatelier's principle concentration pressure catalyst",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Goes through many 'which way will it shift?' examples, including pressure and gas moles."
+    },
+    {
+     "query": "Le Chatelier's principle explained",
+     "channel": "Tyler DeWitt",
+     "note": "A slow, clear explanation of why the system shifts to relieve a stress."
+    },
+    {
+     "query": "cobalt chloride equilibrium pink blue Le Chatelier demonstration",
+     "channel": "FuseSchool",
+     "note": "Shows the pink ⇌ blue cobalt equilibrium from the lesson so you can see the color shifts."
+    }
+   ],
+   "summaryCard": {
+    "points": [
+     "Le Chatelier: a system at equilibrium shifts to relieve an applied stress.",
+     "Add reactant or remove product → shifts right.",
+     "Add product or remove reactant → shifts left.",
+     "Increase pressure / decrease volume → side with fewer gas moles.",
+     "Decrease pressure / increase volume → side with more gas moles.",
+     "Equal gas moles or no gases → pressure has no effect.",
+     "Catalyst → speeds both directions, no shift.",
+     "Changing a solid's amount → no shift."
+    ],
+    "mustNotForget": [
+     "Increasing a component shifts AWAY from it; decreasing a component shifts TOWARD it.",
+     "Only gas moles count for pressure — ignore (s), (l) and (aq).",
+     "Volume is the opposite of pressure.",
+     "A catalyst never changes the equilibrium position.",
+     "K changes only with temperature — not with concentration, pressure or a catalyst."
+    ]
+   },
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "For 2X(g) + Y(g) ⇌ 2Z(g), when [Z] is increased, the equilibrium shifts to the ____ and [Y] will ____.",
+      "options": [
+       "right, increase",
+       "left, decrease",
+       "left, increase",
+       "right, decrease"
+      ],
+      "answer": 2,
+      "explanation": "Z is a product; adding it shifts the equilibrium left, which makes more X and Y, so [Y] increases."
+     },
+     {
+      "question": "Which statement is Le Chatelier's principle?",
+      "options": [
+       "If a stress is applied to a system at equilibrium, the system shifts in the direction that relieves the stress",
+       "At equilibrium, the concentrations of reactants and products are equal",
+       "A catalyst shifts the equilibrium toward the products",
+       "Increasing the pressure always shifts the equilibrium to the right"
+      ],
+      "answer": 0,
+      "explanation": "Le Chatelier's principle is about the system shifting to relieve (undo) the applied stress."
+     },
+     {
+      "question": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), what happens when the pressure is increased?",
+      "options": [
+       "Shifts left, toward 4 moles of gas",
+       "No change, because K is constant",
+       "The value of K increases",
+       "Shifts right, toward 2 moles of gas"
+      ],
+      "answer": 3,
+      "explanation": "4 moles of gas on the left, 2 on the right. Increasing pressure favors the side with fewer gas moles — the right."
+     },
+     {
+      "question": "What is the effect of adding a catalyst to a system at equilibrium?",
+      "options": [
+       "Shifts it to the right",
+       "No change in the equilibrium position",
+       "Shifts it to the left",
+       "Increases the value of K"
+      ],
+      "answer": 1,
+      "explanation": "A catalyst speeds up the forward and reverse reactions equally, so the equilibrium position does not change."
+     },
+     {
+      "question": "For CO(g) + NO₂(g) ⇌ CO₂(g) + NO(g), which change would INCREASE the amount of products?",
+      "options": [
+       "Increasing the pressure",
+       "Adding CO",
+       "Adding a catalyst",
+       "Adding CO₂"
+      ],
+      "answer": 1,
+      "explanation": "CO is a reactant; adding it shifts the equilibrium right. Pressure has no effect (2 moles each side) and a catalyst causes no shift."
+     },
+     {
+      "question": "For CO(g) + NO₂(g) ⇌ CO₂(g) + NO(g), what happens when NO₂ is added?",
+      "options": [
+       "The equilibrium constant increases",
+       "The equilibrium constant decreases",
+       "The partial pressure of CO increases",
+       "The partial pressure of CO₂ increases"
+      ],
+      "answer": 3,
+      "explanation": "Adding a reactant shifts the equilibrium right, making more CO₂ (and NO). K does not change."
+     },
+     {
+      "question": "For CO(g) + Fe₃O₄(s) ⇌ CO₂(g) + 3FeO(s), what is the effect of adding more FeO?",
+      "options": [
+       "No change",
+       "Shifts to the right",
+       "Shifts to the left",
+       "K increases"
+      ],
+      "answer": 0,
+      "explanation": "FeO is a solid. Changing the amount of a solid does not affect the equilibrium position."
+     },
+     {
+      "question": "For 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), what happens when the volume of the container is increased?",
+      "options": [
+       "Shifts right, toward 2 moles",
+       "No effect",
+       "Shifts left, toward 3 moles",
+       "The reaction stops"
+      ],
+      "answer": 2,
+      "explanation": "Increasing volume = decreasing pressure, which favors the side with more gas moles (3 on the left)."
+     },
+     {
+      "question": "For [Co(H₂O)₆]²⁺(pink) + 4Cl⁻ ⇌ [CoCl₄]²⁻(blue) + 6H₂O(l), what color appears when NaCl solution is added?",
+      "options": [
+       "Blue",
+       "Pink",
+       "Colorless",
+       "No change"
+      ],
+      "answer": 0,
+      "explanation": "NaCl adds Cl⁻, a reactant. The equilibrium shifts right, forming more blue [CoCl₄]²⁻."
+     },
+     {
+      "question": "Which change alters the VALUE of the equilibrium constant?",
+      "options": [
+       "Adding a reactant",
+       "Increasing the pressure",
+       "Adding a catalyst",
+       "Changing the temperature"
+      ],
+      "answer": 3,
+      "explanation": "K changes only when the temperature changes. Concentration, pressure and catalysts change the position, not K."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "State Le Chatelier's principle.",
+      "answer": "If a stress is applied to a system at equilibrium, the system shifts in the direction that relieves the stress.",
+      "explanation": "This is the key definition; every shift question in this lesson is an application of it."
+     },
+     {
+      "question": "For A + 2B ⇌ C + D, C is removed. State the direction of the shift and what happens to [A] and [D].",
+      "answer": "Shifts right; [A] decreases and [D] increases.",
+      "explanation": "Removing a product makes the system replace it by reacting more A and B, which also makes more D."
+     },
+     {
+      "question": "Why does changing the pressure have no effect on CO(g) + NO₂(g) ⇌ CO₂(g) + NO(g)?",
+      "answer": "Both sides have the same number of gas moles (2 = 2).",
+      "explanation": "Pressure only shifts systems with unequal moles of gaseous reactants and products."
+     },
+     {
+      "question": "For 4NO(g) + 2O₂(g) ⇌ 2N₂O₄(g), what is the effect of increasing the pressure on the position and on the amount of N₂O₄?",
+      "answer": "Shifts right; the amount of N₂O₄ increases.",
+      "explanation": "6 moles of gas on the left, 2 on the right. Higher pressure favors fewer moles, so more N₂O₄ forms."
+     },
+     {
+      "question": "Explain how a catalyst affects a system at equilibrium.",
+      "answer": "It speeds up both the forward and reverse reactions equally, so it does not change the equilibrium position; equilibrium is just reached faster.",
+      "explanation": "A catalyst provides an alternative pathway with lower activation energy for both directions."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "PCl₅(g) + heat ⇌ PCl₃(g) + Cl₂(g) is at equilibrium in a closed container.\n(a) State Le Chatelier's principle. [1 mark]\n(b) Predict the effect of adding Cl₂. Explain. [2 marks]\n(c) Predict the effect of increasing the pressure. Explain using moles of gas. [2 marks]\n(d) Predict the effect of removing PCl₃ as it forms, and of adding a catalyst. [2 marks]",
+      "answer": "(a) If a stress is applied to a system at equilibrium, the system shifts in the direction that relieves the stress.\n(b) Shifts left — Cl₂ is a product, so the system uses up the added Cl₂ by forming more PCl₅.\n(c) Shifts left — there is 1 mol of gas on the left and 2 mol on the right; higher pressure favors the side with fewer gas moles.\n(d) Removing PCl₃ → shifts right (to replace the product). Catalyst → no change in position; equilibrium is reached faster.",
+      "explanation": "Always name the stress, then say which way the system moves to undo it. For pressure, count only gas coefficients."
+     },
+     {
+      "question": "N₂O₄(g, colorless) ⇌ 2NO₂(g, brown).\n(a) State how many moles of gas are on each side. [1 mark]\n(b) Predict the shift and the color change when the pressure is increased. [2 marks]\n(c) Predict the shift and the color change when the volume is increased. [2 marks]\n(d) State the effect of each change in (b) and (c) on the value of Keq. [1 mark]",
+      "answer": "(a) Left: 1 mol (N₂O₄); right: 2 mol (NO₂).\n(b) Shifts left toward fewer gas moles → more N₂O₄ → mixture becomes paler (toward colorless).\n(c) Increasing volume = decreasing pressure → shifts right toward more gas moles → more NO₂ → mixture becomes browner.\n(d) No change — Keq only changes with temperature.",
+      "explanation": "Convert volume changes into pressure changes first (they are opposites), then use the gas-mole rule."
+     }
+    ]
+   },
+   "addedAt": "2026-09-28T17:41:17"
+  },
+  {
+   "id": "chemistry-lesson1-3-using-equilibrium-constants",
+   "title": "Lesson 1.3: Using Equilibrium Constants",
+   "subject": "Chemistry",
+   "order": 3,
+   "meta": {
+    "studyMinutes": 75,
+    "difficulty": "hard",
+    "prerequisites": [
+     "Lesson 1.1: A State of Dynamic Equilibrium (writing Keq expressions)",
+     "Lesson 1.2: Le Chatelier's principle",
+     "Scientific notation and square roots on a calculator"
+    ]
+   },
+   "idea": {
+    "simple": "Once you know K, you can use it as a tool. **Kc** uses concentrations, **Kp** uses gas pressures, and **Ksp** measures how much of a 'barely soluble' salt can dissolve. You can also calculate **Q**, which has the same formula as K but uses the amounts you have *right now*. Comparing Q with K tells you which way a reaction will go — or whether a solid will **precipitate**. Adding an ion that is already in the equilibrium (a **common ion**) makes a salt dissolve **less**.",
+    "academic": "At constant temperature the equilibrium constant is a fixed ratio of products to reactants regardless of starting amounts. Kc is expressed in molar concentrations, Kp in partial pressures of gases, and Ksp is the equilibrium constant for the dissolution of a sparingly soluble ionic solid (the solid is omitted). The reaction quotient Q uses the same expression with non-equilibrium values: Q < K → net forward reaction; Q = K → at equilibrium; Q > K → net reverse reaction (for Qsp > Ksp, a precipitate forms). By Le Chatelier's principle, a common ion shifts a solubility equilibrium toward the solid, lowering molar solubility.",
+    "analogy": "K is like the target temperature on a thermostat, and Q is the room's current temperature. If the room is colder than the target (Q < K), the heater runs forward. If it's hotter (Q > K), the system runs in reverse. If they match (Q = K), nothing happens."
+   },
+   "explanation": [
+    {
+     "heading": "Three kinds of equilibrium constant",
+     "text": "At a given, constant temperature, the equilibrium constant is a fixed ratio of products to reactants — no matter the starting amounts.",
+     "bullets": [
+      "**Kc** — uses molar concentrations (mol/L) of aqueous or gaseous species: Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ",
+      "**Kp** — uses partial pressures (atm) of gases; used only for gas-phase reactions: Kp = P(C)ᶜP(D)ᵈ / P(A)ᵃP(B)ᵇ",
+      "**Ksp** — the solubility product constant for a sparingly soluble ionic solid dissolving into its ions: Ksp = [Mʸ⁺]ˣ[Aˣ⁻]ʸ",
+      "(s) and (l) are not included; (g) and (aq) are included. Only gases appear in Kp."
+     ]
+    },
+    {
+     "heading": "Interpreting the magnitude of K",
+     "bullets": [
+      "**K < 1 (K ≪ 1):** reactants favored — very little product forms; the mixture is mostly reactants.",
+      "**K ≈ 1:** comparable amounts — significant concentrations of both reactants and products.",
+      "**K > 1 (K ≫ 1):** products favored — the reaction goes essentially to completion.",
+      "Example: K = 1.3 × 10⁻⁵ → reactants strongly favored. K = 5.0 × 10⁸ → products strongly favored."
+     ]
+    },
+    {
+     "heading": "Calculating K, and an unknown concentration or pressure",
+     "bullets": [
+      "Write the expression (products over reactants, powers = coefficients, leave out solids/liquids).",
+      "Substitute the equilibrium values. For Kp use pressures in atm.",
+      "To find an unknown, substitute everything you know and rearrange.",
+      "Example: CO(g) + 2H₂(g) ⇌ CH₃OH(g), Keq = 2.50 × 10², [CO] = 0.0200 M, [H₂] = 0.500 M → [CH₃OH] = 250 × 0.0200 × 0.500² = 1.25 M."
+     ]
+    },
+    {
+     "heading": "Combining equilibrium constants",
+     "box": {
+      "type": "formula",
+      "title": "Three rules",
+      "content": "1) Add reactions → multiply K:  K(overall) = K₁ × K₂\n2) Reverse a reaction → invert K:  K(reverse) = 1 / K(forward)\n3) Multiply coefficients by n → raise K to the power n:  K(new) = Kⁿ"
+     },
+     "bullets": [
+      "A + B ⇌ C (K₁ = 2.0) and C + D ⇌ E (K₂ = 3.0) → A + B + D ⇌ E, K = 6.0.",
+      "A ⇌ B, K = 5 → 2A ⇌ 2B, K = 5² = 25."
+     ]
+    },
+    {
+     "heading": "The solubility product constant, Ksp",
+     "text": "**Ksp** is a special equilibrium constant (Kc) for the dissolution of a **sparingly soluble** (slightly soluble) ionic compound in water. It tells you the maximum amount of solid that can dissolve at a given temperature to form a **saturated** solution.",
+     "box": {
+      "type": "formula",
+      "title": "General Ksp",
+      "content": "MₓAᵧ(s) ⇌ xMʸ⁺(aq) + yAˣ⁻(aq)\nKsp = [Mʸ⁺]ˣ[Aˣ⁻]ʸ   (the solid is left out)"
+     },
+     "bullets": [
+      "AgCl(s) ⇌ Ag⁺ + Cl⁻ → Ksp = [Ag⁺][Cl⁻]",
+      "CaF₂(s) ⇌ Ca²⁺ + 2F⁻ → Ksp = [Ca²⁺][F⁻]²",
+      "Al(OH)₃(s) ⇌ Al³⁺ + 3OH⁻ → Ksp = [Al³⁺][OH⁻]³",
+      "Ag₂CrO₄(s) ⇌ 2Ag⁺ + CrO₄²⁻ → Ksp = [Ag⁺]²[CrO₄²⁻]",
+      "A **higher Ksp** generally means a **more soluble** compound — but only compare directly when the salts give the same number of ions (e.g. AgCl vs AgBr).",
+      "Like all K values, Ksp is constant only at a specific temperature; it usually increases with temperature."
+     ]
+    },
+    {
+     "heading": "Molar solubility (s) in pure water",
+     "bullets": [
+      "Let s = the amount of solid that dissolves (mol/L).",
+      "For a 1 : 1 salt such as AgBr: [Ag⁺] = s and [Br⁻] = s, so Ksp = s² and s = √Ksp.",
+      "AgBr, Ksp = 5.0 × 10⁻¹³ → s = √(5.0 × 10⁻¹³) = 7.07 × 10⁻⁷ M."
+     ]
+    },
+    {
+     "heading": "The reaction quotient, Q",
+     "text": "The **reaction quotient (Q)** measures the relative amounts of products and reactants at a **given moment in time** (not necessarily at equilibrium). It uses exactly the same expression as K, but with initial or current values.",
+     "box": {
+      "type": "rule",
+      "title": "Compare Q with K",
+      "content": "Q < K → not enough product yet → shifts FORWARD (toward products)\nQ = K → already at equilibrium → no net shift\nQ > K → too much product → shifts in REVERSE (toward reactants)"
+     },
+     "bullets": [
+      "**Qc** uses molar concentrations; **Qp** uses partial pressures; **Qsp** is the solubility product quotient for sparingly soluble salts."
+     ]
+    },
+    {
+     "heading": "Predicting precipitation with Qsp",
+     "box": {
+      "type": "rule",
+      "title": "Will a precipitate form?",
+      "content": "Qsp < Ksp → unsaturated, shifts right (more dissolves) → NO precipitate\nQsp = Ksp → saturated, at equilibrium → no precipitate\nQsp > Ksp → shifts left (toward the solid) → PRECIPITATE forms"
+     },
+     "bullets": [
+      "Calculate Qsp from the ion concentrations in the mixture, using the Ksp expression (with powers).",
+      "Ca(OH)₂: Ksp = 6.5 × 10⁻⁶, [Ca²⁺] = 2.2 × 10⁻⁴ M, [OH⁻] = 4.4 × 10⁻⁴ M → Qsp = (2.2 × 10⁻⁴)(4.4 × 10⁻⁴)² = 4.3 × 10⁻¹¹ < Ksp → no precipitate."
+     ]
+    },
+    {
+     "heading": "The common ion effect",
+     "bullets": [
+      "A **common ion** is an ion already present in a solubility equilibrium that is added from a second, separate source (e.g. Cl⁻ from NaCl added to AgCl).",
+      "Adding it increases that ion's concentration beyond what the solid alone would produce.",
+      "By Le Chatelier's principle, the equilibrium shifts **left — back toward the solid** — to relieve the stress.",
+      "Net effect: adding a common ion **DECREASES the solubility** of the solid; more of it stays as a solid (precipitate).",
+      "In the calculation, use the common-ion concentration from the added salt (the solid adds a negligible amount)."
+     ]
+    },
+    {
+     "heading": "Real-world applications",
+     "bullets": [
+      "**Tooth enamel:** hydroxyapatite Ca₁₀(PO₄)₆(OH)₂(s) ⇌ 10Ca²⁺ + 6PO₄³⁻ + 2OH⁻. Acids from sugars/bacteria remove OH⁻/PO₄³⁻, lowering Q below Ksp, so enamel dissolves (**demineralization**). Saliva rich in Ca²⁺ and PO₄³⁻ raises Q above Ksp, so mineral is redeposited (**remineralization**).",
+      "**Fluoride:** F⁻ replaces some OH⁻, forming fluorapatite Ca₁₀(PO₄)₆F₂, which has a **smaller Ksp** — it is less soluble and resists acid attack better.",
+      "**BaSO₄ in medical imaging:** patients swallow a barium sulfate 'milkshake' before a GI-tract X-ray even though free Ba²⁺ is toxic. It is safe because Ksp ≈ 1.1 × 10⁻¹⁰ is extremely small, so almost no Ba²⁺ is released; sulfate ions already in the body act as a common ion and suppress dissolving even more."
+     ]
+    }
+   ],
+   "kpis": [
+    "Define the equilibrium constant and explain the meaning of Ksp, Kc and Kp for a reversible chemical reaction at a constant temperature.",
+    "Calculate the value of Ksp, Kc or Kp from given equilibrium concentrations or partial pressures at a constant temperature.",
+    "Calculate an unknown equilibrium concentration or partial pressure using the equilibrium constant and given equilibrium data.",
+    "Interpret the magnitude of an equilibrium constant to determine whether reactants or products are favored at equilibrium.",
+    "Calculate and compare the reaction quotient (Qsp, Qc or Qp) with the equilibrium constant to determine the direction in which a reaction will proceed to reach equilibrium.",
+    "Derive and calculate the overall equilibrium constant for a multi-step reaction by combining the equilibrium constants of the component reactions.",
+    "Analyse a common ion and explain how its presence lowers the solubility of a dissolved substance (the common ion effect).",
+    "Calculate the equilibrium ion concentrations of a compound dissolved in a solution containing a common ion, and compare the resulting solubility to its solubility in pure water.",
+    "Apply Ksp, Qsp and common-ion-effect concepts to explain real-world equilibrium phenomena, such as tooth enamel remineralization/demineralization or the controlled solubility of BaSO₄ in medical imaging."
+   ],
+   "keyTerms": [
+    {
+     "term": "Kc",
+     "definition": "Equilibrium constant expressed using molar concentrations (mol/L) of aqueous or gaseous species."
+    },
+    {
+     "term": "Kp",
+     "definition": "Equilibrium constant expressed using the partial pressures (atm) of gases; used only for gas-phase reactions."
+    },
+    {
+     "term": "Ksp (solubility product constant)",
+     "definition": "The equilibrium constant for a sparingly soluble ionic solid dissolving into its ions; the solid is not included."
+    },
+    {
+     "term": "Sparingly soluble",
+     "definition": "Only slightly soluble in water — only a very small amount dissolves."
+    },
+    {
+     "term": "Saturated solution",
+     "definition": "A solution holding the maximum amount of dissolved solid at that temperature; Qsp = Ksp."
+    },
+    {
+     "term": "Molar solubility (s)",
+     "definition": "The number of moles of a solid that dissolve per litre to form a saturated solution."
+    },
+    {
+     "term": "Reaction quotient (Q)",
+     "definition": "The same expression as K but calculated with initial or current (not necessarily equilibrium) concentrations or pressures."
+    },
+    {
+     "term": "Qsp",
+     "definition": "The solubility product quotient; if Qsp > Ksp a precipitate forms."
+    },
+    {
+     "term": "Precipitate",
+     "definition": "An insoluble solid that forms out of a solution."
+    },
+    {
+     "term": "Common ion",
+     "definition": "An ion already present in a solubility equilibrium that is added from a second, separate source."
+    },
+    {
+     "term": "Common ion effect",
+     "definition": "Adding a common ion shifts the solubility equilibrium toward the solid, decreasing the solubility of the salt."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Example 1: Write Kc and Ksp expressions",
+     "difficulty": "easy",
+     "problem": "(a) Write Kc for 2SO₂(g) + O₂(g) ⇌ 2SO₃(g).\n(b) Write Ksp for Ag₂CrO₄(s) ⇌ 2Ag⁺(aq) + CrO₄²⁻(aq).",
+     "steps": [
+      {
+       "explain": "Products over reactants, coefficients become powers.",
+       "work": "(a) Kc = [SO₃]² / [SO₂]²[O₂]"
+      },
+      {
+       "explain": "Leave out the solid; the ions go on top with their coefficients as powers.",
+       "work": "(b) Ksp = [Ag⁺]²[CrO₄²⁻]"
+      }
+     ],
+     "answer": "(a) Kc = [SO₃]²/[SO₂]²[O₂]   (b) Ksp = [Ag⁺]²[CrO₄²⁻]"
+    },
+    {
+     "title": "Example 2: Calculate Kp from partial pressures",
+     "difficulty": "medium",
+     "problem": "2N₂O(g) + O₂(g) ⇌ 4NO(g). P(N₂O) = 2.00 atm, P(O₂) = 4.00 atm, P(NO) = 0.200 atm. Calculate Kp.",
+     "steps": [
+      {
+       "explain": "Write the Kp expression — NO is the product, so it goes on top.",
+       "work": "Kp = P(NO)⁴ / P(N₂O)² P(O₂)"
+      },
+      {
+       "explain": "Substitute.",
+       "work": "Kp = (0.200)⁴ / ((2.00)² × 4.00) = 0.00160 / 16.0"
+      },
+      {
+       "explain": "Calculate.",
+       "work": "Kp = 1.0 × 10⁻⁴",
+       "why": "Kp < 1, so reactants are favored."
+      }
+     ],
+     "answer": "Kp = 1.0 × 10⁻⁴"
+    },
+    {
+     "title": "Example 3: Calculate Ksp from ion concentrations",
+     "difficulty": "medium",
+     "problem": "A saturated solution of BaF₂ at 25 °C has [Ba²⁺] = 3.6 × 10⁻³ M and [F⁻] = 7.2 × 10⁻³ M. Calculate Ksp.",
+     "steps": [
+      {
+       "explain": "Write the dissociation equation.",
+       "work": "BaF₂(s) ⇌ Ba²⁺(aq) + 2F⁻(aq)"
+      },
+      {
+       "explain": "Write Ksp — the coefficient 2 becomes a power.",
+       "work": "Ksp = [Ba²⁺][F⁻]²"
+      },
+      {
+       "explain": "Substitute and calculate.",
+       "work": "Ksp = (3.6 × 10⁻³)(7.2 × 10⁻³)² = (3.6 × 10⁻³)(5.18 × 10⁻⁵) = 1.87 × 10⁻⁷"
+      }
+     ],
+     "answer": "Ksp = 1.87 × 10⁻⁷"
+    },
+    {
+     "title": "Example 4: Use Q to predict the direction",
+     "difficulty": "medium",
+     "problem": "2NO₂(g) ⇌ N₂O₄(g), Kc = 170 at 25 °C. A container holds [NO₂] = 0.050 M and [N₂O₄] = 0.030 M. Calculate Qc and predict the shift.",
+     "steps": [
+      {
+       "explain": "Q uses the same expression as K.",
+       "work": "Qc = [N₂O₄] / [NO₂]²"
+      },
+      {
+       "explain": "Substitute the current values.",
+       "work": "Qc = 0.030 / (0.050)² = 0.030 / 0.0025 = 12"
+      },
+      {
+       "explain": "Compare with Kc.",
+       "work": "Qc (12) < Kc (170)"
+      },
+      {
+       "explain": "Q < K means not enough product yet.",
+       "work": "The reaction shifts forward (to the right), making more N₂O₄."
+      }
+     ],
+     "answer": "Qc = 12 < 170 → shifts forward (right)"
+    },
+    {
+     "title": "Example 5: Will a precipitate form?",
+     "difficulty": "hard",
+     "problem": "Ksp of Ag₂CrO₄ at 25 °C is 1.2 × 10⁻¹². A mixture contains [Ag⁺] = 1.5 × 10⁻² M and [CrO₄²⁻] = 7.5 × 10⁻³ M. Will a precipitate form?",
+     "steps": [
+      {
+       "explain": "Write the Qsp expression (same as Ksp).",
+       "work": "Qsp = [Ag⁺]²[CrO₄²⁻]"
+      },
+      {
+       "explain": "Substitute — remember to square [Ag⁺].",
+       "work": "Qsp = (1.5 × 10⁻²)² × (7.5 × 10⁻³) = (2.25 × 10⁻⁴)(7.5 × 10⁻³) = 1.7 × 10⁻⁶"
+      },
+      {
+       "explain": "Compare with Ksp.",
+       "work": "Qsp (1.7 × 10⁻⁶) > Ksp (1.2 × 10⁻¹²)"
+      }
+     ],
+     "answer": "Qsp > Ksp, so a precipitate of Ag₂CrO₄ forms."
+    },
+    {
+     "title": "Example 6: Solubility with a common ion",
+     "difficulty": "hard",
+     "problem": "AgCl(s) ⇌ Ag⁺ + Cl⁻, Ksp = 1.8 × 10⁻¹⁰. Find the molar solubility of AgCl (a) in pure water and (b) in 0.10 M NaCl. Compare them.",
+     "steps": [
+      {
+       "explain": "Pure water: [Ag⁺] = [Cl⁻] = s.",
+       "work": "Ksp = s² → s = √(1.8 × 10⁻¹⁰) = 1.3 × 10⁻⁵ M"
+      },
+      {
+       "explain": "In NaCl, [Cl⁻] ≈ 0.10 M from the NaCl (AgCl adds a negligible amount).",
+       "work": "Ksp = [Ag⁺](0.10) → [Ag⁺] = 1.8 × 10⁻¹⁰ / 0.10 = 1.8 × 10⁻⁹ M"
+      },
+      {
+       "explain": "Solubility = [Ag⁺] in the NaCl solution.",
+       "work": "s = 1.8 × 10⁻⁹ M"
+      },
+      {
+       "explain": "Compare.",
+       "work": "1.3 × 10⁻⁵ ÷ 1.8 × 10⁻⁹ ≈ 7,400",
+       "why": "The common ion Cl⁻ shifts the equilibrium left toward solid AgCl."
+      }
+     ],
+     "answer": "(a) 1.3 × 10⁻⁵ M  (b) 1.8 × 10⁻⁹ M — about 7,400 times less soluble in NaCl"
+    },
+    {
+     "title": "Example 7: Common ion with a squared term",
+     "difficulty": "hard",
+     "problem": "Ksp of CaF₂ is 3.9 × 10⁻¹¹. Calculate the molar solubility of CaF₂ in 0.20 M NaF.",
+     "steps": [
+      {
+       "explain": "Write the equation and Ksp.",
+       "work": "CaF₂(s) ⇌ Ca²⁺ + 2F⁻ → Ksp = [Ca²⁺][F⁻]²"
+      },
+      {
+       "explain": "F⁻ is the common ion: [F⁻] ≈ 0.20 M. Let s = [Ca²⁺].",
+       "work": "3.9 × 10⁻¹¹ = s × (0.20)²"
+      },
+      {
+       "explain": "Don't forget to square 0.20.",
+       "work": "s = 3.9 × 10⁻¹¹ / 0.040 = 9.75 × 10⁻¹⁰ M",
+       "why": "Using 0.20 instead of 0.20² gives 1.95 × 10⁻¹⁰ — a common mistake."
+      }
+     ],
+     "answer": "s ≈ 9.8 × 10⁻¹⁰ M"
+    }
+   ],
+   "commonMistakes": [
+    {
+     "mistake": "Writing Kp or Kc upside down, e.g. Kp = P(N₂O)²P(O₂)/P(NO)⁴ for 2N₂O + O₂ ⇌ 4NO.",
+     "fix": "Always products over reactants: Kp = P(NO)⁴ / P(N₂O)²P(O₂) = 1.0 × 10⁻⁴."
+    },
+    {
+     "mistake": "Forgetting to square (or cube) an ion concentration in Ksp or Qsp.",
+     "fix": "The coefficient becomes a power: CaF₂ → [F⁻]², Ag₂CrO₄ → [Ag⁺]², Al(OH)₃ → [OH⁻]³."
+    },
+    {
+     "mistake": "Including the solid in the Ksp expression.",
+     "fix": "The solid never appears — Ksp contains only the dissolved ions."
+    },
+    {
+     "mistake": "Getting the Q vs K direction backwards.",
+     "fix": "Q < K → forward (need more product). Q > K → reverse. For Qsp > Ksp → precipitate forms."
+    },
+    {
+     "mistake": "Saying a common ion increases solubility.",
+     "fix": "A common ion shifts the equilibrium toward the solid, so solubility DECREASES."
+    },
+    {
+     "mistake": "Comparing Ksp values of salts that make different numbers of ions to rank solubility.",
+     "fix": "Only compare Ksp directly for salts with the same ion ratio (e.g. AgCl vs AgBr)."
+    }
+   ],
+   "videos": [
+    {
+     "query": "Kc and Kp equilibrium constant calculations partial pressure",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Step-by-step Kc and Kp calculations, including finding an unknown concentration or pressure."
+    },
+    {
+     "query": "reaction quotient Q vs K which direction will the reaction shift",
+     "channel": "Khan Academy",
+     "note": "Explains why comparing Q with K predicts the direction of the reaction."
+    },
+    {
+     "query": "Ksp molar solubility common ion effect",
+     "channel": "Tyler DeWitt",
+     "note": "Covers Ksp, molar solubility in pure water, and how a common ion lowers solubility."
+    },
+    {
+     "query": "will a precipitate form Qsp vs Ksp",
+     "channel": "The Organic Chemistry Tutor",
+     "note": "Worked precipitation problems comparing Qsp with Ksp."
+    }
+   ],
+   "summaryCard": {
+    "points": [
+     "Kc = concentrations; Kp = partial pressures of gases; Ksp = dissolving of a sparingly soluble salt.",
+     "(s) and (l) are left out; (g) and (aq) are included; only gases appear in Kp.",
+     "K ≫ 1 → products favored; K ≈ 1 → comparable; K ≪ 1 → reactants favored.",
+     "Add reactions → K₁ × K₂; reverse → 1/K; multiply by n → Kⁿ.",
+     "Ksp = [Mʸ⁺]ˣ[Aˣ⁻]ʸ; for a 1 : 1 salt in pure water s = √Ksp.",
+     "Q has the same formula as K but uses current values.",
+     "Q < K → forward; Q = K → equilibrium; Q > K → reverse.",
+     "Qsp > Ksp → precipitate forms; a common ion lowers solubility."
+    ],
+    "mustNotForget": [
+     "Products on top — for K, Q, Kp and Ksp alike.",
+     "Coefficients become powers: [F⁻]², [Ag⁺]², (0.20)².",
+     "Q < K → forward; Q > K → reverse (precipitate if Qsp > Ksp).",
+     "A common ion DECREASES solubility (shifts toward the solid).",
+     "Only compare Ksp values directly for salts with the same number of ions."
+    ]
+   },
+   "quiz": {
+    "multipleChoice": [
+     {
+      "question": "For 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), which Kc expression is correct?",
+      "options": [
+       "[SO₃]² / [SO₂]²[O₂]",
+       "[SO₂]²[O₂] / [SO₃]²",
+       "[SO₃] / [SO₂][O₂]",
+       "[SO₃]² / [SO₂][O₂]²"
+      ],
+      "answer": 0,
+      "explanation": "Products over reactants, with each coefficient as a power: [SO₃]² on top, [SO₂]²[O₂] below."
+     },
+     {
+      "question": "For CaCO₃(s) ⇌ CaO(s) + CO₂(g), which Kc expression is correct?",
+      "options": [
+       "[CaO][CO₂] / [CaCO₃]",
+       "[CaCO₃] / [CaO][CO₂]",
+       "1 / [CO₂]",
+       "[CO₂]"
+      ],
+      "answer": 3,
+      "explanation": "CaCO₃ and CaO are solids and are left out, so only the gas remains: Kc = [CO₂]."
+     },
+     {
+      "question": "For A ⇌ B, K = 5. What is K for 2A ⇌ 2B?",
+      "options": [
+       "2.5",
+       "25",
+       "5",
+       "10"
+      ],
+      "answer": 1,
+      "explanation": "Multiplying the equation by 2 raises K to the power 2: 5² = 25."
+     },
+     {
+      "question": "If Kc = 3.6 × 10⁻⁸, which is favored at equilibrium?",
+      "options": [
+       "Products",
+       "Neither side",
+       "Reactants",
+       "It depends on the pressure"
+      ],
+      "answer": 2,
+      "explanation": "K ≪ 1, so very little product forms — reactants are favored."
+     },
+     {
+      "question": "H₂(g) + I₂(g) ⇌ 2HI(g), Kc = 54.3. A flask has [H₂] = [I₂] = [HI] = 0.100 M. Which is correct?",
+      "options": [
+       "Qc = 54.3; at equilibrium",
+       "Qc = 100; shifts in reverse",
+       "Qc = 0.01; shifts in reverse",
+       "Qc = 1.00; shifts forward"
+      ],
+      "answer": 3,
+      "explanation": "Qc = (0.100)² / (0.100 × 0.100) = 1.00. Since Qc < Kc, the reaction shifts forward, making more HI."
+     },
+     {
+      "question": "What does it mean when Q > K?",
+      "options": [
+       "Too much product — the reaction shifts in reverse",
+       "Not enough product — the reaction shifts forward",
+       "The system is at equilibrium",
+       "K will increase"
+      ],
+      "answer": 0,
+      "explanation": "If Q is larger than K there is too much product, so the net reaction runs in reverse toward the reactants."
+     },
+     {
+      "question": "Which is the correct Ksp expression for CaF₂?",
+      "options": [
+       "[Ca²⁺][F⁻]",
+       "[Ca²⁺][F⁻] / [CaF₂]",
+       "[Ca²⁺][F⁻]²",
+       "[Ca²⁺]²[F⁻]"
+      ],
+      "answer": 2,
+      "explanation": "CaF₂(s) ⇌ Ca²⁺ + 2F⁻. The solid is left out and the 2 becomes a power: Ksp = [Ca²⁺][F⁻]²."
+     },
+     {
+      "question": "What happens to the solubility of AgCl when NaCl is added to the solution?",
+      "options": [
+       "It increases",
+       "It decreases",
+       "It stays the same",
+       "Ksp increases"
+      ],
+      "answer": 1,
+      "explanation": "Cl⁻ is a common ion. The equilibrium shifts left toward solid AgCl, so less AgCl dissolves."
+     },
+     {
+      "question": "Ksp of CaCO₃ is 4.5 × 10⁻⁹. A mixture has [Ca²⁺] = [CO₃²⁻] = 0.050 M. What happens?",
+      "options": [
+       "Qsp = 0.10; no precipitate",
+       "Qsp = 2.5 × 10⁻³; no precipitate",
+       "Qsp = Ksp; saturated",
+       "Qsp = 2.5 × 10⁻³; a precipitate forms"
+      ],
+      "answer": 3,
+      "explanation": "Qsp = (0.050)(0.050) = 2.5 × 10⁻³, which is much larger than Ksp (4.5 × 10⁻⁹), so a precipitate forms."
+     },
+     {
+      "question": "Why is it safe for a patient to swallow BaSO₄ for an X-ray, even though Ba²⁺ is toxic?",
+      "options": [
+       "Its Ksp is extremely small, so almost no Ba²⁺ dissolves",
+       "Its Ksp is very large, so it dissolves quickly and leaves the body",
+       "Sulfate ions make Ba²⁺ harmless",
+       "BaSO₄ is a gas in the body"
+      ],
+      "answer": 0,
+      "explanation": "Ksp ≈ 1.1 × 10⁻¹⁰ means nearly all the barium stays locked in the solid; sulfate already in the body acts as a common ion and suppresses dissolving further."
+     }
+    ],
+    "shortAnswer": [
+     {
+      "question": "For X(aq) + Y(s) ⇌ 2Z(aq), [X] = 1.20 M and [Z] = 3.60 M. Calculate Kc.",
+      "answer": "Kc = 10.8",
+      "explanation": "Y is a solid, so it is left out: Kc = [Z]² / [X] = (3.60)² / 1.20 = 12.96 / 1.20 = 10.8."
+     },
+     {
+      "question": "Determine Kp at 400 K for 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) if P(SO₂) = 0.2 atm, P(O₂) = 0.15 atm and P(SO₃) = 0.6 atm.",
+      "answer": "Kp = 60",
+      "explanation": "Kp = P(SO₃)² / P(SO₂)²P(O₂) = (0.6)² / ((0.2)² × 0.15) = 0.36 / 0.006 = 60."
+     },
+     {
+      "question": "Ksp of AgBr is 5.0 × 10⁻¹³ at 25 °C. Calculate [Ag⁺] and [Br⁻] in a saturated solution in pure water.",
+      "answer": "[Ag⁺] = [Br⁻] = 7.07 × 10⁻⁷ M",
+      "explanation": "AgBr ⇌ Ag⁺ + Br⁻ (1 : 1), so Ksp = s² and s = √(5.0 × 10⁻¹³) = 7.07 × 10⁻⁷ M."
+     },
+     {
+      "question": "For X ⇌ Y, K₁ = 4.0 and for Y ⇌ Z, K₂ = 0.25. Find K for X ⇌ Z.",
+      "answer": "K = 1.0",
+      "explanation": "Adding the reactions gives X ⇌ Z, so multiply: K = 4.0 × 0.25 = 1.0."
+     },
+     {
+      "question": "Ksp of PbCl₂ is 1.7 × 10⁻⁵. Find its molar solubility in 0.15 M NaCl.",
+      "answer": "s ≈ 7.6 × 10⁻⁴ M",
+      "explanation": "PbCl₂ ⇌ Pb²⁺ + 2Cl⁻, Ksp = [Pb²⁺][Cl⁻]². With [Cl⁻] ≈ 0.15 M: s = 1.7 × 10⁻⁵ / (0.15)² = 1.7 × 10⁻⁵ / 0.0225 = 7.6 × 10⁻⁴ M."
+     }
+    ],
+    "examStyle": [
+     {
+      "question": "At 298 K, Ksp of Ca(OH)₂ is 6.5 × 10⁻⁶. Two solutions are mixed in equal volumes, giving [Ca²⁺] = 2.2 × 10⁻⁴ M and [OH⁻] = 4.4 × 10⁻⁴ M.\n(a) Write the dissociation equation and the Ksp expression for Ca(OH)₂. [2 marks]\n(b) Calculate Qsp. [2 marks]\n(c) Predict whether a precipitate will form. Justify your answer. [2 marks]",
+      "answer": "(a) Ca(OH)₂(s) ⇌ Ca²⁺(aq) + 2OH⁻(aq); Ksp = [Ca²⁺][OH⁻]²\n(b) Qsp = (2.2 × 10⁻⁴)(4.4 × 10⁻⁴)² = (2.2 × 10⁻⁴)(1.94 × 10⁻⁷) = 4.3 × 10⁻¹¹\n(c) No precipitate forms, because Qsp (4.3 × 10⁻¹¹) < Ksp (6.5 × 10⁻⁶) — the solution is unsaturated and the equilibrium shifts to the right (more would dissolve).",
+      "explanation": "Qsp uses the same expression as Ksp, including the square on [OH⁻]. Only if Qsp > Ksp does the equilibrium shift left and form a solid."
+     },
+     {
+      "question": "Consider CO(g) + 2H₂(g) ⇌ CH₃OH(g).\n(a) Write the Kc expression. [1 mark]\n(b) At equilibrium, [CO] = 0.15 M, [H₂] = 0.30 M and [CH₃OH] = 0.60 M. Calculate Kc. [2 marks]\n(c) State whether reactants or products are favored. [1 mark]\n(d) Calculate Kc for CH₃OH(g) ⇌ CO(g) + 2H₂(g). [2 marks]",
+      "answer": "(a) Kc = [CH₃OH] / [CO][H₂]²\n(b) Kc = 0.60 / (0.15 × 0.30²) = 0.60 / 0.0135 = 44 (44.4)\n(c) Products are favored, because Kc > 1.\n(d) Reversed reaction → K' = 1 / 44.4 = 0.023 (2.25 × 10⁻²)",
+      "explanation": "Square [H₂] because its coefficient is 2. Reversing a reaction inverts K, so a product-favored reaction becomes reactant-favored in reverse."
+     }
+    ]
+   },
+   "addedAt": "2026-09-28T17:41:17"
   },
   {
    "id": "english-unit1-word-families-and-word-forms",
