@@ -21,12 +21,28 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
-  // escape, then allow **bold**, `code` and line breaks
+  // escape, then allow **bold**, `code`, line breaks and {{m:colour-coded parts}}
+  // (m = subject / noun of the sentence, k = predicate, n = the tool word, x = extra)
+  var HL_RE = /\{\{([mknx]):(.+?)\}\}/g;
   function rich(s) {
-    return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    return esc(s).replace(HL_RE, '<span class="hl hl-$1">$2</span>')
+                 .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
                  .replace(/`(.+?)`/g, '<code>$1</code>')
                  .replace(/\n/g, '<br>');
   }
+  function plain(s) { return String(s == null ? '' : s).replace(HL_RE, '$2'); }
+  function localDate(ymd) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(ymd || '');
+    return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+  }
+  // whole days from today (local midnight) until a YYYY-MM-DD date; negative once it has passed
+  function daysUntil(ymd) {
+    var d = localDate(ymd);
+    if (!d) return null;
+    var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    return Math.round((d.getTime() - today.getTime()) / 86400000);
+  }
+  function dayWord(n) { return n === 0 ? 'Today' : n === 1 ? 'Tomorrow' : n > 1 ? 'In ' + n + ' days' : 'Past'; }
   function dirAttr(lesson) {
     var d = lesson && lesson.dir;
     if (!d && lesson && lesson.subject === 'Arabic') d = 'rtl';
@@ -102,8 +118,20 @@
     var p = s.lessons[id] || {};
     return {
       studied: !!p.studied, best: p.best || null, last: p.last || null, attempts: p.attempts || 0, lastWrong: p.lastWrong || [],
-      kpisChecked: p.kpisChecked || [], revealed: p.revealed || {}, myVideos: p.myVideos || []
+      kpisChecked: p.kpisChecked || [], revealed: p.revealed || {}, myVideos: p.myVideos || [], drill: p.drill || {}
     };
+  }
+  function examDone(examId) {
+    var s = loadStore();
+    return (s.exams && s.exams[examId]) || {};
+  }
+  function toggleExamTask(examId, key) {
+    var s = loadStore();
+    if (!s.exams) s.exams = {};
+    var cur = s.exams[examId] || {};
+    cur[key] = !cur[key];
+    s.exams[examId] = cur;
+    saveStore();
   }
   function setP(id, patch) {
     var s = loadStore();
@@ -136,6 +164,7 @@
     LESSONS.forEach(function (l) {
       function add(tab, label, text) {
         if (!text) return;
+        text = plain(text);
         var n = normWithMap(text);
         searchIndex.push({ lesson: l, tab: tab, label: label, text: text, norm: n });
       }
@@ -161,6 +190,8 @@
       (q.multipleChoice || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question + ' ' + (m.options || []).join(' | ')); });
       (q.shortAnswer || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question); });
       (q.examStyle || []).forEach(function (m) { add(v2 ? 'practice' : 'quiz', 'Quiz', m.question); });
+      (l.drills || []).forEach(function (m) { add('practice', 'Practice', m.question + ' ' + (m.options || []).join(' | ')); });
+      if (l.passage) add(v2 ? 'explanation' : 'summary', 'Text', (l.passage.title || '') + ' — ' + (l.passage.text || ''));
     });
   }
   function highlight(entry, words) {
@@ -207,8 +238,15 @@
       (totalLessons ? doneLessons + ' of ' + totalLessons + ' lessons studied.' :
         'No lessons yet. Drop files into a subject\'s <span class="path">materials</span> folder, then ask Claude to <strong>process new files</strong>.') +
       '</p>' +
-      (DATA.generated ? '<p class="hint" style="margin:-14px 0 20px">Last updated ' + esc(formatDate(DATA.generated)) + '</p>' : '') +
-      '<div class="grid">';
+      (DATA.generated ? '<p class="hint" style="margin:-14px 0 20px">Last updated ' + esc(formatDate(DATA.generated)) + '</p>' : '');
+    upcomingExams().forEach(function (x) {
+      var n = daysUntil(x.date);
+      html += '<a class="exam-strip" href="#/subject/' + encodeURIComponent(x.subject) + '">' +
+        '<span class="exam-count">' + esc(dayWord(n)) + '</span>' +
+        '<span class="grow">' + esc(x.subject) + ' exam · ' + esc(formatDate(x.date + 'T00:00:00')) + '</span>' +
+        '<span>Open the revision plan →</span></a>';
+    });
+    html += '<div class="grid">';
     SUBJECTS.forEach(function (s) {
       var p = subjectProgress(s);
       html += '<a class="card" href="#/subject/' + encodeURIComponent(s) + '">' +
@@ -228,6 +266,7 @@
     var html = '<div class="crumbs"><a href="#/">Home</a> / ' + esc(subject) + '</div>' +
       '<h1>' + esc(subject) + '</h1><p class="lead">' + p.total + (p.total === 1 ? ' lesson' : ' lessons') +
       (p.total ? ' · ' + p.done + ' studied (' + p.pct + '%)' : '') + '</p>';
+    upcomingExams(subject).forEach(function (x) { html += examPanel(x); });
     if (!ls.length) {
       html += '<div class="empty">No lessons here yet.<br>Put your files in <span class="path">' + esc(subject) +
         '/materials</span>, then tell Claude: <strong>process new files</strong>.</div>';
@@ -248,7 +287,60 @@
     app.innerHTML = html;
   }
 
+  /* ---------------- exams: countdown + day-by-day plan (from data/exams.json) ---------------- */
+  // exams still ahead (or today), soonest first; optionally for one subject only
+  function upcomingExams(subject) {
+    return (DATA.exams || []).filter(function (x) {
+      var n = daysUntil(x.date);
+      return n !== null && n >= 0 && (!subject || x.subject === subject);
+    }).sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+  }
+  function examPanel(x) {
+    var n = daysUntil(x.date), done = examDone(x.id), total = 0, ticked = 0;
+    (x.plan || []).forEach(function (day, di) {
+      (day.tasks || []).forEach(function (t, ti) { total++; if (done[di + '-' + ti]) ticked++; });
+    });
+    var html = '<section class="exam-panel"><div class="exam-head">' +
+      '<div class="exam-count-big"><span class="n">' + (n === 0 ? 'Today' : n) + '</span>' +
+      (n === 0 ? '' : '<span class="u">' + (n === 1 ? 'day to go' : 'days to go') + '</span>') + '</div>' +
+      '<div class="grow"><h2 dir="auto">' + esc(x.title) + '</h2>' +
+      '<p class="exam-date">' + esc(localDate(x.date).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })) + '</p>' +
+      (x.note ? '<p class="exam-note" dir="auto">' + rich(x.note) + '</p>' : '') + '</div></div>';
+    if (total) {
+      html += '<div class="bar" style="margin:14px 0 4px"><span style="width:' + Math.round(100 * ticked / total) + '%"></span></div>' +
+        '<div class="bar-label"><span>Revision plan</span><span>' + ticked + ' of ' + total + ' steps done</span></div>';
+    }
+    (x.plan || []).forEach(function (day, di) {
+      var dn = daysUntil(day.date), mins = 0;
+      (day.tasks || []).forEach(function (t) { mins += t.minutes || 0; });
+      html += '<div class="plan-day' + (dn === 0 ? ' is-today' : dn < 0 ? ' is-past' : '') + '">' +
+        '<h3><span class="when">' + esc(dayWord(dn)) + '</span>' + esc(day.title || '') +
+        (mins ? '<span class="mins">about ' + (mins >= 60 ? Math.floor(mins / 60) + ' h ' + (mins % 60 ? (mins % 60) + ' min' : '') : mins + ' min') + '</span>' : '') + '</h3>' +
+        '<ul class="checklist">';
+      (day.tasks || []).forEach(function (t, ti) {
+        var key = di + '-' + ti, isDone = !!done[key], target = t.lessonId && getLesson(t.lessonId);
+        html += '<li class="' + (isDone ? 'checked' : '') + '"><label>' +
+          '<input type="checkbox" data-action="toggle-exam-task" data-exam="' + esc(x.id) + '" data-key="' + key + '"' + (isDone ? ' checked' : '') + '>' +
+          '<span class="kpi-text grow">' + rich(t.text) + (t.minutes ? ' <span class="task-min">' + t.minutes + ' min</span>' : '') + '</span>' +
+          (target ? '<a class="task-link" href="#/lesson/' + encodeURIComponent(t.lessonId) + (t.section ? '/' + esc(t.section) : '') + '" dir="auto">' + esc(target.title) + ' →</a>' : '') +
+          '</label></li>';
+      });
+      html += '</ul></div>';
+    });
+    return html + '</section>';
+  }
+
   var TABS = [['summary', 'Summary'], ['kpis', 'KPIs'], ['terms', 'Key Terms'], ['quiz', 'Quiz'], ['flash', 'Flashcards']];
+
+  // the reading text of an unseen-text lesson; shown on the Summary tab and again above every quiz question
+  function passageHtml(l, collapsible) {
+    if (!l.passage || !l.passage.text) return '';
+    var d = dirAttr(l), inner = '<div class="passage-text" ' + d + '>' + rich(l.passage.text) + '</div>';
+    if (collapsible) {
+      return '<details class="passage" open><summary ' + d + '>' + esc(l.passage.title || 'Text') + '</summary>' + inner + '</details>';
+    }
+    return '<div class="passage">' + (l.passage.title ? '<h2 ' + d + '>' + esc(l.passage.title) + '</h2>' : '') + inner + '</div>';
+  }
 
   function viewLesson(id, tab) {
     var l = getLesson(id);
@@ -284,10 +376,11 @@
   }
 
   function tabSummary(l) {
-    var d = dirAttr(l), html = '<div class="reading">';
+    var d = dirAttr(l), html = '<div class="reading">' + passageHtml(l, false);
     (l.summary || []).forEach(function (sec) {
       if (sec.heading) html += '<h2 ' + d + '>' + esc(sec.heading) + '</h2>';
       if (sec.text) html += '<p ' + d + '>' + rich(sec.text) + '</p>';
+      if (sec.en) html += '<p class="en-note" dir="ltr">' + rich(sec.en) + '</p>';
       if (sec.bullets && sec.bullets.length) {
         html += '<ul>';
         sec.bullets.forEach(function (b) { html += '<li ' + d + '>' + rich(b) + '</li>'; });
@@ -377,7 +470,8 @@
   function sectionIdea(l, d) {
     var idea = l.idea || {};
     var html = '<section class="v2-section" id="section-idea"><h2><span class="num">2</span>The Idea in Simple Words</h2>';
-    if (idea.simple) html += '<div class="idea-card simple"><div class="idea-label">In plain words</div><p ' + d + '>' + rich(idea.simple) + '</p></div>';
+    if (idea.simple) html += '<div class="idea-card simple"><div class="idea-label">In plain words</div><p ' + d + '>' + rich(idea.simple) + '</p>' +
+      (idea.en ? '<p class="en-note" dir="ltr">' + rich(idea.en) + '</p>' : '') + '</div>';
     if (idea.academic) html += '<div class="idea-card academic"><div class="idea-label">The proper version</div><p ' + d + '>' + rich(idea.academic) + '</p></div>';
     if (idea.analogy) html += '<div class="idea-card analogy"><div class="idea-label">Think of it like this</div><p ' + d + '>' + rich(idea.analogy) + '</p></div>';
     return html + '</section>';
@@ -385,13 +479,34 @@
 
   function sectionExplanation(l, d) {
     var html = '<section class="v2-section" id="section-explanation"><h2><span class="num">3</span>Full Explanation</h2><div class="reading">';
+    if (l.legend && l.legend.length) {
+      html += '<div class="hl-legend" ' + d + '>';
+      l.legend.forEach(function (g) { html += '<span class="hl hl-' + esc(g.code) + '">● ' + esc(g.label) + '</span>'; });
+      html += '</div>';
+    }
     (l.explanation || l.summary || []).forEach(function (sec) {
       if (sec.heading) html += '<h3 ' + d + '>' + esc(sec.heading) + '</h3>';
       if (sec.text) html += '<p ' + d + '>' + rich(sec.text) + '</p>';
+      if (sec.en) html += '<p class="en-note" dir="ltr">' + rich(sec.en) + '</p>';
       if (sec.bullets && sec.bullets.length) {
         html += '<ul>';
         sec.bullets.forEach(function (b) { html += '<li ' + d + '>' + rich(b) + '</li>'; });
         html += '</ul>';
+      }
+      if (sec.table && sec.table.rows) {
+        html += '<div class="table-wrap"><table class="cmp-table" ' + d + '>';
+        if (sec.table.headers) {
+          html += '<thead><tr>';
+          sec.table.headers.forEach(function (h) { html += '<th>' + rich(h) + '</th>'; });
+          html += '</tr></thead>';
+        }
+        html += '<tbody>';
+        sec.table.rows.forEach(function (row) {
+          html += '<tr>';
+          row.forEach(function (c, ci) { html += (ci === 0 ? '<th scope="row">' : '<td>') + rich(c) + (ci === 0 ? '</th>' : '</td>'); });
+          html += '</tr>';
+        });
+        html += '</tbody></table></div>';
       }
       if (sec.box) {
         html += '<div class="info-box ' + esc(sec.box.type || 'rule') + '"><div class="box-label">' + esc(boxLabel(sec.box.type)) +
@@ -429,7 +544,7 @@
       } else {
         for (var s = 0; s < Math.min(n, steps.length); s++) {
           html += '<div class="step"><div class="step-n">Step ' + (s + 1) + '</div><div ' + d + '>' + rich(steps[s].explain || '') + '</div>' +
-            (steps[s].work ? '<div class="work">' + esc(steps[s].work) + '</div>' : '') +
+            (steps[s].work ? '<div class="work">' + rich(steps[s].work) + '</div>' : '') +
             (steps[s].why ? '<div class="why">Why this step? ' + rich(steps[s].why) + '</div>' : '') + '</div>';
         }
         if (n < steps.length) {
@@ -496,9 +611,50 @@
     return quickRecallState[l.id];
   }
 
+  // Practice ladder: every question on the page at once, easy -> medium -> exam level,
+  // each one marked the moment it is answered, with the reason shown underneath.
+  var DRILL_LEVELS = [['easy', 'Level 1 — Very easy'], ['medium', 'Level 2 — Medium'], ['exam', 'Level 3 — Exam level']];
+  function sectionDrills(l, pr, d) {
+    var drills = l.drills || [];
+    if (!drills.length) return '';
+    var state = pr.drill || {}, answered = 0, right = 0;
+    drills.forEach(function (q, i) {
+      if (state[i] !== undefined) { answered++; if (state[i] === q.answer) right++; }
+    });
+    var html = '<h3>Step-by-step practice</h3><p class="hint" style="margin-top:0">Start with the easy ones. Each answer is checked straight away and tells you why. ' +
+      '<strong>' + right + ' right</strong> · ' + answered + ' of ' + drills.length + ' answered.</p>' + passageHtml(l, true);
+    DRILL_LEVELS.forEach(function (lv) {
+      var any = false;
+      drills.forEach(function (q, i) {
+        if ((q.level || 'easy') !== lv[0]) return;
+        if (!any) { html += '<div class="drill-level ' + lv[0] + '">' + lv[1] + '</div>'; any = true; }
+        var chosen = state[i], locked = chosen !== undefined;
+        html += '<div class="drill"><div class="drill-q" ' + d + '>' + rich(q.question) + '</div><div class="options">';
+        q.options.forEach(function (opt, oi) {
+          var cls = 'option';
+          if (locked && oi === q.answer) cls += ' correct';
+          else if (locked && oi === chosen) cls += ' wrong';
+          html += '<button type="button" class="' + cls + '" data-action="drill-choose" data-q="' + i + '" data-i="' + oi + '" ' + d + (locked ? ' disabled' : '') + '>' +
+            '<span class="key" dir="ltr">' + String.fromCharCode(65 + oi) + '</span><span>' + rich(opt) + '</span></button>';
+        });
+        html += '</div>';
+        if (locked) {
+          var ok = chosen === q.answer;
+          html += '<div class="feedback ' + (ok ? 'good' : 'bad') + '" role="status"><strong class="head">' +
+            (ok ? '✓ Correct' : '✗ Not quite — the answer is ' + String.fromCharCode(65 + q.answer)) + '</strong><span ' + d + '>' + rich(q.explanation) + '</span>' +
+            (q.en ? '<p class="en-note" dir="ltr">' + rich(q.en) + '</p>' : '') + '</div>';
+        }
+        html += '</div>';
+      });
+    });
+    if (answered) html += '<div class="btn-row"><button class="btn small" type="button" data-action="drill-reset">Clear my answers and try again</button></div>';
+    return html;
+  }
+
   function sectionPractice(l, pr, d) {
     var html = '<section class="v2-section" id="section-practice"><h2><span class="num">6</span>Practice</h2>';
-    html += '<h3>Quiz</h3>' + tabQuiz(l);
+    html += sectionDrills(l, pr, d);
+    html += '<h3' + ((l.drills || []).length ? ' style="margin-top:36px"' : '') + '>Quiz</h3>' + tabQuiz(l);
     html += '<h3 style="margin-top:36px">Flashcards</h3>' + tabFlash(l);
     var qr = getQuickRecall(l);
     if (qr.items.length) {
@@ -520,6 +676,7 @@
   function sectionRevise(l, d) {
     var sc = l.summaryCard || {};
     var html = '<section class="v2-section print-section" id="section-revise"><h2><span class="num">7</span>Summary to Revise From</h2><div class="summary-card">';
+    if (sc.title) html += '<h3 class="sheet-title" ' + d + '>' + esc(sc.title) + '</h3>';
     if (sc.points && sc.points.length) {
       html += '<ul>'; sc.points.forEach(function (p) { html += '<li ' + d + '>' + rich(p) + '</li>'; }); html += '</ul>';
     }
@@ -600,6 +757,7 @@
     var html = '<div class="quiz">' +
       '<div class="quiz-top"><span>Question ' + (quiz.i + 1) + ' of ' + n + (quiz.mode === 'retry' ? ' · retrying missed' : '') + '</span><span class="qtype">' + TYPE_LABEL[q.type] + '</span></div>' +
       '<div class="bar"><span style="width:' + Math.round(100 * quiz.i / n) + '%"></span></div>' +
+      passageHtml(l, true) +
       '<div class="question" ' + d + '>' + rich(q.question) + '</div>';
     if (q.type === 'mc') {
       var locked = quiz.chosen !== null;
@@ -725,7 +883,18 @@
     var el = ev.target.closest('[data-action]');
     if (!el) return;
     var act = el.getAttribute('data-action'), l = currentLesson();
+    if (act === 'toggle-exam-task') {
+      toggleExamTask(el.getAttribute('data-exam'), el.getAttribute('data-key'));
+      var y0 = window.scrollY; route(); window.scrollTo(0, y0);
+      return;
+    }
     if (!l) return;
+    if (act === 'drill-choose') {
+      var dr = Object.assign({}, getP(l.id).drill), dq = el.getAttribute('data-q');
+      if (dr[dq] === undefined) { dr[dq] = +el.getAttribute('data-i'); setP(l.id, { drill: dr }); rerenderLesson(); }
+      return;
+    }
+    if (act === 'drill-reset') { setP(l.id, { drill: {} }); rerenderLesson(); return; }
     if (act === 'toggle-studied') {
       setP(l.id, { studied: !getP(l.id).studied }); rerenderLesson();
     } else if (act === 'flip') {
