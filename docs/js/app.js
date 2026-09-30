@@ -571,6 +571,14 @@
     if (videos.length) {
       html += '<div class="video-grid">';
       videos.forEach(function (v) {
+        // a checked, real video (v.url) links straight to it; otherwise fall back to a YouTube search
+        if (v.url) {
+          html += '<div class="video-card"><div class="vtitle">' + esc(v.title || v.query) + '</div>' +
+            '<div class="channel"><strong>' + esc(v.channel) + '</strong>' + (v.duration ? ' · ' + esc(v.duration) : '') + '</div>' +
+            '<p class="note" ' + d + '>' + rich(v.note || '') + '</p>' +
+            '<a class="btn small primary" href="' + esc(v.url) + '" target="_blank" rel="noopener">Watch on YouTube ↗</a></div>';
+          return;
+        }
         html += '<div class="video-card"><a class="btn small primary" href="' + esc(youtubeSearchUrl(v.query)) + '" target="_blank" rel="noopener">Search YouTube ↗</a>' +
           '<div class="channel">Look for a channel like: <strong>' + esc(v.channel) + '</strong></div>' +
           '<p class="note" ' + d + '>' + rich(v.note || '') + '</p></div>';
@@ -651,10 +659,133 @@
     return html;
   }
 
+  /* ---------------- Punnett square practice (lessons with "punnett": true) ---------------- */
+  // Each gene: [letter, what the dominant form looks like, what the recessive form looks like].
+  var PUNNETT_PRESETS = [
+    { id: 'T', label: 'Pea plant height (T, t)', genes: [['T', 'Tall', 'Short']] },
+    { id: 'B', label: 'Guinea pig fur (B, b)', genes: [['B', 'Black', 'White']] },
+    { id: 'G', label: 'Pea pod colour (G, g)', genes: [['G', 'Green', 'Yellow']] },
+    { id: 'RY', label: 'Dihybrid — pea seeds (R, r and Y, y)', genes: [['R', 'Round', 'Wrinkled'], ['Y', 'Yellow', 'Green']] },
+    { id: 'BL', label: 'Dihybrid — rabbits (B, b and L, l)', genes: [['B', 'Black fur', 'Brown fur'], ['L', 'Long ears', 'Short ears']] },
+    { id: 'TG', label: 'Dihybrid — pea plants (T, t and G, g)', genes: [['T', 'Tall', 'Short'], ['G', 'Green pod', 'Yellow pod']] }
+  ];
+  var punnett = null; // {preset, p1, p2, cells: {'row-col': typed text}, counts: {classIndex: typed text}, checked, shown}
+  function pnPreset(id) {
+    for (var i = 0; i < PUNNETT_PRESETS.length; i++) if (PUNNETT_PRESETS[i].id === id) return PUNNETT_PRESETS[i];
+    return PUNNETT_PRESETS[0];
+  }
+  function pnGenotypes(ps) { // every genotype a parent can have: TT, Tt, tt (or RRYY … rryy)
+    var out = [''];
+    ps.genes.forEach(function (g) {
+      var U = g[0], L = U.toLowerCase(), next = [];
+      out.forEach(function (o) { [U + U, U + L, L + L].forEach(function (x) { next.push(o + x); }); });
+      out = next;
+    });
+    return out;
+  }
+  function pnGametes(geno) { // 'Tt' -> T, t   ·   'RrYy' -> RY, Ry, rY, ry
+    var out = [''];
+    for (var i = 0; i < geno.length; i += 2) {
+      var next = [];
+      out.forEach(function (o) { next.push(o + geno[i]); next.push(o + geno[i + 1]); });
+      out = next;
+    }
+    return out;
+  }
+  function pnCross(a, b) { // gametes Ry + rY -> RrYy, capital letter first like the slides
+    var s = '';
+    for (var i = 0; i < a.length; i++) s += a[i] < b[i] ? a[i] + b[i] : b[i] + a[i];
+    return s;
+  }
+  function pnNormalise(text, ps) { // what the student typed -> the same form ('tT' counts as 'Tt'); '' if it is not a genotype
+    var t = String(text || '').replace(/\s+/g, ''), s = '';
+    if (t.length !== ps.genes.length * 2) return '';
+    for (var i = 0; i < ps.genes.length; i++) {
+      var U = ps.genes[i][0], L = U.toLowerCase();
+      var mine = t.split('').filter(function (c) { return c === U || c === L; });
+      if (mine.length !== 2) return '';
+      s += mine.sort().join('');
+    }
+    return s;
+  }
+  function pnClass(geno) { // 0 = dominant for every gene … last = recessive for every gene
+    var idx = 0;
+    for (var i = 0; i < geno.length; i += 2) idx = idx * 2 + (geno[i] === geno[i].toUpperCase() ? 0 : 1);
+    return idx;
+  }
+  function pnClassLabel(ps, idx) {
+    var n = ps.genes.length;
+    return ps.genes.map(function (g, i) { return (idx >> (n - 1 - i)) & 1 ? g[2] : g[1]; }).join(', ');
+  }
+  function pnStart(presetId, p1, p2) {
+    var ps = pnPreset(presetId), het = ps.genes.map(function (g) { return g[0] + g[0].toLowerCase(); }).join('');
+    punnett = { preset: ps.id, p1: p1 || het, p2: p2 || het, cells: {}, counts: {}, checked: false, shown: false };
+  }
+  function sectionPunnett() {
+    if (!punnett) pnStart('T');
+    var ps = pnPreset(punnett.preset), top = pnGametes(punnett.p1), side = pnGametes(punnett.p2);
+    var total = top.length * side.length, nClasses = 1 << ps.genes.length, tally = [], right = 0, genoTally = {}, r, c, i;
+    for (i = 0; i < nClasses; i++) tally.push(0);
+    function select(name, label, options, value) {
+      var s = '<label>' + label + '<select data-pn="' + name + '">';
+      options.forEach(function (o) { s += '<option value="' + esc(o[0]) + '"' + (o[0] === value ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; });
+      return s + '</select></label>';
+    }
+    var genos = pnGenotypes(ps).map(function (g) { return [g, g]; });
+    var html = '<h3 style="margin-top:36px">Punnett square practice</h3>' +
+      '<p class="hint" style="margin-top:0">Pick the cross and the two parents. The gametes are written for you: fill in every box, then the phenotype counts, and check.</p>' +
+      '<div class="pn-controls">' +
+      select('preset', 'Cross', PUNNETT_PRESETS.map(function (p) { return [p.id, p.label]; }), ps.id) +
+      select('p1', 'Parent 1 (across the top)', genos, punnett.p1) +
+      select('p2', 'Parent 2 (down the side)', genos, punnett.p2) + '</div>' +
+      '<p class="pn-cross" dir="ltr"><strong>' + esc(punnett.p1) + ' × ' + esc(punnett.p2) + '</strong></p>' +
+      '<div class="table-wrap"><table class="punnett" dir="ltr"><thead><tr><th></th>';
+    top.forEach(function (g) { html += '<th>' + esc(g) + '</th>'; });
+    html += '</tr></thead><tbody>';
+    for (r = 0; r < side.length; r++) {
+      html += '<tr><th>' + esc(side[r]) + '</th>';
+      for (c = 0; c < top.length; c++) {
+        var want = pnCross(side[r], top[c]), key = r + '-' + c, typed = punnett.cells[key] || '';
+        var ok = pnNormalise(typed, ps) === want;
+        tally[pnClass(want)]++; genoTally[want] = (genoTally[want] || 0) + 1;
+        if (ok) right++;
+        html += '<td><input type="text" data-pn-cell="' + key + '" maxlength="' + (want.length + 2) + '" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Row ' + esc(side[r]) + ', column ' + esc(top[c]) + '"' +
+          (punnett.shown ? ' value="' + esc(want) + '" readonly class="ok"' :
+            ' value="' + esc(typed) + '"' + (punnett.checked && typed ? ' class="' + (ok ? 'ok' : 'bad') + '"' : '')) + '></td>';
+      }
+      html += '</tr>';
+    }
+    html += '</tbody></table></div><div class="pn-counts"><div class="hint" style="margin:0">How many of the ' + total + ' boxes show each phenotype?</div>';
+    var countsRight = 0;
+    for (i = 0; i < nClasses; i++) {
+      var typedN = punnett.counts[i] === undefined ? '' : punnett.counts[i], okN = typedN !== '' && +typedN === tally[i];
+      if (okN) countsRight++;
+      html += '<label><span>' + esc(pnClassLabel(ps, i)) + '</span><input type="number" min="0" max="' + total + '" data-pn-count="' + i + '"' +
+        (punnett.shown ? ' value="' + tally[i] + '" readonly class="ok"' :
+          ' value="' + esc(typedN) + '"' + (punnett.checked && typedN !== '' ? ' class="' + (okN ? 'ok' : 'bad') + '"' : '')) + '></label>';
+    }
+    html += '</div>';
+    if (punnett.checked || punnett.shown) {
+      var allRight = punnett.shown || (right === total && countsRight === nClasses);
+      var ratio = tally.map(function (n, k) { return n + ' ' + pnClassLabel(ps, k); }).filter(function (_, k) { return tally[k]; }).join(' : ');
+      var gRatio = Object.keys(genoTally).sort().map(function (g) { return genoTally[g] + ' ' + g; }).join(' : ');
+      html += '<div class="feedback ' + (allRight ? 'good' : 'bad') + '" role="status"><strong class="head">' +
+        (punnett.shown ? 'Answers shown' : allRight ? '✓ All correct' : right + ' of ' + total + ' boxes right · ' + countsRight + ' of ' + nClasses + ' counts right') + '</strong>' +
+        (allRight ? '<span dir="ltr">Phenotypic ratio: ' + esc(ratio) + (ps.genes.length === 1 ? '<br>Genotypic ratio: ' + esc(gRatio) : '') + '</span>' :
+          '<span>Each box = the gamete at the side + the gamete at the top. Write the capital (dominant) letter first, and keep the two letters of the same gene together.</span>') +
+        '</div>';
+    }
+    return html + '<div class="btn-row"><button class="btn primary" type="button" data-action="pn-check">Check my answers</button>' +
+      '<button class="btn" type="button" data-action="pn-show">Show the answers</button>' +
+      '<button class="btn" type="button" data-action="pn-clear">Clear</button>' +
+      '<button class="btn" type="button" data-action="pn-random">Random cross</button></div>';
+  }
+
   function sectionPractice(l, pr, d) {
     var html = '<section class="v2-section" id="section-practice"><h2><span class="num">6</span>Practice</h2>';
     html += sectionDrills(l, pr, d);
-    html += '<h3' + ((l.drills || []).length ? ' style="margin-top:36px"' : '') + '>Quiz</h3>' + tabQuiz(l);
+    if (l.punnett) html += sectionPunnett();
+    html += '<h3' + ((l.drills || []).length || l.punnett ? ' style="margin-top:36px"' : '') + '>Quiz</h3>' + tabQuiz(l);
     html += '<h3 style="margin-top:36px">Flashcards</h3>' + tabFlash(l);
     var qr = getQuickRecall(l);
     if (qr.items.length) {
@@ -895,6 +1026,17 @@
       return;
     }
     if (act === 'drill-reset') { setP(l.id, { drill: {} }); rerenderLesson(); return; }
+    if (act.indexOf('pn-') === 0 && punnett) {
+      if (act === 'pn-check') { punnett.checked = true; punnett.shown = false; }
+      else if (act === 'pn-show') punnett.shown = true;
+      else if (act === 'pn-clear') pnStart(punnett.preset, punnett.p1, punnett.p2);
+      else if (act === 'pn-random') {
+        var rp = pnPreset(punnett.preset), rg = pnGenotypes(rp);
+        pnStart(rp.id, rg[Math.floor(Math.random() * rg.length)], rg[Math.floor(Math.random() * rg.length)]);
+      }
+      rerenderLesson();
+      return;
+    }
     if (act === 'toggle-studied') {
       setP(l.id, { studied: !getP(l.id).studied }); rerenderLesson();
     } else if (act === 'flip') {
@@ -982,6 +1124,18 @@
 
   app.addEventListener('input', function (ev) {
     if (ev.target.id === 'typed' && quiz) quiz.text = ev.target.value;
+    // Punnett practice: remember what is typed so a re-render never loses it
+    var cell = ev.target.getAttribute('data-pn-cell'), count = ev.target.getAttribute('data-pn-count');
+    if (punnett && cell !== null) { punnett.cells[cell] = ev.target.value; ev.target.className = ''; }
+    if (punnett && count !== null) { punnett.counts[count] = ev.target.value; ev.target.className = ''; }
+  });
+
+  app.addEventListener('change', function (ev) {
+    var which = ev.target.getAttribute('data-pn');
+    if (!which || !punnett) return;
+    if (which === 'preset') pnStart(ev.target.value);
+    else pnStart(punnett.preset, which === 'p1' ? ev.target.value : punnett.p1, which === 'p2' ? ev.target.value : punnett.p2);
+    rerenderLesson();
   });
 
   document.getElementById('search-form').addEventListener('submit', function (ev) {

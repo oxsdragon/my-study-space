@@ -9,7 +9,7 @@ window.STUDY_DATA = {
   "Islamic Studies",
   "Social Studies"
  ],
- "generated": "2026-09-30T18:25:12",
+ "generated": "2026-09-30T19:23:14",
  "lessons": [
   {
    "id": "arabic-alkhabari-wal-inshai",
@@ -4473,1606 +4473,1727 @@ window.STUDY_DATA = {
   },
   {
    "id": "biology-genetic-recombination-and-gene-linkage",
-   "title": "Genetic Recombination and Gene Linkage",
+   "title": "Topic 1.2 — Genetic Recombination and Gene Linkage",
    "subject": "Biology",
-   "order": 4,
+   "order": 2,
    "meta": {
-    "studyMinutes": 30,
+    "studyMinutes": 50,
     "difficulty": "hard",
     "prerequisites": [
-     "Lessons 1–3 on Mendelian genetics (genotype, Punnett squares)",
-     "Basic understanding of meiosis and chromosomes",
-     "Comfort with percentages and simple exponents (2ⁿ)"
+     "Topic 1.1 — Mendelian Genetics (segregation and independent assortment)",
+     "Chromosome pairs, gametes and fertilization",
+     "Powers of 2 and percentages"
     ]
    },
    "idea": {
-    "simple": "Imagine chromosomes as train cars, and genes as passengers riding on them. If two passengers are sitting right next to each other on the SAME car, they usually get off together — that's gene linkage. But every so often, cars can swap sections mid-journey (crossing over), which can separate even close neighbors. The farther apart two passengers sit, the more likely a swap will separate them.",
-    "academic": "Genetic recombination — new gene combinations arising from independent assortment and crossing over during meiosis — is a major source of variation. However, genes located close together on the same chromosome (linked genes) tend to violate Mendel's law of independent assortment because they are usually inherited together, unless separated by crossing over. The frequency of crossing over between two genes (recombination frequency) is proportional to the physical distance between them, which allows recombination frequency data to be converted into map units and used to construct chromosome maps.",
-    "analogy": "Think of a chromosome as a long rope with genes tied on at different points. Crossing over is like cutting two ropes at a random point and swapping the ends. Two knots tied close together almost always end up on the same rope-piece after a cut; two knots tied far apart are much more likely to end up on different pieces."
+    "simple": "Two brothers or sisters have the same parents but are never identical. That is because the chromosomes are shuffled every time gametes are made (**independent assortment** and **crossing over**), and then any sperm can meet any egg. Genes that sit **close together on the same chromosome** do not get shuffled so easily: they are **linked** and usually travel together.",
+    "academic": "The new combination of genes produced by crossing over and independent assortment is called **genetic recombination**; it increases variation. Independent assortment gives **2ⁿ** possible gametes (n = number of chromosome pairs) and fertilization gives **2ⁿ × 2ⁿ** combinations. **Gene linkage** is an exception to Mendel’s law of independent assortment. Crossing over occurs more frequently between genes that are farther apart, so cross-over data (**recombination frequency**) can be used to build **chromosome maps**.",
+    "analogy": "From your slide: “Frequency of crossovers ≈ distance between genes.” Two genes far apart on a chromosome leave a lot of room for a crossover to fall between them, so recombination is **likely**. Two genes side by side leave almost no room, so recombination is **unlikely** and they stay together."
    },
    "explanation": [
     {
+     "heading": "Focus question",
+     "text": "**How do genetic recombination and gene linkage compare?** Recombination makes **new** combinations of genes (more variation). Linkage **keeps** genes together (certain characteristics are inherited together)."
+    },
+    {
      "heading": "Genetic recombination",
-     "text": "**Genetic recombination** is the new combination of genes produced by crossing over and independent assortment during meiosis. It is a major source of genetic **variation** in offspring.",
      "bullets": [
-      "Combinations of genes from independent assortment alone can be calculated as **2ⁿ**, where n = the number of chromosome pairs.",
-      "Since any possible male gamete can fertilize any possible female gamete, the total possible combinations after fertilization are **2ⁿ × 2ⁿ**.",
-      "Example: an organism with 10 chromosomes (5 pairs) makes gametes with 2⁵ = 32 possible combinations."
+      "The new combination of genes produced by **crossing over** and **independent assortment** is called **genetic recombination**.",
+      "Combinations of genes due to independent assortment can be calculated using the formula **2ⁿ**, where **n is the number of chromosome pairs**.",
+      "Any possible male gamete can fertilize any possible female gamete, so the possible combinations after fertilization are **2ⁿ × 2ⁿ**.",
+      "Genetic recombination **increases variation**."
      ],
      "box": {
       "type": "formula",
-      "title": "Independent assortment",
-      "content": "Gamete types (one parent) = 2ⁿ\nOffspring combinations (two parents) = 2ⁿ × 2ⁿ"
+      "title": "The two formulas",
+      "content": "Gamete combinations (independent assortment) = 2ⁿ\nFertilization combinations (offspring) = 2ⁿ × 2ⁿ\nn = number of chromosome PAIRS"
+     }
+    },
+    {
+     "heading": "The two class examples (slides 8–9)",
+     "bullets": [
+      "An organism has five pairs of chromosomes. Total number of chromosomes = 10. Every gamete will have 5 chromosomes. **2⁵ = 32**.",
+      "Drosophila virilis has a 2N chromosome number of 12 (ignore crossing over). Total number of chromosomes = 12. Every gamete will have 6 chromosomes. **2⁶ = 64**.",
+      "Watch the wording: if the question gives the **total** (2N), halve it first to get n."
+     ]
+    },
+    {
+     "heading": "2ⁿ table from the worksheet (Q6–Q10)",
+     "table": {
+      "headers": [
+       "Organism",
+       "n (pairs)",
+       "2ⁿ (gametes)",
+       "2ⁿ × 2ⁿ (fertilization)"
+      ],
+      "rows": [
+       [
+        "Human",
+        "23",
+        "2²³ = 8,388,608",
+        "≈ 7.03 × 10¹³"
+       ],
+       [
+        "Fruit fly",
+        "4",
+        "2⁴ = 16",
+        "256"
+       ],
+       [
+        "Corn",
+        "10",
+        "2¹⁰ = 1,024",
+        "1,048,576"
+       ],
+       [
+        "Species with n = 6",
+        "6",
+        "2⁶ = 64",
+        "4,096"
+       ],
+       [
+        "Species with 8 pairs",
+        "8",
+        "2⁸ = 256",
+        "65,536"
+       ]
+      ]
      }
     },
     {
      "heading": "Gene linkage",
-     "text": "Genes located **close together on the same chromosome** are said to be **linked** — they tend to travel together into the same gamete during meiosis, rather than assorting independently. This is an **exception** to Mendel's law of independent assortment.",
      "bullets": [
-      "Linkage explains why certain characteristics are often inherited together (e.g. genes for hair color and eye color being linked means certain combinations, like blonde hair with blue eyes, occur together more often).",
-      "**Crossing over** (during meiosis) can still separate linked genes — it happens more often between genes that are farther apart on the chromosome."
+      "Genes located **close to each other on the same chromosome** are said to be **linked**.",
+      "They usually **travel together during gamete formation** (the slide shows A and B staying together: all four gametes are “parental”, AB or ab).",
+      "Gene linkage results in an **exception to Mendel’s law of independent assortment**.",
+      "Linkage is the closeness of genes or other DNA sequences to one another on the same chromosome. It explains why certain characteristics are frequently inherited together.",
+      "Example from the slide: genes for hair color and eye color are linked, so certain hair and eye colors tend to be inherited together, such as blonde hair with blue eyes and brown hair with brown eyes."
      ]
+    },
+    {
+     "heading": "Linked or not linked? (slide 15)",
+     "table": {
+      "headers": [
+       "Where the two genes are",
+       "Result"
+      ],
+      "rows": [
+       [
+        "Close together on the same chromosome",
+        "Linked"
+       ],
+       [
+        "On two different chromosomes",
+        "Not linked"
+       ],
+       [
+        "Far apart on the same chromosome",
+        "Not linked"
+       ]
+      ]
+     }
+    },
+    {
+     "heading": "Crossing over",
+     "text": "When homologous chromosomes are aligned, a **chromosome crossover** swaps segments between them. The slide shows alleles A, B, C and a, b, c: after the crossover there are **recombinant chromosomes** (A B c and a b C) and **non-recombinant chromosomes** (A B C and a b c). Crossing over is how linked genes can still be separated."
     },
     {
      "heading": "Genetic mapping using linkage",
-     "text": "Researchers use how often two genes are inherited together to estimate how close they are on a chromosome, building a **chromosome map**.",
      "bullets": [
-      "If two genes are inherited together **more than 50%** of the time, that's evidence they are linked on the same chromosome.",
-      "The **closer together** two genes are, the **more frequently** they are inherited together (less crossing over happens between them).",
-      "If two genes are unlinked (on different chromosomes, or far enough apart), they are inherited together only **50%** of the time — the same as pure chance."
+      "Researchers can use linkage to find the **location of a gene on a chromosome**.",
+      "By looking at how often different genes are inherited together, researchers can create **maps of the relative distances** between them.",
+      "If two genes are inherited together **more than 50% of the time**, this is evidence that they are linked on the same chromosome.",
+      "The **closer together** the genes are, the **more frequently** they will be inherited together.",
+      "Slide example: Gene 3 is more closely linked to Gene 2 than to Gene 4. Gene 1 and Gene 3 are not linked, but by chance they will still be inherited together 50% of the time, the same as if they were on separate chromosomes."
      ]
     },
     {
-     "heading": "Recombination frequency",
-     "text": "**Recombination frequency (RF)** is how often a crossover occurs between two genes during meiosis. **The higher the RF, the farther apart the genes are** on the chromosome. By convention, **1% RF = 1 map unit** (also called a Morgan unit), so RF values can be used directly to build a chromosome map showing gene order and relative distances.",
+     "heading": "Chromosome maps and recombination frequency",
+     "bullets": [
+      "**Crossing over occurs more frequently between genes that are farther apart.**",
+      "Cross-over data can be used to create **chromosome maps**, depictions of how genes are arranged on a chromosome.",
+      "The frequency with which a single chromosomal crossing occurs between two genes during meiosis is referred to as **recombination frequency (RF)**.",
+      "The higher the recombination frequency, the farther the genes are away from each other on the chromosome.",
+      "**Every one RF = map unit = Morgan Unit** (1% = 1 map unit).",
+      "Fruit-fly map on the slide, in order: **y** (yellow body), **w** (white eyes), **v** (vermilion eyes), **m** (miniature wings), **r** (rudimentary wings). y and w are the closest pair."
+     ],
      "box": {
       "type": "rule",
-      "title": "Reading recombination frequency",
-      "content": "RF near 0% → genes very close together (rarely separated)\nRF near 50% → genes unlinked (same as pure chance)\n1% RF = 1 map unit"
+      "title": "How to build a map from percentages",
+      "content": "1. Smallest % = the two closest genes.\n2. Largest % = the two genes at the ends.\n3. Place the other genes between the ends.\n4. Check: the small distances must add up to the big one.\n50% = the genes assort independently (behave as if unlinked)."
      }
     },
     {
      "heading": "Polyploidy",
-     "text": "**Polyploidy** is a condition where an organism or cell has **more than two complete sets of chromosomes**. It is very common in the plant kingdom, where it helps drive the formation of new species and often produces larger, stronger plants. Many common crops — such as potatoes, wheat, and cotton — are polyploid."
+     "bullets": [
+      "**Polyploidy** is a condition where an organism or cell has **more than two complete sets of chromosomes**.",
+      "**In plants:** polyploidy is very common in the plant kingdom. It helps drive the creation of new species and often results in **larger, stronger plants**. Many common crops — such as **potatoes, wheat, and cotton** — are polyploid.",
+      "Slide picture: a **triploid banana (3n = 33)** has no seeds; a **diploid banana (2n = 22)** has seeds."
+     ]
     }
    ],
    "kpis": [
-    "Explain how genetic recombination and gene linkage compare.",
-    "Calculate the number of possible gamete combinations from independent assortment using 2ⁿ.",
-    "Explain gene linkage as an exception to independent assortment, and how crossing over can separate linked genes.",
-    "Use recombination frequency to determine the relative order and distance of genes on a chromosome map.",
-    "Describe polyploidy and its significance, especially in plants."
+    "1.2.1 Explain how genetic recombination increases variation in populations and contributes to the transmission and reshuffling of genetic information across generations.",
+    "1.2.2 Apply mathematical reasoning to predict the number of chromosome combinations produced through independent assortment (use the formula 2ⁿ, where n is the number of chromosome pairs).",
+    "1.2.3 Calculate the number of possible genetic combinations produced through fertilization (use the formula 2ⁿ × 2ⁿ).",
+    "1.2.4 Develop and interpret models to explain gene linkage and predict how the physical location of genes on chromosomes influences inheritance patterns.",
+    "1.2.5 Analyze the relationship between crossing over frequency and the distance between genes on a chromosome.",
+    "1.2.6 Use recombination data to construct and interpret chromosome maps.",
+    "1.2.7 Explain the biological significance of polyploidy and how changes in chromosome number are applied in agriculture."
    ],
    "keyTerms": [
     {
      "term": "Genetic recombination",
-     "definition": "The new combination of genes produced by crossing over and independent assortment, which increases genetic variation."
+     "definition": "The new combination of genes produced by crossing over and independent assortment. It increases variation."
+    },
+    {
+     "term": "2ⁿ",
+     "definition": "The number of combinations of genes (gametes) due to independent assortment, where n is the number of chromosome pairs."
+    },
+    {
+     "term": "2ⁿ × 2ⁿ",
+     "definition": "The possible combinations after fertilization, because any possible male gamete can fertilize any possible female gamete."
     },
     {
      "term": "Gene linkage",
-     "definition": "The tendency of genes located close together on the same chromosome to be inherited together."
+     "definition": "The closeness of genes or other DNA sequences to one another on the same chromosome. Linked genes usually travel together during gamete formation."
+    },
+    {
+     "term": "Linked genes",
+     "definition": "Genes located close to each other on the same chromosome. They are inherited together."
     },
     {
      "term": "Crossing over",
-     "definition": "The exchange of genetic material between homologous chromosomes during meiosis; occurs more often between genes that are farther apart."
+     "definition": "The exchange of segments between homologous chromosomes. It occurs more frequently between genes that are farther apart."
     },
     {
      "term": "Chromosome map",
-     "definition": "A depiction of how genes are arranged along a chromosome, built from crossover (recombination frequency) data."
+     "definition": "A depiction of how genes are arranged on a chromosome, made from cross-over data: the relative order and distance between genes."
     },
     {
      "term": "Recombination frequency (RF)",
-     "definition": "The frequency with which a crossover occurs between two genes during meiosis; higher RF means the genes are farther apart."
+     "definition": "The frequency with which a single chromosomal crossing occurs between two genes during meiosis."
     },
     {
      "term": "Map unit (Morgan unit)",
-     "definition": "A unit of genetic distance on a chromosome map; by convention, 1% recombination frequency = 1 map unit."
+     "definition": "Every one RF = one map unit = one Morgan unit."
     },
     {
-     "term": "Independent assortment",
-     "definition": "The random distribution of chromosome pairs into gametes; the number of possible combinations is 2ⁿ for n chromosome pairs."
+     "term": "Recombinant chromosomes",
+     "definition": "Chromosomes that carry a new combination of alleles after a crossover (the others are non-recombinant)."
     },
     {
      "term": "Polyploidy",
-     "definition": "A condition where an organism or cell has more than two complete sets of chromosomes; common in plants."
+     "definition": "A condition where an organism or cell has more than two complete sets of chromosomes."
+    },
+    {
+     "term": "Protein (review vocabulary)",
+     "definition": "Large, complex polymer essential to all life that provides structure for tissues and organs."
     }
    ],
    "examples": [
     {
-     "title": "Example 1: Gamete types from independent assortment",
+     "title": "Slides 8–9 — Gametes from pairs, and from 2N",
      "difficulty": "easy",
-     "problem": "A cell has 4 chromosome pairs (8 chromosomes total). How many genetically different gamete types can it produce through independent assortment alone?",
+     "problem": "(a) An organism has five pairs of chromosomes. How many different gametes can it produce? (b) Drosophila virilis has a 2N chromosome number of 12. Calculate the number of different chromosomal combinations that could occur in the gametes of the fruit fly (ignore crossing over).",
      "steps": [
       {
-       "explain": "Identify n, the number of chromosome PAIRS (not the total chromosome count).",
-       "work": "n = 4 pairs"
+       "explain": "(a) Five pairs means n = 5. Use 2ⁿ.",
+       "work": "Total number of chromosomes = 10\nEvery gamete will have 5 chromosomes\n2⁵ = 2 × 2 × 2 × 2 × 2 = 32"
       },
       {
-       "explain": "Apply the formula for independent assortment: each pair can contribute either its maternal or paternal chromosome to a gamete.",
-       "work": "Number of gamete types = 2ⁿ = 2⁴"
+       "explain": "(b) 2N = 12 is the total. Halve it to get the number of pairs.",
+       "work": "Total number of chromosomes = 12\nn = 12 ÷ 2 = 6",
+       "why": "The formula always uses pairs. Using 12 instead of 6 is the most common mistake."
       },
       {
-       "explain": "Calculate the final number.",
-       "work": "2⁴ = 16"
+       "explain": "Use 2ⁿ with n = 6.",
+       "work": "2⁶ = 64"
       }
      ],
-     "answer": "16 possible gamete types."
+     "answer": "(a) 32 different gametes. (b) 64 different chromosomal combinations."
     },
     {
-     "title": "Example 2: Deciding whether two genes are linked",
+     "title": "Worksheet Q6–Q9 — The 2ⁿ and 2ⁿ × 2ⁿ table",
      "difficulty": "medium",
-     "problem": "Two genes, P and Q, are found to be inherited together in 78% of offspring. Are P and Q linked? Explain your reasoning.",
+     "problem": "Complete the table for: human (n = 23), fruit fly (n = 4), corn (n = 10) and a species with n = 6. Give 2ⁿ (gamete combinations) and 2ⁿ × 2ⁿ (fertilization combinations).",
      "steps": [
       {
-       "explain": "Recall the benchmark for unlinked genes: independent assortment predicts 50% co-inheritance by chance alone.",
-       "work": "Expected co-inheritance if unlinked = 50%"
+       "explain": "Fruit fly, n = 4. Gametes first, then multiply the answer by itself for fertilization.",
+       "work": "2⁴ = 16\n16 × 16 = 256"
       },
       {
-       "explain": "Compare the observed rate to this benchmark.",
-       "work": "Observed = 78%, well above 50%",
-       "why": "The bigger the gap above 50%, the stronger the evidence for linkage — 78% is a clear, strong signal, not just random noise."
+       "explain": "Species with n = 6.",
+       "work": "2⁶ = 64\n64 × 64 = 4,096"
       },
       {
-       "explain": "Draw a conclusion based on the comparison.",
-       "work": "78% ≫ 50% → genes are linked"
+       "explain": "Corn, n = 10.",
+       "work": "2¹⁰ = 1,024\n1,024 × 1,024 = 1,048,576"
+      },
+      {
+       "explain": "Human, n = 23. Use a calculator.",
+       "work": "2²³ = 8,388,608\n8,388,608 × 8,388,608 ≈ 7.03 × 10¹³",
+       "why": "2ⁿ × 2ⁿ is the same as 2²ⁿ, so for humans it is 2⁴⁶. That is about 70 trillion combinations from one pair of parents, before crossing over is even counted."
       }
      ],
-     "answer": "Yes, P and Q are linked — their 78% co-inheritance rate is far higher than the 50% expected for unlinked genes."
+     "answer": "Human: 8,388,608 and ≈ 7.03 × 10¹³. Fruit fly: 16 and 256. Corn: 1,024 and 1,048,576. n = 6: 64 and 4,096."
     },
     {
-     "title": "Example 3: Mapping three genes from recombination frequencies",
-     "difficulty": "hard",
-     "problem": "Recombination frequencies were measured between three genes: M–N: 6%, N–O: 9%, M–O: 15%. (a) Convert these to map units. (b) Determine the most likely order of the genes on the chromosome.",
-     "steps": [
-      {
-       "explain": "Convert each recombination frequency directly into map units, since 1% RF = 1 map unit.",
-       "work": "M–N = 6 map units, N–O = 9 map units, M–O = 15 map units"
-      },
-      {
-       "explain": "Check whether the largest distance equals the sum of the two smaller ones — if so, the gene measured in both smaller distances sits in the middle.",
-       "work": "M–N + N–O = 6 + 9 = 15, which equals M–O = 15",
-       "why": "This consistency check works because if N sits between M and O, the direct M-to-O distance should equal the sum of the two shorter hops through N."
-      },
-      {
-       "explain": "Conclude the gene order from the consistent distances.",
-       "work": "Order: M — N — O (N is in the middle)"
-      }
-     ],
-     "answer": "Gene order: M — N — O, with N positioned 6 map units from M and 9 map units from O (consistent with the 15-unit M–O distance)."
-    },
-    {
-     "title": "Example 4 (worksheet Q12): Mapping four genes",
-     "difficulty": "hard",
-     "problem": "Crossing-over percentages between four linked genes: K–L 9%, K–M 3%, K–N 21%, L–M 6%, L–N 12%. (a) Which two genes are closest? (b) Find the gene order and distances. (c) What would 50% crossing over mean?",
-     "steps": [
-      {
-       "explain": "The smallest percentage = the closest pair.",
-       "work": "K–M = 3% is the smallest → K and M are closest"
-      },
-      {
-       "explain": "The largest percentage = the two genes at the ends of the map.",
-       "work": "K–N = 21% is the largest → K and N are the ends"
-      },
-      {
-       "explain": "Place the other genes between the ends using their distance from K.",
-       "work": "From K: M at 3, L at 9, N at 21 → K — M — L — N",
-       "why": "Measuring every gene from the same end gene turns the problem into putting numbers on a ruler."
-      },
-      {
-       "explain": "Check every remaining pair against the map. All must agree.",
-       "work": "L–M = 9 − 3 = 6 ✓   L–N = 21 − 9 = 12 ✓"
-      },
-      {
-       "explain": "Answer part (c) from the 50% rule.",
-       "work": "50% = genes assort independently (behave as unlinked)"
-      }
-     ],
-     "answer": "(a) K and M (3%). (b) K — M — L — N with K–M = 3, M–L = 6, L–N = 12 map units (K–N = 21). (c) 50% means the genes behave as unlinked. Note: the worksheet's answer key prints the order as L — K — M — N, but that order gives L–M = 12, not the 6% in the table, so check it with your teacher."
-    },
-    {
-     "title": "Example 5 (worksheet Q10): Gametes and fertilization for n = 8",
+     "title": "Worksheet Q10 — A species with 8 pairs",
      "difficulty": "medium",
-     "problem": "A species has 8 pairs of chromosomes. How many chromosome combinations are possible (a) in its gametes and (b) in the offspring after fertilization?",
+     "problem": "A species has 8 pairs of chromosomes. Calculate the number of possible chromosome combinations in the gametes, and the number of possible combinations in the offspring after fertilization. Show all your steps.",
      "steps": [
       {
-       "explain": "Gametes from one parent: use 2ⁿ with n = 8 pairs.",
-       "work": "2⁸ = 256"
+       "explain": "Write n.",
+       "work": "n = 8 pairs"
       },
       {
-       "explain": "Fertilization joins one gamete from each parent, so multiply.",
-       "work": "2⁸ × 2⁸ = 256 × 256 = 65,536"
+       "explain": "Gametes: 2ⁿ.",
+       "work": "2⁸ = 256 combinations"
+      },
+      {
+       "explain": "Fertilization: any male gamete can fertilize any female gamete, so multiply.",
+       "work": "2⁸ × 2⁸ = 256 × 256 = 65,536 combinations"
       }
      ],
-     "answer": "(a) 256 gamete combinations. (b) 65,536 offspring combinations."
+     "answer": "Gametes = 2⁸ = 256 combinations; fertilization = 2⁸ × 2⁸ = 65,536 combinations."
+    },
+    {
+     "title": "Worksheet Q11 — Why siblings are not identical",
+     "difficulty": "medium",
+     "problem": "Explain, using the concept of independent assortment and crossing over, why full siblings from the same two parents are not genetically identical.",
+     "steps": [
+      {
+       "explain": "Point 1: independent assortment.",
+       "work": "Independent assortment shuffles maternal/paternal chromosomes randomly into gametes."
+      },
+      {
+       "explain": "Point 2: crossing over.",
+       "work": "Crossing over exchanges segments between homologous chromosomes."
+      },
+      {
+       "explain": "Conclusion: link both points to the gametes and then to the siblings.",
+       "work": "Each gamete (and therefore each sibling) receives a unique combination of alleles.",
+       "why": "An “explain” answer needs the cause (the two processes) and the result (unique gametes → different siblings)."
+      }
+     ],
+     "answer": "Independent assortment shuffles maternal/paternal chromosomes randomly into gametes, and crossing over exchanges segments between homologous chromosomes, so each gamete (and therefore each sibling) receives a unique combination of alleles, making siblings genetically different despite sharing the same parents."
+    },
+    {
+     "title": "Worksheet Q12 — Mapping four genes (K, L, M, N)",
+     "difficulty": "hard",
+     "problem": "Crossing-over percentages between four linked genes on the same chromosome: K and L 9%, K and M 3%, K and N 21%, L and M 6%, L and N 12%. (a) Which two genes are closest together? Justify your answer. (b) Draw the correct gene order and map distances. (c) If two genes show a crossing-over percentage of 50%, what does this indicate about their linkage?",
+     "steps": [
+      {
+       "explain": "(a) The lowest crossing-over % means the shortest distance.",
+       "work": "K and M = 3% (lowest) → K and M are closest together"
+      },
+      {
+       "explain": "(b) The largest % gives the two genes at the ends.",
+       "work": "K and N = 21% (largest) → K and N are the ends"
+      },
+      {
+       "explain": "Measure every gene from K and put them in order of distance.",
+       "work": "K = 0, M = 3, L = 9, N = 21\nOrder: K — M — L — N",
+       "why": "Measuring everything from one end gene turns the problem into marking numbers on a ruler."
+      },
+      {
+       "explain": "Check the two pairs you have not used yet. Both must match the table.",
+       "work": "L and M = 9 − 3 = 6 ✓ (table: 6%)\nL and N = 21 − 9 = 12 ✓ (table: 12%)"
+      },
+      {
+       "explain": "Write the map with distances between neighbours.",
+       "work": "K —3— M —6— L —12— N   (K to N = 21)"
+      },
+      {
+       "explain": "(c) Use the 50% rule.",
+       "work": "50% → the genes assort independently (behave as if unlinked), even if physically on the same chromosome"
+      }
+     ],
+     "answer": "(a) K and M are closest together (lowest crossing-over % = 3%, indicating the shortest physical distance). (b) K —3— M —6— L —12— N. (c) A 50% crossing-over frequency indicates the genes assort independently (behave as if unlinked), even if physically on the same chromosome.\n**Check with your teacher:** the worksheet’s answer key prints the order as “L — K — M — N”. That order would make L and M 12 units apart and L and N 30 units apart, but the table says 6% and 12%. The order K — M — L — N fits all five numbers."
+    },
+    {
+     "title": "Worksheet Q13 — Mapping three genes (X, Y, Z)",
+     "difficulty": "hard",
+     "problem": "Recombination frequencies: X–Y 7%, X–Z 19%, Y–Z 12%. (a) Determine the correct order of genes X, Y, and Z on the chromosome. (b) Sketch the chromosome map showing the relative distances between the genes.",
+     "steps": [
+      {
+       "explain": "Smallest RF = closest pair.",
+       "work": "X–Y = 7% is smallest → X and Y are closest"
+      },
+      {
+       "explain": "Largest RF = farthest apart = the two ends.",
+       "work": "X–Z = 19% is largest → X and Z are farthest apart"
+      },
+      {
+       "explain": "The gene that is left must be in the middle.",
+       "work": "Y is between X and Z\nOrder: X — Y — Z"
+      },
+      {
+       "explain": "Check that the two short distances add up to the long one, then draw the map.",
+       "work": "7 + 12 = 19 ✓\nX ---7%--- Y ---12%--- Z",
+       "why": "If the distances are additive, the order is correct."
+      }
+     ],
+     "answer": "(a) Gene order: X — Y — Z. (b) Map: X ---7%--- Y ---12%--- Z (X to Z ≈ 19%, consistent with additive distances)."
+    },
+    {
+     "title": "Slide 20 — Class problem: W, X, Y, Z",
+     "difficulty": "hard",
+     "problem": "A scientist determines the recombination frequencies between the following genes: W–X 3%, X–Y 2%, Y–Z 13%, Z–W 8%. What is the correct place of the genes and the correct order relative to one another?",
+     "steps": [
+      {
+       "explain": "Remember: the larger the recombination frequency, the larger the distance between two genes. The largest gives the ends.",
+       "work": "Y–Z = 13% (largest) → Y and Z are the ends"
+      },
+      {
+       "explain": "Start from Z. W is 8 from Z.",
+       "work": "Z —8— W"
+      },
+      {
+       "explain": "X is 3 from W, and Y is 2 from X. Keep going in the same direction.",
+       "work": "Z —8— W —3— X —2— Y"
+      },
+      {
+       "explain": "Check: the three steps must add up to the Y–Z distance.",
+       "work": "8 + 3 + 2 = 13 ✓"
+      }
+     ],
+     "answer": "Order: Z — W — X — Y (the same as Y — X — W — Z read backwards), with Z–W = 8, W–X = 3 and X–Y = 2 map units. This working is mine; the slide’s own answer picture (slide 21) shows a different practice question."
     }
    ],
    "commonMistakes": [
     {
-     "mistake": "Using 2ⁿ instead of 2ⁿ × 2ⁿ when asked for total offspring combinations after fertilization.",
-     "fix": "2ⁿ alone gives the possible gamete types from ONE parent. For total offspring combinations from two parents, you need 2ⁿ × 2ⁿ."
+     "mistake": "Using the total number of chromosomes as n.",
+     "fix": "n is the number of PAIRS. 2N = 12 means n = 6, so 2⁶ = 64 (not 2¹²)."
     },
     {
-     "mistake": "Assuming a high co-inheritance rate between two genes says something about every other gene too.",
-     "fix": "Linkage is always evaluated PAIRWISE between two specific genes — a high co-inheritance rate only tells you about that one pair, not about the whole genome."
+     "mistake": "Giving 2ⁿ when the question asks about offspring or fertilized eggs.",
+     "fix": "Gametes = 2ⁿ. Offspring after fertilization = 2ⁿ × 2ⁿ. Six pairs: 64 gametes but 4,096 fertilized eggs."
     },
     {
-     "mistake": "Thinking a recombination frequency near 50% means genes are \"very linked.\"",
-     "fix": "It's the opposite: RF near 0% means genes are very close together; RF near 50% means the genes behave as if unlinked (same as pure chance)."
+     "mistake": "Calculating 2 × n instead of 2ⁿ.",
+     "fix": "2⁵ is 2 × 2 × 2 × 2 × 2 = 32, not 10."
+    },
+    {
+     "mistake": "Thinking a high crossing-over % means strongly linked.",
+     "fix": "It is the opposite. Low % (like 2%) = very close together. 50% = behave as if unlinked."
+    },
+    {
+     "mistake": "Writing a gene order without checking it.",
+     "fix": "Always add the small distances: they must equal the largest one (7 + 12 = 19)."
     }
    ],
    "videos": [
     {
-     "query": "genetic recombination and crossing over explained meiosis",
+     "query": "Amoeba Sisters Meiosis",
+     "title": "Meiosis (Older Video 2017)",
      "channel": "Amoeba Sisters",
-     "note": "Explains crossing over during meiosis and how it creates new gene combinations."
+     "duration": "7 min 44 s",
+     "url": "https://www.youtube.com/watch?v=VzDMG7ke69g",
+     "note": "The stages of meiosis, showing where crossing over and independent assortment happen and why they create variation."
     },
     {
-     "query": "gene linkage and recombination frequency explained genetics",
+     "query": "Bozeman Science Genetic Recombination and Gene Mapping",
+     "title": "Genetic Recombination and Gene Mapping",
      "channel": "Bozeman Science",
-     "note": "Covers linked genes and how recombination frequency relates to physical distance on a chromosome."
+     "duration": "9 min 49 s",
+     "url": "https://www.youtube.com/watch?v=TU44tR0hJ8A",
+     "note": "How the frequency of recombination between linked genes is used to work out where genes are on a chromosome. Closest to your worksheet Part D."
     },
     {
-     "query": "polyploidy in plants explained genetics",
-     "channel": "Khan Academy",
-     "note": "Explains polyploidy and why it's common and useful in plant breeding."
+     "query": "Khan Academy Genetic recombination 1",
+     "title": "Genetic recombination 1",
+     "channel": "Khan Academy (khanacademymedicine)",
+     "duration": "6 min 12 s",
+     "url": "https://www.youtube.com/watch?v=BlnUNmfGn7I",
+     "note": "What recombination is and how crossing over separates genes on the same chromosome."
+    },
+    {
+     "query": "Khan Academy Gene mapping",
+     "title": "Gene mapping",
+     "channel": "Khan Academy (khanacademymedicine)",
+     "duration": "13 min 19 s",
+     "url": "https://www.youtube.com/watch?v=ZeATszO-6e0",
+     "note": "Using recombination frequencies to put genes in order and find map distances. Made for a higher level, so watch it after the Bozeman one."
+    }
+   ],
+   "drills": [
+    {
+     "level": "easy",
+     "question": "Worksheet Q7. A fruit fly has n = 4. How many gamete combinations (2ⁿ)?",
+     "options": [
+      "8",
+      "16",
+      "32",
+      "256"
+     ],
+     "answer": 1,
+     "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16. (8 is 2 × 4, the common mistake.)"
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q7. For the fruit fly (n = 4), how many fertilization combinations (2ⁿ × 2ⁿ)?",
+     "options": [
+      "32",
+      "64",
+      "256",
+      "16"
+     ],
+     "answer": 2,
+     "explanation": "16 × 16 = 256. Any of the 16 male gametes can fertilize any of the 16 female gametes."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q9. A species has n = 6. How many gamete combinations?",
+     "options": [
+      "64",
+      "12",
+      "36",
+      "4,096"
+     ],
+     "answer": 0,
+     "explanation": "2⁶ = 64. 4,096 is the fertilization answer (64 × 64)."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q8. Corn has n = 10. How many gamete combinations?",
+     "options": [
+      "20",
+      "100",
+      "512",
+      "1,024"
+     ],
+     "answer": 3,
+     "explanation": "2¹⁰ = 1,024."
+    },
+    {
+     "level": "easy",
+     "question": "In the formula 2ⁿ, what is n?",
+     "options": [
+      "The total number of chromosomes",
+      "The number of genes",
+      "The number of chromosome pairs",
+      "The number of gametes"
+     ],
+     "answer": 2,
+     "explanation": "From the slide: 2ⁿ, where n is the number of chromosome pairs."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q9. For n = 6, how many fertilization combinations?",
+     "options": [
+      "128",
+      "4,096",
+      "1,024",
+      "16,384"
+     ],
+     "answer": 1,
+     "explanation": "2⁶ × 2⁶ = 64 × 64 = 4,096."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q10. A species has 8 pairs of chromosomes. How many combinations in the gametes, and in the offspring after fertilization?",
+     "options": [
+      "16 and 256",
+      "64 and 4,096",
+      "256 and 512",
+      "256 and 65,536"
+     ],
+     "answer": 3,
+     "explanation": "Gametes: 2⁸ = 256. Fertilization: 256 × 256 = 65,536."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q6. A human has n = 23. How many gamete combinations?",
+     "options": [
+      "8,388,608",
+      "46",
+      "529",
+      "7.03 × 10¹³"
+     ],
+     "answer": 0,
+     "explanation": "2²³ = 8,388,608. 7.03 × 10¹³ is the fertilization answer (2²³ × 2²³)."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q12a. K–L 9%, K–M 3%, K–N 21%, L–M 6%, L–N 12%. Which two genes are closest together?",
+     "options": [
+      "K and L",
+      "L and M",
+      "K and M",
+      "K and N"
+     ],
+     "answer": 2,
+     "explanation": "K and M have the lowest crossing-over % (3%), which indicates the shortest distance."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q12c. Two genes show a crossing-over percentage of 50%. What does this indicate?",
+     "options": [
+      "They are very tightly linked",
+      "They assort independently (behave as if unlinked)",
+      "They are the same gene",
+      "They are 50 genes apart"
+     ],
+     "answer": 1,
+     "explanation": "A 50% crossing-over frequency indicates the genes assort independently, even if they are physically on the same chromosome."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q13a. X–Y 7%, X–Z 19%, Y–Z 12%. What is the gene order?",
+     "options": [
+      "X — Y — Z",
+      "X — Z — Y",
+      "Y — X — Z",
+      "They are not linked"
+     ],
+     "answer": 0,
+     "explanation": "X–Z (19%) is the largest, so X and Z are the ends and Y is between them. Check: 7 + 12 = 19."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q12b. Which gene order fits all five percentages (K–L 9, K–M 3, K–N 21, L–M 6, L–N 12)?",
+     "options": [
+      "L — K — M — N",
+      "K — L — M — N",
+      "M — K — L — N",
+      "K — M — L — N"
+     ],
+     "answer": 3,
+     "explanation": "From K: M at 3, L at 9, N at 21. Check L–M = 6 ✓ and L–N = 12 ✓. The printed answer key says L — K — M — N, which does not fit L–M = 6%, so ask your teacher."
+    },
+    {
+     "level": "exam",
+     "question": "Slide 20. W–X 3%, X–Y 2%, Y–Z 13%, Z–W 8%. What is the gene order?",
+     "options": [
+      "W — X — Y — Z",
+      "Z — W — X — Y",
+      "X — W — Y — Z",
+      "Z — X — W — Y"
+     ],
+     "answer": 1,
+     "explanation": "Y–Z (13%) is the largest, so Y and Z are the ends. From Z: W at 8, X at 11, Y at 13. Check: 8 + 3 + 2 = 13."
+    },
+    {
+     "level": "exam",
+     "question": "Slide 21. Crossing-over frequencies in Drosophila: A and B 12.5%, A and C 6%, B and C 18.5%. Which sequence is most likely?",
+     "options": [
+      "A, B, C",
+      "A, C, B",
+      "B, A, C",
+      "B, C, A"
+     ],
+     "answer": 2,
+     "explanation": "B and C (18.5%) are farthest apart, so they are the ends and A is in the middle: B, A, C (or C, A, B). Check: 12.5 + 6 = 18.5."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q8. For corn (n = 10), how many fertilization combinations?",
+     "options": [
+      "1,048,576",
+      "2,048",
+      "10,240",
+      "1,024"
+     ],
+     "answer": 0,
+     "explanation": "2¹⁰ × 2¹⁰ = 1,024 × 1,024 = 1,048,576."
     }
    ],
    "quiz": {
     "multipleChoice": [
      {
-      "question": "Genetic recombination is best defined as:",
+      "question": "Worksheet Q17. Which process is the main source of new allele combinations on the same chromosome during meiosis?",
       "options": [
-       "The exact copying of a parent's genes with no change",
-       "New combinations of genes produced by crossing over and independent assortment",
-       "The loss of genetic material during meiosis",
-       "A type of mutation caused by radiation"
+       "DNA replication",
+       "Independent assortment of chromosomes",
+       "Crossing over between non-sister chromatids",
+       "Random fertilization"
       ],
-      "answer": 1,
-      "explanation": "Recombination refers to new gene combinations arising from crossing over and independent assortment during meiosis, increasing variation."
+      "answer": 2,
+      "explanation": "Answer key: C. Crossing over exchanges segments between homologous chromosomes, so it changes the alleles on the same chromosome. Independent assortment shuffles whole chromosomes."
      },
      {
-      "question": "An organism has 8 chromosomes (4 pairs). How many possible combinations of chromosomes can result in its gametes from independent assortment alone?",
+      "question": "Worksheet Q18. An organism has 5 pairs of chromosomes (n = 5). How many possible chromosome combinations can result in its gametes due to independent assortment?",
       "options": [
-       "2⁴ = 16",
-       "4² = 16",
-       "2×4 = 8",
-       "4! = 24"
+       "10",
+       "25",
+       "32",
+       "50"
+      ],
+      "answer": 2,
+      "explanation": "Answer key: C (2⁵ = 32). Method: 2ⁿ = 2 × 2 × 2 × 2 × 2 = 32. 10 is 2 × 5 and 25 is 5², the two common mistakes."
+     },
+     {
+      "question": "Worksheet Q19. Two genes have a recombination frequency of 2%. What can be concluded about these genes?",
+      "options": [
+       "They are on different chromosomes",
+       "They are located very close together on the same chromosome",
+       "They are unlinked",
+       "They always assort independently"
+      ],
+      "answer": 1,
+      "explanation": "Answer key: B. The higher the RF, the farther apart the genes. 2% is very low, so crossing over rarely separates them: they are very close together."
+     },
+     {
+      "question": "Worksheet Q20. What does a chromosome map represent?",
+      "options": [
+       "The exact DNA sequence of a gene",
+       "The relative order and distance between genes based on recombination frequency",
+       "The number of chromosomes in a somatic cell",
+       "The stages of mitosis"
+      ],
+      "answer": 1,
+      "explanation": "Answer key: B. Chromosome maps are depictions of how genes are arranged on a chromosome, made from cross-over data."
+     },
+     {
+      "question": "Slide 8. The number of possible genetically different gametes for an organism equals 2ᴺ, where N is the number of pairs of chromosomes. If an organism has five pairs of chromosomes, how many different gametes can it produce?",
+      "options": [
+       "32",
+       "64",
+       "16",
+       "4"
       ],
       "answer": 0,
-      "explanation": "The formula is 2ⁿ where n is the number of chromosome pairs: 2⁴ = 16."
+      "explanation": "Slide answer: total number of chromosomes = 10, every gamete will have 5 chromosomes, 2⁵ = 32."
      },
      {
-      "question": "Genes located close together on the same chromosome are said to be:",
+      "question": "Slide 9. Drosophila virilis has a 2N chromosome number of 12. Calculate the number of different chromosomal combinations that could occur in the gametes of the fruit fly (ignore crossing over).",
       "options": [
-       "mutated",
-       "linked",
-       "polyploid",
-       "recombinant"
-      ],
-      "answer": 1,
-      "explanation": "Linked genes are close together on the same chromosome and tend to be inherited together."
-     },
-     {
-      "question": "Gene linkage is considered an exception to which of Mendel's principles?",
-      "options": [
-       "The principle of dominance",
-       "The law of segregation",
-       "The law of independent assortment",
-       "The principle of true breeding"
+       "6",
+       "16",
+       "64",
+       "12",
+       "32"
       ],
       "answer": 2,
-      "explanation": "Independent assortment assumes genes assort randomly into gametes, but linked genes on the same chromosome tend to travel together instead."
+      "explanation": "Slide answer: total number of chromosomes = 12, every gamete will have 6 chromosomes, 2⁶ = 64. Halve 2N first to get n."
      },
      {
-      "question": "Crossing over between two linked genes happens more often when the genes are:",
+      "question": "Slide 23 (Quiz 1). Which is not true about polyploidy?",
       "options": [
-       "closer together on the chromosome",
-       "farther apart on the chromosome",
-       "on different chromosomes entirely",
-       "in different organisms"
+       "It is caused by crossing over.",
+       "It can produce hardy and vigorous plants.",
+       "It never occurs in animals.",
+       "It is lethal in humans."
       ],
-      "answer": 1,
-      "explanation": "The farther apart two genes are on a chromosome, the more chances there are for a crossover to occur between them."
+      "answer": 0,
+      "explanation": "The slide marks A as correct. Polyploidy means more than two complete sets of chromosomes; it is not caused by crossing over, which only swaps segments between homologous chromosomes. (Read from the position of the “CORRECT” marker on the slide, so confirm with your teacher.)"
      },
      {
-      "question": "If two genes are inherited together only 50% of the time, this suggests they are:",
+      "question": "Slide 24 (Quiz 2). Which does not contribute to genetic variation?",
       "options": [
-       "tightly linked",
-       "not linked (assorting independently, as if on different chromosomes)",
-       "on the same allele",
-       "polyploid"
+       "chromosome number",
+       "crossing over",
+       "meiosis",
+       "random mating"
       ],
-      "answer": 1,
-      "explanation": "A 50% co-inheritance rate matches what's expected by pure chance for unlinked genes, i.e. no meaningful linkage."
+      "answer": 0,
+      "explanation": "The slide marks A as correct. Crossing over, meiosis (independent assortment) and random mating all make new combinations. The chromosome number of a species stays the same."
      },
      {
-      "question": "What does a higher recombination frequency (RF) between two genes indicate?",
+      "question": "Slide 25 (Quiz 3). A housefly has six pairs of chromosomes. If two houseflies are crossed, how many possible types of fertilized eggs could result from the random lining up of the pairs?",
       "options": [
-       "The genes are closer together",
-       "The genes are farther apart on the chromosome",
-       "The genes are on different chromosomes",
-       "The genes are identical"
-      ],
-      "answer": 1,
-      "explanation": "A higher RF means crossing over happens more often between the two genes, which occurs when they are farther apart."
-     },
-     {
-      "question": "By convention, 1% recombination frequency equals:",
-      "options": [
-       "1 chromosome",
-       "1 map unit (Morgan unit)",
-       "1 allele",
-       "1 gamete"
-      ],
-      "answer": 1,
-      "explanation": "This convention (1% RF = 1 map unit) lets recombination frequency data be converted directly into distances on a chromosome map."
-     },
-     {
-      "question": "Polyploidy refers to an organism or cell that has:",
-      "options": [
-       "only one set of chromosomes",
-       "exactly two complete sets of chromosomes",
-       "more than two complete sets of chromosomes",
-       "no chromosomes"
+       "256",
+       "1024",
+       "4096",
+       "16,384"
       ],
       "answer": 2,
-      "explanation": "Polyploid organisms have extra complete sets of chromosomes beyond the normal two (diploid) sets."
+      "explanation": "Fertilized eggs means 2ⁿ × 2ⁿ: 2⁶ × 2⁶ = 64 × 64 = 4,096, the same as worksheet Q9. **Check with your teacher:** on the slide the “CORRECT” marker sits next to 16,384, which does not match the formula or the worksheet answer key."
      },
      {
-      "question": "Which of the following is true about polyploidy in plants?",
+      "question": "Slide 26 (Quiz 4). The chromosome map shows the genes in this order: y, w (close together), then v, m (close together), then r far to the right. Which two alleles have the least frequency of crossing over?",
       "options": [
-       "It is extremely rare and almost never seen",
-       "It often results in larger, stronger plants and helps drive the creation of new species",
-       "It always kills the plant",
-       "It only occurs in animals, not plants"
+       "r and y",
+       "r and w",
+       "y and w",
+       "y and m"
       ],
-      "answer": 1,
-      "explanation": "Polyploidy is common in plants and is associated with larger, more robust plants and new species formation; crops like wheat, potatoes, and cotton are polyploid."
+      "answer": 2,
+      "explanation": "The slide marks C as correct. Crossing over occurs more frequently between genes that are farther apart, so the least crossing over is between the two closest genes: y and w."
      }
     ],
     "shortAnswer": [
      {
-      "question": "A cell has 6 chromosomes (3 pairs). Using the 2ⁿ formula, how many possible chromosome combinations can result in its gametes from independent assortment?",
-      "answer": "2³ = 8 possible combinations.",
-      "explanation": "With 3 chromosome pairs, each pair can independently contribute either the maternal or paternal chromosome, giving 2×2×2 = 8 combinations."
+      "question": "Worksheet Q10. A species has 8 pairs of chromosomes. Calculate the number of possible chromosome combinations in the gametes, and in the offspring after fertilization. Show all your steps.",
+      "answer": "n = 8. Gametes = 2⁸ = 256 combinations. Fertilization = 2⁸ × 2⁸ = 256 × 256 = 65,536 combinations.",
+      "explanation": "2ⁿ for gametes (independent assortment); multiply it by itself for fertilization because any male gamete can fertilize any female gamete."
      },
      {
-      "question": "Explain what gene linkage is and why it is considered an exception to Mendel's law of independent assortment.",
-      "answer": "Gene linkage is when genes located close together on the same chromosome tend to be inherited together rather than assorting independently. It's an exception to independent assortment because that law assumes genes segregate into gametes independently of one another, which isn't true for genes that are physically close together on the same chromosome.",
-      "explanation": "Independent assortment applies cleanly to genes on different chromosomes; genes on the same chromosome only assort \"independently\" if crossing over separates them, which isn't guaranteed."
+      "question": "Worksheet Q11. Explain, using the concept of independent assortment and crossing over, why full siblings from the same two parents are not genetically identical.",
+      "answer": "Independent assortment shuffles maternal/paternal chromosomes randomly into gametes, and crossing over exchanges segments between homologous chromosomes, so each gamete (and therefore each sibling) receives a unique combination of alleles, making siblings genetically different despite sharing the same parents.",
+      "explanation": "Name both processes, say what each one does, then link it to unique gametes and different siblings."
      },
      {
-      "question": "Explain how scientists use recombination frequency to build a chromosome map.",
-      "answer": "Scientists measure how often a crossover occurs between pairs of genes (the recombination frequency). Since higher RF means the genes are farther apart, they can convert RF values into map units (1% RF = 1 map unit) and use these distances to figure out the relative order and spacing of genes along a chromosome.",
-      "explanation": "This is essentially building a map from indirect distance measurements — like using time-of-travel data to estimate distances between towns."
+      "question": "Focus question (slide 3). How do genetic recombination and gene linkage compare?",
+      "answer": "Genetic recombination is the new combination of genes produced by crossing over and independent assortment; it increases variation. Gene linkage is when genes located close to each other on the same chromosome travel together during gamete formation, so they are inherited together. Linkage is an exception to Mendel’s law of independent assortment, and crossing over is what can separate linked genes.",
+      "explanation": "One makes new combinations, the other keeps combinations together. The farther apart two genes are, the more often crossing over separates them."
      },
      {
-      "question": "A scientist finds that Gene A and Gene B are inherited together 92% of the time, while Gene A and Gene C are inherited together only 50% of the time. What can she conclude about each pair, and why?",
-      "answer": "Gene A and Gene B are likely linked (close together on the same chromosome), since they are inherited together far more often than the 50% expected by chance. Gene A and Gene C are likely not linked (either on different chromosomes, or so far apart on the same chromosome that crossing over effectively randomizes them), since 50% is exactly what's expected from independent assortment.",
-      "explanation": "The 50% threshold is the key diagnostic: above it suggests linkage, at or near it suggests no meaningful linkage."
+      "question": "Worksheet Q12c. If two genes show a crossing-over percentage of 50%, what does this indicate about their linkage?",
+      "answer": "A 50% crossing-over frequency indicates the genes assort independently (behave as if unlinked), even if physically on the same chromosome.",
+      "explanation": "From the slides: genes that are not linked are still inherited together 50% of the time by chance, the same as if they were on separate chromosomes."
      },
      {
-      "question": "Define polyploidy and give one example of its significance in agriculture.",
-      "answer": "Polyploidy is a condition where an organism or cell has more than two complete sets of chromosomes. In agriculture, many important crops such as wheat, potatoes, and cotton are polyploid, and polyploidy often produces larger, stronger plants.",
-      "explanation": "Polyploidy is one reason plant breeders sometimes deliberately induce extra chromosome sets to produce bigger or hardier crop varieties."
+      "question": "Define polyploidy and give its significance in plants, with examples from your slides.",
+      "answer": "Polyploidy is a condition where an organism or cell has more than two complete sets of chromosomes. It is very common in the plant kingdom, helps drive the creation of new species and often results in larger, stronger plants. Many common crops such as potatoes, wheat and cotton are polyploid (the slide also shows a seedless triploid banana, 3n = 33).",
+      "explanation": "Definition first (more than two complete sets), then the two effects (new species; larger, stronger plants), then the crop examples."
      }
     ],
     "examStyle": [
      {
-      "question": "A scientist determines the following recombination frequencies between four genes: W–X: 3%, X–Y: 2%, Y–Z: 13%, Z–W: 8%.\n(a) Convert each recombination frequency into map units.\n(b) Using these distances, determine the most likely linear order of the genes on the chromosome.\n(c) Explain your reasoning for the order you chose.",
-      "answer": "(a) W–X = 3 map units, X–Y = 2 map units, Y–Z = 13 map units, Z–W = 8 map units.\n(b) The order is Z – W – X – Y (or its mirror image Y – X – W – Z).\n(c) The largest distance is Y–Z = 13, so Y and Z are the two genes at the ends. The other three distances must then be the steps in between, and they add up exactly: Z–W (8) + W–X (3) + X–Y (2) = 13 ✓. W is 8 from Z, X is 3 further along, and Y is 2 beyond X.",
-      "explanation": "Marks: (a) 2, (b) 3, (c) 3. Method: the biggest distance tells you which two genes sit at the ends; then arrange the other genes between them so the small distances add up to the big one. If they add up exactly, the order is right."
+      "question": "Worksheet Q12. The crossing-over percentages between four linked genes on the same chromosome are: K and L 9%, K and M 3%, K and N 21%, L and M 6%, L and N 12%.\n(a) Which two genes are closest together on the chromosome? Justify your answer. [2]\n(b) Draw the correct gene order and map distances on the chromosome line. [4]\n(c) If two genes show a crossing-over percentage of 50%, what does this indicate about their linkage? [2]",
+      "answer": "(a) K and M are closest together (lowest crossing-over % = 3%, indicating the shortest physical distance).\n(b) K —3— M —6— L —12— N (K to L = 9, K to N = 21).\n(c) A 50% crossing-over frequency indicates the genes assort independently (behave as if unlinked), even if physically on the same chromosome.",
+      "explanation": "Marks shown are suggested. Method for (b): the largest value (K–N 21) gives the ends; place M at 3 and L at 9 from K; check L–M = 6 and L–N = 12. The printed answer key gives “L — K — M — N” for (b), which does not fit L–M = 6%, so check it with your teacher."
      },
      {
-      "question": "A housefly has 6 pairs of chromosomes.\n(a) Using the 2ⁿ rule, calculate how many genetically different types of gametes a housefly can produce through independent assortment alone.\n(b) If two houseflies are crossed, how many possible combinations of gametes (types of fertilized eggs) could result from the random pairing of these gametes?\n(c) Explain in words why this number is so much larger than the number of gamete types from one parent alone.",
-      "answer": "(a) 2⁶ = 64 possible gamete types.\n(b) 2⁶ × 2⁶ = 64 × 64 = 4096 possible combinations.\n(c) Because fertilization combines one gamete from each of two parents, and any of the 64 possible gametes from one parent can pair with any of the 64 possible gametes from the other parent, the total number of combinations multiplies rather than adds — giving a much larger number of possible genetically distinct offspring than either parent could produce alone.",
-      "explanation": "Marks: (a) 2, (b) 2, (c) 2. This shows how independent assortment plus fertilization dramatically multiplies genetic variation across a population, even without any crossing over."
+      "question": "Worksheet Q13 and slide 20.\n(a) Three linked genes have these recombination frequencies: X–Y 7%, X–Z 19%, Y–Z 12%. Determine the correct order of genes X, Y and Z. [3]\n(b) Sketch the chromosome map showing the relative distances between the genes. [2]\n(c) For another chromosome: W–X 3%, X–Y 2%, Y–Z 13%, Z–W 8%. Give the order of the four genes and show your check. [3]",
+      "answer": "(a) Gene order: X — Y — Z (X–Y = 7% is smallest, so X and Y are closest; X–Z = 19% is largest, so X and Z are farthest apart; Y is between X and Z).\n(b) X ---7%--- Y ---12%--- Z (X to Z ≈ 19%, consistent with additive distances).\n(c) Z — W — X — Y. Check: 8 + 3 + 2 = 13 = Y–Z.",
+      "explanation": "Marks shown are suggested. Method: largest RF = the two end genes; place the others between them; the small distances must add up to the largest. Parts (a) and (b) are the worksheet’s own answers; the working for (c) is mine."
      }
     ]
    },
    "summaryCard": {
+    "title": "Topic 1.2 — Recombination and Linkage: quick sheet",
     "points": [
-     "Genetic recombination = new gene combinations from independent assortment + crossing over.",
-     "Independent assortment alone gives 2ⁿ gamete types (n = chromosome pairs); fertilization multiplies this to 2ⁿ × 2ⁿ.",
-     "Linked genes (close together on the same chromosome) tend to be inherited together, violating independent assortment.",
-     "50% co-inheritance = unlinked (pure chance); much higher than 50% = linked.",
-     "Recombination frequency (RF): higher RF = genes farther apart; 1% RF = 1 map unit.",
-     "Polyploidy = more than two full chromosome sets; common in plants, often makes them larger and stronger."
+     "**Genetic recombination:** the new combination of genes produced by crossing over and independent assortment. It increases variation.",
+     "**Gametes = 2ⁿ**, **fertilization = 2ⁿ × 2ⁿ**, n = number of chromosome **pairs** (if you are given 2N, halve it).",
+     "Know these: n = 4 → 16 and 256. n = 5 → 32. n = 6 → 64 and 4,096. n = 8 → 256 and 65,536. n = 10 → 1,024 and 1,048,576. n = 23 → 8,388,608 and ≈ 7.03 × 10¹³.",
+     "**Linked genes:** close to each other on the same chromosome; they usually travel together during gamete formation. An exception to Mendel’s law of independent assortment.",
+     "**Crossing over** occurs more frequently between genes that are farther apart. Higher RF = farther apart. 1 RF = 1 map unit = 1 Morgan unit.",
+     "**Map method:** smallest % = closest pair; largest % = the ends; the small distances must add up to the largest.",
+     "**50%** = the genes assort independently (behave as if unlinked).",
+     "**Polyploidy:** more than two complete sets of chromosomes; very common in plants; larger, stronger plants (potatoes, wheat, cotton)."
     ],
     "mustNotForget": [
-     "2ⁿ = gametes from ONE parent; 2ⁿ × 2ⁿ = combinations after fertilization from TWO parents.",
-     "50% co-inheritance = unlinked; well above 50% = linked.",
-     "Higher recombination frequency = genes farther apart (1% RF = 1 map unit).",
-     "To find gene order, look for the pair of distances that add up to the largest distance.",
-     "Polyploidy (more than 2 chromosome sets) is common in plants and linked to larger, hardier crops."
+     "n is the number of chromosome PAIRS, not the total.",
+     "Gametes = 2ⁿ. Fertilized eggs / offspring = 2ⁿ × 2ⁿ.",
+     "Low crossing-over % = genes close together. 50% = behave as if unlinked.",
+     "Largest % = the two genes at the ends; always check that the distances add up.",
+     "Siblings differ because of independent assortment + crossing over (+ random fertilization)."
     ]
    },
-   "addedAt": "2026-09-22T17:24:14"
+   "addedAt": "2026-09-30T19:21:59"
   },
   {
-   "id": "biology-lesson1-work-of-gregor-mendel",
-   "title": "Lesson 1: The Work of Gregor Mendel",
+   "id": "biology-topic-1-1-mendelian-genetics",
+   "title": "Topic 1.1 — Mendelian Genetics",
    "subject": "Biology",
    "order": 1,
+   "punnett": true,
    "meta": {
-    "studyMinutes": 25,
-    "difficulty": "easy",
+    "studyMinutes": 60,
+    "difficulty": "medium",
     "prerequisites": [
-     "Basic understanding of chromosomes and sexual reproduction",
-     "Reading simple ratios (e.g. 3:1)"
+     "What chromosomes and gametes (eggs and sperm) are",
+     "Fractions, percentages and simple ratios such as 3:1"
     ]
    },
    "idea": {
-    "simple": "Imagine each parent gives their child one building block for every toy set — say, a red or a blue one. Genes work a bit like that: each parent passes on one version (allele) of every gene to their child. If one color is \"stronger\" (dominant), the toy looks that color even if the child is secretly also holding a block of the other color.",
-    "academic": "Gregor Mendel used pea plants to discover the basic rules of inheritance: individuals inherit two alleles for each gene, one from each parent; these alleles segregate (separate) into gametes; and when a dominant and a recessive allele are both present, the dominant allele's trait is expressed while the recessive allele's trait is masked, not lost.",
-    "analogy": "Think of a genotype like a hand of two playing cards, one face-up and one face-down. Whichever card is face-up is what everyone sees (the phenotype) — but the face-down card is still there in the hand, ready to be dealt again to the next generation."
+    "simple": "Every characteristic (like seed color) is controlled by a **gene**, and a gene comes in different forms called **alleles**. You get one allele from each parent. If one allele is **dominant**, it is the one you see. The **recessive** one is hidden, not lost, and it can show up again in a later generation.",
+    "academic": "Mendel crossed **true-breeding** pea plants and followed the traits through the **P**, **F1** and **F2** generations. His slides give four principles: (1) inheritance is determined by units called **genes**, passed from parents to offspring; (2) some alleles are **dominant** and others **recessive**; (3) each adult has two copies of each gene, and these **segregate** from each other when gametes are formed; (4) alleles for different genes usually segregate **independently** of each other (**independent assortment**). A **Punnett square** uses probability to predict the genotypes and phenotypes of a cross.",
+    "analogy": "Your teacher’s coin example: each coin flip is an **independent event** with a probability of 1/2. A heterozygous parent (Gg) is like a coin: each gamete gets G or g with probability 1/2. A Punnett square is just every possible pair of “flips” from the two parents written in a grid."
    },
    "explanation": [
     {
-     "heading": "Mendel's experiments with peas",
-     "text": "Gregor Mendel, a monk born in 1822, studied inheritance using pea plants in his monastery garden. Peas were a good \"model system\": they are small, easy to grow, produce many offspring, and can **self-pollinate** (a single flower has both male and female parts) or be **cross-pollinated** by hand.",
+     "heading": "Part 1 — The Work of Gregor Mendel (slides 1–25)",
+     "text": "Mendel worked with garden peas. Your slides call peas a **“model system.”** He started with **“true breeding”** plants and crossed them to make **hybrids**.",
      "bullets": [
-      "**Trait:** a specific characteristic of an individual, such as seed color or plant height.",
-      "**True-breeding organism:** one that, when self-pollinated, always produces offspring with the same traits as itself.",
-      "**Hybrid:** offspring created by crossing two different true-breeding strains.",
-      "Mendel removed one set of reproductive structures from some flowers so he could control exactly which plants were crossed, preventing unwanted self-pollination."
+      "**Trait:** specific characteristic / feature (e.g., seed color, plant height) of an individual.",
+      "**True-breeding organism:** one that, when self-pollinated, produces offspring with the same traits. True-breeding plants are genetically identical for the character(s) being investigated.",
+      "**Hybrid:** created from a cross of true-breeding individuals.",
+      "**Pollination:** a pea flower has a male part and a female part, so it can **self-pollinate**. For **cross-pollination** Mendel moved pollen from one plant to another, after removing one set of reproductive structures so the flower could not self-pollinate."
      ]
     },
     {
+     "heading": "The seven pea characteristics",
+     "text": "Pea plants have very distinct true-breeding features. In every one of Mendel’s seven F1 crosses, the hybrid offspring showed the trait of **only one parent**.",
+     "table": {
+      "headers": [
+       "Characteristic",
+       "P cross",
+       "F1 (all offspring)"
+      ],
+      "rows": [
+       [
+        "Seed shape",
+        "Round × Wrinkled",
+        "Round"
+       ],
+       [
+        "Seed color",
+        "Yellow × Green",
+        "Yellow"
+       ],
+       [
+        "Flower color",
+        "Purple × White",
+        "Purple"
+       ],
+       [
+        "Pod shape",
+        "Smooth × Constricted",
+        "Smooth"
+       ],
+       [
+        "Pod color",
+        "Green × Yellow",
+        "Green"
+       ],
+       [
+        "Flower position",
+        "Axial × Terminal",
+        "Axial"
+       ],
+       [
+        "Plant height",
+        "Tall × Short",
+        "Tall"
+       ]
+      ]
+     }
+    },
+    {
      "heading": "Genes and alleles",
-     "text": "Mendel's first conclusion: an individual's characteristics are determined by factors passed from parents to offspring. Today we call these factors **genes**, and the different versions of a gene (e.g. the versions for yellow vs. green seeds) are called **alleles**."
+     "bullets": [
+      "**Genes:** passed from one generation to the next; determine an individual’s characteristics.",
+      "**Alleles:** the different forms of a gene.",
+      "Characteristics such as seed color are determined by **genes**. Yellow and green seed colors are determined by **alleles**. The allele for yellow seeds is **dominant** to the allele for green."
+     ]
     },
     {
-     "heading": "The principle of dominance",
+     "heading": "Principle of dominance",
      "bullets": [
-      "Some alleles are **dominant**, some are **recessive**.",
-      "An organism with **at least one dominant allele** shows that dominant trait.",
-      "An organism shows a **recessive** trait only if it has **no dominant allele** for that gene — i.e., two recessive alleles."
+      "Some alleles are dominant, some recessive.",
+      "An organism with **at least one dominant allele** will exhibit that trait.",
+      "An organism with a recessive allele will exhibit the trait **only in the absence of a dominant allele**."
      ],
      "box": {
       "type": "rule",
-      "title": "The principle of dominance",
-      "content": "GG → dominant trait shown\nGg → dominant trait shown (recessive allele masked, not gone)\ngg → recessive trait shown"
+      "title": "Law of Dominance (slide 13)",
+      "content": "AA → dominant phenotype\nAa → dominant phenotype\naa → recessive phenotype"
      }
     },
     {
-     "heading": "The F1 generation: hybrids show only one trait",
-     "text": "When Mendel crossed true-breeding plants with contrasting traits (e.g. green seeds × yellow seeds), all the hybrid **F1 offspring** showed the trait of only **one** parent (e.g. all green) — the dominant trait. The recessive trait (yellow) seemed to vanish."
+     "heading": "Homozygous vs heterozygous, genotype vs phenotype",
+     "bullets": [
+      "**Homozygous:** has two identical alleles for a gene (BB or bb).",
+      "**Heterozygous:** has two different alleles for a gene (Bb — the slide shows Bb and bB are the same thing).",
+      "**Genotype:** genetic makeup. **Phenotype:** physical traits.",
+      "Two organisms may share the same **phenotype** but have different **genotypes**."
+     ],
+     "table": {
+      "headers": [
+       "Genotype",
+       "Name",
+       "Phenotype (slide 17)"
+      ],
+      "rows": [
+       [
+        "BB",
+        "homozygous dominant",
+        "purple"
+       ],
+       [
+        "Bb",
+        "heterozygous",
+        "purple"
+       ],
+       [
+        "bb",
+        "homozygous recessive",
+        "white"
+       ]
+      ]
+     }
     },
     {
-     "heading": "The F2 generation and segregation",
-     "text": "Mendel then let the F1 plants self-pollinate to produce the **F2 generation**. The recessive trait **reappeared** — about 1/4 of F2 plants were yellow, 3/4 green (a 3:1 ratio). This showed the recessive allele was never lost; it was simply masked in F1.",
+     "heading": "Mendel’s First Law: Segregation",
+     "text": "**Segregation: separation of alleles during gamete formation.** Each gamete (egg or sperm) carries only one allele for each gene; the alleles pair up again at **fertilization**.",
      "bullets": [
-      "**Segregation:** during gamete formation, the two alleles an individual carries separate, so each gamete (egg or sperm) receives only **one** allele for each gene.",
-      "At fertilization, gametes join again to restore allele pairs. The F1 plants (all heterozygous) each carried one dominant and one recessive allele, so when self-pollinated they could recombine to give some homozygous-recessive F2 offspring."
+      "**P:** green pod × yellow pod.",
+      "**F1:** all green. The yellow allele is recessive, so it was masked by the dominant allele for green. It was not lost.",
+      "**F2** (F1 × F1, Gg × Gg): green, green, green, yellow. The recessive trait reappears.",
+      "What proportion of F2 offspring were short? **1/4**. What proportion were tall? **3/4**."
      ],
      "box": {
       "type": "rule",
-      "title": "Gg × Gg cross",
-      "content": "Genotype ratio: 1 GG : 2 Gg : 1 gg\nPhenotype ratio: 3 dominant : 1 recessive"
+      "title": "Gg × Gg (slide 25)",
+      "content": "Gametes: G and g from each parent\nF2: GG, Gg, Gg, gg → 3 green : 1 yellow"
      }
+    },
+    {
+     "heading": "Part 2 — Applying Mendel’s Principles (slides 26–40): probability",
+     "text": "**Probability: the likelihood an event will occur.** If you flip a coin, the probability of either outcome is **50% or 1/2**. Each flip is an **independent event**, so for three coin tosses you multiply: **1/2 × 1/2 × 1/2 = 1/8**.",
+     "bullets": [
+      "Probability of a gamete from Gg receiving **G**: 50%, or 1/2.",
+      "Probability of a gamete receiving **g**: 50%, or 1/2.",
+      "Gg × Gg: probability of green offspring is **3/4**; probability of yellow offspring is **1/4**."
+     ]
+    },
+    {
+     "heading": "Making a Punnett square (one factor)",
+     "text": "Slide 32 uses a cross of ospreys for beak size (B, b). The steps on the slides:",
+     "bullets": [
+      "Work out the **possible gametes** of each parent.",
+      "Write the **gametes for one parent along one side** and the other parent’s along the top.",
+      "**Combine gamete genotypes** in each box (“write out the new genotypes”).",
+      "**Figure out the results.** Bb × Bb gives BB, Bb, Bb, bb: 3 genotypes, 2 phenotypes, 3/4 dominant and 1/4 recessive."
+     ],
+     "table": {
+      "headers": [
+       "Bb × Bb",
+       "B",
+       "b"
+      ],
+      "rows": [
+       [
+        "B",
+        "BB",
+        "Bb"
+       ],
+       [
+        "b",
+        "Bb",
+        "bb"
+       ]
+      ]
+     }
+    },
+    {
+     "heading": "Two factors: the dihybrid cross and 9:3:3:1",
+     "text": "A **two-factor (dihybrid) cross** follows two genes at once. **P:** RRYY × rryy. The gametes are RY and ry, so the **F1 generation are all RrYy** (round, yellow). Crossing F1 × F1 (RrYy × RrYy) gives the F2. Each parent makes four gametes: **RY, Ry, rY, ry**.",
+     "table": {
+      "headers": [
+       "RrYy × RrYy",
+       "RY",
+       "Ry",
+       "rY",
+       "ry"
+      ],
+      "rows": [
+       [
+        "RY",
+        "RRYY",
+        "RRYy",
+        "RrYY",
+        "RrYy"
+       ],
+       [
+        "Ry",
+        "RRYy",
+        "RRyy",
+        "RrYy",
+        "Rryy"
+       ],
+       [
+        "rY",
+        "RrYY",
+        "RrYy",
+        "rrYY",
+        "rrYy"
+       ],
+       [
+        "ry",
+        "RrYy",
+        "Rryy",
+        "rrYy",
+        "rryy"
+       ]
+      ]
+     },
+     "box": {
+      "type": "rule",
+      "title": "9:3:3:1 ratio of phenotypes",
+      "content": "9/16 round, yellow\n3/16 round, green\n3/16 wrinkled, yellow\n1/16 wrinkled, green (rryy)"
+     }
+    },
+    {
+     "heading": "Independent assortment",
+     "text": "**Independent assortment: genes for different traits can segregate independently during gamete formation.** Mendel’s evidence was that **all combinations of phenotypes** appeared in the F2. If R and Y always stayed together, only round-yellow and wrinkled-green seeds would have appeared."
+    },
+    {
+     "heading": "Summary of Mendel’s Principles (slides 36–37)",
+     "bullets": [
+      "Inheritance is determined by units called **genes**, which are passed from parents to offspring.",
+      "Where more than one form of a gene for a single trait exists, some alleles may be **dominant** and others **recessive**.",
+      "Each adult has two copies of each gene — one from each parent. These genes **segregate** from each other when gametes are formed.",
+      "Alleles for different genes usually segregate **independently** of each other."
+     ]
+    },
+    {
+     "heading": "EXTRA — not in your slides or worksheet: other patterns of inheritance",
+     "text": "**This part is extra.** It was the old “Lesson 3” on the site, but none of it appears in your three course files, so it is not used in any question here. Learn it only if your teacher covers it.",
+     "bullets": [
+      "**Incomplete dominance (extra):** the heterozygote is a blend, e.g. red × white flowers give pink.",
+      "**Codominance (extra):** both alleles show fully and separately, e.g. blood type AB.",
+      "**Multiple alleles (extra):** a gene has more than two alleles in the population, e.g. blood type alleles A, B and O.",
+      "**Polygenic traits (extra):** several genes control one trait, giving a wide range of phenotypes."
+     ]
     }
    ],
    "kpis": [
     "Explain from where an organism gets its unique characteristics.",
     "Explain how different forms of a gene are distributed to offspring.",
-    "Describe Mendel's experimental method using true-breeding pea plants and hybrid crosses.",
-    "State the principle of dominance and distinguish dominant from recessive alleles.",
-    "Explain the principle of segregation and how it accounts for a recessive trait reappearing in the F2 generation."
+    "Explain how probability can be used to predict inherited traits.",
+    "Explain how alleles segregate when more than one gene is involved.",
+    "Identify Mendel’s contributions to our understanding of genetics.",
+    "Complete a monohybrid Punnett square and give the genotypic (1:2:1) and phenotypic (3:1) ratios.",
+    "Complete the 4×4 dihybrid Punnett square and use the 9:3:3:1 ratio to calculate expected numbers of offspring."
    ],
    "keyTerms": [
     {
-     "term": "Gene",
-     "definition": "A factor, passed from parent to offspring, that determines an individual's characteristics."
-    },
-    {
-     "term": "Allele",
-     "definition": "One of the different forms that a gene can have (e.g. the allele for yellow seeds vs. the allele for green seeds)."
-    },
-    {
      "term": "Trait",
-     "definition": "A specific characteristic or feature of an individual, such as seed color or plant height."
+     "definition": "Specific characteristic / feature (e.g., seed color, plant height) of an individual."
     },
     {
      "term": "True breeding",
-     "definition": "Describes an organism that, when self-pollinated, always produces offspring with the same traits as itself."
-    },
-    {
-     "term": "Purebred",
-     "definition": "Another term for a true-breeding organism, homozygous for the trait(s) in question."
+     "definition": "A true-breeding organism is one that, when self-pollinated, produces offspring with the same traits."
     },
     {
      "term": "Hybrid",
-     "definition": "An offspring produced by crossing two different true-breeding strains."
+     "definition": "Created from a cross of true-breeding individuals."
+    },
+    {
+     "term": "Gene",
+     "definition": "Passed from one generation to the next; determines an individual’s characteristics."
+    },
+    {
+     "term": "Allele",
+     "definition": "The different forms of a gene."
     },
     {
      "term": "Dominant",
-     "definition": "Describes an allele that produces its trait whenever it is present, even with only one copy."
+     "definition": "An organism with at least one dominant allele will exhibit that trait."
     },
     {
      "term": "Recessive",
-     "definition": "Describes an allele whose trait only appears when no dominant allele is present (i.e. two recessive alleles)."
+     "definition": "An organism with a recessive allele will exhibit the trait only in the absence of a dominant allele."
     },
     {
      "term": "Homozygous",
-     "definition": "Having two identical alleles for a gene (e.g. GG or gg)."
+     "definition": "Has two identical alleles for a gene (e.g. BB or bb)."
     },
     {
      "term": "Heterozygous",
-     "definition": "Having two different alleles for a gene (e.g. Gg)."
+     "definition": "Has two different alleles for a gene (e.g. Bb)."
     },
     {
      "term": "Genotype",
-     "definition": "An organism's genetic makeup — the specific alleles it carries."
+     "definition": "Genetic makeup (e.g. BB, Bb, bb)."
     },
     {
      "term": "Phenotype",
-     "definition": "An organism's observable physical traits, resulting from its genotype."
+     "definition": "Physical traits (e.g. purple or white flowers)."
     },
     {
      "term": "Segregation",
-     "definition": "The separation of the two alleles an individual carries during gamete formation, so each gamete gets only one allele per gene."
+     "definition": "Separation of alleles during gamete formation."
     },
-    {
-     "term": "F1 / F2 generation",
-     "definition": "F1 is the first hybrid generation from a cross of two true-breeding parents; F2 is the next generation, produced by self-pollinating or crossing F1 individuals."
-    }
-   ],
-   "examples": [
-    {
-     "title": "Example 1: Crossing two true-breeding plants",
-     "difficulty": "easy",
-     "problem": "In pea plants, purple flowers (P) are dominant over white (p). A true-breeding purple plant (PP) is crossed with a true-breeding white plant (pp). What are the genotype and phenotype of the F1 offspring?",
-     "steps": [
-      {
-       "explain": "List the gametes each true-breeding parent can produce — a homozygous parent can only make one type of gamete.",
-       "work": "PP parent → all P gametes. pp parent → all p gametes."
-      },
-      {
-       "explain": "Combine one gamete from each parent to find the offspring genotype.",
-       "work": "F1 genotype = Pp"
-      },
-      {
-       "explain": "Apply the principle of dominance: any plant with at least one P allele shows the dominant (purple) phenotype.",
-       "work": "F1 phenotype = purple"
-      }
-     ],
-     "answer": "All F1 offspring are Pp and purple."
-    },
-    {
-     "title": "Example 2: Crossing two heterozygotes",
-     "difficulty": "medium",
-     "problem": "Two purple Pp plants are crossed. What genotype and phenotype ratios are expected in the offspring?",
-     "steps": [
-      {
-       "explain": "List the possible gametes from each Pp parent — segregation means each gamete gets only one allele.",
-       "work": "Each Pp parent produces 1/2 P and 1/2 p gametes"
-      },
-      {
-       "explain": "Combine gametes from both parents in all four possible ways to find the offspring genotypes.",
-       "work": "Offspring: 1/4 PP, 1/2 Pp, 1/4 pp"
-      },
-      {
-       "explain": "Apply the principle of dominance to convert genotypes into phenotypes: PP and Pp both look purple; only pp looks white.",
-       "work": "Phenotypes: 3/4 purple, 1/4 white",
-       "why": "This is exactly why a Gg × Gg cross always gives the same 3:1 phenotype ratio, no matter which trait is involved."
-      }
-     ],
-     "answer": "Genotype ratio 1:2:1 (PP:Pp:pp); phenotype ratio 3:1 (purple:white)."
-    },
-    {
-     "title": "Example 3: Working out an unknown genotype (a test cross)",
-     "difficulty": "hard",
-     "problem": "A purple-flowered plant of unknown genotype is crossed with a white-flowered plant (pp), producing 48 purple offspring and 52 white offspring. What was the genotype of the purple parent, and how do you know?",
-     "steps": [
-      {
-       "explain": "Notice the offspring are roughly half purple and half white — a 1:1 ratio.",
-       "work": "Observed ratio ≈ 1:1 (purple : white)"
-      },
-      {
-       "explain": "Compare this to what different genotypes for the purple parent would predict: PP × pp would give all-purple offspring; Pp × pp would give a 1:1 mix.",
-       "work": "Test: Pp × pp → gametes: Pp parent gives 1/2 P, 1/2 p; pp parent gives all p",
-       "why": "Crossing an unknown genotype with a homozygous recessive individual (pp) is called a test cross — it's the standard way to reveal a hidden heterozygous genotype."
-      },
-      {
-       "explain": "Combine the gametes to predict the offspring ratio, and compare it to what was actually observed.",
-       "work": "Predicted offspring: 1/2 Pp (purple), 1/2 pp (white) → matches the observed ~1:1 ratio"
-      }
-     ],
-     "answer": "The purple parent's genotype was Pp (heterozygous) — confirmed because a test cross with pp produced the 1:1 ratio that only a Pp × pp cross predicts."
-    }
-   ],
-   "commonMistakes": [
-    {
-     "mistake": "Thinking a recessive allele disappears once it's masked in a heterozygote.",
-     "fix": "Masked does not mean gone — a recessive allele stays in the genotype and can reappear when it pairs with another recessive allele in a later generation."
-    },
-    {
-     "mistake": "Confusing genotype with phenotype.",
-     "fix": "Genotype is the letters (e.g. Gg); phenotype is what you actually see (e.g. purple flowers). Two different genotypes (GG and Gg) can share the same phenotype."
-    },
-    {
-     "mistake": "Expecting a small sample to match a ratio exactly.",
-     "fix": "Ratios like 3:1 are probabilities — they only show up accurately over many offspring, so a handful of offspring might not match exactly."
-    }
-   ],
-   "videos": [
-    {
-     "query": "Gregor Mendel pea plant experiments explained",
-     "channel": "Amoeba Sisters",
-     "note": "A clear, friendly overview of Mendel's pea experiments and the principle of dominance."
-    },
-    {
-     "query": "genotype vs phenotype explained biology",
-     "channel": "Bozeman Science",
-     "note": "Explains the genotype/phenotype distinction with several examples — good for the common mix-up."
-    },
-    {
-     "query": "segregation of alleles during meiosis explained",
-     "channel": "Khan Academy",
-     "note": "Covers how alleles physically separate during gamete formation — the biological basis of segregation."
-    }
-   ],
-   "quiz": {
-    "multipleChoice": [
-     {
-      "question": "Why were pea plants a good choice for Mendel's inheritance experiments?",
-      "options": [
-       "They are small, easy to grow, produce many offspring, and can be self- or cross-pollinated",
-       "They have only one chromosome",
-       "They cannot reproduce sexually",
-       "They show no variation in traits"
-      ],
-      "answer": 0,
-      "explanation": "Peas are a convenient \"model system\": easy to grow in large numbers, with traits that are simple to track, and flowers that can be controlled for self- or cross-pollination."
-     },
-     {
-      "question": "A true-breeding (purebred) plant, when self-pollinated, produces offspring that…",
-      "options": [
-       "always show the same traits as the parent",
-       "always show new, random traits",
-       "never reproduce",
-       "always show the opposite trait"
-      ],
-      "answer": 0,
-      "explanation": "By definition, a true-breeding organism is homozygous for the trait, so self-pollination always yields offspring with the same trait."
-     },
-     {
-      "question": "A hybrid pea plant is produced by…",
-      "options": [
-       "cloning a single plant",
-       "crossing two different true-breeding strains",
-       "self-pollinating a true-breeding plant",
-       "exposing a plant to radiation"
-      ],
-      "answer": 1,
-      "explanation": "A hybrid comes from crossing two different true-breeding parent strains, combining their different alleles."
-     },
-     {
-      "question": "What does it mean for an allele to be dominant?",
-      "options": [
-       "It is always the rarer allele",
-       "An organism shows that trait if it has at least one copy of the allele",
-       "It can only be inherited from the mother",
-       "It disappears after one generation"
-      ],
-      "answer": 1,
-      "explanation": "A dominant allele produces its trait even in a heterozygous individual (one dominant + one recessive allele)."
-     },
-     {
-      "question": "An organism shows a recessive trait only if…",
-      "options": [
-       "it has at least one dominant allele",
-       "it has two recessive alleles (no dominant allele present)",
-       "it is a hybrid",
-       "it was cross-pollinated"
-      ],
-      "answer": 1,
-      "explanation": "A recessive trait is masked by a dominant allele; it only shows when both alleles present are recessive."
-     },
-     {
-      "question": "When Mendel crossed true-breeding green-seeded plants with true-breeding yellow-seeded plants, the F1 offspring were:",
-      "options": [
-       "all yellow",
-       "half yellow, half green",
-       "all green",
-       "spotted yellow and green"
-      ],
-      "answer": 2,
-      "explanation": "All F1 offspring showed the dominant trait (green); green is dominant over yellow in this cross."
-     },
-     {
-      "question": "In the F2 generation (from self-pollinating F1 plants), what ratio of traits did Mendel observe?",
-      "options": [
-       "1:1",
-       "1:3",
-       "3:1",
-       "9:3:3:1"
-      ],
-      "answer": 2,
-      "explanation": "About 3/4 of F2 offspring showed the dominant trait and 1/4 showed the recessive trait — a 3:1 ratio, since F1 plants are heterozygous."
-     },
-     {
-      "question": "Why did the recessive (yellow) trait reappear in the F2 generation after \"disappearing\" in F1?",
-      "options": [
-       "The recessive allele had mutated back",
-       "The recessive allele was never lost — it was masked in the heterozygous F1, then segregated out again during gamete formation",
-       "F2 plants were a different species",
-       "It reappeared by pure chance with no genetic explanation"
-      ],
-      "answer": 1,
-      "explanation": "This is the key insight of segregation: alleles don't blend or disappear, they separate cleanly during gamete formation and can recombine in later generations."
-     },
-     {
-      "question": "According to the principle of segregation, each gamete (egg or sperm) receives:",
-      "options": [
-       "both alleles for a gene",
-       "no alleles for that gene",
-       "only one allele for that gene",
-       "a blended mixture of both alleles"
-      ],
-      "answer": 2,
-      "explanation": "During gamete formation, the two alleles an individual carries separate, so each gamete carries just one allele per gene."
-     },
-     {
-      "question": "A plant with genotype Gg is best described as:",
-      "options": [
-       "homozygous dominant",
-       "homozygous recessive",
-       "heterozygous",
-       "true-breeding"
-      ],
-      "answer": 2,
-      "explanation": "Gg has two different alleles (one dominant G, one recessive g), which is the definition of heterozygous."
-     }
-    ],
-    "shortAnswer": [
-     {
-      "question": "Define \"true-breeding\" and explain how Mendel used true-breeding strains to start his experiments.",
-      "answer": "A true-breeding organism, when self-pollinated, always produces offspring with the same traits. Mendel started with true-breeding pea strains so each strain reliably passed on one specific trait, giving him a clean baseline before crossing strains to make hybrids.",
-      "explanation": "Starting from a known, stable baseline is what let Mendel clearly track how traits changed after a controlled cross."
-     },
-     {
-      "question": "Explain the difference between genotype and phenotype, with an example.",
-      "answer": "Genotype is the genetic makeup (the alleles an organism carries), e.g. Gg. Phenotype is the observable trait that results, e.g. green seeds. Two organisms can share a phenotype (both green) but have different genotypes (GG or Gg).",
-      "explanation": "This distinction matters because a dominant phenotype can hide two different possible genotypes underneath it."
-     },
-     {
-      "question": "State the principle of dominance in your own words.",
-      "answer": "When two different alleles for a gene are both present, the dominant allele's trait is expressed and the recessive allele's trait is masked; the recessive trait only shows up when no dominant allele is present.",
-      "explanation": "This explains why heterozygous (Gg) individuals show the dominant trait rather than a blend."
-     },
-     {
-      "question": "Explain what segregation is and why it matters for explaining the F2 generation's 3:1 ratio.",
-      "answer": "Segregation is the separation of an individual's two alleles during gamete formation, so each gamete gets only one allele. Because F1 plants are heterozygous (Gg), their gametes are half G and half g; combining these randomly at fertilization produces GG, Gg, Gg, and gg offspring — 3 showing the dominant trait and 1 showing the recessive trait.",
-      "explanation": "The 3:1 ratio is a direct mathematical consequence of segregation combined with random fertilization."
-     },
-     {
-      "question": "Why did Mendel remove some reproductive structures from certain pea flowers before crossing them?",
-      "answer": "To prevent those flowers from self-pollinating, so he could control exactly which two plants were crossed and be certain of the parentage of the offspring.",
-      "explanation": "Without this step, Mendel couldn't be sure whether a plant had truly been cross-pollinated or had simply self-pollinated."
-     }
-    ],
-    "examStyle": [
-     {
-      "question": "In pea plants, tall (T) is dominant over dwarf (t).\n(a) A tall plant with genotype Tt is crossed with a dwarf plant (tt). List the gametes each parent can produce.\n(b) Give the genotypes and phenotypes of the offspring, and their expected ratio.",
-      "answer": "(a) Tt parent produces gametes: 1/2 T and 1/2 t. tt parent produces gametes: all t.\n(b) Offspring: 1/2 Tt (tall) and 1/2 tt (dwarf) — a 1:1 ratio of tall to dwarf.",
-      "explanation": "Marks: (a) 2, (b) 3. Since the tt parent can only contribute a t allele, the offspring's phenotype depends entirely on whether the Tt parent contributes a T or a t."
-     },
-     {
-      "question": "A tall pea plant (Tt) is crossed with another tall pea plant (Tt).\n(a) List the possible gametes from each parent.\n(b) Give the genotypes and phenotypes of the offspring and their expected ratio.\n(c) Explain, using the idea of segregation, why a dwarf offspring is possible even though both parents are tall.",
-      "answer": "(a) Each Tt parent produces 1/2 T and 1/2 t gametes.\n(b) Offspring genotypes: 1/4 TT, 1/2 Tt, 1/4 tt. Phenotypes: 3/4 tall (TT and Tt), 1/4 dwarf (tt) — a 3:1 ratio.\n(c) Each parent, though tall, is heterozygous and carries one recessive t allele. Segregation means each parent can pass on either the T or the t allele to a given gamete; if both parents happen to contribute a t allele to the same offspring, that offspring is tt (dwarf) despite both parents appearing tall.",
-      "explanation": "Marks: (a) 2, (b) 3, (c) 3. This is the classic monohybrid cross that produces Mendel's 3:1 ratio, and it's the same logic behind the pea F1×F1 cross in the lesson."
-     }
-    ]
-   },
-   "summaryCard": {
-    "points": [
-     "Genes come in different versions called alleles; individuals carry two alleles per gene, one from each parent.",
-     "Dominant alleles show their trait whenever present; recessive alleles only show when no dominant allele is present.",
-     "Homozygous = two identical alleles (GG or gg); heterozygous = two different alleles (Gg).",
-     "Genotype is the genetic makeup (letters); phenotype is the observable trait it produces.",
-     "Segregation: each gamete gets only one allele per gene, never both.",
-     "A cross of two heterozygotes (Gg × Gg) gives a 1:2:1 genotype ratio and a 3:1 phenotype ratio."
-    ],
-    "mustNotForget": [
-     "A masked recessive allele is not lost — it can reappear in a later generation.",
-     "Genotype (letters) is not the same as phenotype (what you see): GG and Gg can look identical.",
-     "Each gamete carries only one allele per gene (segregation).",
-     "Gg × Gg → 3:1 phenotype ratio, 1:2:1 genotype ratio.",
-     "A test cross (unknown genotype × homozygous recessive) reveals whether an organism is homozygous or heterozygous."
-    ]
-   },
-   "addedAt": "2026-09-30T18:25:11"
-  },
-  {
-   "id": "biology-lesson2-applying-mendels-principles",
-   "title": "Lesson 2: Applying Mendel's Principles",
-   "subject": "Biology",
-   "order": 2,
-   "meta": {
-    "studyMinutes": 30,
-    "difficulty": "medium",
-    "prerequisites": [
-     "Lesson 1: The Work of Gregor Mendel (genotype, phenotype, dominant/recessive)",
-     "Basic probability (fractions, multiplying probabilities)"
-    ]
-   },
-   "idea": {
-    "simple": "A Punnett square is just a multiplication table for genes. You write one parent's possible 'gene cards' across the top and the other's down the side, then fill in the grid by combining them — like a times table, but instead of numbers you get gene combinations.",
-    "academic": "Because alleles segregate randomly into gametes and combine randomly at fertilization, the outcomes of a genetic cross follow the rules of probability. A Punnett square is a systematic grid that lists every possible combination of gametes from two parents, letting you read off the exact genotype and phenotype ratios expected in the offspring — for one gene (monohybrid) or two genes at once (dihybrid, following independent assortment).",
-    "analogy": "Think of a Punnett square like flipping two coins at once, but each coin is a parent's \"gene coin\" with a dominant side and a recessive side. Just like predicting how often you get heads-heads, heads-tails, and so on from two coins, a Punnett square predicts how often each gene combination shows up in the offspring."
-   },
-   "explanation": [
-    {
-     "heading": "Probability and heredity",
-     "text": "**Probability** is the likelihood that an event will occur. A coin toss has a 50% (1/2) chance of either outcome, and each flip is an **independent event** — the outcome of one flip doesn't affect the next. For independent events happening together, multiply their probabilities: three tails in a row is 1/2 × 1/2 × 1/2 = 1/8."
-    },
-    {
-     "heading": "Using segregation to predict outcomes",
-     "text": "Because alleles segregate randomly into gametes, probability predicts genetic outcomes. For a heterozygous parent (Gg), the probability a gamete gets G is 1/2, and the probability it gets g is 1/2. Combining two parents' gametes at fertilization is also random and independent, so probabilities multiply — this is the logic behind the 3:1 (green:yellow) ratio in a Gg × Gg cross."
-    },
-    {
-     "heading": "Genotype and phenotype, homozygous and heterozygous",
-     "bullets": [
-      "Two organisms can share the same **phenotype** but have different **genotypes** (e.g. GG and Gg both look green).",
-      "**Homozygous:** two identical alleles for a gene (e.g. GG or gg). **Heterozygous:** two different alleles (e.g. Gg).",
-      "**Homozygous dominant** (e.g. GG) and **homozygous recessive** (e.g. gg) are the two homozygous cases."
-     ]
-    },
-    {
-     "heading": "Punnett squares",
-     "text": "A **Punnett square** is a grid used to predict the genotype and phenotype combinations from a genetic cross. You list one parent's possible gametes along the top and the other's along the side, then fill in each cell with the combination. For a **monohybrid cross** (one trait, Bb × Bb): 3 genotypes possible (BB, Bb, bb) and 2 phenotypes, with a 3/4 chance of the dominant phenotype and 1/4 chance of the recessive.",
-     "box": {
-      "type": "rule",
-      "title": "Monohybrid cross (Bb × Bb)",
-      "content": "Genotypes: 1 BB : 2 Bb : 1 bb\nPhenotypes: 3 dominant : 1 recessive"
-     }
-    },
-    {
-     "heading": "Two-factor (dihybrid) crosses",
-     "text": "A **dihybrid cross** tracks two traits at once (e.g. seed shape and color). Crossing two double-heterozygotes (RrYy × RrYy) gives a **9:3:3:1** ratio of phenotypes in F2, because the two genes assort independently.",
-     "bullets": [
-      "**Independent assortment:** genes for different traits segregate into gametes independently of one another, so all combinations of alleles are possible in gametes.",
-      "For RrYy × RrYy: 16 possible offspring combinations, giving 9/16 dominant-dominant, 3/16 dominant-recessive, 3/16 recessive-dominant, and 1/16 fully recessive."
-     ],
-     "box": {
-      "type": "rule",
-      "title": "Dihybrid cross (RrYy × RrYy)",
-      "content": "9/16 round-yellow, 3/16 round-green, 3/16 wrinkled-yellow, 1/16 wrinkled-green\nShortcut: multiply two separate monohybrid probabilities (e.g. 3/4 × 1/4)"
-     }
-    }
-   ],
-   "kpis": [
-    "Explain how probability can be used to predict inherited traits.",
-    "Explain how alleles segregate when more than one gene is involved (independent assortment).",
-    "Identify Mendel's contributions to our understanding of genetics.",
-    "Construct and interpret a Punnett square for a monohybrid cross.",
-    "Construct and interpret a Punnett square for a dihybrid (two-factor) cross."
-   ],
-   "keyTerms": [
     {
      "term": "Probability",
-     "definition": "The likelihood that a particular event will occur, often expressed as a fraction or percentage."
-    },
-    {
-     "term": "Independent event",
-     "definition": "An event whose outcome does not affect, and is not affected by, another event (e.g. separate coin flips)."
-    },
-    {
-     "term": "Punnett square",
-     "definition": "A grid used to predict the genotype and phenotype combinations of offspring from a genetic cross."
-    },
-    {
-     "term": "Monohybrid cross",
-     "definition": "A genetic cross that tracks a single trait (one gene) between two parents."
-    },
-    {
-     "term": "Dihybrid cross",
-     "definition": "A genetic cross that tracks two different traits (two genes) between two parents at the same time."
+     "definition": "The likelihood an event will occur."
     },
     {
      "term": "Independent assortment",
-     "definition": "The principle that genes for different traits segregate into gametes independently of one another."
+     "definition": "Genes for different traits can segregate independently during gamete formation."
     },
     {
-     "term": "Homozygous dominant",
-     "definition": "Having two copies of the dominant allele for a gene (e.g. GG)."
+     "term": "Monohybrid cross",
+     "definition": "A cross that follows one gene, e.g. Aa × Aa. Genotypic ratio 1:2:1, phenotypic ratio 3:1."
     },
     {
-     "term": "Homozygous recessive",
-     "definition": "Having two copies of the recessive allele for a gene (e.g. gg)."
+     "term": "Dihybrid cross",
+     "definition": "A two-factor cross that follows two genes, e.g. RrYy × RrYy. Phenotypic ratio 9:3:3:1."
     },
     {
-     "term": "9:3:3:1 ratio",
-     "definition": "The expected phenotype ratio in the F2 generation of a dihybrid cross between two double heterozygotes."
+     "term": "P, F1, F2",
+     "definition": "P = the parents. F1 = their offspring. F2 = the offspring of F1 × F1 (the P generation are the grandparents of the F2)."
+    },
+    {
+     "term": "Purebred",
+     "definition": "On your Vocabulary Station list without a definition. Extra definition: another word for true breeding."
+    },
+    {
+     "term": "Offspring",
+     "definition": "On your Vocabulary Station list without a definition. Extra definition: the new individuals produced by the parents."
+    },
+    {
+     "term": "Chromosome",
+     "definition": "On your Vocabulary Station list without a definition. Extra definition: a structure that carries genes; homologous chromosomes exist in pairs."
     }
    ],
    "examples": [
     {
-     "title": "Example 1: A monohybrid test cross",
+     "title": "Worksheet Q1 — Monohybrid cross Tt × Tt",
      "difficulty": "easy",
-     "problem": "In guinea pigs, black fur (B) is dominant over white (b). A heterozygous black guinea pig (Bb) is crossed with a white guinea pig (bb). What genotype and phenotype ratio is expected in the offspring?",
+     "problem": "In pea plants, tall (T) is dominant over short (t). A heterozygous plant (Tt) is self-pollinated. Complete the Punnett square and the table (number of offspring out of 4, genotypic ratio, phenotype, phenotypic ratio).",
      "steps": [
       {
-       "explain": "List the gametes each parent can produce.",
-       "work": "Bb parent → 1/2 B, 1/2 b. bb parent → all b."
+       "explain": "Self-pollinated means the cross is Tt × Tt. Write each parent’s gametes. Segregation gives each gamete one allele.",
+       "work": "Parent 1 gametes: T, t\nParent 2 gametes: T, t"
       },
       {
-       "explain": "Build a 2×2 Punnett square by combining each gamete pair.",
-       "work": "Offspring genotypes: 1/2 Bb, 1/2 bb"
+       "explain": "Put one parent’s gametes along the top and the other’s down the side. Fill each box with the side letter + the top letter, capital first.",
+       "work": "      T     t\nT    TT    Tt\nt    Tt    tt"
       },
       {
-       "explain": "Convert genotypes to phenotypes using dominance.",
-       "work": "Phenotypes: 1/2 black (Bb), 1/2 white (bb)"
+       "explain": "Count each genotype out of 4.",
+       "work": "TT = 1, Tt = 2, tt = 1\nGenotypic ratio 1 : 2 : 1",
+       "why": "Tt appears twice because there are two ways to make it: T from the first parent and t from the second, or the other way round."
+      },
+      {
+       "explain": "Turn genotypes into phenotypes. Any box with at least one T is tall.",
+       "work": "TT tall, Tt tall, Tt tall, tt short\nPhenotypic ratio 3 tall : 1 short"
       }
      ],
-     "answer": "Genotype and phenotype ratio: 1:1 (black : white)."
+     "answer": "Punnett square: TT, Tt, Tt, tt. Genotypic ratio 1:2:1 (1 TT : 2 Tt : 1 tt). Phenotypic ratio 3:1 (3 tall : 1 short)."
     },
     {
-     "title": "Example 2: Probability across two births",
+     "title": "Worksheet Q2 — Guinea pigs, P to F2",
      "difficulty": "medium",
-     "problem": "A Bb × Bb cross is made. (a) What is the probability a single offspring is black? (b) What is the probability that the first two offspring are both black?",
+     "problem": "In guinea pigs, black fur (B) is dominant over white fur (b). A homozygous black guinea pig is crossed with a white guinea pig. (a) Write the genotypes of the two parents. (b) Draw a Punnett square to show the F1 genotypes and phenotypes. (c) If two F1 guinea pigs are crossed, what percentage of F2 offspring will be white? Show your working.",
      "steps": [
       {
-       "explain": "Set up the monohybrid Punnett square for Bb × Bb.",
-       "work": "Offspring genotypes: 1/4 BB, 1/2 Bb, 1/4 bb"
+       "explain": "(a) Homozygous black = two dominant alleles. White is the recessive phenotype, so it can only be bb.",
+       "work": "Parents: BB (black) × bb (white)"
       },
       {
-       "explain": "Combine BB and Bb, since both show the dominant (black) phenotype.",
-       "work": "P(black) = 1/4 + 1/2 = 3/4"
+       "explain": "(b) BB makes only B gametes; bb makes only b gametes. Fill the square.",
+       "work": "      B     B\nb    Bb    Bb\nb    Bb    Bb",
+       "why": "When both parents are homozygous, every box is the same, so you know the F1 without counting."
       },
       {
-       "explain": "For two separate births, multiply the probability of black for each one.",
-       "work": "P(both black) = 3/4 × 3/4 = 9/16",
-       "why": "Separate offspring are independent events, just like separate coin flips — so their probabilities multiply, even though each individual birth still follows the same 3/4 chance."
+       "explain": "Read the F1.",
+       "work": "All F1 = Bb: heterozygous (genotype), black fur (phenotype)"
+      },
+      {
+       "explain": "(c) Cross two F1 animals: Bb × Bb.",
+       "work": "      B     b\nB    BB    Bb\nb    Bb    bb"
+      },
+      {
+       "explain": "Only bb is white. It is 1 box out of 4.",
+       "work": "1/4 × 100 = 25% white"
       }
      ],
-     "answer": "P(one offspring black) = 3/4. P(first two offspring both black) = 9/16."
+     "answer": "(a) BB (black) × bb (white). (b) All F1 offspring are Bb: black fur, heterozygous. (c) F1 × F1 (Bb × Bb) gives 25% white (bb) offspring."
     },
     {
-     "title": "Example 3: A dihybrid probability shortcut",
+     "title": "Worksheet Q3–4 — The 4×4 dihybrid square and 9:3:3:1",
      "difficulty": "hard",
-     "problem": "In pea plants, round (R) is dominant over wrinkled (r), and yellow (Y) is dominant over green (y). Two RrYy plants are crossed. What is the probability that an offspring is round and green?",
+     "problem": "In pea plants, round seeds (R) are dominant over wrinkled seeds (r), and yellow seeds (Y) are dominant over green seeds (y). Two heterozygous plants (RrYy × RrYy) are crossed. Complete the 4×4 Punnett square using the gametes RY, Ry, rY, ry, then complete the phenotype summary table.",
      "steps": [
       {
-       "explain": "Break the dihybrid cross into two separate monohybrid crosses, since the genes assort independently.",
-       "work": "Seed shape: Rr × Rr. Seed color: Yy × Yy"
+       "explain": "Find the gametes of RrYy. Each gamete gets one allele of the R gene and one of the Y gene.",
+       "work": "R with Y → RY\nR with y → Ry\nr with Y → rY\nr with y → ry",
+       "why": "Independent assortment: the R gene and the Y gene segregate independently, so all four combinations are made."
       },
       {
-       "explain": "Find the probability of \"round\" from the shape cross.",
-       "work": "P(round) = 3/4 (RR or Rr)"
+       "explain": "Put RY, Ry, rY, ry along the top and down the side. In each box join the two gametes, keeping the R letters together and the Y letters together, capital first.",
+       "work": "       RY     Ry     rY     ry\nRY   RRYY   RRYy   RrYY   RrYy\nRy   RRYy   RRyy   RrYy   Rryy\nrY   RrYY   RrYy   rrYY   rrYy\nry   RrYy   Rryy   rrYy   rryy"
       },
       {
-       "explain": "Find the probability of \"green\" from the color cross.",
-       "work": "P(green) = 1/4 (yy only)"
+       "explain": "Round, Yellow = at least one R and at least one Y. Count the boxes.",
+       "work": "RRYY, RRYy, RrYY, RrYy, RRYy, RrYy, RrYY, RrYy, RrYy = 9"
       },
       {
-       "explain": "Since the two genes assort independently, multiply the two probabilities together instead of building the full 16-box grid.",
-       "work": "P(round and green) = 3/4 × 1/4 = 3/16",
-       "why": "This shortcut — splitting a dihybrid cross into two monohybrid crosses and multiplying — gives the same answer as a full Punnett square, much faster."
+       "explain": "Round, Green = at least one R, but yy.",
+       "work": "RRyy, Rryy, Rryy = 3"
+      },
+      {
+       "explain": "Wrinkled, Yellow = rr, with at least one Y.",
+       "work": "rrYY, rrYy, rrYy = 3"
+      },
+      {
+       "explain": "Wrinkled, Green = rr and yy.",
+       "work": "rryy = 1"
+      },
+      {
+       "explain": "Check that the four numbers add up to all 16 boxes, then write the ratio.",
+       "work": "9 + 3 + 3 + 1 = 16 ✓\n9 : 3 : 3 : 1"
       }
      ],
-     "answer": "P(round and green) = 3/16."
+     "answer": "RrYy × RrYy produces 9 Round-Yellow : 3 Round-Green : 3 Wrinkled-Yellow : 1 Wrinkled-Green (9:3:3:1) out of 16 combinations."
     },
     {
-     "title": "Example 4 (worksheet Q2): Two generations of guinea pigs",
-     "difficulty": "easy",
-     "problem": "Black fur (B) is dominant over white fur (b). A homozygous black guinea pig is crossed with a white one. (a) Give the parents' genotypes. (b) Describe the F1. (c) If two F1 guinea pigs are crossed, what percentage of the F2 is white?",
+     "title": "Worksheet Q5 — Rabbits: turning 9:3:3:1 into numbers",
+     "difficulty": "hard",
+     "problem": "In rabbits, black fur (B) is dominant over brown fur (b), and long ears (L) is dominant over short ears (l). A heterozygous rabbit (BbLl) is crossed with another heterozygous rabbit (BbLl), producing 320 offspring. (a) Using the expected 9:3:3:1 ratio, calculate the expected number of offspring with: black fur & long ears; black fur & short ears; brown fur & long ears; brown fur & short ears. (b) What is the probability (%) that an offspring will have brown fur AND short ears? Show your calculation.",
      "steps": [
       {
-       "explain": "Homozygous black = two dominant alleles. White is recessive, so it must have two recessive alleles.",
-       "work": "Parents: BB × bb"
+       "explain": "Both parents are heterozygous for both genes, so this is the 9:3:3:1 cross. Match each phenotype to its fraction.",
+       "work": "Black, Long (both dominant) = 9/16\nBlack, Short = 3/16\nBrown, Long = 3/16\nBrown, Short (both recessive) = 1/16"
       },
       {
-       "explain": "Every F1 offspring gets B from one parent and b from the other.",
-       "work": "F1: all Bb → all black, heterozygous"
-      },
-      {
-       "explain": "Cross two F1 animals and read the Punnett square.",
-       "work": "Bb × Bb → 1 BB : 2 Bb : 1 bb"
-      },
-      {
-       "explain": "Only bb is white.",
-       "work": "bb = 1/4 = 25%"
-      }
-     ],
-     "answer": "(a) BB × bb. (b) All F1 are Bb, black. (c) 25% of the F2 are white (bb)."
-    },
-    {
-     "title": "Example 5 (worksheet Q5): Turning 9:3:3:1 into real numbers",
-     "difficulty": "medium",
-     "problem": "In rabbits, black fur (B) is dominant over brown (b) and long ears (L) over short (l). BbLl × BbLl produces 320 offspring. (a) How many of each phenotype are expected? (b) What is the probability of brown fur AND short ears?",
-     "steps": [
-      {
-       "explain": "The ratio 9:3:3:1 has 16 parts. Find the size of one part.",
-       "work": "320 ÷ 16 = 20 offspring per part"
+       "explain": "Find one sixteenth of the offspring.",
+       "work": "320 ÷ 16 = 20"
       },
       {
        "explain": "Multiply each ratio number by 20.",
-       "work": "Black-long 9 × 20 = 180\nBlack-short 3 × 20 = 60\nBrown-long 3 × 20 = 60\nBrown-short 1 × 20 = 20",
-       "why": "Check: 180 + 60 + 60 + 20 = 320, so nothing is missing."
+       "work": "Black, Long: 9 × 20 = 180\nBlack, Short: 3 × 20 = 60\nBrown, Long: 3 × 20 = 60\nBrown, Short: 1 × 20 = 20",
+       "why": "Check: 180 + 60 + 60 + 20 = 320, the total you started with."
       },
       {
-       "explain": "Brown and short is the double-recessive class, the '1' in the ratio.",
-       "work": "1/16 = 0.0625 = 6.25%"
+       "explain": "(b) Brown AND short is the double recessive (bbll), the “1” in the ratio. Turn the fraction into a percentage.",
+       "work": "1/16 = 1 ÷ 16 = 0.0625\n0.0625 × 100 = 6.25%"
       }
      ],
-     "answer": "(a) 180 black-long, 60 black-short, 60 brown-long, 20 brown-short. (b) 1/16 = 6.25%."
+     "answer": "(a) Black-Long = 180; Black-Short = 60; Brown-Long = 60; Brown-Short = 20 (out of 320, using the 9:3:3:1 ratio). (b) Brown & short ears probability = 1/16 = 6.25%."
+    },
+    {
+     "title": "Slide 38 — “Questions time”: three crosses with T and t",
+     "difficulty": "medium",
+     "problem": "If the allele for tall is represented by T and the allele for dwarf by t, give the gametes produced by the parents and the phenotypes of the offspring for each of the following crosses: a. Tt × tt   b. TT × Tt   c. Tt × Tt",
+     "steps": [
+      {
+       "explain": "a. Tt × tt. Write the gametes, then the square.",
+       "work": "Tt parent: 1/2 T and 1/2 t. tt parent: all t\n      T     t\nt    Tt    tt\nt    Tt    tt\nOffspring: 1/2 Tt, tall & 1/2 tt, dwarf"
+      },
+      {
+       "explain": "b. TT × Tt.",
+       "work": "TT parent: all T. Tt parent: 1/2 T and 1/2 t\n      T     T\nT    TT    TT\nt    Tt    Tt\nOffspring: all tall (1/2 Tt and 1/2 TT)"
+      },
+      {
+       "explain": "c. Tt × Tt.",
+       "work": "1/2 T and 1/2 t from each parent\n      T     t\nT    TT    Tt\nt    Tt    tt\nOffspring: 3/4 tall (1/4 TT and 1/2 Tt), 1/4 dwarf (tt)"
+      }
+     ],
+     "answer": "a. 1/2 Tt tall, 1/2 tt dwarf. b. All tall (1/2 Tt, 1/2 TT). c. 3/4 tall (1/4 TT and 1/2 Tt), 1/4 dwarf (tt)."
+    },
+    {
+     "title": "Slide 39 — The odorless skunk",
+     "difficulty": "hard",
+     "problem": "You cross an odorless skunk with an ordinary, stinky skunk chosen at random. Half of the 18 offspring are odorless, and half are smelly. There are two different ways you could have gotten this result. Diagram both possible crosses, showing genotypes and phenotypes of parents and offspring. Define your symbols.",
+     "steps": [
+      {
+       "explain": "A 1/2 : 1/2 result always comes from heterozygous × homozygous recessive. You are not told which trait is dominant, so try both.",
+       "work": "1/2 : 1/2 → Aa × aa type of cross"
+      },
+      {
+       "explain": "Possibility #1: stinky is dominant. S = stinky, s = odorless. The odorless skunk must be ss, and the stinky parent must be heterozygous to give 1/2 odorless offspring.",
+       "work": "ss × Ss\nOffspring: 1/2 Ss, stinky\n           1/2 ss, odorless"
+      },
+      {
+       "explain": "Possibility #2: odorless is dominant. O = odorless, o = stinky. The stinky parent must be homozygous (oo), so the odorless skunk must be heterozygous.",
+       "work": "Oo × oo\nOffspring: 1/2 Oo, odorless\n           1/2 oo, stinky"
+      }
+     ],
+     "answer": "Possibility #1 (stinky dominant): ss × Ss → 1/2 Ss stinky, 1/2 ss odorless. Possibility #2 (odorless dominant): Oo × oo → 1/2 Oo odorless, 1/2 oo stinky."
     }
    ],
    "commonMistakes": [
     {
-     "mistake": "Treating Bb and bB as two different genotypes.",
-     "fix": "Order doesn't matter — Bb and bB both mean \"one dominant, one recessive allele,\" i.e. heterozygous. They're the same genotype, just written from different parents' gametes."
+     "mistake": "Writing Tt and tT as two different genotypes.",
+     "fix": "They are the same (heterozygous). Write the capital letter first and count them together: that is why the ratio is 1 : 2 : 1."
     },
     {
-     "mistake": "Building a dihybrid Punnett square with only 2 rows and columns.",
-     "fix": "For a dihybrid cross (RrYy × RrYy), each parent can make 4 different gamete types (RY, Ry, rY, ry), so you need a 4×4 = 16-box grid, not a 2×2."
+     "mistake": "Giving the genotypic ratio when the question asks for the phenotypic ratio.",
+     "fix": "Tt × Tt: genotypic 1 TT : 2 Tt : 1 tt, phenotypic 3 tall : 1 short. Read which one is asked."
     },
     {
-     "mistake": "Multiplying probabilities for events that aren't actually independent.",
-     "fix": "Only multiply probabilities for events that truly don't affect each other — like two different genes assorting independently, or two separate births."
+     "mistake": "Using only two gametes for a dihybrid parent.",
+     "fix": "RrYy makes four gametes: RY, Ry, rY, ry. That is why the square is 4×4 with 16 boxes."
+    },
+    {
+     "mistake": "Mixing the letters in a dihybrid box (e.g. RYry).",
+     "fix": "Keep each gene’s letters together, capital first: RrYy."
+    },
+    {
+     "mistake": "Dividing by 4 in a 9:3:3:1 question.",
+     "fix": "9 + 3 + 3 + 1 = 16 parts. Divide the total by 16 first (320 ÷ 16 = 20), then multiply."
     }
    ],
    "videos": [
     {
-     "query": "how to do a Punnett square monohybrid cross",
-     "channel": "Bozeman Science",
-     "note": "Step-by-step walkthrough of building and reading a monohybrid Punnett square."
+     "query": "How Mendel's pea plants helped us understand genetics TED-Ed",
+     "title": "How Mendel’s pea plants helped us understand genetics",
+     "channel": "TED-Ed (Hortensia Jiménez Díaz)",
+     "duration": "3 min 6 s",
+     "url": "https://www.youtube.com/watch?v=Mehz7tCxjSE",
+     "note": "The same video that is embedded on slide 5 of your PowerPoint: Mendel’s pea crosses, dominant and recessive alleles, and a first Punnett square."
     },
     {
-     "query": "dihybrid cross Punnett square 9:3:3:1 explained",
+     "query": "Amoeba Sisters Monohybrids and the Punnett Square Guinea Pigs",
+     "title": "Monohybrids and the Punnett Square Guinea Pigs",
      "channel": "Amoeba Sisters",
-     "note": "Shows how to set up a full 4×4 dihybrid Punnett square and where the 9:3:3:1 ratio comes from."
+     "duration": "6 min 28 s",
+     "url": "https://www.youtube.com/watch?v=i-0rSv6oxSY",
+     "note": "How to set up and read a one-gene (monohybrid) Punnett square, with genotype and phenotype ratios."
     },
     {
-     "query": "probability rules genetics multiplication rule",
-     "channel": "Khan Academy",
-     "note": "Covers the multiplication rule for independent events — the math behind every Punnett square."
+     "query": "Amoeba Sisters Dihybrid and Two-Trait Crosses",
+     "title": "Dihybrid and Two-Trait Crosses",
+     "channel": "Amoeba Sisters",
+     "duration": "8 min 31 s",
+     "url": "https://www.youtube.com/watch?v=qIGXTJLrLf8",
+     "note": "How to find the four gametes and fill the 16-box square for a two-trait cross, leading to 9:3:3:1."
+    },
+    {
+     "query": "Bozeman Science Mendelian Genetics",
+     "title": "Mendelian Genetics",
+     "channel": "Bozeman Science",
+     "duration": "16 min 4 s",
+     "url": "https://www.youtube.com/watch?v=NWqgZUnJdAY",
+     "note": "A longer walk through Mendel, the law of segregation and independent assortment, with worked genetics problems."
+    }
+   ],
+   "drills": [
+    {
+     "level": "easy",
+     "question": "Worksheet Q1. Tt × Tt. What are the four boxes of the Punnett square?",
+     "options": [
+      "TT, TT, tt, tt",
+      "TT, Tt, Tt, tt",
+      "Tt, Tt, Tt, Tt",
+      "TT, Tt, tt, tt"
+     ],
+     "answer": 1,
+     "explanation": "Each parent gives T or t. T+T = TT, T+t = Tt, t+T = Tt, t+t = tt."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q1. What is the genotypic ratio for Tt × Tt?",
+     "options": [
+      "3 : 1",
+      "1 : 1",
+      "9 : 3 : 3 : 1",
+      "1 : 2 : 1"
+     ],
+     "answer": 3,
+     "explanation": "Count the boxes: 1 TT : 2 Tt : 1 tt. The genotypic ratio counts the letters, not what the plant looks like."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q1. What is the phenotypic ratio for Tt × Tt?",
+     "options": [
+      "3 tall : 1 short",
+      "1 tall : 3 short",
+      "1 tall : 1 short",
+      "All tall"
+     ],
+     "answer": 0,
+     "explanation": "TT, Tt and Tt are tall (at least one T). Only tt is short. So 3 tall : 1 short."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q2a. A homozygous black guinea pig is crossed with a white guinea pig (B = black, dominant). What are the parents’ genotypes?",
+     "options": [
+      "Bb × bb",
+      "BB × Bb",
+      "BB × bb",
+      "Bb × Bb"
+     ],
+     "answer": 2,
+     "explanation": "Homozygous black = BB. White is recessive, so it must be bb."
+    },
+    {
+     "level": "easy",
+     "question": "Worksheet Q2b. BB × bb. What are the F1 offspring?",
+     "options": [
+      "All Bb, black fur",
+      "All BB, black fur",
+      "1/2 Bb black, 1/2 bb white",
+      "All bb, white fur"
+     ],
+     "answer": 0,
+     "explanation": "BB gives only B; bb gives only b. Every offspring is Bb: heterozygous genotype, black phenotype."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q2c. Two F1 guinea pigs (Bb × Bb) are crossed. What percentage of the F2 will be white?",
+     "options": [
+      "75%",
+      "50%",
+      "0%",
+      "25%"
+     ],
+     "answer": 3,
+     "explanation": "Bb × Bb gives BB, Bb, Bb, bb. Only bb is white: 1 out of 4 = 25%."
+    },
+    {
+     "level": "medium",
+     "question": "Slide 38a. Tt × tt. What offspring are expected?",
+     "options": [
+      "All tall",
+      "1/2 Tt tall and 1/2 tt dwarf",
+      "3/4 tall and 1/4 dwarf",
+      "All dwarf"
+     ],
+     "answer": 1,
+     "explanation": "Tt gives 1/2 T and 1/2 t; tt gives all t. Boxes: Tt, tt, Tt, tt → 1/2 tall, 1/2 dwarf."
+    },
+    {
+     "level": "medium",
+     "question": "Slide 38b. TT × Tt. What offspring are expected?",
+     "options": [
+      "3/4 tall, 1/4 dwarf",
+      "1/2 tall, 1/2 dwarf",
+      "All tall (1/2 TT and 1/2 Tt)",
+      "All Tt"
+     ],
+     "answer": 2,
+     "explanation": "TT gives all T, so every offspring has at least one T and is tall. Half are TT and half are Tt."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q3. Which gametes does an RrYy plant make?",
+     "options": [
+      "Rr and Yy",
+      "R, r, Y, y",
+      "RY and ry only",
+      "RY, Ry, rY, ry"
+     ],
+     "answer": 3,
+     "explanation": "Each gamete needs one allele of each gene: R or r, with Y or y. That gives RY, Ry, rY, ry."
+    },
+    {
+     "level": "medium",
+     "question": "Worksheet Q3. In the 4×4 square, what goes in the box where gamete Ry meets gamete rY?",
+     "options": [
+      "RrYy",
+      "RRyy",
+      "rrYY",
+      "RyrY"
+     ],
+     "answer": 0,
+     "explanation": "Join the gametes and keep each gene’s letters together, capital first: R + r = Rr, y + Y = Yy → RrYy."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q4. RrYy × RrYy. How many of the 16 boxes are Round, Green?",
+     "options": [
+      "9",
+      "1",
+      "3",
+      "4"
+     ],
+     "answer": 2,
+     "explanation": "Round, Green needs at least one R and yy: RRyy, Rryy, Rryy = 3 boxes (3/16)."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q5a. BbLl × BbLl produce 320 offspring. How many are expected to have black fur and long ears?",
+     "options": [
+      "180",
+      "240",
+      "60",
+      "20"
+     ],
+     "answer": 0,
+     "explanation": "Black, long is both dominant = 9/16. 320 ÷ 16 = 20, and 9 × 20 = 180."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q5a. In the same cross (320 offspring), how many are expected to have black fur and short ears?",
+     "options": [
+      "20",
+      "60",
+      "180",
+      "80"
+     ],
+     "answer": 1,
+     "explanation": "Black, short is one dominant and one recessive = 3/16. 3 × 20 = 60. Brown, long is also 3/16 = 60."
+    },
+    {
+     "level": "exam",
+     "question": "Worksheet Q5b. What is the probability that an offspring has brown fur AND short ears?",
+     "options": [
+      "25%",
+      "18.75%",
+      "56.25%",
+      "6.25%"
+     ],
+     "answer": 3,
+     "explanation": "Brown and short is the double recessive bbll = 1/16. 1 ÷ 16 = 0.0625 = 6.25% (20 out of 320)."
+    },
+    {
+     "level": "exam",
+     "question": "Slide 39. An odorless skunk × a stinky skunk gives 1/2 odorless and 1/2 stinky offspring. If stinky (S) is dominant, what was the cross?",
+     "options": [
+      "SS × ss",
+      "Ss × Ss",
+      "ss × Ss",
+      "ss × ss"
+     ],
+     "answer": 2,
+     "explanation": "The odorless skunk is ss. To get 1/2 odorless offspring, the stinky parent must carry s, so it is Ss. ss × Ss → 1/2 Ss stinky, 1/2 ss odorless."
     }
    ],
    "quiz": {
     "multipleChoice": [
      {
-      "question": "If you flip a coin three times in a row, what is the probability of getting tails all three times?",
+      "question": "Worksheet Q14. Which term describes an organism with two identical alleles for a given gene?",
       "options": [
-       "1/2",
-       "1/4",
-       "1/6",
-       "1/8"
-      ],
-      "answer": 3,
-      "explanation": "Each flip is independent with probability 1/2 for tails, so multiply: 1/2 × 1/2 × 1/2 = 1/8."
-     },
-     {
-      "question": "A Gg parent produces gametes. What is the probability that a given gamete carries the g allele?",
-      "options": [
-       "0%",
-       "25%",
-       "50%",
-       "100%"
+       "Heterozygous",
+       "Hemizygous",
+       "Homozygous",
+       "Polygenic"
       ],
       "answer": 2,
-      "explanation": "Segregation splits a heterozygote's two alleles evenly between gametes, so each gamete has a 50% (1/2) chance of getting either allele."
+      "explanation": "Answer key: C. Homozygous = has two identical alleles for a gene (BB or bb). Heterozygous means two different alleles."
      },
      {
-      "question": "Two organisms have the same phenotype but different genotypes. Which pair of genotypes could explain this (for a dominant/recessive trait)?",
-      "options": [
-       "GG and gg",
-       "GG and Gg",
-       "Gg and gg",
-       "gg and gg"
-      ],
-      "answer": 1,
-      "explanation": "GG and Gg both show the dominant phenotype because both contain at least one dominant allele, even though their genotypes differ."
-     },
-     {
-      "question": "An organism with genotype gg is best described as:",
-      "options": [
-       "homozygous dominant",
-       "heterozygous",
-       "homozygous recessive",
-       "a hybrid"
-      ],
-      "answer": 2,
-      "explanation": "gg has two identical recessive alleles, which is homozygous recessive."
-     },
-     {
-      "question": "In a Punnett square for a Bb × Bb cross, how many different genotypes are possible among the offspring?",
-      "options": [
-       "1",
-       "2",
-       "3",
-       "4"
-      ],
-      "answer": 2,
-      "explanation": "The offspring can be BB, Bb, or bB (the same as Bb), or bb — three distinct genotypes: BB, Bb, and bb."
-     },
-     {
-      "question": "For a Bb × Bb cross, what is the probability of an offspring showing the dominant phenotype?",
+      "question": "Worksheet Q15. In a monohybrid cross Aa × Aa, what fraction of offspring is expected to be homozygous recessive?",
       "options": [
        "1/4",
        "1/2",
        "3/4",
        "1"
       ],
-      "answer": 2,
-      "explanation": "Of the four equally likely combinations (BB, Bb, Bb, bb), three show the dominant phenotype: 3/4."
+      "answer": 0,
+      "explanation": "Answer key: A. Method: the square gives AA, Aa, Aa, aa. Homozygous recessive is aa, which is 1 box out of 4 = 1/4."
      },
      {
-      "question": "A dihybrid cross tracks:",
+      "question": "Worksheet Q16. A dihybrid cross between two heterozygous individuals (AaBb × AaBb) is expected to produce offspring in what phenotypic ratio?",
       "options": [
-       "one trait in one organism",
-       "two traits at the same time",
-       "three generations at once",
-       "only recessive traits"
-      ],
-      "answer": 1,
-      "explanation": "\"Dihybrid\" means two genes/traits are being followed simultaneously, unlike a monohybrid cross which tracks just one."
-     },
-     {
-      "question": "Crossing two double heterozygotes (RrYy × RrYy) for independently assorting genes produces what phenotype ratio in the offspring?",
-      "options": [
+       "1:2:1",
        "3:1",
-       "1:1",
        "9:3:3:1",
-       "1:2:1"
+       "1:1:1:1"
       ],
       "answer": 2,
-      "explanation": "This is the classic dihybrid cross ratio, arising from independent assortment of the two gene pairs."
+      "explanation": "Answer key: C. Each parent makes 4 gametes, giving 16 boxes: 9 both dominant, 3 + 3 one dominant, 1 both recessive. 1:2:1 and 3:1 belong to a monohybrid cross."
      },
      {
-      "question": "What does the principle of independent assortment state?",
+      "question": "Slide 10. Yellow and green seed colors are determined by alleles. The allele for yellow seeds is ______ to the allele for green.",
       "options": [
-       "All traits are always inherited together",
-       "Genes for different traits segregate into gametes independently of one another",
-       "Only dominant alleles are passed to offspring",
-       "Alleles blend together in offspring"
+       "recessive",
+       "identical",
+       "linked",
+       "dominant"
+      ],
+      "answer": 3,
+      "explanation": "The slide’s answer is “dominant”: yellow × green seeds gave all yellow seeds in the F1."
+     },
+     {
+      "question": "Slide 22. Green pod × yellow pod gave an F1 that was all green. Why didn’t the allele for yellow color show in the F1 generation?",
+      "options": [
+       "It was lost during the cross",
+       "It is recessive, so it was masked by the dominant allele for green",
+       "It blended with the green allele",
+       "The F1 plants did not inherit it"
       ],
       "answer": 1,
-      "explanation": "Independent assortment means the allele a gamete gets for one gene doesn't affect which allele it gets for a different gene (as long as the genes aren't linked)."
+      "explanation": "From the slide notes: the yellow allele is recessive and was masked by the dominant allele for green. It was not lost, because it reappeared in the F2."
      },
      {
-      "question": "In an RrYy × RrYy dihybrid cross, what fraction of offspring is expected to be fully homozygous recessive (rryy)?",
+      "question": "Slide 24. In the F2 generation of Mendel’s cross for plant height, what proportion of the offspring were short?",
       "options": [
        "1/4",
+       "1/2",
+       "3/4",
+       "1/16"
+      ],
+      "answer": 0,
+      "explanation": "The slide’s answers are 1/4 short and 3/4 tall. F1 × F1 is Tt × Tt → TT, Tt, Tt, tt, and only tt is short."
+     },
+     {
+      "question": "Slide 28. Each coin flip is an independent event. What is the probability of getting the same outcome on three coin tosses in a row (for example, three tails)?",
+      "options": [
+       "1/2",
        "1/8",
+       "1/6",
+       "3/2"
+      ],
+      "answer": 1,
+      "explanation": "Multiply independent events: 1/2 × 1/2 × 1/2 = 1/8."
+     },
+     {
+      "question": "Slide 32. In the osprey cross Bb × Bb, how many different genotypes and phenotypes are possible for the offspring?",
+      "options": [
+       "2 genotypes, 3 phenotypes",
+       "4 genotypes, 2 phenotypes",
+       "4 genotypes, 4 phenotypes",
+       "3 genotypes, 2 phenotypes"
+      ],
+      "answer": 3,
+      "explanation": "The boxes are BB, Bb, Bb, bb. That is 3 genotypes (BB, Bb, bb) and 2 phenotypes (dominant and recessive)."
+     },
+     {
+      "question": "Slide 35. In the F2 of RrYy × RrYy, what proportion of offspring are likely to be round and green?",
+      "options": [
+       "9/16",
+       "3/16",
        "1/16",
-       "9/16"
+       "1/4"
       ],
-      "answer": 2,
-      "explanation": "The probability of rr is 1/4 and of yy is 1/4; since the genes assort independently, multiply: 1/4 × 1/4 = 1/16."
+      "answer": 1,
+      "explanation": "Round, green = dominant for shape, recessive for color = one of the “3” classes: RRyy, Rryy, Rryy → 3/16."
+     },
+     {
+      "question": "Slide 35. How many different kinds of gametes could an RRyy individual produce, and what are they?",
+      "options": [
+       "4: RY, Ry, rY, ry",
+       "2: R and y",
+       "2: Ry and ry",
+       "1: Ry"
+      ],
+      "answer": 3,
+      "explanation": "RRyy is homozygous for both genes. It can only give R and only give y, so every gamete is Ry."
      }
     ],
     "shortAnswer": [
      {
-      "question": "Explain how the probability of independent events is calculated, using the coin-flip example, and connect this to predicting genetic crosses.",
-      "answer": "For independent events, you multiply their individual probabilities: e.g. three tails in a row is 1/2 × 1/2 × 1/2 = 1/8. In genetics, which allele a gamete receives (segregation) and which two gametes combine at fertilization are also independent random events, so you multiply their probabilities to predict a cross's outcome.",
-      "explanation": "This is why Punnett squares work: each cell represents one specific combination, and its probability is the product of each parent's individual gamete probability."
+      "question": "Slide 38a. T = tall, t = dwarf. For the cross Tt × tt, give the gametes produced by the parents and the phenotypes of the offspring.",
+      "answer": "Gametes: Tt parent: 1/2 T and 1/2 t. tt parent: all t. Offspring: 1/2 Tt, tall and 1/2 tt, dwarf.",
+      "explanation": "The tt parent can only give t, so the offspring depend on whether the Tt parent gives T (→ Tt, tall) or t (→ tt, dwarf). Each happens half of the time."
      },
      {
-      "question": "Describe how to set up a Punnett square for a monohybrid cross (one trait).",
-      "answer": "Write one parent's possible gametes along the top of the grid and the other parent's possible gametes along the side. Fill in each interior cell by combining the allele from its row and column. The filled cells show every possible offspring genotype, in the ratio they're expected to occur.",
-      "explanation": "Each cell in the grid represents an equally likely combination of one gamete from each parent."
+      "question": "Slide 38b. T = tall, t = dwarf. For the cross TT × Tt, give the gametes produced by the parents and the phenotypes of the offspring.",
+      "answer": "Gametes: TT parent: all T. Tt parent: 1/2 T and 1/2 t. Offspring: all tall (1/2 Tt and 1/2 TT).",
+      "explanation": "Every offspring gets T from the TT parent, so every offspring has at least one dominant allele and is tall."
      },
      {
-      "question": "What is the difference between a monohybrid cross and a dihybrid cross?",
-      "answer": "A monohybrid cross follows a single trait (one gene) between two parents. A dihybrid cross follows two different traits (two genes) at the same time.",
-      "explanation": "Dihybrid crosses need a bigger Punnett square (4×4 instead of 2×2) because each parent can produce four different gamete types instead of two."
+      "question": "Define a true-breeding organism and a hybrid, using the wording from your slides.",
+      "answer": "True-breeding organism: one that, when self-pollinated, produces offspring with the same traits. Hybrid: created from a cross of true-breeding individuals.",
+      "explanation": "These are the definitions on slides 4 and 9. True-breeding plants are genetically identical for the character being investigated."
      },
      {
-      "question": "Explain what independent assortment means and how it produces the 9:3:3:1 ratio in a dihybrid cross.",
-      "answer": "Independent assortment means the alleles for one gene segregate into gametes independently of the alleles for another gene. For RrYy × RrYy, this allows all four combinations of alleles (RY, Ry, rY, ry) in each parent's gametes, giving 16 equally likely offspring combinations that sort into the 9:3:3:1 phenotype ratio.",
-      "explanation": "Without independent assortment, the two genes would always travel together and only two phenotype classes would appear instead of four."
+      "question": "Slide 30. Complete and explain: “Two organisms may share the same ______ but have different ______.” Give an example.",
+      "answer": "Two organisms may share the same phenotype but have different genotypes. Example: BB and Bb plants both have purple flowers (GG and Gg pods are both green).",
+      "explanation": "Genotype is the genetic makeup; phenotype is the physical traits. One dominant allele is enough to show the dominant trait, so homozygous dominant and heterozygous look the same."
      },
      {
-      "question": "Two organisms have the same phenotype but different genotypes. Explain how this is possible.",
-      "answer": "If a trait shows complete dominance, both a homozygous dominant genotype (e.g. GG) and a heterozygous genotype (e.g. Gg) produce the same observable dominant phenotype, even though their genetic makeup differs.",
-      "explanation": "This is exactly why you can't always tell an organism's genotype just by looking at its phenotype — a test cross with a homozygous recessive individual is needed to find out."
+      "question": "Slide 40. Can you now differentiate between the monohybrid and dihybrid cross?",
+      "answer": "A monohybrid cross follows one gene (e.g. Aa × Aa): a 2×2 square, genotypes 1/4 AA, 1/2 Aa, 1/4 aa, phenotypic ratio 3:1. A dihybrid cross follows two genes (e.g. AaBb × AaBb): each parent makes four gametes (AB, Ab, aB, ab), a 4×4 square with 16 boxes, phenotypic ratio 9:3:3:1.",
+      "explanation": "The slide shows both squares side by side: dominant for A and B = 9/16, dominant A recessive b = 3/16, recessive a dominant B = 3/16, recessive for both = 1/16."
      }
     ],
     "examStyle": [
      {
-      "question": "In pea plants, round seed shape (R) is dominant over wrinkled (r), and yellow seed color (Y) is dominant over green (y). A plant homozygous for round, yellow seeds (RRYY) is crossed with a plant homozygous for wrinkled, green seeds (rryy).\n(a) What are the genotype and phenotype of the F1 offspring?\n(b) If two F1 plants are crossed (a dihybrid cross), what are the genotypes of the parents in this cross?\n(c) What phenotype ratio is expected in the F2 generation?",
-      "answer": "(a) F1 genotype: RrYy (heterozygous for both traits). Phenotype: round, yellow seeds (both dominant traits show).\n(b) Both F1 parents in the cross are RrYy × RrYy.\n(c) 9:3:3:1 — 9/16 round yellow, 3/16 round green, 3/16 wrinkled yellow, 1/16 wrinkled green.",
-      "explanation": "Marks: (a) 2, (b) 2, (c) 4. Each RRYY × rryy parent can only contribute R and Y, or r and y respectively, so every F1 offspring must be RrYy — the standard dihybrid cross setup."
+      "question": "Worksheet Q2. In guinea pigs, black fur (B) is dominant over white fur (b). A homozygous black guinea pig is crossed with a white guinea pig.\n(a) Write the genotypes of the two parents. [2]\n(b) Draw a Punnett square to show the F1 genotypes and phenotypes. [3]\n(c) If two F1 guinea pigs are crossed, what percentage of F2 offspring will be white? Show your working. [3]",
+      "answer": "(a) Parents: BB (black) × bb (white).\n(b) Gametes B, B and b, b. Every box is Bb. All F1 offspring are Bb: black fur (phenotype), heterozygous (genotype).\n(c) F1 × F1 = Bb × Bb → BB, Bb, Bb, bb. White = bb = 1/4 = 25%.",
+      "explanation": "Marks shown are suggested (the worksheet gives only the total of 60). Method: (a) homozygous dominant and recessive phenotype fix both genotypes; (b) homozygous parents give identical boxes; (c) a heterozygous × heterozygous cross always gives 1/4 homozygous recessive."
      },
      {
-      "question": "A pea plant heterozygous for pod color (Gg, green dominant over yellow) is crossed with another heterozygous plant (Gg).\n(a) Draw out (in words) the gametes produced by each parent and their probabilities.\n(b) What are the possible offspring genotypes and their probabilities?\n(c) What is the probability that an offspring is green? What is the probability it is yellow?",
-      "answer": "(a) Each Gg parent produces gametes: 1/2 G and 1/2 g.\n(b) Offspring genotypes: 1/4 GG, 1/2 Gg, 1/4 gg.\n(c) Green (GG or Gg) = 3/4. Yellow (gg) = 1/4.",
-      "explanation": "Marks: (a) 2, (b) 3, (c) 3. This is the standard Gg × Gg monohybrid cross that produces the classic 3:1 phenotype ratio."
+      "question": "Worksheet Q5. In rabbits, black fur (B) is dominant over brown fur (b), and long ears (L) is dominant over short ears (l). BbLl × BbLl produce 320 offspring.\n(a) Using the expected 9:3:3:1 ratio, calculate the expected number of offspring of each phenotype. [4]\n(b) What is the probability (%) that an offspring will have brown fur AND short ears? Show your calculation. [2]",
+      "answer": "(a) 320 ÷ 16 = 20. Black fur, long ears 9/16 → 9 × 20 = 180. Black fur, short ears 3/16 → 60. Brown fur, long ears 3/16 → 60. Brown fur, short ears 1/16 → 20.\n(b) 1/16 = 0.0625 = 6.25%.",
+      "explanation": "Marks shown are suggested. Method: the ratio has 16 parts, so divide the total by 16, then multiply by 9, 3, 3 and 1. Check 180 + 60 + 60 + 20 = 320. Brown and short is the double recessive, the “1” part."
      }
     ]
    },
    "summaryCard": {
+    "title": "Topic 1.1 — Mendelian Genetics: quick sheet",
     "points": [
-     "Probability of independent events: multiply them (e.g. two coin flips, or two different genes).",
-     "Punnett square: one parent's gametes across the top, the other's down the side; fill in each cell.",
-     "Monohybrid cross (Bb × Bb): 1:2:1 genotype ratio, 3:1 phenotype ratio.",
-     "Homozygous dominant (BB) and homozygous recessive (bb) are the two \"pure\" genotypes; heterozygous (Bb) has one of each.",
-     "Dihybrid cross (RrYy × RrYy): 9:3:3:1 phenotype ratio from independent assortment, using a 4×4 grid.",
-     "Shortcut: split a dihybrid cross into two separate monohybrid crosses and multiply their probabilities."
+     "**Gene:** passed from one generation to the next; determines characteristics. **Alleles:** the different forms of a gene.",
+     "**Dominance:** at least one dominant allele → the dominant trait. Recessive trait only in the absence of a dominant allele.",
+     "**Homozygous** = two identical alleles (BB, bb). **Heterozygous** = two different alleles (Bb). **Genotype** = genetic makeup. **Phenotype** = physical traits.",
+     "**Segregation:** separation of alleles during gamete formation. **Independent assortment:** genes for different traits can segregate independently during gamete formation.",
+     "**Monohybrid** Tt × Tt → TT, Tt, Tt, tt. Genotypic 1:2:1, phenotypic 3:1 (25% recessive).",
+     "**Dihybrid** RrYy × RrYy → gametes RY, Ry, rY, ry → 16 boxes → 9:3:3:1.",
+     "**Using 9:3:3:1:** total ÷ 16, then × 9, × 3, × 3, × 1 (320 → 180, 60, 60, 20). Double recessive = 1/16 = 6.25%.",
+     "**Probability:** independent events multiply (1/2 × 1/2 × 1/2 = 1/8)."
     ],
     "mustNotForget": [
-     "Multiply probabilities only for independent events — like two different genes or two separate offspring.",
-     "A dihybrid cross needs a 4×4 grid (16 boxes), not a 2×2.",
-     "Bb and bB are the SAME genotype (heterozygous).",
-     "Monohybrid Bb × Bb → 3:1 phenotype; dihybrid RrYy × RrYy → 9:3:3:1 phenotype.",
-     "Dihybrid probability shortcut: multiply the two separate monohybrid probabilities instead of building the full grid."
+     "Tt × Tt: genotypic ratio 1:2:1, phenotypic ratio 3:1.",
+     "A heterozygous dihybrid parent makes four gametes: RY, Ry, rY, ry.",
+     "RrYy × RrYy gives 9:3:3:1 out of 16 boxes.",
+     "For expected numbers, divide the total by 16 first, then multiply.",
+     "A recessive allele is masked in the F1, not lost. It reappears in the F2."
     ]
    },
-   "addedAt": "2026-09-30T18:25:11"
-  },
-  {
-   "id": "biology-lesson3-other-patterns-of-inheritance",
-   "title": "Lesson 3: Other Patterns of Inheritance",
-   "subject": "Biology",
-   "order": 3,
-   "meta": {
-    "studyMinutes": 30,
-    "difficulty": "medium",
-    "prerequisites": [
-     "Lesson 2: Applying Mendel's Principles (Punnett squares, probability)",
-     "Dominant/recessive alleles and genotype notation"
-    ]
-   },
-   "idea": {
-    "simple": "Mendel's rules (one clear winner allele) work great for pea plants, but real life has more variety: sometimes two alleles blend like mixing paint (incomplete dominance), sometimes they both show up side by side like a patchwork quilt (codominance), sometimes a gene has more than two possible \"flavors\" across a population (multiple alleles), and sometimes many genes team up to create a whole spectrum of outcomes (polygenic traits) — plus, the environment itself can nudge how genes are expressed.",
-    "academic": "While many traits follow Mendel's simple dominant/recessive pattern, several important exceptions exist: incomplete dominance (heterozygotes show a blended intermediate phenotype), codominance (heterozygotes express both alleles fully and separately), multiple alleles (more than two allele forms exist for a gene across a population, though each individual carries only two), polygenic inheritance (several genes jointly determine a trait, producing continuous variation), and genotype–environment interaction (environmental conditions influence how a genotype is expressed as a phenotype).",
-    "analogy": "Think of incomplete dominance like mixing red and white paint to get pink — a genuine blend. Codominance is more like a checkerboard of red and white squares side by side — both colors are fully there, just not mixed. A polygenic trait is like a group project graded by averaging many students' small individual contributions — no single student's part determines the whole grade."
-   },
-   "explanation": [
-    {
-     "heading": "Incomplete dominance",
-     "text": "In **incomplete dominance**, one allele is not completely dominant over another, so heterozygotes show a **blended, intermediate** phenotype. Example: four o'clock flowers — red (RR) × white (WW) produces **pink (RW)** heterozygous offspring, a blend of the two parent colors. Pink (RW) × pink (RW) can still produce some fully red or fully white offspring, since the alleles themselves haven't blended, only the phenotype has."
-    },
-    {
-     "heading": "Codominance",
-     "text": "In **codominance**, the phenotypes of both alleles are **clearly and separately expressed** in the heterozygote — not blended. Example: in some chicken breeds, black and white feather alleles are codominant, so heterozygotes are speckled with distinct black **and** white feathers (\"erminette\"), not gray."
-    },
-    {
-     "heading": "Incomplete dominance vs. codominance",
-     "text": "Both occur when neither allele is simply dominant over the other, but the outcome differs:",
-     "bullets": [
-      "**Incomplete dominance:** the traits blend into a new, intermediate phenotype (e.g. pink from red + white).",
-      "**Codominance:** both traits appear fully and separately, side by side (e.g. black-and-white speckling, or AB blood type)."
-     ],
-     "box": {
-      "type": "rule",
-      "title": "Blending vs. both-shown",
-      "content": "Incomplete dominance → RW = pink (a NEW blended look)\nCodominance → speckled / type AB (BOTH original traits, fully shown)"
-     }
-    },
-    {
-     "heading": "Multiple alleles",
-     "text": "Many genes exist in **more than two allele forms** across a population, even though any one individual still carries only two of them.",
-     "bullets": [
-      "**Rabbit coat color** has 4 alleles, from most to least dominant: C (full color) > Cᶜʰ (chinchilla) > Cʰ (Himalayan) > c (albino).",
-      "**Human blood type** is controlled by three alleles: Iᴬ and Iᴮ (codominant with each other, and both dominant over i); i is recessive. Genotypes: AA or AO → type A; BB or BO → type B; AB → type AB (codominance); OO → type O."
-     ],
-     "box": {
-      "type": "rule",
-      "title": "Blood type genotypes",
-      "content": "IᴬIᴬ or Iᴬi → type A\nIᴮIᴮ or Iᴮi → type B\nIᴬIᴮ → type AB (codominance)\nii → type O"
-     }
-    },
-    {
-     "heading": "Polygenic traits",
-     "text": "**Polygenic traits** are produced by the interaction of **several genes** at once (not just one gene with multiple alleles). Examples: eye color in fruit flies, coat color in dogs, and human skin/hair color. Because many genes contribute, polygenic traits typically show a **wide, continuous range** of phenotypes rather than a few discrete categories."
-    },
-    {
-     "heading": "Genes and the environment",
-     "text": "An organism's **phenotype** is only **partly** determined by its **genotype** — environmental conditions can also affect how genes are expressed. Example: butterflies hatching in cooler spring days develop darker wing pigmentation than those hatching in warmer summer days, helping them regulate body temperature for flight. Even internal conditions count as \"environment\": both men and women can carry genes for male-pattern baldness, but it appears far more often in men because male hormones trigger the gene's expression."
-    }
-   ],
-   "kpis": [
-    "Describe some of the exceptions to Mendel's principles of simple dominance.",
-    "Distinguish incomplete dominance from codominance, with examples.",
-    "Explain how a gene can have multiple alleles, using rabbit coat color and human blood type as examples.",
-    "Explain what a polygenic trait is and why such traits show a wide range of phenotypes.",
-    "Explain the environment's role in the way genes determine traits."
-   ],
-   "keyTerms": [
-    {
-     "term": "Incomplete dominance",
-     "definition": "A pattern where one allele is not completely dominant over another, so heterozygotes show a blended, intermediate phenotype."
-    },
-    {
-     "term": "Codominance",
-     "definition": "A pattern where both alleles in a heterozygote are fully and separately expressed, rather than blending."
-    },
-    {
-     "term": "Multiple alleles",
-     "definition": "A situation where a gene exists in more than two allele forms across a population, though any one individual carries only two."
-    },
-    {
-     "term": "Polygenic trait",
-     "definition": "A trait produced by the interaction of several different genes, typically showing a wide range of phenotypes."
-    },
-    {
-     "term": "Blood type alleles (Iᴬ, Iᴮ, i)",
-     "definition": "The three human blood-type alleles: Iᴬ and Iᴮ are codominant with each other and dominant over i, which is recessive."
-    },
-    {
-     "term": "Antigen",
-     "definition": "A protein on the surface of red blood cells that determines blood type."
-    },
-    {
-     "term": "Genotype–environment interaction",
-     "definition": "The idea that an organism's phenotype depends not only on its genotype but also on environmental conditions during development."
-    }
-   ],
-   "examples": [
-    {
-     "title": "Example 1: An incomplete dominance cross",
-     "difficulty": "easy",
-     "problem": "In four o'clock flowers, red (R) and white (W) show incomplete dominance. A red (RR) plant is crossed with a pink (RW) plant. What phenotypes are expected in the offspring, and in what ratio?",
-     "steps": [
-      {
-       "explain": "List the gametes each parent produces.",
-       "work": "RR parent → all R. RW parent → 1/2 R, 1/2 W."
-      },
-      {
-       "explain": "Combine the gametes to find the offspring genotypes.",
-       "work": "Offspring genotypes: 1/2 RR, 1/2 RW"
-      },
-      {
-       "explain": "Convert genotypes to phenotypes — remember there's no simple dominant here; RW is its own blended phenotype (pink).",
-       "work": "Phenotypes: 1/2 red (RR), 1/2 pink (RW)"
-      }
-     ],
-     "answer": "1:1 ratio of red to pink; no white offspring are possible from this particular cross."
-    },
-    {
-     "title": "Example 2: A codominance cross (blood type)",
-     "difficulty": "medium",
-     "problem": "A man with blood type AB (IᴬIᴮ) has children with a woman with blood type O (ii). What blood types are possible in their children, and in what proportions?",
-     "steps": [
-      {
-       "explain": "List the gametes each parent can produce.",
-       "work": "IᴬIᴮ parent → 1/2 Iᴬ, 1/2 Iᴮ. ii parent → all i."
-      },
-      {
-       "explain": "Combine gametes to find the offspring genotypes.",
-       "work": "Offspring genotypes: 1/2 Iᴬi, 1/2 Iᴮi"
-      },
-      {
-       "explain": "Convert genotypes to blood types — Iᴬ and Iᴮ are each dominant over i.",
-       "work": "Iᴬi = type A, Iᴮi = type B",
-       "why": "Codominance between Iᴬ and Iᴮ never actually shows up here, because no offspring inherits both Iᴬ and Iᴮ — codominance only appears when an individual has one of each."
-      }
-     ],
-     "answer": "1/2 of children will be type A, 1/2 will be type B. No child can be type AB or type O from this particular cross."
-    },
-    {
-     "title": "Example 3: Combining multiple alleles and codominance",
-     "difficulty": "hard",
-     "problem": "A woman with type A blood, whose mother was type O, marries a man with type AB blood. (a) What is the woman's genotype? (b) What blood types are possible in their children?",
-     "steps": [
-      {
-       "explain": "Since the woman's mother was type O (ii), the woman must have inherited an i allele from her mother, even though she herself shows type A.",
-       "work": "Woman's genotype must include one i allele",
-       "why": "A parent with type O can only pass on the recessive i allele — so any child of a type-O parent carries at least one i, regardless of their own phenotype."
-      },
-      {
-       "explain": "Combine this with her own type A phenotype to determine her full genotype.",
-       "work": "Woman's genotype = Iᴬi (heterozygous, not IᴬIᴬ)"
-      },
-      {
-       "explain": "List the gametes from both parents: the woman (Iᴬi) and the man (IᴬIᴮ).",
-       "work": "Woman → 1/2 Iᴬ, 1/2 i. Man → 1/2 Iᴬ, 1/2 Iᴮ."
-      },
-      {
-       "explain": "Combine all gamete pairs to list the possible offspring genotypes and blood types.",
-       "work": "Offspring: 1/4 IᴬIᴬ (type A), 1/4 IᴬIᴮ (type AB), 1/4 Iᴬi (type A), 1/4 Iᴮi (type B)"
-      }
-     ],
-     "answer": "(a) The woman's genotype is Iᴬi. (b) Their children could be type A (1/2), type AB (1/4), or type B (1/4) — but not type O."
-    }
-   ],
-   "commonMistakes": [
-    {
-     "mistake": "Confusing incomplete dominance (blending) with codominance (both fully expressed).",
-     "fix": "Ask: does the heterozygote look like a NEW blended color (incomplete dominance, e.g. pink), or does it show BOTH original traits distinctly at once (codominance, e.g. speckled feathers or AB blood)?"
-    },
-    {
-     "mistake": "Thinking \"multiple alleles\" means one individual can carry more than two alleles.",
-     "fix": "Multiple alleles is a population-level idea — many versions of a gene exist across everyone, but any single individual (being diploid) still only carries two alleles for that gene."
-    },
-    {
-     "mistake": "Treating a polygenic trait like a single-gene trait with only a few categories.",
-     "fix": "Because several genes each contribute a small effect, polygenic traits (like height or skin color) produce a wide, continuous spread of outcomes, not just 2–4 discrete categories."
-    }
-   ],
-   "videos": [
-    {
-     "query": "incomplete dominance vs codominance explained biology",
-     "channel": "Amoeba Sisters",
-     "note": "Directly compares the two patterns side by side with clear examples — perfect for the blending vs. both-shown mix-up."
-    },
-    {
-     "query": "multiple alleles blood type genetics explained",
-     "channel": "Bozeman Science",
-     "note": "Explains ABO blood type genetics, showing dominance and codominance working together in one gene."
-    },
-    {
-     "query": "polygenic inheritance explained biology",
-     "channel": "Khan Academy",
-     "note": "Covers how multiple genes combine to produce continuous traits like height or skin color."
-    }
-   ],
-   "quiz": {
-    "multipleChoice": [
-     {
-      "question": "In incomplete dominance, a heterozygous offspring's phenotype is:",
-      "options": [
-       "identical to one parent",
-       "a blend, intermediate between the two parent phenotypes",
-       "always the same as the dominant parent",
-       "completely random"
-      ],
-      "answer": 1,
-      "explanation": "Incomplete dominance produces a blended intermediate phenotype, like pink flowers from red × white parents."
-     },
-     {
-      "question": "Red (RR) four o'clock flowers are crossed with white (WW) flowers. What color are the RW heterozygous offspring?",
-      "options": [
-       "Red",
-       "White",
-       "Pink",
-       "Spotted red and white"
-      ],
-      "answer": 2,
-      "explanation": "This is a classic incomplete dominance example: the heterozygote blends into pink."
-     },
-     {
-      "question": "In codominance, the heterozygote's phenotype shows:",
-      "options": [
-       "a blend of both traits",
-       "only the dominant trait",
-       "both traits fully and separately (e.g. speckled black and white)",
-       "neither trait"
-      ],
-      "answer": 2,
-      "explanation": "Codominance means both alleles are expressed clearly and separately, not blended — like black-and-white speckled \"erminette\" chickens."
-     },
-     {
-      "question": "What is the main difference between incomplete dominance and codominance?",
-      "options": [
-       "There is no difference",
-       "Incomplete dominance blends the two traits; codominance expresses both traits separately and fully",
-       "Codominance only happens in plants",
-       "Incomplete dominance only happens with blood types"
-      ],
-      "answer": 1,
-      "explanation": "Blending (a new intermediate look) = incomplete dominance; both traits appearing distinctly side by side = codominance."
-     },
-     {
-      "question": "Rabbit coat color has four alleles, ranked from most to least dominant as C > Cᶜʰ > Cʰ > c. A rabbit with genotype Cᶜʰc will have which coat?",
-      "options": [
-       "Full color, since C is present",
-       "Chinchilla, since Cᶜʰ is dominant over c",
-       "Himalayan",
-       "Albino"
-      ],
-      "answer": 1,
-      "explanation": "Between Cᶜʰ and c, Cᶜʰ is more dominant, so the rabbit shows the chinchilla phenotype."
-     },
-     {
-      "question": "A person has blood type AB. What does this tell you about their genotype and the relationship between the A and B alleles?",
-      "options": [
-       "Genotype AB; A and B alleles are codominant with each other",
-       "Genotype OO; A and B blended together",
-       "Genotype AA; B is recessive",
-       "It is impossible to have type AB blood"
-      ],
-      "answer": 0,
-      "explanation": "Type AB results from the genotype IᴬIᴮ; since Iᴬ and Iᴮ are codominant, both antigens are expressed, giving type AB."
-     },
-     {
-      "question": "A person with genotype IᴬIᴬ or Iᴬi has which blood type?",
-      "options": [
-       "Type A",
-       "Type B",
-       "Type AB",
-       "Type O"
-      ],
-      "answer": 0,
-      "explanation": "Iᴬ is dominant over the recessive i, so either IᴬIᴬ (homozygous) or Iᴬi (heterozygous) both give type A blood."
-     },
-     {
-      "question": "Which of the following is an example of a polygenic trait?",
-      "options": [
-       "Human blood type",
-       "Pea seed color (single gene)",
-       "Human skin color, controlled by several genes",
-       "Four o'clock flower color"
-      ],
-      "answer": 2,
-      "explanation": "Polygenic traits are controlled by multiple genes acting together, producing a wide range of phenotypes — human skin color is a classic example."
-     },
-     {
-      "question": "Why do polygenic traits typically show a wide, continuous range of phenotypes rather than just a few categories?",
-      "options": [
-       "Because only one gene is involved",
-       "Because several genes each contribute a small effect, so many combinations are possible",
-       "Because the environment has no effect on them",
-       "Because they always show complete dominance"
-      ],
-      "answer": 1,
-      "explanation": "With multiple contributing genes, there are many possible combinations of alleles, producing a spread of intermediate outcomes rather than a few sharp categories."
-     },
-     {
-      "question": "Butterflies hatching in cooler spring days develop darker wing pigmentation than those hatching in warm summer days. This best illustrates:",
-      "options": [
-       "Codominance",
-       "Incomplete dominance",
-       "That phenotype is only partly determined by genotype — the environment also affects gene expression",
-       "That genotype alone determines phenotype"
-      ],
-      "answer": 2,
-      "explanation": "The same genotype produces different phenotypes depending on environmental conditions (temperature/season), showing genotype–environment interaction."
-     }
-    ],
-    "shortAnswer": [
-     {
-      "question": "Explain incomplete dominance using the four o'clock flower example, and state why an RW × RW cross can still produce some fully red or fully white offspring.",
-      "answer": "In four o'clock flowers, red (R) and white (W) alleles show incomplete dominance: heterozygous (RW) plants are pink, a blend of both colors. An RW × RW cross can still produce RR (red) and WW (white) offspring because the alleles themselves never actually blended — they simply segregate and recombine like any other alleles; only the phenotype of the heterozygote is blended.",
-      "explanation": "This distinguishes true genetic blending (which doesn't happen) from phenotypic blending (which does) — the alleles remain distinct and can separate out again."
-     },
-     {
-      "question": "Explain the difference between incomplete dominance and codominance, giving one example of each.",
-      "answer": "Incomplete dominance produces a blended, intermediate phenotype in heterozygotes (e.g. pink four o'clock flowers from red × white). Codominance produces both parent phenotypes fully and separately in heterozygotes (e.g. black-and-white speckled \"erminette\" chickens, or AB blood type).",
-      "explanation": "The key test: does the heterozygote look like a new blended color (incomplete dominance), or does it show both original traits distinctly (codominance)?"
-     },
-     {
-      "question": "Explain what \"multiple alleles\" means, and why any one rabbit can still only carry two of the four coat-color alleles.",
-      "answer": "\"Multiple alleles\" means more than two versions of a gene exist across the whole population (here, four alleles for rabbit coat color: C, Cᶜʰ, Cʰ, c). However, each individual rabbit only inherits two alleles for that gene — one from each parent — even though the population as a whole has more options.",
-      "explanation": "Multiple alleles is a population-level idea; each diploid individual is still limited to two alleles per gene."
-     },
-     {
-      "question": "Explain how human blood type shows both dominance/recessiveness and codominance at the same time.",
-      "answer": "Iᴬ and Iᴮ are each dominant over the recessive i (so IᴬI or Iᴬi is type A, and IᴮIᴮ or Iᴮi is type B, and ii is type O). But Iᴬ and Iᴮ are codominant with each other, so a person with genotype IᴬIᴮ expresses both antigens and has type AB blood.",
-      "explanation": "This is a good example of how a gene can involve more than one type of dominance relationship among its different alleles at once."
-     },
-     {
-      "question": "Explain how the environment can affect an organism's phenotype even when its genotype stays the same, using an example from the lesson.",
-      "answer": "The environment can influence whether or how strongly a gene is expressed. For example, butterflies with the same genotype develop darker wing pigmentation when they hatch in the cooler spring than in the warmer summer, because temperature affects gene expression for pigmentation. Similarly, male-pattern baldness genes are expressed more in men because of hormonal differences.",
-      "explanation": "This shows phenotype = genotype + environment; the same genetic instructions can produce different outcomes depending on conditions during development."
-     }
-    ],
-    "examStyle": [
-     {
-      "question": "A chinchilla rabbit (Cᶜʰc) is crossed with a dark gray (full color) rabbit (CCᶜʰ). Alleles rank from most to least dominant: C > Cᶜʰ > Cʰ > c.\n(a) List the possible gametes from each parent.\n(b) Set up the Punnett square (in words) and give the genotypes of the offspring.\n(c) Give the phenotypes of the offspring and their expected proportions.",
-      "answer": "(a) Cᶜʰc parent: gametes Cᶜʰ or c. CCᶜʰ parent: gametes C or Cᶜʰ.\n(b) Offspring genotypes: CCᶜʰ, Cᶜʰc, CCᶜʰ, Cᶜʰc — in other words, 1/2 CCᶜʰ and 1/2 Cᶜʰc.\n(c) CCᶜʰ shows full (dark gray) color since C is most dominant; Cᶜʰc shows chinchilla since Cᶜʰ is dominant over c. So 50% dark gray coats and 50% chinchilla coats.",
-      "explanation": "Marks: (a) 2, (b) 2, (c) 2. Remember multiple-allele dominance still follows a strict ranking — always check which allele in a pair is more dominant, not just whether one is \"C\"."
-     },
-     {
-      "question": "A man with heterozygous type A blood (Iᴬi) has children with a woman with heterozygous type B blood (Iᴮi).\n(a) List the gametes each parent can produce.\n(b) Set up the cross and list the possible offspring genotypes.\n(c) What is the probability that a child has type O blood? Show your reasoning.",
-      "answer": "(a) Iᴬi parent: gametes Iᴬ or i. Iᴮi parent: gametes Iᴮ or i.\n(b) Possible offspring genotypes: IᴬIᴮ (type AB), Iᴬi (type A), Iᴮi (type B), ii (type O).\n(c) The probability of ii (type O) is 1/4, since it requires the i gamete from both parents (1/2 × 1/2 = 1/4), or 25%.",
-      "explanation": "Marks: (a) 2, (b) 2, (c) 2. This is the same logic as any two-allele Punnett square — just remember Iᴬ and Iᴮ are codominant with each other, so IᴬIᴮ offspring show both, not a blend."
-     }
-    ]
-   },
-   "summaryCard": {
-    "points": [
-     "Incomplete dominance: heterozygote shows a blended, intermediate phenotype (e.g. pink from red × white).",
-     "Codominance: heterozygote shows both traits fully and separately (e.g. AB blood type, speckled chickens).",
-     "Multiple alleles: more than two versions of a gene exist in a population, but each individual still carries only two.",
-     "Blood type: Iᴬ and Iᴮ are codominant with each other, and both dominant over recessive i.",
-     "Polygenic traits (several genes) produce a wide, continuous range of phenotypes, e.g. human skin color.",
-     "Phenotype = genotype + environment — the same genotype can look different under different conditions."
-    ],
-    "mustNotForget": [
-     "Incomplete dominance blends; codominance shows both traits separately.",
-     "Multiple alleles exist at the population level; each individual still has only two.",
-     "Type AB blood = IᴬIᴮ (codominance); type O = ii (fully recessive).",
-     "A parent with type O blood can only pass on the recessive i allele.",
-     "Environment can change how a genotype is expressed — genotype alone doesn't always predict phenotype."
-    ]
-   },
-   "addedAt": "2026-09-30T18:25:11"
+   "addedAt": "2026-09-30T19:21:58"
   },
   {
    "id": "chemistry-lesson1-1-dynamic-equilibrium",
